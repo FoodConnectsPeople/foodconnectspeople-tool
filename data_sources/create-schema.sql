@@ -26,7 +26,6 @@ CREATE TABLE foodconnectspeople.Recipe (
   , is_from_longitude DECIMAL(9,6)
 
   , category VARCHAR(1024)
-  , main_ingredient VARCHAR(1024)
   , cooking_technique VARCHAR(1024)
   , is_vegetarian BOOLEAN
   , is_vegan BOOLEAN
@@ -66,6 +65,7 @@ CREATE TABLE foodconnectspeople.Ingredients (
 CREATE TABLE foodconnectspeople.RecipeIngredients (
   recipe_id SERIAL
   , ingredient_id SERIAL
+  , is_main BOOLEAN
   , quantity SMALLINT
   , unit_of_measure VARCHAR(128)
   , is_vegetarian BOOLEAN
