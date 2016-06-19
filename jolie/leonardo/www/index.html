@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="js/spin.min.js"></script>
+    <script type="text/javascript" src="js/jolie-client.js"></script>
+    <title>Food Connects People</title>
+  </head>
+  <body>
+    <button onclick="getIngredients()">Get Ingredients</button>
+    <div id="panel">
+    </div>
+    <script>
+    function onError( data ) {
+        alert( data.error.message );
+    }
+
+    function getIngredients() {
+      JolieClient.getIngredients({}, function( data ) {
+          for( var i = 0; i < data.ingredient.length; i++ ) {
+              var properties = "";
+              for( var x = 0; x < data.ingredient[ i ].properties.length; x++ ) {
+                  properties = properties + data.ingredient[ i ].properties[ x ] + " "
+              }
+              $("#panel").append( "<div>" + data.ingredient[ i ].name + "," + properties + "</div>");
+          }
+      }, onError);
+    }
+   </script>
+  </body>
+</html>

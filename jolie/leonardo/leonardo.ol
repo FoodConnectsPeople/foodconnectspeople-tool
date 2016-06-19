@@ -21,6 +21,9 @@ include "protocols/http.iol"
 
 include "config.iol"
 
+include "../../data_sources/jolie/public/interfaces/DbServiceInterface.iol"
+include "../__frontend/public/interfaces/FrontendInterface.iol"
+
 execution { concurrent }
 
 interface HTTPInterface {
@@ -28,10 +31,19 @@ RequestResponse:
 	default(DefaultOperationHttpRequest)(undefined)
 }
 
+outputPort Frontend {
+	Interfaces: FrontendInterface, DbServiceInterface
+}
+
+embedded {
+	Jolie:
+		"../__frontend/frontend.ol" in Frontend
+}
+
 inputPort HTTPInput {
 Protocol: http {
 	.keepAlive = true; // Keep connections open
-	.debug = DebugHttp; 
+	.debug = DebugHttp;
 	.debug.showContent = DebugHttpContent;
 	.format -> format;
 	.contentType -> mime;
@@ -41,7 +53,10 @@ Protocol: http {
 }
 Location: Location_Leonardo
 Interfaces: HTTPInterface
+Aggregates: Frontend
 }
+
+
 
 init
 {
@@ -61,7 +76,7 @@ main
 			s = request.operation;
 			s.regex = "\\?";
 			split@StringUtils( s )( s );
-			
+
 			// Default page
                         shouldAddIndex = false;
                         if ( s.result[0] == "" ) {
@@ -74,7 +89,7 @@ main
                         if ( shouldAddIndex ) {
                                 s.result[0] += DefaultPage
                         };
-			
+
 			file.filename = documentRootDirectory + s.result[0];
 
 			getMimeType@File( file.filename )( mime );

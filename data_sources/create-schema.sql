@@ -60,6 +60,19 @@ CREATE TABLE foodconnectspeople.RecipeCategory (
 CREATE TABLE foodconnectspeople.Ingredients (
   ingredient_id SERIAL
   , name VARCHAR(1024)
+  , CONSTRAINT unique_ingredient_name UNIQUE (name)
+);
+
+CREATE TABLE foodconnectspeople.Properties (
+  property_id SERIAL
+  , name VARCHAR(128)
+  , CONSTRAINT unique_property_name UNIQUE (name)
+);
+
+CREATE TABLE foodconnectspeople.IngredientsProperties (
+  ingredient_id INTEGER NOT NULL
+  , property_id INTEGER NOT NULL
+  , CONSTRAINT ingredient_property_primary_key PRIMARY KEY (ingredient_id, property_id)
 );
 
 CREATE TABLE foodconnectspeople.RecipeIngredients (
@@ -68,10 +81,6 @@ CREATE TABLE foodconnectspeople.RecipeIngredients (
   , is_main BOOLEAN
   , quantity SMALLINT
   , unit_of_measure VARCHAR(128)
-  , is_vegetarian BOOLEAN
-  , is_vegan BOOLEAN
-  , is_gluten_free BOOLEAN
-  , is_lactose_free BOOLEAN
   , preparation_technique VARCHAR(1024)
   , PRIMARY KEY (recipe_id, ingredient_id)
   , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipe(id)
@@ -113,4 +122,16 @@ CREATE TABLE foodconnectspeople.Languages (
   language_id SERIAL
   , label VARCHAR(64)
   , abbreviation VARCHAR(3)
-)
+);
+
+CREATE OR REPLACE VIEW foodconnectspeople.ingredients_properties_view AS
+SELECT I.name AS ingredient_name, P.name AS property_name FROM foodconnectspeople.ingredients AS I
+INNER JOIN foodconnectspeople.ingredientsproperties AS IP ON I.ingredient_id=IP.ingredient_id
+INNER JOIN foodconnectspeople.properties AS P ON P.property_id=IP.property_id
+ORDER BY I.name;
+
+INSERT INTO foodconnectspeople.Properties ( name ) VALUES ('vegan');
+INSERT INTO foodconnectspeople.Properties ( name ) VALUES ('vegetarian');
+INSERT INTO foodconnectspeople.Properties ( name ) VALUES ('gluten_free');
+INSERT INTO foodconnectspeople.Properties ( name ) VALUES ('lactose_free');
+INSERT INTO foodconnectspeople.Properties ( name ) VALUES ('spicy');

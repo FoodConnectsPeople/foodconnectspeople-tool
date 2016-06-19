@@ -1,0 +1,74 @@
+ingredient,is_vegetarian,is_vegan,is_gluten_free,is_lactose_free,is_spicy
+eggplant,true,true,true,true,false
+potato,true,true,true,true,false
+zucchini,true,true,true,true,false
+corn oil,true,true,true,true,false
+extra-virgin olive oil,true,true,true,true,false
+garlic,true,true,true,true,false
+tomato,true,true,true,true,false
+sugar,true,true,true,true,false
+salt,true,true,true,true,true
+parsley,true,true,true,true,false
+white yogurt,true,false,true,false,false
+greek yogurt,true,false,true,false,false
+feta cheese,true,false,true,false,false
+dry mint,true,true,true,true,true
+red hot chilli pepper,true,true,true,true,true
+spring onion,true,true,true,true,false
+lemon,true,true,true,true,false
+walnut,true,true,true,true,false
+onion,true,true,true,true,false
+isot,true,true,true,true,true
+kidney bean,true,true,true,true,false
+red onion,true,true,true,true,false
+cherry tomato,true,true,true,true,false
+black olive,true,true,true,true,false
+small green pepper,true,true,true,true,false
+sumak,true,true,true,true,true
+pepper,true,true,true,true,false
+red pepper,true,true,true,true,false
+green onion leave,true,true,true,true,false
+ricotta cheese,true,false,true,false,false
+black pepper,true,true,true,true,true
+kurdish red pepper paste,true,true,true,true,false
+pomegranate sauce,true,true,true,true,false
+chickpea,true,true,true,true,false
+tahini,true,true,true,true,true
+lemon juice,true,true,true,true,false
+paprika,true,true,true,true,true
+cumin powder,true,true,true,true,true
+chicken thigh,true,false,true,true,false
+chicken leg,true,false,true,true,false
+stale bread,true,true,true,true,false
+turkish pepper paste,true,true,true,true,false
+turkish phyllo pastry,true,true,true,true,false
+water,true,true,true,true,false
+egg ,true,false,true,true,false
+sesame seed,true,true,true,true,true
+spinach,true,true,true,true,false
+leak,true,true,true,true,false
+bulgur,true,true,true,true,false
+yenibahar,true,true,true,true,false
+fresh mint,true,true,true,true,true
+lettuce,true,true,true,true,false
+rocket,true,true,true,true,false
+champignon mushroom,true,true,true,true,false
+fontina cheese,true,false,true,false,false
+taleggio cheese,true,false,true,false,false
+butter,true,false,true,false,false
+nutmeg,true,true,true,true,true
+celery root,true,true,true,true,false
+carrot,true,true,true,true,false
+shrimp,false,false,true,true,false
+iceberg salad,true,true,true,true,false
+cucumber,true,true,true,true,false
+yellow pepper,true,true,true,true,false
+red radish,true,true,true,true,false
+semolina,true,true,true,true,false
+yogurt,true,false,true,true,false
+white vinegar,true,true,true,true,false
+fresh red hot chilli pepper,true,true,true,true,false
+coconut,true,true,true,true,false
+breadcrumb,true,true,true,true,false
+baking powder,true,true,true,true,true
+vanilla extract,true,true,true,true,true
