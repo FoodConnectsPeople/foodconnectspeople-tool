@@ -18,6 +18,12 @@ inputPort DbService {
   Interfaces: DbServiceInterface
 }
 
+inputPort DbServiceHttp {
+  Location: DB_SERVICE_LOCATION_HTTP
+  Protocol: http { .format = "json" }
+  Interfaces: DbServiceInterface
+}
+
 init {
     __queries;
     parseIniFile@IniUtils( "../../jolie/config.ini" )( config );
@@ -40,15 +46,7 @@ init {
       connect@Database( connectionInfo )();
       println@Console("Connected to Database " + DBNAME + "@" + HOST )()
     };
-    println@Console("DbService is running...")();
-
-    // loading properties from DB
-    q = queries.select_properties;
-    query@Database( q )( result );
-    for( i = 0, i < #result.row, i++ ) {
-        global.properties.( result.row[ i ].name ).id = result.row[ i ].property_id
-    };
-    undef( q )
+    println@Console("DbService is running...")()
 }
 
 main {
@@ -58,24 +56,37 @@ main {
                                        throw( DatabaseError )
               );
 
-              q = queries.select_ingredients_properties;
+              q = queries.select_ingredients;
               query@Database( q )( result );
 
-              current_ingredient = result.row[ 0 ].ingredient_name;
-              ingredient_index = 0;
-              prop_index = 0;
-              response.ingredient[ ingredient_index ].name = current_ingredient;
               for( i = 0, i < #result.row, i++ ) {
-                  if ( current_ingredient != result.row[ i ].ingredient_name ) {
-                      current_ingredient = result.row[ i ].ingredient_name;
-                      ingredient_index++;
-                      prop_index = 0;
-                      response.ingredient[ ingredient_index ].name = current_ingredient
-                  };
-                  response.ingredient[ ingredient_index ].properties[ prop_index ] = result.row[ i ].property_name;
-                  prop_index++
+                  with( response.ingredient[ i ] ) {
+                      .ingredient_id = result.row[ i ].ingredient_id;
+                      .name = result.row[ i ].name;
+                      .properties = result.row[ i ].properties;
+                      .allergene = result.row[ i ].allergene
+                  }
               }
         }
+  }]
+
+  [ getProperties( request )( response ) {
+        scope( sql ) {
+              install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                       throw( DatabaseError )
+              );
+
+              q = queries.select_properties;
+              query@Database( q )( result );
+
+              for( i = 0, i < #result.row, i++ ) {
+                  with( response.property[ i ] ) {
+                      .name = result.row[ i ].name;
+                      .property_id = result.row[ i ].property_id
+                  }
+              }
+        }
+
   }]
 
   [ insertIngredient( request )( response ) {
@@ -84,20 +95,21 @@ main {
                                        throw( DatabaseError )
               );
 
-              q.statement[ 0 ] = queries.insert_ingredient;
-              q.statement[ 0 ].name = request.name;
-              q.statement[ 1 ] = queries.select_ingredient_id;
-              q.statement[ 1 ].name = request.name;
-              executeTransaction@Database( q )( transaction_result );
-
-              undef( q );
+              // prepare properties
+              properties = "";
               for( i = 0, i < #request.properties, i++ ) {
-                  q.statement[ i ] = queries.insert_ingredient_property;
-                  q.statement[ i ].ingredient_id = transaction_result.result[ 1 ].row.ingredient_id;
-                  q.statement[ i ].property_id = global.properties.( request.properties[ i ] ).id
-              }
-              ;
-              executeTransaction@Database( q )( )
+                 properties = properties + request.properties[ i ] + ","
+              };
+              allergene = "";
+              for( i = 0, i < #request.allergene, i++ ) {
+                 allergene = allergene + request.allergene[ i ] + ","
+              };
+
+              q = queries.insert_ingredient;
+              q.name = request.name;
+              q.properties = properties;
+              q.allergene = request.allergene;
+              update@Database( q )( )
 
         }
   }]

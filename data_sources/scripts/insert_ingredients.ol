@@ -24,6 +24,7 @@ main {
       prop_index = 0;
       with( req ) {
           .name = ingredients.line[ i ].ingredient;
+          /*TODO extract allergene from excel */
           if ( ingredients.line[ i ].is_vegan == "true" ) {
               .properties[ prop_index ] = "vegan";
               prop_index++

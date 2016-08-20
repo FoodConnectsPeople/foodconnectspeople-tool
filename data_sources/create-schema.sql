@@ -16,10 +16,11 @@
 CREATE SCHEMA foodconnectspeople;
 
 CREATE TABLE foodconnectspeople.Recipe (
-  id SERIAL PRIMARY KEY
+  recipe_id SERIAL PRIMARY KEY
   , name VARCHAR(1024) NOT NULL
   , preparation_time_minutes SMALLINT
   , difficulty SMALLINT
+  , countries  VARCHAR
 
   , place_of_origin VARCHAR(256)
   , is_from_latitude DECIMAL(9,6)
@@ -27,14 +28,10 @@ CREATE TABLE foodconnectspeople.Recipe (
 
   , category VARCHAR(1024)
   , cooking_technique VARCHAR(1024)
-  , is_vegetarian BOOLEAN
-  , is_vegan BOOLEAN
-  , is_gluten_free BOOLEAN
-  , is_lactose_free BOOLEAN
 );
 
 CREATE TABLE foodconnectspeople.FcpUser (
-  id SERIAL PRIMARY KEY
+  fcp_user_id SERIAL PRIMARY KEY
   , username varchar(255) NOT NULL
   , full_name VARCHAR(1024)
   , is_author BOOLEAN -- has contributed >=1 recipe
@@ -46,48 +43,64 @@ CREATE TABLE foodconnectspeople.AuthorRecipe (
   author_id SERIAL
   , recipe_id SERIAL
   , PRIMARY KEY (author_id, recipe_id)
-  , FOREIGN KEY (author_id) REFERENCES foodconnectspeople.FcpUser(id)
-  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipe(id)
+  , FOREIGN KEY (author_id) REFERENCES foodconnectspeople.FcpUser(fcp_user_id)
+  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipe(recipe_id)
 );
 
 CREATE TABLE foodconnectspeople.RecipeCategory (
   recipe_id SERIAL
   , category_name VARCHAR(512)
   , PRIMARY KEY (recipe_id, category_name)
-  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipe(id)
+  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipe(recipe_id)
 );
 
 CREATE TABLE foodconnectspeople.Ingredients (
   ingredient_id SERIAL
   , name VARCHAR(1024)
+  , properties VARCHAR
+  , allergene VARCHAR
   , CONSTRAINT unique_ingredient_name UNIQUE (name)
+);
+
+CREATE TABLE foodconnectspeople.CookingTechniques (
+  cooking_technique_id SERIAL
+  , name VARCHAR(1024)
+  , CONSTRAINT unique_cooking_technique_name UNIQUE (name)
 );
 
 CREATE TABLE foodconnectspeople.Properties (
   property_id SERIAL
-  , name VARCHAR(128)
+  , name VARCHAR
   , CONSTRAINT unique_property_name UNIQUE (name)
 );
 
-CREATE TABLE foodconnectspeople.IngredientsProperties (
-  ingredient_id INTEGER NOT NULL
-  , property_id INTEGER NOT NULL
-  , CONSTRAINT ingredient_property_primary_key PRIMARY KEY (ingredient_id, property_id)
-);
-
 CREATE TABLE foodconnectspeople.RecipeIngredients (
-  recipe_id SERIAL
-  , ingredient_id SERIAL
+  recipe_id INTEGER
+  , ingredient_id INTEGER
   , is_main BOOLEAN
   , quantity SMALLINT
   , unit_of_measure VARCHAR(128)
   , preparation_technique VARCHAR(1024)
   , PRIMARY KEY (recipe_id, ingredient_id)
-  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipe(id)
+  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipe(recipe_id)
+);
+
+
+CREATE TABLE foodconnectspeople.Countries (
+  country_id SERIAL
+  , name VARCHAR(128)
+  , PRIMARY KEY (country_id)
+);
+
+CREATE TABLE foodconnectspeople.RecipeCountries (
+  recipe_id INTEGER
+  , country_id INTEGER
+  , PRIMARY KEY (recipe_id, country_id)
+  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipe(recipe_id)
 );
 
 CREATE TABLE foodconnectspeople.Event (
-  id SERIAL PRIMARY KEY
+  event_id SERIAL PRIMARY KEY
   , name VARCHAR(1024) NOT NULL
   , place VARCHAR(255) NOT NULL
   , start_date DATE NOT NULL
@@ -98,8 +111,8 @@ CREATE TABLE foodconnectspeople.RecipeEvents (
   recipe_id SERIAL
   , event_id SERIAL
   , PRIMARY KEY (recipe_id, event_id)
-  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipe(id)
-  , FOREIGN KEY (event_id) REFERENCES foodconnectspeople.Event(id)
+  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipe(recipe_id)
+  , FOREIGN KEY (event_id) REFERENCES foodconnectspeople.Event(event_id)
 );
 
 CREATE TABLE foodconnectspeople.RecipeTools(
@@ -107,7 +120,7 @@ CREATE TABLE foodconnectspeople.RecipeTools(
   , tool_name VARCHAR(1024)
   , tool_quantity SMALLINT
   , PRIMARY KEY (recipe_id, tool_name)
-  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipe(id)
+  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipe(recipe_id)
 );
 
 CREATE TABLE foodconnectspeople.Multilanguage (
@@ -123,12 +136,6 @@ CREATE TABLE foodconnectspeople.Languages (
   , label VARCHAR(64)
   , abbreviation VARCHAR(3)
 );
-
-CREATE OR REPLACE VIEW foodconnectspeople.ingredients_properties_view AS
-SELECT I.name AS ingredient_name, P.name AS property_name FROM foodconnectspeople.ingredients AS I
-INNER JOIN foodconnectspeople.ingredientsproperties AS IP ON I.ingredient_id=IP.ingredient_id
-INNER JOIN foodconnectspeople.properties AS P ON P.property_id=IP.property_id
-ORDER BY I.name;
 
 INSERT INTO foodconnectspeople.Properties ( name ) VALUES ('vegan');
 INSERT INTO foodconnectspeople.Properties ( name ) VALUES ('vegetarian');
