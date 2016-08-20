@@ -26,7 +26,7 @@ inputPort DbServiceHttp {
 
 init {
     __queries;
-    parseIniFile@IniUtils( "../../jolie/config.ini" )( config );
+    parseIniFile@IniUtils( INI_FILE )( config );
     HOST = config.db.HOST;
     DRIVER = config.db.DRIVER;
     PORT = int( config.db.PORT );
