@@ -1,2 +1,2 @@
 # foodconnectspeople-tool
-This is a project for the developement of tools related to www.foodconnectspeople.com
+This is a project for the development of tools related to www.foodconnectspeople.com
