@@ -1,0 +1,20 @@
+id,name,preparation_time_minutes,persons,difficulty,place_of_origin,is_from_latitude,is_from_longitude,category,main_ingredient,cooking_technique,is_vegetarian,is_vegan,is_gluten_free,is_lactose_free
+1,saksuka,30,4,3,turkey,,,main,eggplant,pan-fried,TRUE,TRUE,TRUE,TRUE
+2,haydari,5,4,1,turkey,,,entrée,yogurt,raw,TRUE,FALSE,TRUE,FALSE
+3,roasted eggplant salad,40,4,2,turkey,,,entrée,eggplant,roasted,TRUE,TRUE,TRUE,TRUE
+4,zucchini salad,30,4,2,turkey,,,entrée,zucchini,pan-fried,TRUE,FALSE,TRUE,FALSE
+5,kidney bean salad,15,4,1,turkey,,,entrée,bean,boiled,TRUE,TRUE,TRUE,TRUE
+6,roasted pepper rolls with cheese,50,4,4,turkey,,,main,pepper,roasted,TRUE,FALSE,TRUE,FALSE
+7,spoon salad,30,4,1,turkey,,,entrée,tomato,raw,TRUE,TRUE,TRUE,TRUE
+8,chickpeas dip (hummus),15,4,1,turkey,,,entrée,chickpea,boiled,TRUE,TRUE,TRUE,TRUE
+9,chicken with walnuts,60,4,3,turkey,,,main,chicken,boiled,FALSE,FALSE,FALSE,TRUE
+10,cretan paste,5,4,1,turkey,,,entrée,ricotta cheese,raw,TRUE,FALSE,TRUE,FALSE
+11,eggplants dip (babaganoush),30,4,2,turkey,,,entrée,eggplant,roasted,TRUE,FALSE,TRUE,FALSE
+12,spinach filled pastry (borek),60,4,4,turkey,,,main,spinach,baked,TRUE,FALSE,FALSE,FALSE
+13,hot vegetarian burgers (yalanci cig kofte),60,4,4,turkey,,,main,bulgur,almost raw,TRUE,FALSE,FALSE,TRUE
+14,cheese stuffed mushrooms,30,4,2,turkey,,,entrée,mushroom,baked,TRUE,FALSE,TRUE,FALSE
+15,root celery salad,20,4,1,turkey,,,entrée,root celery,raw,TRUE,FALSE,TRUE,FALSE
+16,shrimp salad,30,4,2,turkey,,,entrée,shrimp,pan-fried,FALSE,FALSE,TRUE,TRUE
+17,zucchini burger (kolokithokeftedes),40,4,4,greece,,,main,zucchini,fried,TRUE,FALSE,FALSE,FALSE
+18,hot feta dip (tirokafteri),15,4,2,greece,,,entrée,feta cheese,pan-fried,TRUE,FALSE,TRUE,FALSE
+19,rhum cake,40,4,2,turkey,,,dessert,coconut,baked,TRUE,FALSE,FALSE,TRUE

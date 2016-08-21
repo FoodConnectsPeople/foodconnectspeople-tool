@@ -15,13 +15,13 @@
 
 CREATE SCHEMA foodconnectspeople;
 
-CREATE TABLE foodconnectspeople.Recipe (
+
+CREATE TABLE foodconnectspeople.Recipes (
   recipe_id SERIAL PRIMARY KEY
   , name VARCHAR(1024) NOT NULL
   , preparation_time_minutes SMALLINT
   , difficulty SMALLINT
   , countries  VARCHAR
-
   , place_of_origin VARCHAR(256)
   , is_from_latitude DECIMAL(9,6)
   , is_from_longitude DECIMAL(9,6)
@@ -43,15 +43,16 @@ CREATE TABLE foodconnectspeople.AuthorRecipe (
   author_id SERIAL
   , recipe_id SERIAL
   , PRIMARY KEY (author_id, recipe_id)
+
   , FOREIGN KEY (author_id) REFERENCES foodconnectspeople.FcpUser(fcp_user_id)
-  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipe(recipe_id)
+  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipes(recipe_id)
 );
 
 CREATE TABLE foodconnectspeople.RecipeCategory (
   recipe_id SERIAL
   , category_name VARCHAR(512)
   , PRIMARY KEY (recipe_id, category_name)
-  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipe(recipe_id)
+  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipes(recipe_id)
 );
 
 CREATE TABLE foodconnectspeople.Ingredients (
@@ -82,7 +83,7 @@ CREATE TABLE foodconnectspeople.RecipeIngredients (
   , unit_of_measure VARCHAR(128)
   , preparation_technique VARCHAR(1024)
   , PRIMARY KEY (recipe_id, ingredient_id)
-  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipe(recipe_id)
+  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipes(recipe_id)
 );
 
 
@@ -96,7 +97,7 @@ CREATE TABLE foodconnectspeople.RecipeCountries (
   recipe_id INTEGER
   , country_id INTEGER
   , PRIMARY KEY (recipe_id, country_id)
-  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipe(recipe_id)
+  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipes(recipe_id)
 );
 
 CREATE TABLE foodconnectspeople.Event (
@@ -111,7 +112,7 @@ CREATE TABLE foodconnectspeople.RecipeEvents (
   recipe_id SERIAL
   , event_id SERIAL
   , PRIMARY KEY (recipe_id, event_id)
-  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipe(recipe_id)
+  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipes(recipe_id)
   , FOREIGN KEY (event_id) REFERENCES foodconnectspeople.Event(event_id)
 );
 
@@ -120,7 +121,7 @@ CREATE TABLE foodconnectspeople.RecipeTools(
   , tool_name VARCHAR(1024)
   , tool_quantity SMALLINT
   , PRIMARY KEY (recipe_id, tool_name)
-  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipe(recipe_id)
+  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipes(recipe_id)
 );
 
 CREATE TABLE foodconnectspeople.Multilanguage (
