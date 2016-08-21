@@ -26,7 +26,7 @@ inputPort DbServiceHttp {
 
 init {
     __queries;
-    parseIniFile@IniUtils( "../../jolie/config.ini" )( config );
+    parseIniFile@IniUtils( INI_FILE )( config );
     HOST = config.db.HOST;
     DRIVER = config.db.DRIVER;
     PORT = int( config.db.PORT );
@@ -112,5 +112,28 @@ main {
               update@Database( q )( )
 
         }
+  }]
+
+  [ insertRecipe( request )( response ) {
+    scope( sql ) {
+      install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                               throw( DatabaseError )
+      );
+      undef( q );
+      for( i = 0, i < #request.recipe, i++ ) {
+          q.statement[ i ] = queries.insert_recipe;
+          q.statement[ i ].name = request.recipe[ i ].name;
+          q.statement[ i ].preparation_time_minutes = request.recipe[ i ].preparation_time_minutes;
+          q.statement[ i ].difficulty = request.recipe[ i ].difficulty;
+          q.statement[ i ].countries = request.recipe[ i ].countries;
+          q.statement[ i ].place_of_origin = request.recipe[ i ].place_of_origin;
+          q.statement[ i ].is_from_latitude = request.recipe[ i ].is_from_latitude;
+          q.statement[ i ].is_from_longitude = request.recipe[ i ].is_from_longitude;
+          q.statement[ i ].category = request.recipe[ i ].category;
+          q.statement[ i ].cooking_technique = request.recipe[ i ].cooking_technique
+      }
+      ;
+      executeTransaction@Database( q )( )
+    }
   }]
 }
