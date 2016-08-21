@@ -125,15 +125,12 @@ main {
           q.statement[ i ].name = request.recipe[ i ].name;
           q.statement[ i ].preparation_time_minutes = request.recipe[ i ].preparation_time_minutes;
           q.statement[ i ].difficulty = request.recipe[ i ].difficulty;
+          q.statement[ i ].countries = request.recipe[ i ].countries;
           q.statement[ i ].place_of_origin = request.recipe[ i ].place_of_origin;
           q.statement[ i ].is_from_latitude = request.recipe[ i ].is_from_latitude;
           q.statement[ i ].is_from_longitude = request.recipe[ i ].is_from_longitude;
           q.statement[ i ].category = request.recipe[ i ].category;
-          q.statement[ i ].cooking_technique = request.recipe[ i ].cooking_technique;
-          q.statement[ i ].is_vegetarian = request.recipe[ i ].is_vegetarian;
-          q.statement[ i ].is_vegan = request.recipe[ i ].is_vegan;
-          q.statement[ i ].is_gluten_free = request.recipe[ i ].is_gluten_free;
-          q.statement[ i ].is_lactose_free = request.recipe[ i ].is_lactose_free
+          q.statement[ i ].cooking_technique = request.recipe[ i ].cooking_technique
       }
       ;
       executeTransaction@Database( q )( )

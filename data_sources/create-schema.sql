@@ -48,13 +48,6 @@ CREATE TABLE foodconnectspeople.AuthorRecipe (
   , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipes(recipe_id)
 );
 
-CREATE TABLE foodconnectspeople.RecipeCategory (
-  recipe_id SERIAL
-  , category_name VARCHAR(512)
-  , PRIMARY KEY (recipe_id, category_name)
-  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipes(recipe_id)
-);
-
 CREATE TABLE foodconnectspeople.Ingredients (
   ingredient_id SERIAL
   , name VARCHAR(1024)

@@ -25,15 +25,12 @@ type InsertRecipeRequest: void {
     .name: string
     .preparation_time_minutes: int
     .difficulty: int
+    .countries: string
     .place_of_origin: string
     .is_from_latitude: double
     .is_from_longitude: double
     .category: string
     .cooking_technique: string
-    .is_vegetarian: bool
-    .is_vegan: bool
-    .is_gluten_free: bool
-    .is_lactose_free: bool
   }
 }
 
