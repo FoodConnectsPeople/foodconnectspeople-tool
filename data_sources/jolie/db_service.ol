@@ -136,4 +136,26 @@ main {
       executeTransaction@Database( q )( )
     }
   }]
+
+  [ getRecipes( request )( response ) {
+    scope( sql ) {
+          install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                   throw( DatabaseError )
+          );
+
+          q = queries.get_recipes;
+          query@Database( q )( result );
+          for( i = 0, i < #result.row, i++ ) {
+              with( response.recipe[ i ] ) {
+                  .name = result.row[ i ].name;
+                  .preparation_time_minutes = result.row[ i ].preparation_time_minutes;
+                  .difficulty = result.row[ i ].difficulty;
+                  .countries  = result.row[ i ].countries;
+                  .place_of_origin = result.row[ i ].place_of_origin;
+                  .category = result.row[ i ].category;
+                  .cooking_technique = result.row[ i ].cooking_technique
+              }
+          }
+    }
+  }]
 }
