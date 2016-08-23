@@ -8,6 +8,9 @@ define __queries {
         :preparation_time_minutes, :difficulty, :countries, :place_of_origin,
         :is_from_latitude, :is_from_longitude, :category, :cooking_technique)";
     .select_properties = "SELECT name, property_id FROM foodconnectspeople.properties";
-    .select_ingredients = "SELECT ingredient_id, name, properties, allergene FROM foodconnectspeople.ingredients"
+    .select_ingredients = "SELECT ingredient_id, name, properties, allergene FROM foodconnectspeople.ingredients";
+    .get_recipes = "SELECT recipe_id, name, preparation_time_minutes,
+      difficulty, countries, place_of_origin, category, cooking_technique
+      FROM foodconnectspeople.recipes"
   }
 }
