@@ -123,13 +123,15 @@ main {
       for( i = 0, i < #request.recipe, i++ ) {
           q.statement[ i ] = queries.insert_recipe;
           q.statement[ i ].name = request.recipe[ i ].name;
+          q.statement[ i ].link = request.recipe[ i ].link;
           q.statement[ i ].preparation_time_minutes = request.recipe[ i ].preparation_time_minutes;
+          q.statement[ i ].persons = request.recipe[ i ].persons;
           q.statement[ i ].difficulty = request.recipe[ i ].difficulty;
-          q.statement[ i ].countries = request.recipe[ i ].countries;
           q.statement[ i ].place_of_origin = request.recipe[ i ].place_of_origin;
           q.statement[ i ].is_from_latitude = request.recipe[ i ].is_from_latitude;
           q.statement[ i ].is_from_longitude = request.recipe[ i ].is_from_longitude;
           q.statement[ i ].category = request.recipe[ i ].category;
+          q.statement[ i ].main_ingredient = request.recipe[ i ].main_ingredient;
           q.statement[ i ].cooking_technique = request.recipe[ i ].cooking_technique
       }
       ;
@@ -150,7 +152,6 @@ main {
                   .name = result.row[ i ].name;
                   .preparation_time_minutes = result.row[ i ].preparation_time_minutes;
                   .difficulty = result.row[ i ].difficulty;
-                  .countries  = result.row[ i ].countries;
                   .place_of_origin = result.row[ i ].place_of_origin;
                   .category = result.row[ i ].category;
                   .cooking_technique = result.row[ i ].cooking_technique

@@ -15,18 +15,19 @@
 
 CREATE SCHEMA foodconnectspeople;
 
-
 CREATE TABLE foodconnectspeople.Recipes (
   recipe_id SERIAL PRIMARY KEY
   , name VARCHAR(1024) NOT NULL
+  , link VARCHAR(1024)
   , preparation_time_minutes SMALLINT
+  , persons INT
   , difficulty SMALLINT
-  , countries  VARCHAR
+  --, countries  VARCHAR
   , place_of_origin VARCHAR(256)
   , is_from_latitude DECIMAL(9,6)
   , is_from_longitude DECIMAL(9,6)
-
   , category VARCHAR(1024)
+  , main_ingredient VARCHAR(1024)
   , cooking_technique VARCHAR(1024)
 );
 
@@ -60,12 +61,6 @@ CREATE TABLE foodconnectspeople.CookingTechniques (
   cooking_technique_id SERIAL
   , name VARCHAR(1024)
   , CONSTRAINT unique_cooking_technique_name UNIQUE (name)
-);
-
-CREATE TABLE foodconnectspeople.Properties (
-  property_id SERIAL
-  , name VARCHAR
-  , CONSTRAINT unique_property_name UNIQUE (name)
 );
 
 CREATE TABLE foodconnectspeople.RecipeIngredients (
@@ -130,9 +125,3 @@ CREATE TABLE foodconnectspeople.Languages (
   , label VARCHAR(64)
   , abbreviation VARCHAR(3)
 );
-
-INSERT INTO foodconnectspeople.Properties ( name ) VALUES ('vegan');
-INSERT INTO foodconnectspeople.Properties ( name ) VALUES ('vegetarian');
-INSERT INTO foodconnectspeople.Properties ( name ) VALUES ('gluten_free');
-INSERT INTO foodconnectspeople.Properties ( name ) VALUES ('lactose_free');
-INSERT INTO foodconnectspeople.Properties ( name ) VALUES ('spicy');

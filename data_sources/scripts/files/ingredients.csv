@@ -1,74 +1,241 @@
-ingredient,is_vegetarian,is_vegan,is_gluten_free,is_lactose_free,is_spicy
-eggplant,true,true,true,true,false
-potato,true,true,true,true,false
-zucchini,true,true,true,true,false
-corn oil,true,true,true,true,false
-extra-virgin olive oil,true,true,true,true,false
-garlic,true,true,true,true,false
-tomato,true,true,true,true,false
-sugar,true,true,true,true,false
-salt,true,true,true,true,true
-parsley,true,true,true,true,false
-white yogurt,true,false,true,false,false
-greek yogurt,true,false,true,false,false
-feta cheese,true,false,true,false,false
-dry mint,true,true,true,true,true
-red hot chilli pepper,true,true,true,true,true
-spring onion,true,true,true,true,false
-lemon,true,true,true,true,false
-walnut,true,true,true,true,false
-onion,true,true,true,true,false
-isot,true,true,true,true,true
-kidney bean,true,true,true,true,false
-red onion,true,true,true,true,false
-cherry tomato,true,true,true,true,false
-black olive,true,true,true,true,false
-small green pepper,true,true,true,true,false
-sumak,true,true,true,true,true
-pepper,true,true,true,true,false
-red pepper,true,true,true,true,false
-green onion leave,true,true,true,true,false
-ricotta cheese,true,false,true,false,false
-black pepper,true,true,true,true,true
-kurdish red pepper paste,true,true,true,true,false
-pomegranate sauce,true,true,true,true,false
-chickpea,true,true,true,true,false
-tahini,true,true,true,true,true
-lemon juice,true,true,true,true,false
-paprika,true,true,true,true,true
-cumin powder,true,true,true,true,true
-chicken thigh,true,false,true,true,false
-chicken leg,true,false,true,true,false
-stale bread,true,true,true,true,false
-turkish pepper paste,true,true,true,true,false
-turkish phyllo pastry,true,true,true,true,false
-water,true,true,true,true,false
-egg ,true,false,true,true,false
-sesame seed,true,true,true,true,true
-spinach,true,true,true,true,false
-leak,true,true,true,true,false
-bulgur,true,true,true,true,false
-yenibahar,true,true,true,true,false
-fresh mint,true,true,true,true,true
-lettuce,true,true,true,true,false
-rocket,true,true,true,true,false
-champignon mushroom,true,true,true,true,false
-fontina cheese,true,false,true,false,false
-taleggio cheese,true,false,true,false,false
-butter,true,false,true,false,false
-nutmeg,true,true,true,true,true
-celery root,true,true,true,true,false
-carrot,true,true,true,true,false
-shrimp,false,false,true,true,false
-iceberg salad,true,true,true,true,false
-cucumber,true,true,true,true,false
-yellow pepper,true,true,true,true,false
-red radish,true,true,true,true,false
-semolina,true,true,true,true,false
-yogurt,true,false,true,true,false
-white vinegar,true,true,true,true,false
-fresh red hot chilli pepper,true,true,true,true,false
-coconut,true,true,true,true,false
-breadcrumb,true,true,true,true,false
-baking powder,true,true,true,true,true
-vanilla extract,true,true,true,true,true
+ingredient_id,name,properties,allergene
+1,almond,__vegetarian__vegan__,
+2,anchovy,,
+3,aneto,__vegetarian__vegan__,
+4,anise for dessert,__vegetarian__vegan__,
+5,apple cider vinegar,__vegetarian__vegan__,
+6,avocado,__vegetarian__vegan__,
+7,baby chard,__vegetarian__vegan__,
+8,baking powder,__vegetarian__vegan__,
+9,baking soda,__vegetarian__vegan__,
+10,banana,__vegetarian__vegan__,
+11,basil,__vegetarian__vegan__,
+12,basil leaf,__vegetarian__vegan__,
+13,basmati rice,__vegetarian__vegan__,__gluten__
+14,bay leaf,__vegetarian__vegan__,
+15,beef meat,,
+16,bell pepper,__vegetarian__vegan__,
+17,black cardamom,__vegetarian__vegan__,
+18,black olive,__vegetarian__vegan__,
+19,black pepper,__vegetarian__vegan__,
+20,black pepper seed,__vegetarian__vegan__,
+21,black-eyed pea,__vegetarian__vegan__,
+22,boiled chickpea,__vegetarian__vegan__,
+23,boneless chicken thigh,,
+24,breadcrumb,__vegetarian__vegan__,__gluten__
+25,brown mustard seed,__vegetarian__vegan__,
+26,brown sugar,__vegetarian__vegan__,
+27,bulgur,__vegetarian__vegan__,__gluten__
+28,butter,__vegetarian__,__lactose__
+29,cabbage,__vegetarian__vegan__,
+30,calamari,,
+31,caper,__vegetarian__vegan__,
+32,carrot,__vegetarian__vegan__,
+33,cashew,__vegetarian__vegan__,
+34,celery root,__vegetarian__vegan__,
+35,chaat masala,__vegetarian__vegan__,
+36,champignon mushroom,__vegetarian__vegan__,
+37,cherry in sirup,__vegetarian__vegan__,
+38,cherry sirup,__vegetarian__vegan__,
+39,cherry tomato,__vegetarian__vegan__,
+40,chicken,,
+41,chicken breast,,
+42,chicken leg,,
+43,chicken thigh,,
+44,chickpea,__vegetarian__vegan__,
+45,chickpea flour,__vegetarian__vegan__,
+46,chili powder,__vegetarian__vegan__,
+47,chives,__vegetarian__vegan__,
+48,cilantro,__vegetarian__vegan__,
+49,cinnamon,__vegetarian__vegan__,
+50,cinnamon powder,__vegetarian__vegan__,
+51,cinnamon stick,__vegetarian__vegan__,
+52,clove,__vegetarian__vegan__,
+53,coconut,__vegetarian__vegan__,
+54,coconut milk,__vegetarian__vegan__,
+55,concentrated tomato paste,__vegetarian__vegan__,
+56,coriander,__vegetarian__vegan__,
+57,coriander powder,__vegetarian__vegan__,
+58,coriander seed,__vegetarian__vegan__,
+59,corn meal flour,__vegetarian__vegan__,
+60,corn oil,__vegetarian__vegan__,
+61,cornstarch,__vegetarian__vegan__,
+62,cottage cheese,__vegetarian__,__lactose__
+63,couscous,__vegetarian__vegan__,
+64,cucumber,__vegetarian__vegan__,
+65,cumin,__vegetarian__vegan__,
+66,cumin powder,__vegetarian__vegan__,
+67,cumin seed,__vegetarian__vegan__,
+68,curry,__vegetarian__vegan__,
+69,curry leaf,__vegetarian__vegan__,
+70,curry powder,__vegetarian__vegan__,
+71,dijon mustard,__vegetarian__vegan__,
+72,dried apricot,__vegetarian__vegan__,
+73,dried cherries,__vegetarian__vegan__,
+74,dried plum,__vegetarian__vegan__,
+75,dry blackcurrant,__vegetarian__vegan__,
+76,dry chickpea,__vegetarian__vegan__,
+77,dry coconut shred,__vegetarian__vegan__,
+78,dry mint,__vegetarian__vegan__,
+79,dry oregano,__vegetarian__vegan__,
+80,dry pomegranate seed,__vegetarian__vegan__,
+81,dulce de leche,__vegetarian__,__lactose__
+82,egg,,
+83,egg yolk,,
+84,eggplant,__vegetarian__vegan__,
+85,extra-virgin olive oil,__vegetarian__vegan__,
+86,feta cheese,__vegetarian__,__lactose__
+87,flour,__vegetarian__vegan__,__gluten__
+88,flour type 0,__vegetarian__vegan__,__gluten__
+89,flour type 00,__vegetarian__vegan__,__gluten__
+90,fontina cheese,__vegetarian__,__lactose__
+91,french baguette,__vegetarian__vegan__,__gluten__
+92,fresh basil,__vegetarian__vegan__,
+93,fresh coriander leaf,__vegetarian__vegan__,
+94,fresh green hot chilli pepper,__vegetarian__vegan__,
+95,fresh habanero chili,__vegetarian__vegan__,
+96,fresh mint,__vegetarian__vegan__,
+97,fresh oregano,__vegetarian__vegan__,
+98,fresh red hot chilli pepper,__vegetarian__vegan__,
+99,fresh rosemary,__vegetarian__vegan__,
+100,fresh thyme,__vegetarian__vegan__,
+101,frozen pea,__vegetarian__vegan__,
+102,garam masala,__vegetarian__vegan__,
+103,garlic,__vegetarian__vegan__,
+104,ginger,__vegetarian__vegan__,
+105,ginger paste,__vegetarian__vegan__,
+106,ginger root,__vegetarian__vegan__,
+107,greek yogurt,__vegetarian__,__lactose__
+108,green bean,__vegetarian__vegan__,
+109,green cardamom seed,__vegetarian__vegan__,
+110,green chilly,__vegetarian__vegan__,
+111,green grape,__vegetarian__vegan__,
+112,green lentil,__vegetarian__vegan__,
+113,green onion,__vegetarian__vegan__,
+114,green onion leave,__vegetarian__vegan__,
+115,green pepper,__vegetarian__vegan__,
+116,ground cinnamon,__vegetarian__vegan__,
+117,ground coriander,__vegetarian__vegan__,
+118,ground cumin,__vegetarian__vegan__,
+119,ground pepper,__vegetarian__vegan__,
+120,ground turmeric,__vegetarian__vegan__,
+121,half peach,__vegetarian__vegan__,
+122,harissa,__vegetarian__vegan__,
+123,honey,__vegetarian__vegan__,
+124,iceberg salad,__vegetarian__vegan__,
+125,icing sugar,__vegetarian__vegan__,
+126,instant yeast,__vegetarian__vegan__,
+127,isot,__vegetarian__vegan__,
+128,kidney bean,__vegetarian__vegan__,
+129,kurdish red pepper paste,__vegetarian__vegan__,
+130,lamb meat,,
+131,leak,__vegetarian__vegan__,
+132,lemon,__vegetarian__vegan__,
+133,lemon juice,__vegetarian__vegan__,
+134,lemon peel,__vegetarian__vegan__,
+135,lettuce,__vegetarian__vegan__,
+136,lime,__vegetarian__vegan__,
+137,lime peel,__vegetarian__vegan__,
+138,maggi,__vegetarian__vegan__,__lactose__
+139,mango,__vegetarian__vegan__,
+140,manioc,__vegetarian__vegan__,
+141,mastic gum,__vegetarian__vegan__,
+142,mastic powder,__vegetarian__vegan__,
+143,melon seed,__vegetarian__vegan__,
+144,mozzarella cheese,__vegetarian__,__lactose__
+145,muenster cheese,__vegetarian__,__lactose__
+146,mushroom,__vegetarian__vegan__,
+147,mussel,,
+148,mutton meat,,
+149,non-salted butter,__vegetarian__,
+150,non-sweetened cocoa powder,__vegetarian__vegan__,
+151,non-sweetened coconut milk,__vegetarian__vegan__,
+152,nutmeg,__vegetarian__vegan__,
+153,okra,__vegetarian__vegan__,
+154,onion,__vegetarian__vegan__,
+155,orange,__vegetarian__vegan__,
+156,orange juice,__vegetarian__vegan__,
+157,orange peel,__vegetarian__vegan__,
+158,ouzo,__vegetarian__vegan__,
+159,palm oil,__vegetarian__vegan__,
+160,paprika,__vegetarian__vegan__,
+161,parmesan cheese,__vegetarian__,__lactose__
+162,parsley,__vegetarian__vegan__,
+163,peanut paste,__vegetarian__vegan__,
+164,pepper,__vegetarian__vegan__,
+165,phyllo pastry,__vegetarian__vegan__,
+166,piccadilly tomato,__vegetarian__vegan__,
+167,pine nut,__vegetarian__vegan__,
+168,pistachio,__vegetarian__vegan__,
+169,plum,__vegetarian__vegan__,
+170,pomegranate sauce,__vegetarian__vegan__,
+171,potato,__vegetarian__vegan__,__gluten__
+172,pumpkin,__vegetarian__vegan__,
+173,raisin,__vegetarian__vegan__,
+174,raki,__vegetarian__vegan__,
+175,red bell pepper,__vegetarian__vegan__,
+176,red chili ,__vegetarian__vegan__,
+177,red chili powder,__vegetarian__vegan__,
+178,red hot chilli pepper,__vegetarian__vegan__,
+179,red mullet,,
+180,red onion,__vegetarian__vegan__,
+181,red pepper,__vegetarian__vegan__,
+182,red radish,__vegetarian__vegan__,
+183,rice,__vegetarian__vegan__,__gluten__
+184,ricotta cheese,__vegetarian__,
+185,rocket,__vegetarian__vegan__,
+186,rose pepper,__vegetarian__vegan__,
+187,salmon,,
+188,salt,__vegetarian__vegan__,
+189,sardine,,
+190,scallion,__vegetarian__vegan__,
+191,semolina,__vegetarian__vegan__,__gluten__
+192,semolina flour,__vegetarian__vegan__,__gluten__
+193,sesame seed,__vegetarian__vegan__,
+194,shallot,__vegetarian__vegan__,
+195,shrimp,,
+196,small green pepper,__vegetarian__vegan__,
+197,small tomato,__vegetarian__vegan__,
+198,smoked paprika,__vegetarian__vegan__,
+199,soy sauce,__vegetarian__vegan__,
+200,soya mince,__vegetarian__vegan__,
+201,spelt flour,__vegetarian__vegan__,
+202,spinach,__vegetarian__vegan__,
+203,spring onion,__vegetarian__vegan__,
+204,stale bread,__vegetarian__vegan__,__gluten__
+205,sugar,__vegetarian__vegan__,
+206,sugar powder,__vegetarian__vegan__,
+207,sumak,__vegetarian__vegan__,
+208,sundried tomato,__vegetarian__vegan__,
+209,sweet potato,__vegetarian__vegan__,
+210,sweet vinegar,__vegetarian__vegan__,
+211,tahini,__vegetarian__vegan__,
+212,taleggio cheese,__vegetarian__,__lactose__
+213,tamarind paste,__vegetarian__vegan__,
+214,thai green curry paste,__vegetarian__vegan__,
+215,tomato,__vegetarian__vegan__,
+216,tomato paste,__vegetarian__vegan__,
+217,tomato sauce,__vegetarian__vegan__,
+218,tomato sauce in cubes,__vegetarian__vegan__,
+219,tosella cheese,__vegetarian__,__lactose__
+220,tuna fish,,
+221,turkish allspice,__vegetarian__vegan__,
+222,turkish pepper paste,__vegetarian__vegan__,
+223,turkish phyllo pastry,__vegetarian__vegan__,
+224,turmeric powder,__vegetarian__vegan__,
+225,vanilla bean,__vegetarian__vegan__,
+226,vanilla extract,__vegetarian__vegan__,
+227,vanillin,__vegetarian__vegan__,
+228,vegetable broth,__vegetarian__vegan__,
+229,walnut,__vegetarian__vegan__,
+230,water,__vegetarian__vegan__,
+231,white vinegar,__vegetarian__vegan__,
+232,white wine,__vegetarian__vegan__,
+233,white yogurt,__vegetarian__,__lactose__
+234,white/kamut flour,__vegetarian__vegan__,__gluten__
+235,whole milk,__vegetarian__,__lactose__
+236,yeast for dessert,__vegetarian__vegan__,
+237,yellow bell pepper,__vegetarian__vegan__,
+238,yellow pepper,__vegetarian__vegan__,
+239,yenibahar,__vegetarian__vegan__,
+240,zucchini,__vegetarian__vegan__,
