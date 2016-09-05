@@ -21,29 +21,10 @@ main {
 	importFile@CSVImport( import )( ingredients );
   for( i = 0, i < #ingredients.line, i++ ) {
       undef( req );
-      prop_index = 0;
       with( req ) {
-          .name = ingredients.line[ i ].ingredient;
-          /*TODO extract allergene from excel */
-          if ( ingredients.line[ i ].is_vegan == "true" ) {
-              .properties[ prop_index ] = "vegan";
-              prop_index++
-          };
-          if ( ingredients.line[ i ].is_vegetarian == "true" ) {
-              .properties[ prop_index ] = "vegetarian";
-              prop_index++
-          };
-          if ( ingredients.line[ i ].is_gluten_free == "true" ) {
-              .properties[ prop_index ] = "gluten_free";
-              prop_index++
-          };
-          if ( ingredients.line[ i ].is_lactose_free == "true" ) {
-              .properties[ prop_index ] = "lactose_free";
-              prop_index++
-          };
-          if ( ingredients.line[ i ].is_spicy == "true" ) {
-              .properties[ prop_index ] = "spicy"
-          }
+          .name = ingredients.line[ i ].name;
+          .properties = ingredients.line[ i ].properties;
+          .allergene = ingredients.line[ i ].allergene
       };
       valueToPrettyString@StringUtils( req )( s );
       println@Console( s )();

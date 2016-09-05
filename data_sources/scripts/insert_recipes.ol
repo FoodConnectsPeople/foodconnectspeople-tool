@@ -17,13 +17,8 @@ main {
     .separator = ",";
     .verbose = true
   };
-  import.filename = "./files/recipes.csv"; /* extract manually from data spreadsheet */
+  import.filename = "./files/recipes.csv"; /* extracted manually from data spreadsheet */
 	importFile@CSVImport( import )( recipes );
-
-  with( replaceAllRequest ) {
-    .replacement = "";
-    .regex = " "
-  };
 
   undef( req );
   for ( i = 0, i < #recipes.line, i++ ) {
@@ -31,20 +26,19 @@ main {
     //  Build the requests fields from the fields declared in the recipes object.
     with ( req.recipe[ i ] ) {
       .name = recipes.line[ i ].name;
+      .link = recipes.line[ i ].link;
       .preparation_time_minutes = int(recipes.line[ i ].preparation_time_minutes);
+      .persons = int(recipes.line[ i ].persons);
       .difficulty = int(recipes.line[ i ].difficulty);
-
-      replaceAllRequest = recipes.line[ i ].countries;
-      replaceAll@StringUtils( replaceAllRequest )( .countries );
-
       .place_of_origin = recipes.line[ i ].place_of_origin;
       .is_from_latitude = double(recipes.line[ i ].is_from_latitude);
       .is_from_longitude = double(recipes.line[ i ].is_from_longitude);
       .category = recipes.line[ i ].category;
+      .main_ingredient = recipes.line[ i ].main_ingredient;
       .cooking_technique = recipes.line[ i ].cooking_technique
     }
   };
-  
+
   valueToPrettyString@StringUtils( req )( s );
   println@Console( s )();
 

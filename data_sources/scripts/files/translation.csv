@@ -1,0 +1,545 @@
+English,Italian,Table,Column,Table_2,Column_2,Table_3,Column_3
+sauteed eggplants (shakshuka),Melanzane saltate (shakshuka),Recipe,Name,,,,
+mint dip (haydari),Crema alla menta (haydari),Recipe,Name,,,,
+roasted eggplant salad,Insalata di melanzane arrosto,Recipe,Name,,,,
+zucchini salad,Insalata di zucchini,Recipe,Name,,,,
+kidney bean salad,Insalata di fagioli borlotti,Recipe,Name,,,,
+roasted pepper rolls with cheese,Involtini di peperoni al forno con formaggio,Recipe,Name,,,,
+spoon salad,Insalata al cucchiaio,Recipe,Name,,,,
+chickpeas dip (hummus),Crema di ceci (hummus),Recipe,Name,,,,
+circassian chicken,Pollo alla circassa,Recipe,Name,,,,
+cretan paste,Crema cretese,Recipe,Name,,,,
+eggplants dip (babaganoush),Crema di melanzane (babaganoush),Recipe,Name,,,,
+spinach phyllo pastry (borek),Sfoglia agli spinaci (borek),Recipe,Name,,,,
+hot vegetarian burgers (yalanci cig kofte),Polpette piccanti vegetariane (yalanci cig kofte),Recipe,Name,,,,
+cheese stuffed mushrooms,Funghi ripieni al formaggio,Recipe,Name,,,,
+root celery salad,Insalata di sedano rapa,Recipe,Name,,,,
+shrimp salad,Insalata di gamberetti,Recipe,Name,,,,
+zucchini burger (kolokithokeftedes),Polpette di zucchini (kolokithokeftedes),Recipe,Name,,,,
+hot feta dip (tirokafteri),Crema piccante alla feta (tirokafteri),Recipe,Name,,,,
+rhum cake,Torta al rum,Recipe,Name,,,,
+falafel,Falafel,Recipe,Name,,,,
+indian style okra,Okra in stile indiano,Recipe,Name,,,,
+chicken curry,Pollo al curry,Recipe,Name,,,,
+pakistani style rice (channa pulao),Riso alla pakistana (channa pulao),Recipe,Name,,,,
+lamb skewers with vegetables,Spiedini di agnello con verdure,Recipe,Name,,,,
+carrot dip (tarator),Crema di carote (tarator),Recipe,Name,,,,
+baked eggplants with cheese,Melanzane al forno con formaggio,Recipe,Name,,,,
+tomato baskets with cheese,Pomodori ripieni al formaggio,Recipe,Name,,,,
+curry sauced shrimps,Gamberi alla salsa curry,Recipe,Name,,,,
+kebap with pistachios and fresh basil,Kebab con pistacchio e basilico,Recipe,Name,,,,
+greek style mussels in red sauce (mydia saganaki),Cozze alla greca in salsa rossa (mydia saganaki),Recipe,Name,,,,
+cretan style stuffed calamari,Calamari ripieni alla cretese,Recipe,Name,,,,
+crescione romagnolo with samosa filling,Crescione romagnolo con ripieno di samosa,Recipe,Name,,,,
+armenian eggplant,Melanzane alla armena,Recipe,Name,,,,
+armenian phyllo pastry,Sfoglia alla armena,Recipe,Name,,,,
+walnut mushroom taco,Taco alle noci e funghi,Recipe,Name,,,,
+carrot ribbons,Nastri di carote,Recipe,Name,,,,
+spinach cheese,Formaggio di spinaci,Recipe,Name,,,,
+pumpkin noodles,Spaghetti di zucca,Recipe,Name,,,,
+thai chicken in green curry,Pollo alla tailandese con curry verde,Recipe,Name,,,,
+indonesian rice,Riso alla indonesiana,Recipe,Name,,,,
+vegetable cous cous,Cous cous vegetariano,Recipe,Name,,,,
+guacamole,Guacamole,Recipe,Name,,,,
+morcilla de verano,Salsiccia estiva,Recipe,Name,,,,
+swans of lake Sarmasi (lahana sarmasi),Cigni del lago Sarmasi (lahana sarmasi),Recipe,Name,,,,
+moist orange cake with mastic cream,Torata alla arancia con crema di mastica,Recipe,Name,,,,
+mediterranean olive tapenade,Tapenade mediterranea alle olive,Recipe,Name,,,,
+carrot dip with bell pepper (biberli tarator),Crema di carote ai peperoni (biberli tarator),Recipe,Name,,,,
+eggplant and green lentils stew (mualle),Stufato di melanzane e lenticchie verdi (mualle),Recipe,Name,,,,
+potatoes dough rolls,Involtini di pasta di patate,Recipe,Name,,,,
+salmorejo,Salmorejo,Recipe,Name,,,,
+ajoblanco,Ajoblanco,Recipe,Name,,,,
+cheese tart with mastic,Torta al formaggio alla mastica,Recipe,Name,,,,
+salmon with crust of pine nuts and mastic sauce,Salmone con sfoglia di pinoli e crema alla mastica,Recipe,Name,,,,
+grilled calamari with feta,Calamari grigliati alla feta,Recipe,Name,,,,
+sauteed calamari with ouzo on potato pouree bed,Calamari saltati all'ouzo su letto di pure' di patate,Recipe,Name,,,,
+armenian stuffed pumpkin (ghapama),Zucca ripiena alla armena (ghapama),Recipe,Name,,,,
+Saint Joseph's donuts (zeppole),Ciambelle di San Giuseppe (zeppole),Recipe,Name,,,,
+Dahi baray,Dahi baray,Recipe,Name,,,,
+Chapli kebab,Chapli kebab,Recipe,Name,,,,
+Manjar de coco,Dolce di cocco,Recipe,Name,,,,
+Panquecas de doce de leite,Frittelle di dolce di latte,Recipe,Name,,,,
+Birani,Birani,Recipe,Name,,,,
+Konnto,Konnto,Recipe,Name,,,,
+Simaumo,Simaumo,Recipe,Name,,,,
+Tigadeghena,Tigadeghena,Recipe,Name,,,,
+Deghe,Deghe,Recipe,Name,,,,
+Ghorme gosht,Ghorme gosht,Recipe,Name,,,,
+Jamweli,Jamweli,Recipe,Name,,,,
+Zucchini with bechamel sauce,Zucchini alla besciamella,Recipe,Name,,,,
+Egusi soup,Zuppa egusi,Recipe,Name,,,,
+Kebab,Kebab,Recipe,Name,,,,
+Wake,Wake,Recipe,Name,,,,
+Crescione pie with herbs,Crescione alle erbette,Recipe,Name,,,,
+Passatelli asciutti with mushroom sauce,Passatelli asciutti alla salsa di funghi,Recipe,Name,,,,
+Eggplant light parmigiana,Parmigiana di melanzane leggera,Recipe,Name,,,,
+Baked mix peppers,Peperoni al forno,Recipe,Name,,,,
+Romagna peaches with cream,Pesche romagnole alla crema,Recipe,Name,,,,
+Grandparents' Romagna donut,Ciambella romagnola della nonna,Recipe,Name,,,,
+turkey,turchia,Recipe,Place_of_origin,,,,
+middle east,medio oriente,Recipe,Place_of_origin,,,,
+russia,russia,Recipe,Place_of_origin,,,,
+greece,grecia,Recipe,Place_of_origin,,,,
+india,india,Recipe,Place_of_origin,,,,
+pakistan,pakistan,Recipe,Place_of_origin,,,,
+mediterranean,mediterraneo,Recipe,Place_of_origin,,,,
+thailand,thailandia,Recipe,Place_of_origin,,,,
+fusion,fusion,Recipe,Place_of_origin,,,,
+armenia,armenia,Recipe,Place_of_origin,,,,
+mexico,messico,Recipe,Place_of_origin,,,,
+indonesia,indonesia,Recipe,Place_of_origin,,,,
+morocco,marocco,Recipe,Place_of_origin,,,,
+spain,spagna,Recipe,Place_of_origin,,,,
+italy,italia,Recipe,Place_of_origin,,,,
+brazil,brasile,Recipe,Place_of_origin,,,,
+argentina,argentina,Recipe,Place_of_origin,,,,
+bangladesh,bangladesh,Recipe,Place_of_origin,,,,
+guinea-bissau,guinea-bissau,Recipe,Place_of_origin,,,,
+gambia,gambia,Recipe,Place_of_origin,,,,
+mali,mali,Recipe,Place_of_origin,,,,
+afghanistan,afghanistan,Recipe,Place_of_origin,,,,
+nigeria,nigeria,Recipe,Place_of_origin,,,,
+togo,togo,Recipe,Place_of_origin,,,,
+main,piatto principale,Recipe,Category,,,,
+side dish,contorno,Recipe,Category,,,,
+dessert,dessert,Recipe,Category,,,,
+entrée,antipasto,Recipe,Category,,,,
+eggplant,melanzane,Recipe,Main_ingredient,,,,
+yogurt,yogurt,Recipe,Main_ingredient,,,,
+zucchini,zucchine,Recipe,Main_ingredient,,,,
+bean,fagioli,Recipe,Main_ingredient,,,,
+pepper,peperoni,Recipe,Main_ingredient,,,,
+tomato,pomodori,Recipe,Main_ingredient,,,,
+chickpea,ceci,Recipe,Main_ingredient,,,,
+chicken,pollo,Recipe,Main_ingredient,,,,
+ricotta cheese,ricotta,Recipe,Main_ingredient,,,,
+spinach,spinaci,Recipe,Main_ingredient,,,,
+bulgur,bulgur,Recipe,Main_ingredient,,,,
+mushroom,funghi,Recipe,Main_ingredient,,,,
+root celery,sedano rapa,Recipe,Main_ingredient,,,,
+shrimp,gamberetti,Recipe,Main_ingredient,,,,
+feta cheese,formaggio feta,Recipe,Main_ingredient,,,,
+coconut,cocco,Recipe,Main_ingredient,,,,
+okra,okra,Recipe,Main_ingredient,,,,
+rice,riso,Recipe,Main_ingredient,,,,
+lamb,agnello,Recipe,Main_ingredient,,,,
+carrot,carote,Recipe,Main_ingredient,,,,
+"beef meat, lamb meat","manzo, agnello",Recipe,Main_ingredient,,,,
+mussel,cozze,Recipe,Main_ingredient,,,,
+calamari,calamari,Recipe,Main_ingredient,,,,
+"spelt flour, potato","farina di farro, patate",Recipe,Main_ingredient,,,,
+muenster cheese,formaggio muenster,Recipe,Main_ingredient,,,,
+"walnut, mushroom","noci, funghi",Recipe,Main_ingredient,,,,
+"spinach, cashew","spinaci, anacardi",Recipe,Main_ingredient,,,,
+pumpkin,zucca,Recipe,Main_ingredient,,,,
+"cous cous, sweet potato","cous cous, patate dolci",Recipe,Main_ingredient,,,,
+avocado,avocado,Recipe,Main_ingredient,,,,
+cabbage,cavolo,Recipe,Main_ingredient,,,,
+"egg,sugar,milk","uova, zucchero, latte",Recipe,Main_ingredient,,,,
+"olive, tomato","olive, pomodori",Recipe,Main_ingredient,,,,
+"carrot, bell pepper","carote, peperoni",Recipe,Main_ingredient,,,,
+potato,patate,Recipe,Main_ingredient,,,,
+almond,mandorle,Recipe,Main_ingredient,,,,
+cheese,formaggio,Recipe,Main_ingredient,,,,
+salmon,salmone,Recipe,Main_ingredient,,,,
+"chickpea flour, yogurt, sugar","farina di ceci, yogurt, zucchero",Recipe,Main_ingredient,,,,
+beef meat,manzo,Recipe,Main_ingredient,,,,
+coconut milk,latte di cocco,Recipe,Main_ingredient,,,,
+"flour, condensed milk","farina, latte condensato",Recipe,Main_ingredient,,,,
+"beef meat, rice","manzo, riso",Recipe,Main_ingredient,,,,
+"chicken meat, rice","pollo, riso",Recipe,Main_ingredient,,,,
+"mutton meat, rice","montone, riso",Recipe,Main_ingredient,,,,
+banana,banane,Recipe,Main_ingredient,,,,
+mutton meat,montone,Recipe,Main_ingredient,,,,
+"beef meat, semolina","manzo, semolino",Recipe,Main_ingredient,,,,
+"chicken meat, pepper, eggplant","pollo, peperoni, melanzane",Recipe,Main_ingredient,,,,
+"sardine, red mullet","sardine, triglie",Recipe,Main_ingredient,,,,
+"flour, spinach, chard","farina, spinaci, cardi",Recipe,Main_ingredient,,,,
+"flour, mushroom","farina, funghi",Recipe,Main_ingredient,,,,
+bell pepper,peperoni,Recipe,Main_ingredient,,,,
+peach,pesche,Recipe,Main_ingredient,,,,
+"flour, butter, sugar","farina, burro, zucchero",Recipe,Main_ingredient,,,,
+pan-fried,in padella,Recipe,Cooking_Technique,,,,
+raw,crudista,Recipe,Cooking_Technique,,,,
+roasted,arrosto,Recipe,Cooking_Technique,,,,
+boiled,bollito,Recipe,Cooking_Technique,,,,
+baked,al forno,Recipe,Cooking_Technique,,,,
+almost raw,quasi crudista,Recipe,Cooking_Technique,,,,
+fried,fritto,Recipe,Cooking_Technique,,,,
+unit,unita',RecipeIngredients,Unit_of_measure,,,,
+glass,bicchiere,RecipeIngredients,Unit_of_measure,,,,
+spoon,cucchiaio,RecipeIngredients,Unit_of_measure,,,,
+clove,spicchio,RecipeIngredients,Unit_of_measure,,,,
+small spoon,cucchiaino,RecipeIngredients,Unit_of_measure,,,,
+,,RecipeIngredients,Unit_of_measure,,,,
+gr,gr,RecipeIngredients,Unit_of_measure,,,,
+bunch,mazzo,RecipeIngredients,Unit_of_measure,,,,
+slice,fetta,RecipeIngredients,Unit_of_measure,,,,
+sheet,sheet,RecipeIngredients,Unit_of_measure,,,,
+spring,spring,RecipeIngredients,Unit_of_measure,,,,
+pinch,pizzico,RecipeIngredients,Unit_of_measure,,,,
+drop,goccia,RecipeIngredients,Unit_of_measure,,,,
+kg,kg,RecipeIngredients,Unit_of_measure,,,,
+package,confezione,RecipeIngredients,Unit_of_measure,,,,
+ml,ml,RecipeIngredients,Unit_of_measure,,,,
+cm,cm,RecipeIngredients,Unit_of_measure,,,,
+lt,lt,RecipeIngredients,Unit_of_measure,,,,
+can,lattina,RecipeIngredients,Unit_of_measure,,,,
+cube,cubetto,RecipeIngredients,Unit_of_measure,,,,
+leaf,leaf,RecipeIngredients,Unit_of_measure,,,,
+bottle,bottiglia,RecipeIngredients,Unit_of_measure,,,,
+small bag,bustina,RecipeIngredients,Unit_of_measure,,,,
+ ,,RecipeIngredients,Preparation_technique,,,,
+boiled,bollito,RecipeIngredients,Preparation_technique,,,,
+"boiled, peeled, smashed","bollito, pelato, schiacciato",RecipeIngredients,Preparation_technique,,,,
+boiling,che bolle,RecipeIngredients,Preparation_technique,,,,
+chopped,affettato,RecipeIngredients,Preparation_technique,,,,
+cleaned,pulito,RecipeIngredients,Preparation_technique,,,,
+crumbled,spezzettato,RecipeIngredients,Preparation_technique,,,,
+crushed,schiacciato,RecipeIngredients,Preparation_technique,,,,
+cut,tagliato,RecipeIngredients,Preparation_technique,,,,
+cut (size: 1 cm),tagliato (dimensione: 1 cm),RecipeIngredients,Preparation_technique,,,,
+cut (size: 1-2 cm),tagliato (dimensione: 1-2 cm),RecipeIngredients,Preparation_technique,,,,
+"cut (size: 5cm long, thin)","tagliato (sottili, lunghi 5 cm)",RecipeIngredients,Preparation_technique,,,,
+cut in long stripes,tagliato a strisce,RecipeIngredients,Preparation_technique,,,,
+cut in pieces,tagliato a pezzi,RecipeIngredients,Preparation_technique,,,,
+cut in thin long pieces,tagliato a pezzi sottili e lunghi,RecipeIngredients,Preparation_technique,,,,
+cut in thin slices,tagliato a fete sottili,RecipeIngredients,Preparation_technique,,,,
+cut into noodles,tagliato a mo' di spaghetti,RecipeIngredients,Preparation_technique,,,,
+diced,a cubetti,RecipeIngredients,Preparation_technique,,,,
+diced (size: 1cm),a cubetti (dimensione: 1 cm),RecipeIngredients,Preparation_technique,,,,
+diced (size: 2-3cm),a cubetti (dimensione: 2-3 cm),RecipeIngredients,Preparation_technique,,,,
+diced (size: 2cm),a cubetti (dimensione: 2cm),RecipeIngredients,Preparation_technique,,,,
+diced (size: small),a cubetti piccoli,RecipeIngredients,Preparation_technique,,,,
+finely crumbled,spezzettato finemente,RecipeIngredients,Preparation_technique,,,,
+grated,grattugiato,RecipeIngredients,Preparation_technique,,,,
+"grated, drained","grattugiato, asciugato",RecipeIngredients,Preparation_technique,,,,
+grounded,macinato,RecipeIngredients,Preparation_technique,,,,
+hard-boiled,bollito a lungo,RecipeIngredients,Preparation_technique,,,,
+hot,molto caldo,RecipeIngredients,Preparation_technique,,,,
+juiced,spremuto,RecipeIngredients,Preparation_technique,,,,
+leaves removed from stem,foglie tolte dal gambo,RecipeIngredients,Preparation_technique,,,,
+melted,fuso,RecipeIngredients,Preparation_technique,,,,
+minced,tritato,RecipeIngredients,Preparation_technique,,,,
+peeled,pelato,RecipeIngredients,Preparation_technique,,,,
+"peeled, chopped","pelato, tagliato",RecipeIngredients,Preparation_technique,,,,
+"peeled, cut (size: 1 cm)","pelato, tagliato (dimensione: 1cm)",RecipeIngredients,Preparation_technique,,,,
+"peeled, diced","pelato, a cubetti",RecipeIngredients,Preparation_technique,,,,
+"peeled, diced (size: 2cm)","pelato, a cubetti (dimesione: 2cm)",RecipeIngredients,Preparation_technique,,,,
+"peeled, grated","pelato, grattugiato",RecipeIngredients,Preparation_technique,,,,
+"peeled, seeded, thin sliced","pelato, tolti i semi, a fette fine",RecipeIngredients,Preparation_technique,,,,
+rough chopped,affettato grezzamente,RecipeIngredients,Preparation_technique,,,,
+sautee,saltato,RecipeIngredients,Preparation_technique,,,,
+scrambled,strapazzato,RecipeIngredients,Preparation_technique,,,,
+sliced,affettato,RecipeIngredients,Preparation_technique,,,,
+small pieces,a pezzi piccoli,RecipeIngredients,Preparation_technique,,,,
+smashed,schiacciato,RecipeIngredients,Preparation_technique,,,,
+soaked,in ammollo,RecipeIngredients,Preparation_technique,,,,
+soaked (time: 24 hrs),in ammollo (tempo: 24 ore),RecipeIngredients,Preparation_technique,,,,
+"soaked (time: 2hrs), rinsed, drained","in ammollo per 2 ore, pulito, asciugato",RecipeIngredients,Preparation_technique,,,,
+soaked (time: 30 min),in ammollo (tempo: 30 minuti),RecipeIngredients,Preparation_technique,,,,
+soaked (time: 6 hrs),in ammollo (tempo: 6 ore),RecipeIngredients,Preparation_technique,,,,
+softened in warm water,ammorbidito in acqua calda,RecipeIngredients,Preparation_technique,,,,
+split in 8 pieces,diviso in 8 parti,RecipeIngredients,Preparation_technique,,,,
+split in three,diviso in 3 parti,RecipeIngredients,Preparation_technique,,,,
+split in three (lengthwise),diviso in 3 per la lunghezza,RecipeIngredients,Preparation_technique,,,,
+split in two,diviso in due,RecipeIngredients,Preparation_technique,,,,
+"stem removed, thin chopped","rimosso il gambo, affettato finemente",RecipeIngredients,Preparation_technique,,,,
+thin chopped,affettato finemente,RecipeIngredients,Preparation_technique,,,,
+thin diced,a cubetti piccoli,RecipeIngredients,Preparation_technique,,,,
+thin sliced,a fette sottili,RecipeIngredients,Preparation_technique,,,,
+"top cut, carved","rimossa la cima, scavato",RecipeIngredients,Preparation_technique,,,,
+warm,caldo,RecipeIngredients,Preparation_technique,,,,
+washed,lavato,RecipeIngredients,Preparation_technique,,,,
+"washed, cut (size: 7-8 cm)","lavato, tagliato (dimensione: 7-8cm)",RecipeIngredients,Preparation_technique,,,,
+"washed, dried","lavato, asciugato",RecipeIngredients,Preparation_technique,,,,
+"washed, shell removed","lavato, rimosso il guscio",RecipeIngredients,Preparation_technique,,,,
+"washed, wiped","lavato, pulito",RecipeIngredients,Preparation_technique,,,,
+almond,mandorle,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+anchovy,acciughe,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+aneto,aneto,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+anise for dessert,anice per dolci,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+apple cider vinegar,aceto di mele,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+avocado,avocado,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+baby chard,cardi,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+baking powder,lievito in polvere,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+baking soda,bicarbonato,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+balsamic vinegar,aceto balsamico,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+banana,banane,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+basil,basilico,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+basil leaf,foglie di basilico,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+basmati rice,riso basmati,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+bay leaf,alloro,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+beef meat,carne di manzo,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+bell pepper,peperoni,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+black cardamom,cardamomo nero,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+black olive,olive nere,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+black pepper,pepe nero,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+black pepper seed,pepe nero in semi,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+black-eyed pea,fagioli dall'occchio nero,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+boiled chickpea,ceci bolliti,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+boneless chicken thigh,cosce di pollo disossate,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+breadcrumb,briciole di pane,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+brown mustard seed,semi di mostarda scura,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+brown sugar,zucchero di canna,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+bulgur,bulgur,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+butter,burro,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+cabbage,cavolo,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+calamari,calamari,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+caper,capperi,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+carrot,carote,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+cashew,anacardi,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+cayenne pepper,pepe di cayenna,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+celery root,sedano rapa,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+chaat masala,chaat masala,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+champignon mushroom,funghi champignon,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+cherry in sirup,ciliege in sciroppo,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+cherry sirup,sciroppo di ciliege,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+cherry tomato,pomodorini,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+chicken,pollo,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+chicken breast,petto di pollo,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+chicken leg,zampa di pollo,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+chicken thigh,coscia di pollo,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+chickpea,ceci,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+chickpea flour,farina di ceci,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+chili powder,peperoncino in polvere,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+chives,erba cipollina,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+cilantro,coriandolo,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+cinnamon,cannella,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+cinnamon powder,cannella in polvere,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+cinnamon stick,bastoncino di cannella,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+clove,chiodo di garofano,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+coconut,cocco,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+coconut milk,latte di cocco,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+concentrated tomato paste,salsa concentrata di pomodoro,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+coriander,coriandolo,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+coriander powder,coriandolo in polvere,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+coriander seed,semi di coriandolo,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+corn meal flour,farina di mais,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+corn oil,olio di girasole,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+cornstarch,amido di mais,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+cottage cheese,fiocchi di latte,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+couscous,couscous,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+cucumber,cetriolo,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+cumin,cumino,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+cumin powder,cumino in polvere,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+cumin seed,cumino in semi,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+curry,curry,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+curry leaf,foglie di curry,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+curry powder,curry in polvere,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+dijon mustard,mostarda di Digione,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+dried apricot,albicocche disidratate,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+dried cherries,ciliege disidratate,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+dried plum,prugne secche,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+dry basil,basilico secco,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+dry blackcurrant,ribes nero secco,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+dry chickpea,ceci secchi,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+dry coconut shred,cocco grattugiato,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+dry mint,menta secca,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+dry oregano,origano secco,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+dry pomegranate seed,semi di melograno secchi,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+dulce de leche,dolce di latte,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+egg,uova,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+egg yolk,tuorlo d'uovo,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+eggplant,melanzane,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+extra-virgin olive oil,olio di oliva extra-vergine,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+feta cheese,feta,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+flour,farina,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+flour type 0,farina tipo 0,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+flour type 00,farina tipo 00,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+fontina cheese,fontina,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+french baguette,baguette francese,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+fresh basil,basilico fresco,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+fresh coriander leaf,coriandolo fresco,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+fresh green hot chilli pepper,peperoncini verdi freschi,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+fresh habanero chili,peperoncini habanero freschi,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+fresh mint,menta fresca,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+fresh oregano,origano fresco,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+fresh red hot chilli pepper,peperoncini rossi freschi,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+fresh rosemary,rosmarino fresco,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+fresh thyme,timo fresco,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+frozen pea,piselli surgelati,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+garam masala,garam masala,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+garlic,aglio,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+ginger,zenzero,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+ginger paste,crema di zenzero,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+ginger root,radice di zenzero,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+greek yogurt,yogurt greco,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+green bean,fagioli verdi,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+green cardamom seed,semi di cardamomo verdi,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+green chilly,peperoncino verde,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+green grape,uva bianca,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+green lentil,lenticchie verdi,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+green onion,cipolle verdi,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+green onion leave,foglie di cipolle verdi,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+green pepper,peperoni verdi,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+ground cinnamon,polvere di cannella,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+ground coriander,polvere di coriandolo,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+ground cumin,polvere di cumino,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+ground pepper,polvere di pepe,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+ground turmeric,curcuma in polvere,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+half peach,mezza pesca,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+harissa,harissa,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+honey,miele,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+iceberg salad,insalata iceberg,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+icing sugar,zucchero a velo,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+instant yeast,lievito istantaneo,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+isot,isot,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+kidney bean,fagioli rossi,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+kurdish red pepper paste,crema di pepe rosso curda,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+lamb meat,carne di agnello,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+leak,porri,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+lemon,limoni,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+lemon juice,succo di limone,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+lemon peel,buccia di limone,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+lemon zest,scorza di limone,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+lettuce,lattuga,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+lime,lime,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+lime peel,buccia di limone,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+maggi,maggi,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+mango,mango,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+manioc,manioca,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+mastic gum,mastica in pezzi,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+mastic powder,polvere di mastica,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+melon seed,semi di melone,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+mozzarella cheese,mozzarella,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+muenster cheese,formaggio muenster,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+mushroom,funghi,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+mussel,cozze,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+mutton meat,carne di montone,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+non-salted butter,burro sciapo,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+non-sweetened cocoa powder,polvere di cacao amara,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+non-sweetened coconut milk,latte di cocco senza zucchero,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+nothing,nulla,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+nutmeg,noce moscata,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+okra,okra,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+onion,cipolle,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+orange,arance,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+orange juice,succo di arancia,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+orange peel,buccia di arancia,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+ouzo,ouzo,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+palm oil,olio di palma,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+paprika,paprika,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+parmesan cheese,parmigiano,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+parsley,prezzemolo,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+peanut paste,burro di arachidi,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+pepper,pepe,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+phyllo pastry,pasta sfoglia fillo,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+piccadilly tomato,pomodorino piccadilly,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+pine nut,pinoli,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+pistachio,pistacchi,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+plum,prugne,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+pomegranate sauce,salsa di melograno,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+potato,patate,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+pumpkin,zucca,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+raisin,uvetta,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+raki,raki,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+red bell pepper,peperoni rossi,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+red chili ,peperoncino rosso,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+red chili powder,peperoncino in polvere,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+red hot chilli pepper,peperoncino rosso,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+red mullet,triglie,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+red onion,cipolla rossa,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+red pepper,peperone rosso,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+red radish,radicchio rosso,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+rice,riso,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+ricotta cheese,ricotta,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+rocket,rucola,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+rose pepper,pepe rosa,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+rosolio liqueur,rosolio,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+salmon,salmone,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+salt,sale,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+sardine,sardine,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+scallion,scalogno,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+semolina,semolino,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+semolina flour,farina di semolino,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+sesame seed,semi di sesamo,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+shallot,scalogno,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+shrimp,gamberetti,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+small green pepper,peperoni verdi piccoli (friarelli),RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+small tomato,pomodori piccoli,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+smoked paprika,paprika affumicata,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+soy sauce,salsa di soia,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+soya mince,soya tritata,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+spelt flour,farina di farro,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+spinach,spinaci,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+spring onion,cipollotti,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+stale bread,pane vecchio,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+sugar,zucchero,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+sugar powder,zucchero in polvere,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+sumak,sumak,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+sundried tomato,pomodorini secchi,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+sweet potato,patata dolce,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+sweet vinegar,aceto dolce,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+tahini,tahini,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+taleggio cheese,taleggio,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+tamarind paste,crema di tamarindo,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+thai green curry paste,crema di curry verde tailandese,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+tomato,pomodori,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+tomato paste,pasta di pomodori,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+tomato sauce,salsa di pomodori,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+tomato sauce in cubes,salsa di pomodori a cubetti,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+tosella cheese,tosella,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+tuna fish,tonno,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+turkish allspice,spezie miste turche,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+turkish pepper paste,crema di pepe turca,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+turkish phyllo pastry,pasta sfoglia turca,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+turkish red tomato paste,crema turca di pomodori rossi,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+turmeric powder,curcuma in polvere,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+vanilla bean,semi di vaniglia,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+vanilla extract,estratto di vaniglia,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+vanillin,vanillina,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+vegetable broth,brodo vegetale,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+vegetable stock powder,polvere per brodo vegetale,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+walnut,noci,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+water,acqua,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+white vinegar,aceto bianco,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+white wine,vino bianco,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+white yogurt,yogurt bianco,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+white/kamut flour,farina di kamut/bianca,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+whole milk,latte intero,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+yeast for dessert,lievito per dolci,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+yellow bell pepper,peperone giallo,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+yellow pepper,peperone giallo,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+yenibahar,yenibahar,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+zucchini,zucchine,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient
+frying pan,padella,RecipeTools,Tool_Name,,,,
+paper towel,tovagliolo di carta,RecipeTools,Tool_Name,,,,
+bowl,ciotola,RecipeTools,Tool_Name,,,,
+oven,forno,RecipeTools,Tool_Name,,,,
+large plate,piatto ampio,RecipeTools,Tool_Name,,,,
+stretch film,pellicola trasparente,RecipeTools,Tool_Name,,,,
+food processor,robot da cucina,RecipeTools,Tool_Name,,,,
+pot,pentola,RecipeTools,Tool_Name,,,,
+skillet,padella,RecipeTools,Tool_Name,,,,
+oven paper,carta da forno,RecipeTools,Tool_Name,,,,
+kitchen paper,carta da cucina,RecipeTools,Tool_Name,,,,
+tray,vassoio,RecipeTools,Tool_Name,,,,
+barbecue,barbecue,RecipeTools,Tool_Name,,,,
+wooden skewer,spiedini di legno,RecipeTools,Tool_Name,,,,
+skewer,spiedini,RecipeTools,Tool_Name,,,,
+oven tray,vassoio da forno,RecipeTools,Tool_Name,,,,
+iron pan,padella in acciaio,RecipeTools,Tool_Name,,,,
+cup,tazza,RecipeTools,Tool_Name,,,,
+sealable container,contenitore ermetico,RecipeTools,Tool_Name,,,,
+blender,tritatutto,RecipeTools,Tool_Name,,,,
+"peeler, spiral cutter","pelatore, affettatore a spirale",RecipeTools,Tool_Name,,,,
+plate,piatto,RecipeTools,Tool_Name,,,,
+large pot,pentolone,RecipeTools,Tool_Name,,,,
+porcelain plate,piatto in porcellana,RecipeTools,Tool_Name,,,,
+small pot,pentolino,RecipeTools,Tool_Name,,,,
+baking tray,vassoio da cottura,RecipeTools,Tool_Name,,,,
+toothpick,stuzzicadente,RecipeTools,Tool_Name,,,,
+rolling pin,mattarello,RecipeTools,Tool_Name,,,,
+whisk,frusta,RecipeTools,Tool_Name,,,,
+grill,grill,RecipeTools,Tool_Name,,,,
+crepe pan,padella per crepes,RecipeTools,Tool_Name,,,,
+ladle,mestolo,RecipeTools,Tool_Name,,,,
+napkin,fazzoletto,RecipeTools,Tool_Name,,,,
+large pan,padella grande,RecipeTools,Tool_Name,,,,
+schiacciapassatelli,schiacciapassatelli,RecipeTools,Tool_Name,,,,
+oven casserole,casseruola da forno,RecipeTools,Tool_Name,,,,
+large bowl,ciotola grande,RecipeTools,Tool_Name,,,,
+pan,padella,RecipeTools,Tool_Name,,,,
+cake pan,padella per torte,RecipeTools,Tool_Name,,,,

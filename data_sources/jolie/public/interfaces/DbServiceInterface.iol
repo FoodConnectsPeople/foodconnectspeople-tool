@@ -23,13 +23,15 @@ type InsertIngredientRequest: void {
 type InsertRecipeRequest: void {
   .recipe*: void {
     .name: string
+    .link: string
     .preparation_time_minutes: int
+    .persons: int
     .difficulty: int
-    .countries: string
     .place_of_origin: string
     .is_from_latitude: double
     .is_from_longitude: double
     .category: string
+    .main_ingredient: string
     .cooking_technique: string
   }
 }
@@ -41,8 +43,7 @@ type GetRecipeResponse: void {
   .recipe*: void {
     .name: string
     .preparation_time_minutes: int
-    .difficulty: int
-    .countries: string
+    .difficulty: int    
     .place_of_origin: string
     .category: string
     .cooking_technique: string
