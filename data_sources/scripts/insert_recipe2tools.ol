@@ -17,17 +17,17 @@ main {
     .separator = ",";
     .verbose = true
   };
-  import.filename = "./files/ingredients.csv";
-	importFile@CSVImport( import )( ingredients );
-  for( i = 0, i < #ingredients.line, i++ ) {
+  import.filename = "./files/recipe2tools.csv";
+	importFile@CSVImport( import )( recipe2tools );
+  for( i = 0, i < #recipe2tools.line, i++ ) {
       undef( req );
       with( req ) {
-          .name = ingredients.line[ i ].name;
-          .properties = ingredients.line[ i ].properties;
-          .allergene = ingredients.line[ i ].allergene
+          .recipe_id = int(recipe2tools.line[ i ].recipe_id);
+          .tool_name = recipe2tools.line[ i ].tool_name;
+          .tool_quantity  = int(recipe2tools.line[ i ].tool_quantity)
       };
       valueToPrettyString@StringUtils( req )( s );
       println@Console( s )();
-      insertIngredient@DbService( req )()
+      insertRecipeTool@DbService( req )()
   }
 }

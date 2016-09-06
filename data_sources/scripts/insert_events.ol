@@ -17,17 +17,19 @@ main {
     .separator = ",";
     .verbose = true
   };
-  import.filename = "./files/ingredients.csv";
-	importFile@CSVImport( import )( ingredients );
-  for( i = 0, i < #ingredients.line, i++ ) {
+  import.filename = "./files/events.csv";
+	importFile@CSVImport( import )( events );
+  for( i = 0, i < #events.line, i++ ) {
       undef( req );
       with( req ) {
-          .name = ingredients.line[ i ].name;
-          .properties = ingredients.line[ i ].properties;
-          .allergene = ingredients.line[ i ].allergene
+          .name = events.line[ i ].name;
+          .place = events.line[ i ].place;
+          .start_date = events.line[ i ].start_date;
+          .end_date = events.line[ i ].end_date;
+          .category = events.line[ i ].category
       };
       valueToPrettyString@StringUtils( req )( s );
       println@Console( s )();
-      insertIngredient@DbService( req )()
+      insertEvent@DbService( req )()
   }
 }

@@ -1,0 +1,79 @@
+id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from_latitude,is_from_longitude,category,main_ingredient,cooking_technique
+1,sauteed eggplants (shakshuka),turkey/shakshuka,30,4,3,turkey,,,main,eggplant,pan-fried
+2,mint dip (haydari),turkey/haydari,5,4,1,turkey,,,entrée,yogurt,raw
+3,roasted eggplant salad,turkey/turkish-roasted-eggplant-salad,40,4,2,turkey,,,entrée,eggplant,roasted
+4,zucchini salad,turkey/kabak-salatasi,30,4,2,turkey,,,entrée,zucchini,pan-fried
+5,kidney bean salad,turkey/piyaz,15,4,1,turkey,,,entrée,bean,boiled
+6,roasted pepper rolls with cheese,turkey/peynirli-koz-biber,50,4,4,turkey,,,main,pepper,roasted
+7,spoon salad,turkey/kasik-salatasi,30,4,1,turkey,,,entrée,tomato,raw
+8,chickpeas dip (hummus),middle-east/hummus,15,4,1,middle east,,,entrée,chickpea,boiled
+9,circassian chicken,russia/cerkez-tavugu,60,4,3,russia,,,main,chicken,boiled
+10,cretan paste,turkey/girit-ezmesi,5,4,1,turkey,,,entrée,ricotta cheese,raw
+11,eggplants dip (babaganoush),middle-east/babaganoush,30,4,2,middle east,,,entrée,eggplant,roasted
+12,spinach phyllo pastry (borek),middle-east/ispanakli-borek,60,4,4,middle east,,,main,spinach,baked
+13,hot vegetarian burgers (yalanci cig kofte),turkey/yalanci-cig-kofte,60,4,4,turkey,,,main,bulgur,almost raw
+14,cheese stuffed mushrooms,turkey/firinda-kasarli-mantar,30,4,2,turkey,,,entrée,mushroom,baked
+15,root celery salad,turkey/turkish-root-celery-salad,20,4,1,turkey,,,entrée,root celery,raw
+16,shrimp salad,turkey/karides-salatasi,30,4,2,turkey,,,entrée,shrimp,pan-fried
+17,zucchini burger (kolokithokeftedes),greece/kolokithokeftedes,40,4,4,greece,,,main,zucchini,fried
+18,hot feta dip (tirokafteri),greece/tirokafteri,15,4,2,greece,,,entrée,feta cheese,pan-fried
+19,rhum cake,turkey/rum-tatlisi,40,4,2,turkey,,,dessert,coconut,baked
+20,falafel,middle-east/falafel,60,4,3,middle east,,,main,chickpea,fried
+21,indian style okra,india/bhindi,40,4,3,india,,,main,okra,pan-fried
+22,chicken curry,pakistan/chicken-curry,50,5,3,pakistan,,,main,chicken,pan-fried
+23,pakistani style rice (channa pulao),pakistan/channa-pulao,40,5,3,pakistan,,,main,rice,boiled
+24,lamb skewers with vegetables,mediterranean-area/sebzeli-kuzu-sis,40,10,3,mediterranean,,,main,lamb,baked
+25,carrot dip (tarator),turkey/turkish-carrot-dip,20,4,2,turkey,,,entrée,carrot,pan-fried
+26,baked eggplants with cheese,turkey/firinda-peynirli-karniyarik,40,5,3,turkey,,,main,eggplant,baked
+27,tomato baskets with cheese,turkey/peynirly-domates-sepeti,30,6,2,turkey,,,entrée,tomato,raw
+28,curry sauced shrimps,thailand/curry-sauced-shrimps,40,6,3,thailand,,,main,shrimp,pan-fried
+29,kebap with pistachios and fresh basil,turkey/fistikli-reyhanli-kebap,60,8,3,turkey,,,main,"beef meat, lamb meat",baked
+30,greek style mussels in red sauce (mydia saganaki),greece/midia-saganaki,40,4,3,greece,,,main,mussel,pan-fried
+31,cretan style stuffed calamari,greece/kalamaria-gemista,90,6,4,greece,,,main,calamari,baked
+32,crescione romagnolo with samosa filling,world-fusion/crescione-romagnolo-with-samosa-filling,90,5,4,fusion,,,main,"spelt flour, potato",baked
+33,armenian eggplant,armenia/armenian-style-eggplants,40,4,3,armenia,,,entrée,eggplant,baked
+34,armenian phyllo pastry,armenia/armenian-style-boreg,60,6,3,armenia,,,main,muenster cheese,baked
+35,walnut mushroom taco,mexico/walnut-mushroom-taco,30,4,2,mexico,,,entrée,"walnut, mushroom",almost raw
+36,carrot ribbons,world-fusion/carrot-ribbons,40,4,3,fusion,,,entrée,carrot,raw
+37,spinach cheese,world-fusion/spinach-cheese,20,4,2,fusion,,,entrée,"spinach, cashew",raw
+38,pumpkin noodles,world-fusion/pumpkin-noodles,20,4,2,fusion,,,entrée,pumpkin,raw
+39,thai chicken in green curry,thailand/thai-chicken-in-green-curry,40,8,3,thailand,,,main,chicken,boiled
+40,indonesian rice,indonesia/indonesian-rice,60,10,3,indonesia,,,side dish,rice,boiled
+41,vegetable cous cous,morocco/vegetable-cous-cous,80,8,3,morocco,,,main,"cous cous, sweet potato",boiled
+42,guacamole,mexico/guacamole,15,4,1,mexico,,,entrée,avocado,raw
+43,morcilla de verano,spain/morcilla-de-verano,30,4,3,spain,,,entrée,eggplant,roasted
+44,swans of lake Sarmasi (lahana sarmasi),turkey/turkish-swans-of-lake-sarmasi,90,6,4,turkey,,,main,cabbage,boiled
+45,moist orange cake with mastic cream,turkey/turkish-moist-orange-cake-with-mastic-cream,60,12,3,turkey,,,dessert,"egg,sugar,milk",baked
+46,mediterranean olive tapenade,mediterranean-area/mediterranean-olive-tapenade,10,4,1,mediterranean,,,entrée,"olive, tomato",almost raw
+47,carrot dip with bell pepper (biberli tarator),turkey/carrot-dip-with-bell-pepper,30,4,2,turkey,,,entrée,"carrot, bell pepper",baked
+48,eggplant and green lentils stew (mualle),turkey/turkish-eggplant-and-green-lentils-stew,90,5,3,turkey,,,main,eggplant,boiled
+49,potatoes dough rolls,turkey/turkish-potatoes-dough-rolls,90,8,4,turkey,,,main,potato,baked
+50,salmorejo,spain/salmorejo,10,6,1,spain,,,entrée,tomato,almost raw
+51,ajoblanco,spain/ajoblanco,10,6,1,spain,,,entrée,almond,almost raw
+52,cheese tart with mastic,world-fusion/cheese-tart-with-mastic,50,6,3,fusion,,,main,cheese,baked
+53,salmon with crust of pine nuts and mastic sauce,world-fusion/salmon-with-crust-of-pine-nuts-and-mastic-sauce,40,6,3,fusion,,,main,salmon,baked
+54,grilled calamari with feta,greece/grilled-calamari-with-feta,30,5,2,greece,,,main,calamari,roasted
+55,sauteed calamari with ouzo on potato pouree bed,greece/sauteed-calamari-with-ouzo-on-potato-pouree-bed,60,5,3,greece,,,main,calamari,pan-fried
+56,armenian stuffed pumpkin (ghapama),armenia/ghapama,150,6,3,armenia,,,main,pumpkin,baked
+57,Saint Joseph's donuts (zeppole),italy/saint-joseph-donuts,90,8,4,italy,,,dessert,"egg,sugar,milk",fried
+58,Dahi baray,pakistan/dahi-baray,90,6,4,pakistan,,,main,"chickpea flour, yogurt, sugar",fried
+59,Chapli kebab,pakistan/chapli-kebab,40,6,3,pakistan,,,main,beef meat,pan-fried
+60,Manjar de coco,brazil/manjar-de-coco,60,12,2,brazil,,,dessert,coconut milk,boiled
+61,Panquecas de doce de leite,argentina/panquecas-de-doce-de-leite,30,8,3,argentina,,,dessert,"flour, condensed milk",pan-fried
+62,Birani,bangladesh/birani,40,8,3,bangladesh,,,main,"beef meat, rice",boiled
+63,Konnto,guinea-bissau/konnto,45,8,3,guinea-bissau,,,main,"chicken meat, rice",pan-fried
+64,Simaumo,gambia/simaumo,45,8,3,gambia,,,main,"chicken meat, rice",pan-fried
+65,Tigadeghena,mail/tigadeghena,45,4,3,mali,,,main,"mutton meat, rice",pan-fried
+66,Deghe,mail/deghe,15,8,2,mali,,,dessert,banana,almost raw
+67,Ghorme gosht,afghanistan/ghorme-gosht,60,8,3,afghanistan,,,main,"beef meat, rice",pan-fried
+68,Jamweli,gambia/jamweli,90,8,3,gambia,,,main,mutton meat,boiled
+69,Zucchini with bechamel sauce,italy/zucchini-with-bechamel-sauce,45,4,3,italy,,,main,zucchini,baked
+70,Egusi soup,nigeria/egusi-soup,90,8,3,nigeria,,,main,"beef meat, semolina",pan-fried
+71,Kebab,afghanistan/kebab,45,8,3,afghanistan,,,main,"chicken meat, pepper, eggplant",roasted
+72,Wake,togo/wake,45,12,4,togo,,,main,"sardine, red mullet",fried
+73,Crescione pie with herbs,italy/crescione-pie-with-herbs,60,4,4,italy,,,main,"flour, spinach, chard",baked
+74,Passatelli asciutti with mushroom sauce,italy/passatelli-asciutti-with-mushroom-sauce,45,4,3,italy,,,main,"flour, mushroom",boiled
+75,Err:509,italy/eggplant-light-parmigiana,75,4,3,italy,,,main,eggplant,baked
+76,Baked mix peppers,italy/baked-mix-peppers,45,4,2,italy,,,entrée,bell pepper,baked
+77,Romagna peaches with cream,italy/romagna-peaches-with-cream,45,12,2,italy,,,dessert,peach,almost raw
+78,Grandparents' Romagna donut,italy/grandparents-romagna-donut,45,8,3,italy,,,dessert,"flour, butter, sugar",baked

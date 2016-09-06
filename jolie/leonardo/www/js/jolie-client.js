@@ -57,6 +57,9 @@ var JolieClient = JolieClient || (function() {
         jolieCall( "getIngredients", request, callback, errorHandler );
     }
 
+    API.getRecipes = function( request, callback, errorHandler ) {
+        jolieCall( "getRecipes", request, callback, errorHandler );
+    }
 
     return API;
 })();

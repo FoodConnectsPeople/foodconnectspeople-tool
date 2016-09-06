@@ -9,6 +9,7 @@
   </head>
   <body>
     <button onclick="getIngredients()">Get Ingredients</button>
+    <button onclick="getRecipes()">Get Recipes</button>
     <div id="panel">
     </div>
     <script>
@@ -25,6 +26,22 @@
               }
               $("#panel").append( "<div>" + data.ingredient[ i ].name + "," + properties + "</div>");
           }
+      }, onError);
+    }
+
+    function capitalizeFirstLetter(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+
+    function getRecipes() {
+      JolieClient.getRecipes({}, function( data ) {
+        var recipeList = "<ul>";
+        for (var i = 0; i < data.recipe.length; i++) {
+          recipeList += "<li>" + data.recipe[ i ].name + " [" +
+                capitalizeFirstLetter(data.recipe[ i ].place_of_origin) + "]</li>";
+        }
+        recipeList += "</ul>";
+        $("#panel").html(recipeList);
       }, onError);
     }
    </script>

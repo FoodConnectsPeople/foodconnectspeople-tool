@@ -15,18 +15,19 @@
 
 CREATE SCHEMA foodconnectspeople;
 
-CREATE TABLE foodconnectspeople.Recipe (
+CREATE TABLE foodconnectspeople.Recipes (
   recipe_id SERIAL PRIMARY KEY
   , name VARCHAR(1024) NOT NULL
+  , link VARCHAR(1024)
   , preparation_time_minutes SMALLINT
+  , persons INT
   , difficulty SMALLINT
-  , countries  VARCHAR
-
+  --, countries  VARCHAR
   , place_of_origin VARCHAR(256)
   , is_from_latitude DECIMAL(9,6)
   , is_from_longitude DECIMAL(9,6)
-
   , category VARCHAR(1024)
+  , main_ingredient VARCHAR(1024)
   , cooking_technique VARCHAR(1024)
 );
 
@@ -43,15 +44,9 @@ CREATE TABLE foodconnectspeople.AuthorRecipe (
   author_id SERIAL
   , recipe_id SERIAL
   , PRIMARY KEY (author_id, recipe_id)
-  , FOREIGN KEY (author_id) REFERENCES foodconnectspeople.FcpUser(fcp_user_id)
-  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipe(recipe_id)
-);
 
-CREATE TABLE foodconnectspeople.RecipeCategory (
-  recipe_id SERIAL
-  , category_name VARCHAR(512)
-  , PRIMARY KEY (recipe_id, category_name)
-  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipe(recipe_id)
+  , FOREIGN KEY (author_id) REFERENCES foodconnectspeople.FcpUser(fcp_user_id)
+  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipes(recipe_id)
 );
 
 CREATE TABLE foodconnectspeople.Ingredients (
@@ -68,21 +63,16 @@ CREATE TABLE foodconnectspeople.CookingTechniques (
   , CONSTRAINT unique_cooking_technique_name UNIQUE (name)
 );
 
-CREATE TABLE foodconnectspeople.Properties (
-  property_id SERIAL
-  , name VARCHAR
-  , CONSTRAINT unique_property_name UNIQUE (name)
-);
-
 CREATE TABLE foodconnectspeople.RecipeIngredients (
   recipe_id INTEGER
-  , ingredient_id INTEGER
-  , is_main BOOLEAN
+  , ingredient VARCHAR(1024)
+  -- , is_main BOOLEAN
   , quantity SMALLINT
   , unit_of_measure VARCHAR(128)
   , preparation_technique VARCHAR(1024)
-  , PRIMARY KEY (recipe_id, ingredient_id)
-  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipe(recipe_id)
+  , alternate_ingredient VARCHAR(1024)
+  -- , PRIMARY KEY (recipe_id, ingredient)
+  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipes(recipe_id)
 );
 
 
@@ -96,23 +86,24 @@ CREATE TABLE foodconnectspeople.RecipeCountries (
   recipe_id INTEGER
   , country_id INTEGER
   , PRIMARY KEY (recipe_id, country_id)
-  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipe(recipe_id)
+  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipes(recipe_id)
 );
 
-CREATE TABLE foodconnectspeople.Event (
+CREATE TABLE foodconnectspeople.Events (
   event_id SERIAL PRIMARY KEY
   , name VARCHAR(1024) NOT NULL
   , place VARCHAR(255) NOT NULL
-  , start_date DATE NOT NULL
-  , end_date DATE
+  , start_date VARCHAR(255) NOT NULL
+  , end_date VARCHAR(255) NOT NULL
+  , category VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE foodconnectspeople.RecipeEvents (
   recipe_id SERIAL
   , event_id SERIAL
   , PRIMARY KEY (recipe_id, event_id)
-  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipe(recipe_id)
-  , FOREIGN KEY (event_id) REFERENCES foodconnectspeople.Event(event_id)
+  -- , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipes(recipe_id)
+  -- , FOREIGN KEY (event_id) REFERENCES foodconnectspeople.Events(event_id)
 );
 
 CREATE TABLE foodconnectspeople.RecipeTools(
@@ -120,7 +111,7 @@ CREATE TABLE foodconnectspeople.RecipeTools(
   , tool_name VARCHAR(1024)
   , tool_quantity SMALLINT
   , PRIMARY KEY (recipe_id, tool_name)
-  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipe(recipe_id)
+  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipes(recipe_id)
 );
 
 CREATE TABLE foodconnectspeople.Multilanguage (
@@ -136,9 +127,3 @@ CREATE TABLE foodconnectspeople.Languages (
   , label VARCHAR(64)
   , abbreviation VARCHAR(3)
 );
-
-INSERT INTO foodconnectspeople.Properties ( name ) VALUES ('vegan');
-INSERT INTO foodconnectspeople.Properties ( name ) VALUES ('vegetarian');
-INSERT INTO foodconnectspeople.Properties ( name ) VALUES ('gluten_free');
-INSERT INTO foodconnectspeople.Properties ( name ) VALUES ('lactose_free');
-INSERT INTO foodconnectspeople.Properties ( name ) VALUES ('spicy');
