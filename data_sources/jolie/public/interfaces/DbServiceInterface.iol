@@ -129,6 +129,10 @@ type InsertRecipeToolRequest: void {
 }
 
 
+type InsertIngredientResponse: void
+type InsertRecipeResponse: void
+
+
 type GetRecipeResponse: void {
   .recipe*: void {
     .name: string
@@ -162,5 +166,7 @@ interface DbServiceInterface {
     insertRecipeIngredient( InsertRecipeIngredientRequest )( void ) throws DatabaseError,
     insertRecipeEvent( InsertRecipeEventRequest )( void ) throws DatabaseError,
     insertRecipeTool( InsertRecipeToolRequest )( void ) throws DatabaseError,
+    insertIngredient( InsertIngredientRequest )( InsertIngredientResponse ) throws DatabaseError,
+    insertRecipe( InsertRecipeRequest )( InsertRecipeResponse ) throws DatabaseError,
     getRecipes( void )( GetRecipeResponse ) throws DatabaseError
 }

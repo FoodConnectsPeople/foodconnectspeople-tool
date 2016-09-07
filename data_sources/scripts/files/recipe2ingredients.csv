@@ -1,4 +1,4 @@
-recipe_id,ingredient,quantity,unit_of_measure,preparation_technique,alternate_ingredient
+recipe_id,ingredient,quantity,unit_of_measure,preparation_technique,alternate ingredient
 1,eggplant,2,unit,"peeled, diced",
 1,potato,2,unit,"peeled, diced",
 1,zucchini,2,unit,diced,

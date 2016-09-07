@@ -44,7 +44,6 @@ CREATE TABLE FCP.AuthorRecipe (
   author_id SERIAL
   , recipe_id SERIAL
   , PRIMARY KEY (author_id, recipe_id)
-
   , FOREIGN KEY (author_id) REFERENCES FCP.FcpUser(fcp_user_id)
   , FOREIGN KEY (recipe_id) REFERENCES FCP.Recipes(recipe_id)
 );
@@ -102,8 +101,6 @@ CREATE TABLE FCP.RecipeEvents (
   recipe_id SERIAL
   , event_id SERIAL
   , PRIMARY KEY (recipe_id, event_id)
-  -- , FOREIGN KEY (recipe_id) REFERENCES FCP.Recipes(recipe_id)
-  -- , FOREIGN KEY (event_id) REFERENCES FCP.Events(event_id)
 );
 
 CREATE TABLE FCP.RecipeTools(

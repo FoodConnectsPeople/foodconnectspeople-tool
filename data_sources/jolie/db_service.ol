@@ -82,7 +82,6 @@ main {
 
               q = queries.select_ingredients;
               query@Database( q )( result );
-
               for( i = 0, i < #result.row, i++ ) {
                   with( response.ingredient[ i ] ) {
                       .ingredient_id = result.row[ i ].ingredient_id;
@@ -255,7 +254,6 @@ main {
           }
     }
   }]
-
 
   [ buildCommaSeparatedString( request )( response ) {
         scope( sql ) {
