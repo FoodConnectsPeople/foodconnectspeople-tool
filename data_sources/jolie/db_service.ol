@@ -325,32 +325,39 @@ main {
                                          throw( DatabaseError )
                 );
 
-                t.recipe_name = "maccheroni";
+                t.recipe_name = "curry";
                 t.max_preparation_time = 45;
                 t.difficulty_value[0] = 2;
                 t.difficulty_value[1] = 3;
-                t.country[0] = "Italy";
-                t.country[1] = "Greece";
-                t.recipe_category = "Entree";
-                t.main_ingredient = "Mutton Meat";
-                t.cooking_technique[0] = "fried";
+                t.country[0] = "thailand";
+                t.country[1] = "greece";
+                t.recipe_category = "main";
+                t.main_ingredient = "shrimp";
+                t.cooking_technique[0] = "pan-fried";
                 t.cooking_technique[1] = "roasted";
-                t.eater_category[0] = "vegan";
-                t.eater_category[1] = "carnivore";
+                t.eater_category[0] = "onnivore";
                 t.not_allergene[0] = "gluten";
                 t.not_allergene[1] = "lactose";
                 t.yes_ingredient[0] = "garlic";
-                t.yes_ingredient[1] = "onion";
+                t.yes_ingredient[1] = "red hot chilli pepper";
                 t.not_ingredient[0] = "cocumber";
                 t.not_ingredient[1] = "cream";
-                t.yes_tool[0] = "bbq";
-                t.yes_tool[1] = "oven";
+                t.yes_tool[0] = "frying pan";
                 t.not_tool[0] = "spoon";
                 t.not_tool[1] = "scissors";
-                t.appears_in_event = "Workshop in Romagna";
+                t.appears_in_event = "2nd Meze Workshop";
                 t.language = "English";
 
-                mostGeneralRecipeQuery@DbService(t)(res)
+                mostGeneralRecipeQuery@DbService(t)(res);
+
+                println@Console("Number of recipes satisfying the query :" + #res.recipe)();
+                for( i = 0, i < #res.recipe, i++ ) {
+                  println@Console("Recipe #" + i + " : ")();
+                  println@Console("  ID : " + res.recipe[i].recipe_id)();
+                  println@Console("  Name : " + res.recipe[i].recipe_name)();
+                  println@Console("  Link : " + res.recipe[i].recipe_link)()
+                }
+
           }
     }
 
@@ -366,8 +373,7 @@ main {
                 // recipe category, main ingredient, cooking technique
 
 
-                // q = "SELECT recipe_id FROM FCP.recipe";
-                q = "SELECT recipe_id, name, link FROM FCP.recipe";
+                q = "SELECT recipe_id, name, link FROM FCP.recipes";
                 constraint_adder = " WHERE ";
 
                 // DB.name LIKE *user_specified_name*
@@ -380,7 +386,7 @@ main {
 
                 // DB.preparation_time <= user_specified_time
                 if (is_defined(request.max_preparation_time)) {
-                  constraint = " ( preparation_time <= " + request.max_preparation_time + " ) ";
+                  constraint = " ( preparation_time_minutes <= " + request.max_preparation_time + " ) ";
                   println@Console ("Adding prep. time constraint: '" + constraint + "'")();
                   q = q + constraint_adder + constraint;
                   constraint_adder = " AND "
@@ -400,12 +406,11 @@ main {
 
                 // (DB.country LIKE *user_country_1*) OR ... OR (DB.country LIKE *user_country_n*)
                 if (is_defined(request.country)) {
-                  req.field = "country";
+                  req.field = "place_of_origin";
                   req.vector << request.country;
                   req.sep = "";
                   buildSetVsSet@DbService(req)(constraint);
-                  //buildSetVsSet@DbService({.field = "country", .vector << request.country, .sep = "" })(constraint);
-                  println@Console ("Adding countries constraint: '" + constraint + "'")();
+                  println@Console ("Adding place of origin constraint: '" + constraint + "'")();
                   q = q + constraint_adder + constraint;
                   constraint_adder = " AND "
                 };
@@ -460,9 +465,9 @@ main {
                 if (is_defined(request.yes_ingredient)) {
                   for (idx = 0, idx < #request.yes_ingredient, idx++) {
                     yes_ingr = request.yes_ingredient[idx];
-                    constraint1 = " ( EXISTS SELECT * FROM FCP.recipeIngredients WHERE  ";
-                    constraint2 = " FCP.recipe.recipe_id = FCP.recipeIngredients.recipe_id AND ";
-                    constraint3 = " FCP.recipeIngredients.ingredient_id = '" + yes_ingr + "' ) ";
+                    constraint1 = " ( EXISTS ( SELECT * FROM FCP.recipeIngredients WHERE  ";
+                    constraint2 = " FCP.recipes.recipe_id = FCP.recipeIngredients.recipe_id AND ";
+                    constraint3 = " FCP.recipeIngredients.ingredient = '" + yes_ingr + "' ) ) ";
                     constraint = constraint1 + constraint2 + constraint3;
                     println@Console ("Adding yes ingredient constraint: '" + constraint + "'")();
                     q = q + constraint_adder + constraint;
@@ -473,9 +478,9 @@ main {
                 if (is_defined(request.not_ingredient)) {
                   for (idx = 0, idx < #request.not_ingredient, idx++) {
                     not_ingr = request.not_ingredient[idx];
-                    constraint1 = " ( NOT EXISTS SELECT * FROM FCP.recipeIngredients WHERE  ";
-                    constraint2 = " FCP.recipe.recipe_id = FCP.recipeIngredients.recipe_id AND ";
-                    constraint3 = " FCP.recipeIngredients.ingredient_id = '" + not_ingr + "' ) ";
+                    constraint1 = " ( NOT EXISTS ( SELECT * FROM FCP.recipeIngredients WHERE  ";
+                    constraint2 = " FCP.recipes.recipe_id = FCP.recipeIngredients.recipe_id AND ";
+                    constraint3 = " FCP.recipeIngredients.ingredient = '" + not_ingr + "' ) ) ";
                     constraint = constraint1 + constraint2 + constraint3;
                     println@Console ("Adding not ingredient constraint: '" + constraint + "'")();
                     q = q + constraint_adder + constraint;
@@ -505,9 +510,9 @@ main {
                 if (is_defined(request.yes_tool)) {
                   for (idx = 0, idx < #request.yes_tool, idx++) {
                     yes_tool = request.yes_tool[idx];
-                    constraint1  = " ( EXISTS SELECT * FROM FCP.recipeTools WHERE  ";
-                    constraint2 = " FCP.recipe.recipe_id = FCP.recipeTools.recipe_id AND ";
-                    constraint3 = " FCP.recipeTools.tool_name = '" + yes_tool + "' ) ";
+                    constraint1  = " ( EXISTS ( SELECT * FROM FCP.recipeTools WHERE  ";
+                    constraint2 = " FCP.recipes.recipe_id = FCP.recipeTools.recipe_id AND ";
+                    constraint3 = " FCP.recipeTools.tool_name = '" + yes_tool + "' ) ) ";
                     constraint = constraint1 + constraint2 + constraint3;
                     println@Console ("Adding yes tool constraint: '" + constraint + "'")();
                     q = q + constraint_adder + constraint;
@@ -515,12 +520,12 @@ main {
                   }
                 };
 
-                if (is_defined(request.not_tool) > 1) {
-                  for (idx = 0, idx < #request.not_tool - 1, idx++) {
+                if (is_defined(request.not_tool)) {
+                  for (idx = 0, idx < #request.not_tool, idx++) {
                     not_tool = request.not_tool[idx];
-                    constraint1 = " ( NOT EXISTS SELECT * FROM FCP.recipeTools WHERE  ";
-                    constraint2 = " FCP.recipe.recipe_id = FCP.recipeTools.recipe_id AND ";
-                    constraint3 = " FCP.recipeTools.tool_name = '" + not_tool + "' ) ";
+                    constraint1 = " ( NOT EXISTS ( SELECT * FROM FCP.recipeTools WHERE  ";
+                    constraint2 = " FCP.recipes.recipe_id = FCP.recipeTools.recipe_id AND ";
+                    constraint3 = " FCP.recipeTools.tool_name = '" + not_tool + "' ) ) ";
                     constraint = constraint1 + constraint2 + constraint3;
                     println@Console ("Adding not tool constraint: '" + constraint + "'")();
                     q = q + constraint_adder + constraint;
@@ -543,9 +548,9 @@ main {
                 // constraint_adder = " WHERE ";
 
                 if (is_defined(request.appears_in_event)) {
-                  constraint1 = " (EXISTS SELECT * FROM FCP.recipeEvents WHERE ";
-                  constraint2 = " FCP.recipe.recipe_id = FCP.recipeEvents.recipe_id AND ";
-                  constraint3 = " FCP.recipeEvents.event = '" + request.appears_in_event + "' )";
+                  constraint1 = " (EXISTS ( SELECT * FROM FCP.recipeEventsNames WHERE ";
+                  constraint2 = " FCP.recipes.recipe_id = FCP.recipeEventsNames.recipe_id AND ";
+                  constraint3 = " FCP.recipeEventsNames.name = '" + request.appears_in_event + "' ) ) ";
                   constraint = constraint1 + constraint2 + constraint3;
                   println@Console ("Adding event constraint: '" + constraint + "'")();
                   q = q + constraint_adder + constraint;
@@ -561,13 +566,13 @@ main {
 
                 ////////////////////////////////////////////////////////////////////////
                 // Section 4: select the recipe_ids from the portion of query involving only
-                // the recipeIngrProperties table, i.e. : recipes that :
+                // the recipeIngredientsProperties table, i.e. : recipes that :
                 // (a) do not contain any ingredient with some of the user-specified allergenes
                 // (b) do not contain any ingredient not suitable for some eater category,
                 // i.e. for all eater categories, all ingredients are ok
 
                 // selects recipe_id from recipe where, for each not_allergene[idx],
-                // in recipeIngrProperties, it does not exist a pair <recipe_id,properties>
+                // in recipeIngredientsProperties, it does not exist a pair <recipe_id,properties>
                 // s.t. properties contains allergene[idx]
 
                 //q = "SELECT recipe_id FROM FCP.recipe";
@@ -576,9 +581,9 @@ main {
                 if (is_defined(request.not_allergene)) {
                   for (idx = 0, idx < #request.not_allergene, idx ++) {
                     not_allergene = request.not_allergene[idx];
-                    constraint1 = " ( NOT EXISTS SELECT * FROM FCP.recipeIngrProperties WHERE  ";
-                    constraint2 = " FCP.recipe.recipe_id = FCP.recipeIngrProperties.recipe_id AND ";
-                    constraint3 = " FCP.recipeIngrProperties.properties LIKE '%" + not_allergene + "%' ) ";
+                    constraint1 = " ( NOT EXISTS ( SELECT * FROM FCP.recipeIngredientsProperties WHERE  ";
+                    constraint2 = " FCP.recipes.recipe_id = FCP.recipeIngredientsProperties.recipe_id AND ";
+                    constraint3 = " FCP.recipeIngredientsProperties.properties LIKE '%" + not_allergene + "%' ) ) ";
                     constraint = constraint1 + constraint2 + constraint3;
                     println@Console ("Adding not allergene constraint: '" + constraint + "'")();
                     q = q + constraint_adder + constraint;
@@ -589,9 +594,9 @@ main {
                 if (is_defined(request.eater_category)) {
                   for (idx = 0, idx < #request.eater_category, idx++) {
                     eater = request.eater_category[idx];
-                    constraint1 = " ( NOT EXISTS SELECT * FROM FCP.recipeIngrProperties WHERE  ";
-                    constraint2 = " FCP.recipe.recipe_id = FCP.recipeIngrProperties.recipe_id AND ";
-                    constraint3 = " FCP.recipeIngrProperties.properties NOT LIKE '%" + eater + "%' ) ";
+                    constraint1 = " ( NOT EXISTS ( SELECT * FROM FCP.recipeIngredientsProperties WHERE  ";
+                    constraint2 = " FCP.recipes.recipe_id = FCP.recipeIngredientsProperties.recipe_id AND ";
+                    constraint3 = " FCP.recipeIngredientsProperties.properties NOT LIKE '%" + eater + "%' ) ) ";
                     constraint = constraint1 + constraint2 + constraint3;
                     println@Console ("Adding eater category constraint: '" + constraint + "'")();
                     q = q + constraint_adder + constraint;
@@ -602,20 +607,10 @@ main {
                 println@Console(" ")();
                 println@Console("------------------------------------------------------")();
                 println@Console("Query on Recipe, Ingredients, Events, Tools, Eaters : " + q)();
-                //query@Database( q )( recipe_ids_from_recipeIngrProperties_table_query );
-                //buildList@DbService({.vector = recipe_ids_from_recipeIngrProperties_table_query, .sep = "" })
-                //                   (ids_from_recipeIngrProperties);
 
-                response.recipe[0].recipe_id = 1;
-                response.recipe[0].recipe_name = "Foo";
-                response.recipe[0].recipe_link = "www"
-  /****
-                //q = "SELECT recipe_id, name, link FROM FCP.recipe";
-                //q = q + " WHERE ( recipe_id IN " + ids_from_recipe + " )";
-                //q = q + "   AND ( recipe_id IN " + ids_from_recipeIngredients + " )";
-                //q = q + "   AND ( recipe_id IN " + ids_from_recipeIngrProperties + " )";
-                //q = q + "   AND ( recipe_id IN " + ids_from_recipeEvents + " )";
-                //q = q + "   AND ( recipe_id IN " + ids_from_recipeTools + " )";
+                //response.recipe[0].recipe_id = 1;
+                //response.recipe[0].recipe_name = "Foo";
+                //response.recipe[0].recipe_link = "www"
 
                 query@Database( q )( result );
 
@@ -626,7 +621,7 @@ main {
                         .recipe_link = result.row[ i ].link
                     }
                 }
-                ****/
+
 
           }
     }]

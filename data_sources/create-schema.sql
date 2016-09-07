@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016 foodconnectspeople.
+ * Copyright (c) 2016 FCP.
  *
  * Requires a DB to be created.
  *
@@ -8,14 +8,14 @@
  * - Execute script: \i <name of this file>.sql
  * - Show all DB's: \l
  * - Show tables: \dt
- * - Describe table: \d foodconnectspeople.<tablename>
+ * - Describe table: \d FCP.<tablename>
  * - Drop the whole schema (e.g., for tests):
- *    drop schema foodconnectspeople cascade;
+ *    drop schema FCP cascade;
 */
 
-CREATE SCHEMA foodconnectspeople;
+CREATE SCHEMA FCP;
 
-CREATE TABLE foodconnectspeople.Recipes (
+CREATE TABLE FCP.Recipes (
   recipe_id SERIAL PRIMARY KEY
   , name VARCHAR(1024) NOT NULL
   , link VARCHAR(1024)
@@ -31,7 +31,7 @@ CREATE TABLE foodconnectspeople.Recipes (
   , cooking_technique VARCHAR(1024)
 );
 
-CREATE TABLE foodconnectspeople.FcpUser (
+CREATE TABLE FCP.FcpUser (
   fcp_user_id SERIAL PRIMARY KEY
   , username varchar(255) NOT NULL
   , full_name VARCHAR(1024)
@@ -40,16 +40,16 @@ CREATE TABLE foodconnectspeople.FcpUser (
   --, (hashed) password?
 );
 
-CREATE TABLE foodconnectspeople.AuthorRecipe (
+CREATE TABLE FCP.AuthorRecipe (
   author_id SERIAL
   , recipe_id SERIAL
   , PRIMARY KEY (author_id, recipe_id)
 
-  , FOREIGN KEY (author_id) REFERENCES foodconnectspeople.FcpUser(fcp_user_id)
-  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipes(recipe_id)
+  , FOREIGN KEY (author_id) REFERENCES FCP.FcpUser(fcp_user_id)
+  , FOREIGN KEY (recipe_id) REFERENCES FCP.Recipes(recipe_id)
 );
 
-CREATE TABLE foodconnectspeople.Ingredients (
+CREATE TABLE FCP.Ingredients (
   ingredient_id SERIAL
   , name VARCHAR(1024)
   , properties VARCHAR
@@ -57,13 +57,13 @@ CREATE TABLE foodconnectspeople.Ingredients (
   , CONSTRAINT unique_ingredient_name UNIQUE (name)
 );
 
-CREATE TABLE foodconnectspeople.CookingTechniques (
+CREATE TABLE FCP.CookingTechniques (
   cooking_technique_id SERIAL
   , name VARCHAR(1024)
   , CONSTRAINT unique_cooking_technique_name UNIQUE (name)
 );
 
-CREATE TABLE foodconnectspeople.RecipeIngredients (
+CREATE TABLE FCP.RecipeIngredients (
   recipe_id INTEGER
   , ingredient VARCHAR(1024)
   -- , is_main BOOLEAN
@@ -72,24 +72,24 @@ CREATE TABLE foodconnectspeople.RecipeIngredients (
   , preparation_technique VARCHAR(1024)
   , alternate_ingredient VARCHAR(1024)
   -- , PRIMARY KEY (recipe_id, ingredient)
-  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipes(recipe_id)
+  , FOREIGN KEY (recipe_id) REFERENCES FCP.Recipes(recipe_id)
 );
 
 
-CREATE TABLE foodconnectspeople.Countries (
+CREATE TABLE FCP.Countries (
   country_id SERIAL
   , name VARCHAR(128)
   , PRIMARY KEY (country_id)
 );
 
-CREATE TABLE foodconnectspeople.RecipeCountries (
+CREATE TABLE FCP.RecipeCountries (
   recipe_id INTEGER
   , country_id INTEGER
   , PRIMARY KEY (recipe_id, country_id)
-  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipes(recipe_id)
+  , FOREIGN KEY (recipe_id) REFERENCES FCP.Recipes(recipe_id)
 );
 
-CREATE TABLE foodconnectspeople.Events (
+CREATE TABLE FCP.Events (
   event_id SERIAL PRIMARY KEY
   , name VARCHAR(1024) NOT NULL
   , place VARCHAR(255) NOT NULL
@@ -98,23 +98,23 @@ CREATE TABLE foodconnectspeople.Events (
   , category VARCHAR(255) NOT NULL
 );
 
-CREATE TABLE foodconnectspeople.RecipeEvents (
+CREATE TABLE FCP.RecipeEvents (
   recipe_id SERIAL
   , event_id SERIAL
   , PRIMARY KEY (recipe_id, event_id)
-  -- , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipes(recipe_id)
-  -- , FOREIGN KEY (event_id) REFERENCES foodconnectspeople.Events(event_id)
+  -- , FOREIGN KEY (recipe_id) REFERENCES FCP.Recipes(recipe_id)
+  -- , FOREIGN KEY (event_id) REFERENCES FCP.Events(event_id)
 );
 
-CREATE TABLE foodconnectspeople.RecipeTools(
+CREATE TABLE FCP.RecipeTools(
   recipe_id SERIAL
   , tool_name VARCHAR(1024)
   , tool_quantity SMALLINT
   , PRIMARY KEY (recipe_id, tool_name)
-  , FOREIGN KEY (recipe_id) REFERENCES foodconnectspeople.Recipes(recipe_id)
+  , FOREIGN KEY (recipe_id) REFERENCES FCP.Recipes(recipe_id)
 );
 
-CREATE TABLE foodconnectspeople.Multilanguage (
+CREATE TABLE FCP.Multilanguage (
   table_name VARCHAR(128)
   , field_name VARCHAR(128)
   , item_id INTEGER
@@ -122,7 +122,7 @@ CREATE TABLE foodconnectspeople.Multilanguage (
   , content VARCHAR(2048)
 );
 
-CREATE TABLE foodconnectspeople.Languages (
+CREATE TABLE FCP.Languages (
   language_id SERIAL
   , label VARCHAR(64)
   , abbreviation VARCHAR(3)

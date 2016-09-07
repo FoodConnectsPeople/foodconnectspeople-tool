@@ -1,1 +1,8 @@
-here create a folder link to folder jolie/lib
+Step 0: activate the Postgres service
+
+Step 1: crate the DB: jolie create_database.ol
+
+Step 2: activate the Jolie listener service: in ../jolie, jolie db_service.ol
+
+Step 3: fill all the tables and views: insert_all.bat
+ 
