@@ -42,7 +42,7 @@ embedded {
 
 inputPort HTTPInput {
 Protocol: http {
-	.keepAlive = true; // Keep connections open
+	.keepAlive = false; // Keep connections open
 	.debug = DebugHttp;
 	.debug.showContent = DebugHttpContent;
 	.format -> format;

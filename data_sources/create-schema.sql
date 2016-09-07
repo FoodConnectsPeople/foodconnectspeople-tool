@@ -127,3 +127,31 @@ CREATE TABLE FCP.Languages (
   , label VARCHAR(64)
   , abbreviation VARCHAR(3)
 );
+
+CREATE VIEW FCP.recipeingredientsproperties
+AS SELECT
+recipeingredients.recipe_id,
+ingredients.ingredient_id,
+recipeingredients.ingredient,
+recipeingredients.quantity,
+recipeingredients.unit_of_measure,
+recipeingredients.preparation_technique,
+recipeingredients.alternate_ingredient,
+ingredients.properties,
+ingredients.allergene
+FROM FCP.recipeingredients recipeingredients, FCP.ingredients ingredients
+WHERE recipeIngredients.ingredient = ingredients.name ;
+
+
+CREATE VIEW FCP.recipeeventsnames
+AS SELECT
+recipeevents.recipe_id,
+recipeevents.event_id,
+events.name,
+events.place,
+events.start_date,
+events.end_date,
+events.category
+
+FROM FCP.recipeevents recipeevents, FCP.events events
+WHERE recipeevents.event_id = events.event_id ;

@@ -18,19 +18,28 @@ inputPort DbService {
   Interfaces: DbServiceInterface
 }
 
+// Output port to invoke "internal functions"
+outputPort MySelf {
+  Location: DB_SERVICE_LOCATION
+  Protocol: sodep
+  Interfaces: DbServiceInterface
+}
+
 inputPort DbServiceHttp {
   Location: DB_SERVICE_LOCATION_HTTP
   Protocol: http { .format = "json" }
   Interfaces: DbServiceInterface
 }
 
-// Output port to invoke "internal functions"
-
-outputPort DbService {
-  Location: DB_SERVICE_LOCATION
+// used for self-contained tests
+inputPort DbServiceLocal {
+  Location: "local"
   Protocol: sodep
   Interfaces: DbServiceInterface
 }
+
+
+
 
 init {
     __queries;
@@ -266,7 +275,7 @@ main {
         }
   }]
 
-    [ buildList( request )( response ) {
+   [ buildList( request )( response ) {
           scope( sql ) {
                 install( SQLException => println@Console( sql.SQLException.stackTrace )();
                                          throw( DatabaseError )
@@ -319,7 +328,7 @@ main {
           }
     }]
 
-    [ tester( request ) ] {
+  /*  [ tester( request ) ] {
           scope( sql ) {
                 install( SQLException => println@Console( sql.SQLException.stackTrace )();
                                          throw( DatabaseError )
@@ -348,7 +357,7 @@ main {
                 t.appears_in_event = "2nd Meze Workshop";
                 t.language = "English";
 
-                mostGeneralRecipeQuery@DbService(t)(res);
+                mostGeneralRecipeQuery@MySelf(t)(res);
 
                 println@Console("Number of recipes satisfying the query :" + #res.recipe)();
                 for( i = 0, i < #res.recipe, i++ ) {
@@ -359,7 +368,7 @@ main {
                 }
 
           }
-    }
+    }*/
 
     [ mostGeneralRecipeQuery( request )( response ) {
           scope( sql ) {
@@ -397,8 +406,8 @@ main {
                 if (is_defined(request.difficulty_value)) {
                   req.vector << request.difficulty_value;
                   req.sep = "";
-                  buildIntList@DbService(req)(list);
-                  //buildIntList@DbService({.vector << request.difficulty_value, .sep = "" })(list);
+                  buildIntList@MySelf(req)(list);
+                  //buildIntList@MySelf({.vector << request.difficulty_value, .sep = "" })(list);
                   println@Console ("Adding diff. level constraint: '( difficulty IN " + list + ")'")();
                   q = q + constraint_adder + "( difficulty IN " + list + ")";
                   constraint_adder = " AND "
@@ -409,7 +418,7 @@ main {
                   req.field = "place_of_origin";
                   req.vector << request.country;
                   req.sep = "";
-                  buildSetVsSet@DbService(req)(constraint);
+                  buildSetVsSet@MySelf(req)(constraint);
                   println@Console ("Adding place of origin constraint: '" + constraint + "'")();
                   q = q + constraint_adder + constraint;
                   constraint_adder = " AND "
@@ -436,8 +445,8 @@ main {
                   req.field = "cooking_technique";
                   req.vector << request.cooking_technique;
                   req.sep = "";
-                  buildSetVsSet@DbService(req)(constraint);
-                  // buildSetVsSet@DbService({.field = "cooking_technique", .vector << request.cooking_technique, .sep = "" })(constraint);
+                  buildSetVsSet@MySelf(req)(constraint);
+                  // buildSetVsSet@MySelf({.field = "cooking_technique", .vector << request.cooking_technique, .sep = "" })(constraint);
                   println@Console ("Adding cooking constraint: '" + constraint + "'")();
                   q = q + constraint_adder + constraint;
                   constraint_adder = " AND "
@@ -447,7 +456,7 @@ main {
                 //println@Console("------------------------------------------------------")();
                 //println@Console("Query on Recipe : " + q)();
                 //query@Database( q )( recipe_ids_from_recipe_table_query );
-                //buildList@DbService({.vector = recipe_ids_from_recipe_table_query, .sep = "" })
+                //buildList@MySelf({.vector = recipe_ids_from_recipe_table_query, .sep = "" })
                 //                   (ids_from_recipe);
 
                 ////////////////////////////////////////////////////////////////////////
@@ -492,7 +501,7 @@ main {
                 //println@Console("------------------------------------------------------")();
                 //println@Console("Query on Recipe and RecipeIngredients : " + q)();
                 //query@Database( q )( recipe_ids_from_recipeIngredients_table_query );
-                //buildList@DbService({.vector = recipe_ids_from_recipeIngredients_table_query, .sep = "" })
+                //buildList@MySelf({.vector = recipe_ids_from_recipeIngredients_table_query, .sep = "" })
                 //                   (ids_from_recipeIngredients);
 
 
@@ -537,7 +546,7 @@ main {
                 //println@Console("------------------------------------------------------")();
                 //println@Console("Query on recipe, recipe Ingredients and recipeTools : " + q)();
                 //query@Database( q )( recipe_ids_from_recipeTools_table_query );
-                //buildList@DbService({.vector = recipe_ids_from_recipeTools_table_query, .sep = "" })
+                //buildList@MySelf({.vector = recipe_ids_from_recipeTools_table_query, .sep = "" })
                 //                   (ids_from_recipeTools);
 
                 ////////////////////////////////////////////////////////////////////////
@@ -561,7 +570,7 @@ main {
                 //println@Console("------------------------------------------------------")();
                 //println@Console("Query on Recipe, Ingredients, Events : " + q)();
                 //query@Database( q )( recipe_ids_from_recipeEvents_table_query );
-                //buildList@DbService({.vector = recipe_ids_from_recipeEvents_table_query, .sep = "" })
+                //buildList@MySelf({.vector = recipe_ids_from_recipeEvents_table_query, .sep = "" })
                 //                   (ids_from_recipeEvents);
 
                 ////////////////////////////////////////////////////////////////////////

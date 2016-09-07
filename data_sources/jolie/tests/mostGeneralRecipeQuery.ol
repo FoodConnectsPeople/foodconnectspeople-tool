@@ -1,16 +1,4 @@
-include "console.iol"
-include "string_utils.iol"
-
-include "public/interfaces/CSVImportSurface.iol"
-include "../jolie/public/interfaces/DbServiceInterface.iol"
-
-include "../jolie/constants.iol"
-
-outputPort DbService {
-  Location: DB_SERVICE_LOCATION
-  Protocol: sodep
-  Interfaces: DbServiceInterface
-}
+include "head.iol"
 
 main {
       t.recipe_name = "curry";
