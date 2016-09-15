@@ -4,8 +4,14 @@ define __queries {
     /** .insert_ingredient_property = "INSERT INTO FCP.ingredientsproperties ( ingredient_id, property_id ) VALUES ( :ingredient_id, :property_id )"; **/
     .insert_recipeingredient = "INSERT INTO FCP.recipeingredients ( recipe_id, ingredient, quantity, unit_of_measure, preparation_technique, alternate_ingredient ) VALUES ( :recipe_id, :ingredient, :quantity, :unit_of_measure, :preparation_technique, :alternate_ingredient )";
     .insert_event = "INSERT into FCP.events ( name, place, start_date, end_date, category ) VALUES ( :name, :place, :start_date, :end_date, :category )";
-    .insert_recipeevent = "INSERT into FCP.recipeevents ( recipe_id, event_id ) VALUES ( :recipe_id, :event_id )";
+    .insert_user = "INSERT into FCP.fcpusers ( fcp_user_id, username, full_name, is_author, is_cook ) VALUES ( :fcp_user_id, :username, :full_name, :is_author, :is_cook ) ";
+    .insert_authorrecipe = "INSERT into FCP.authorrecipe ( author_id, recipe_id ) VALUES ( :author_id, :recipe_id ) ";
+    .insert_cookingtechnique = "INSERT into FCP.cookingtechniques ( cooking_technique_id, name ) VALUES ( :cooking_technique_id, :name ) ";
+    .insert_country = "INSERT into FCP.countries ( country_id, name ) VALUES ( :country_id, :name )";
+    .insert_tool = "INSERT into FCP.tools ( tool_id, name ) VALUES ( :tool_id, :name )";
+    .insert_recipecategory = "INSERT into FCP.recipecategories ( category_id, name ) VALUES ( :category_id, :name )";
     .insert_recipetool = "INSERT into FCP.recipetools ( recipe_id, tool_name, tool_quantity ) VALUES ( :recipe_id, :tool_name, :tool_quantity )";
+    .insert_recipeevent = "INSERT into FCP.recipeevents ( recipe_id, event_id ) VALUES ( :recipe_id, :event_id )";
     .insert_recipe = "INSERT INTO FCP.Recipes ( name, link,
       preparation_time_minutes, persons, difficulty, place_of_origin, is_from_latitude,
       is_from_longitude, category, main_ingredient, cooking_technique) VALUES ( :name,

@@ -156,6 +156,88 @@ main {
         }
   }]
 
+  [ insertUser( request )( response ) {
+        scope( sql ) {
+              install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                       throw( DatabaseError )
+              );
+
+              q = queries.insert_user;
+              q.fcp_user_id = request.fcp_user_id;
+              q.username = request.username;
+              q.full_name = request.full_name;
+              q.is_author = request.is_author;
+              q.is_cook = request.is_cook;
+              update@Database( q )( )
+
+        }
+  }]
+
+  [ insertAuthorRecipe( request )( response ) {
+        scope( sql ) {
+              install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                       throw( DatabaseError )
+              );
+
+              q = queries.insert_authorrecipe;
+              q.author_id = request.author_id;
+              q.recipe_id = request.recipe_id;
+              update@Database( q )( )
+        }
+  }]
+
+  [ insertCookingTechnique( request )( response ) {
+        scope( sql ) {
+              install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                       throw( DatabaseError )
+              );
+
+              q = queries.insert_cookingtechnique;
+              q.cooking_technique_id = request.cooking_technique_id;
+              q.name = request.name;
+              update@Database( q )( )
+        }
+  }]
+
+  [ insertCountry( request )( response ) {
+        scope( sql ) {
+              install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                       throw( DatabaseError )
+              );
+
+              q = queries.insert_country;
+              q.country_id = request.country_id;
+              q.name = request.name;
+              update@Database( q )( )
+        }
+  }]
+
+  [ insertTool( request )( response ) {
+        scope( sql ) {
+              install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                       throw( DatabaseError )
+              );
+
+              q = queries.insert_tool;
+              q.tool_id = request.tool_id;
+              q.name = request.name;
+              update@Database( q )( )
+        }
+  }]
+
+  [ insertRecipeCategory( request )( response ) {
+        scope( sql ) {
+              install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                       throw( DatabaseError )
+              );
+
+              q = queries.insert_recipecategory;
+              q.category_id = request.category_id;
+              q.name = request.name;
+              update@Database( q )( )
+        }
+  }]
+
   [ insertRecipeIngredient( request )( response ) {
         scope( sql ) {
               install( SQLException => println@Console( sql.SQLException.stackTrace )();

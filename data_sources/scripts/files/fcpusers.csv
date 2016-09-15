@@ -1,0 +1,7 @@
+fcp_user_id,username,full_name,is_author,is_cook
+1,Asli,Asli Zengin,TRUE,TRUE
+2,Nicole,Nicole Parigot de Souza,TRUE,TRUE
+3,Lusine,Lusine Mayman,TRUE,TRUE
+4,Chrysa,Chrysa Litari,TRUE,TRUE
+5,GP,Giampiero Monittola,TRUE,TRUE
+99,UNKNOWN,John Smith,TRUE,TRUE

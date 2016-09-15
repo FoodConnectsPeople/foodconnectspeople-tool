@@ -1,0 +1,79 @@
+author_id,recipe_id,recipe_name,place_of_origin
+1,1,sauteed eggplants (shakshuka),turkey
+1,2,mint dip (haydari),turkey
+1,3,roasted eggplant salad,turkey
+1,4,zucchini salad,turkey
+1,5,kidney bean salad,turkey
+1,6,roasted pepper rolls with cheese,turkey
+1,7,spoon salad,turkey
+1,8,chickpeas dip (hummus),middle east
+1,9,circassian chicken,russia
+1,10,cretan paste,turkey
+99,11,eggplants dip (babaganoush),middle east
+99,12,spinach phyllo pastry (borek),middle east
+1,13,hot vegetarian burgers (yalanci cig kofte),turkey
+1,14,cheese stuffed mushrooms,turkey
+1,15,root celery salad,turkey
+1,16,shrimp salad,turkey
+4,17,zucchini burger (kolokithokeftedes),greece
+4,18,hot feta dip (tirokafteri),greece
+1,19,rhum cake,turkey
+99,20,falafel,middle east
+99,21,indian style okra,india
+99,22,chicken curry,pakistan
+99,23,pakistani style rice (channa pulao),pakistan
+99,24,lamb skewers with vegetables,mediterranean
+1,25,carrot dip (tarator),turkey
+1,26,baked eggplants with cheese,turkey
+1,27,tomato baskets with cheese,turkey
+99,28,curry sauced shrimps,thailand
+1,29,kebap with pistachios and fresh basil,turkey
+4,30,greek style mussels in red sauce (mydia saganaki),greece
+4,31,cretan style stuffed calamari,greece
+99,32,crescione romagnolo with samosa filling,fusion
+3,33,armenian eggplant,armenia
+3,34,armenian phyllo pastry,armenia
+99,35,walnut mushroom taco,mexico
+99,36,carrot ribbons,fusion
+99,37,spinach cheese,fusion
+99,38,pumpkin noodles,fusion
+99,39,thai chicken in green curry,thailand
+99,40,indonesian rice,indonesia
+99,41,vegetable cous cous,morocco
+99,42,guacamole,mexico
+99,43,morcilla de verano,spain
+1,44,swans of lake Sarmasi (lahana sarmasi),turkey
+1,45,moist orange cake with mastic cream,turkey
+99,46,mediterranean olive tapenade,mediterranean
+1,47,carrot dip with bell pepper (biberli tarator),turkey
+1,48,eggplant and green lentils stew (mualle),turkey
+1,49,potatoes dough rolls,turkey
+99,50,salmorejo,spain
+99,51,ajoblanco,spain
+99,52,cheese tart with mastic,fusion
+99,53,salmon with crust of pine nuts and mastic sauce,fusion
+4,54,grilled calamari with feta,greece
+4,55,sauteed calamari with ouzo on potato pouree bed,greece
+3,56,armenian stuffed pumpkin (ghapama),armenia
+5,57,Saint Joseph's donuts (zeppole),italy
+99,58,Dahi baray,pakistan
+99,59,Chapli kebab,pakistan
+2,60,Manjar de coco,brazil
+99,61,Panquecas de doce de leite,argentina
+99,62,Birani,bangladesh
+99,63,Konnto,guinea-bissau
+99,64,Simaumo,gambia
+99,65,Tigadeghena,mali
+99,66,Deghe,mali
+99,67,Ghorme gosht,afghanistan
+99,68,Jamweli,gambia
+99,69,Zucchini with bechamel sauce,italy
+99,70,Egusi soup,nigeria
+99,71,Kebab,afghanistan
+99,72,Wake,togo
+99,73,Crescione pie with herbs,italy
+99,74,Passatelli asciutti with mushroom sauce,italy
+99,75,Light parmigiana,italy
+99,76,Baked mix peppers,italy
+99,77,Romagna peaches with cream,italy
+99,78,Grandparents' Romagna donut,italy

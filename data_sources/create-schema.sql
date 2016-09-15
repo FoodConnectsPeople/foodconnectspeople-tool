@@ -1,3 +1,4 @@
+
 /*
  * Copyright (c) 2016 FCP.
  *
@@ -31,7 +32,7 @@ CREATE TABLE FCP.Recipes (
   , cooking_technique VARCHAR(1024)
 );
 
-CREATE TABLE FCP.FcpUser (
+CREATE TABLE FCP.FcpUsers (
   fcp_user_id SERIAL PRIMARY KEY
   , username varchar(255) NOT NULL
   , full_name VARCHAR(1024)
@@ -44,7 +45,7 @@ CREATE TABLE FCP.AuthorRecipe (
   author_id SERIAL
   , recipe_id SERIAL
   , PRIMARY KEY (author_id, recipe_id)
-  , FOREIGN KEY (author_id) REFERENCES FCP.FcpUser(fcp_user_id)
+  , FOREIGN KEY (author_id) REFERENCES FCP.FcpUsers(fcp_user_id)
   , FOREIGN KEY (recipe_id) REFERENCES FCP.Recipes(recipe_id)
 );
 
@@ -54,12 +55,6 @@ CREATE TABLE FCP.Ingredients (
   , properties VARCHAR
   , allergene VARCHAR
   , CONSTRAINT unique_ingredient_name UNIQUE (name)
-);
-
-CREATE TABLE FCP.CookingTechniques (
-  cooking_technique_id SERIAL
-  , name VARCHAR(1024)
-  , CONSTRAINT unique_cooking_technique_name UNIQUE (name)
 );
 
 CREATE TABLE FCP.RecipeIngredients (
@@ -75,18 +70,37 @@ CREATE TABLE FCP.RecipeIngredients (
 );
 
 
+CREATE TABLE FCP.CookingTechniques (
+  cooking_technique_id SERIAL
+  , name VARCHAR(1024)
+  , CONSTRAINT unique_cooking_technique_name UNIQUE (name)
+);
+
 CREATE TABLE FCP.Countries (
   country_id SERIAL
   , name VARCHAR(128)
   , PRIMARY KEY (country_id)
 );
 
-CREATE TABLE FCP.RecipeCountries (
-  recipe_id INTEGER
-  , country_id INTEGER
-  , PRIMARY KEY (recipe_id, country_id)
-  , FOREIGN KEY (recipe_id) REFERENCES FCP.Recipes(recipe_id)
+CREATE TABLE FCP.Tools (
+  tool_id SERIAL
+  , name VARCHAR(128)
+  , PRIMARY KEY (tool_id)
 );
+
+CREATE TABLE FCP.RecipeCategories (
+  category_id SERIAL
+  , name VARCHAR(128)
+  , PRIMARY KEY (category_id)
+);
+
+--CREATE TABLE FCP.RecipeCountries (
+--  recipe_id INTEGER
+--  , country_id INTEGER
+--  , PRIMARY KEY (recipe_id, country_id)
+--  , FOREIGN KEY (recipe_id) REFERENCES FCP.Recipes(recipe_id)
+--);
+
 
 CREATE TABLE FCP.Events (
   event_id SERIAL PRIMARY KEY

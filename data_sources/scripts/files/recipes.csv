@@ -73,7 +73,7 @@ id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from
 72,Wake,togo/wake,45,12,4,togo,,,main,"sardine, red mullet",fried
 73,Crescione pie with herbs,italy/crescione-pie-with-herbs,60,4,4,italy,,,main,"flour, spinach, chard",baked
 74,Passatelli asciutti with mushroom sauce,italy/passatelli-asciutti-with-mushroom-sauce,45,4,3,italy,,,main,"flour, mushroom",boiled
-75,Err:509,italy/eggplant-light-parmigiana,75,4,3,italy,,,main,eggplant,baked
+75,Light parmigiana,italy/eggplant-light-parmigiana,75,4,3,italy,,,main,eggplant,baked
 76,Baked mix peppers,italy/baked-mix-peppers,45,4,2,italy,,,entrée,bell pepper,baked
 77,Romagna peaches with cream,italy/romagna-peaches-with-cream,45,12,2,italy,,,dessert,peach,almost raw
 78,Grandparents' Romagna donut,italy/grandparents-romagna-donut,45,8,3,italy,,,dessert,"flour, butter, sugar",baked

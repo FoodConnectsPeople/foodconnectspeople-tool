@@ -128,10 +128,38 @@ type InsertRecipeToolRequest: void {
   .tool_quantity: int
 }
 
+type InsertUserRequest: void {
+  .fcp_user_id: int
+  .username: string
+  .full_name : string
+  .is_author : bool
+  .is_cook: bool
+}
 
-type InsertIngredientResponse: void
-type InsertRecipeResponse: void
+type InsertAuthorRecipeRequest: void {
+  .author_id: int
+  .recipe_id: int
+}
 
+type InsertCookingTechniqueRequest: void {
+  .cooking_technique_id: int
+  .name: string
+}
+
+type InsertCountryRequest: void {
+  .country_id: int
+  .name: string
+}
+
+type InsertToolRequest: void {
+  .tool_id: int
+  .name: string
+}
+
+type InsertRecipeCategoryRequest: void {
+  .category_id: int
+  .name: string
+}
 
 type GetRecipeResponse: void {
   .recipe*: void {
@@ -166,7 +194,13 @@ interface DbServiceInterface {
     insertRecipeIngredient( InsertRecipeIngredientRequest )( void ) throws DatabaseError,
     insertRecipeEvent( InsertRecipeEventRequest )( void ) throws DatabaseError,
     insertRecipeTool( InsertRecipeToolRequest )( void ) throws DatabaseError,
-    insertIngredient( InsertIngredientRequest )( InsertIngredientResponse ) throws DatabaseError,
-    insertRecipe( InsertRecipeRequest )( InsertRecipeResponse ) throws DatabaseError,
+    insertIngredient( InsertIngredientRequest )( void ) throws DatabaseError,
+    insertRecipe( InsertRecipeRequest )( void ) throws DatabaseError,
+    insertUser( InsertUserRequest )( void ) throws DatabaseError,
+    insertAuthorRecipe( InsertAuthorRecipeRequest )( void ) throws DatabaseError,
+    insertCookingTechnique( InsertCookingTechniqueRequest )( void ) throws DatabaseError,
+    insertCountry( InsertCountryRequest )( void ) throws DatabaseError,
+    insertTool( InsertToolRequest )( void ) throws DatabaseError,
+    insertRecipeCategory( InsertRecipeCategoryRequest )( void ) throws DatabaseError,
     getRecipes( void )( GetRecipeResponse ) throws DatabaseError
 }

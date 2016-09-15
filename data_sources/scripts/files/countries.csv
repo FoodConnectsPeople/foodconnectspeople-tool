@@ -1,0 +1,228 @@
+country_id,name,region
+1,Afghanistan ,ASIA (EX. NEAR EAST)         
+2,Albania ,EASTERN EUROPE                     
+3,Algeria ,NORTHERN AFRICA                    
+4,American Samoa ,OCEANIA                            
+5,Andorra ,WESTERN EUROPE                     
+6,Angola ,SUB-SAHARAN AFRICA                 
+7,Anguilla ,LATIN AMER. & CARIB    
+8,Antigua & Barbuda ,LATIN AMER. & CARIB    
+9,Argentina ,LATIN AMER. & CARIB    
+10,Armenia ,C.W. OF IND. STATES 
+11,Aruba ,LATIN AMER. & CARIB    
+12,Australia ,OCEANIA                            
+13,Austria ,WESTERN EUROPE                     
+14,Azerbaijan ,C.W. OF IND. STATES 
+15,"Bahamas, The ",LATIN AMER. & CARIB    
+16,Bahrain ,NEAR EAST                          
+17,Bangladesh ,ASIA (EX. NEAR EAST)         
+18,Barbados ,LATIN AMER. & CARIB    
+19,Belarus ,C.W. OF IND. STATES 
+20,Belgium ,WESTERN EUROPE                     
+21,Belize ,LATIN AMER. & CARIB    
+22,Benin ,SUB-SAHARAN AFRICA                 
+23,Bermuda ,NORTHERN AMERICA                   
+24,Bhutan ,ASIA (EX. NEAR EAST)         
+25,Bolivia ,LATIN AMER. & CARIB    
+26,Bosnia & Herzegovina ,EASTERN EUROPE                     
+27,Botswana ,SUB-SAHARAN AFRICA                 
+28,Brazil ,LATIN AMER. & CARIB    
+29,British Virgin Is. ,LATIN AMER. & CARIB    
+30,Brunei ,ASIA (EX. NEAR EAST)         
+31,Bulgaria ,EASTERN EUROPE                     
+32,Burkina Faso ,SUB-SAHARAN AFRICA                 
+33,Burma ,ASIA (EX. NEAR EAST)         
+34,Burundi ,SUB-SAHARAN AFRICA                 
+35,Cambodia ,ASIA (EX. NEAR EAST)         
+36,Cameroon ,SUB-SAHARAN AFRICA                 
+37,Canada ,NORTHERN AMERICA                   
+38,Cape Verde ,SUB-SAHARAN AFRICA                 
+39,Cayman Islands ,LATIN AMER. & CARIB    
+40,Central African Rep. ,SUB-SAHARAN AFRICA                 
+41,Chad ,SUB-SAHARAN AFRICA                 
+42,Chile ,LATIN AMER. & CARIB    
+43,China ,ASIA (EX. NEAR EAST)         
+44,Colombia ,LATIN AMER. & CARIB    
+45,Comoros ,SUB-SAHARAN AFRICA                 
+46,"Congo, Dem. Rep. ",SUB-SAHARAN AFRICA                 
+47,"Congo, Repub. of the ",SUB-SAHARAN AFRICA                 
+48,Cook Islands ,OCEANIA                            
+49,Costa Rica ,LATIN AMER. & CARIB    
+50,Cote d'Ivoire ,SUB-SAHARAN AFRICA                 
+51,Croatia ,EASTERN EUROPE                     
+52,Cuba ,LATIN AMER. & CARIB    
+53,Cyprus ,NEAR EAST                          
+54,Czech Republic ,EASTERN EUROPE                     
+55,Denmark ,WESTERN EUROPE                     
+56,Djibouti ,SUB-SAHARAN AFRICA                 
+57,Dominica ,LATIN AMER. & CARIB    
+58,Dominican Republic ,LATIN AMER. & CARIB    
+59,East Timor ,ASIA (EX. NEAR EAST)         
+60,Ecuador ,LATIN AMER. & CARIB    
+61,Egypt ,NORTHERN AFRICA                    
+62,El Salvador ,LATIN AMER. & CARIB    
+63,Equatorial Guinea ,SUB-SAHARAN AFRICA                 
+64,Eritrea ,SUB-SAHARAN AFRICA                 
+65,Estonia ,BALTICS                            
+66,Ethiopia ,SUB-SAHARAN AFRICA                 
+67,Faroe Islands ,WESTERN EUROPE                     
+68,Fiji ,OCEANIA                            
+69,Finland ,WESTERN EUROPE                     
+70,France ,WESTERN EUROPE                     
+71,French Guiana ,LATIN AMER. & CARIB    
+72,French Polynesia ,OCEANIA                            
+73,Gabon ,SUB-SAHARAN AFRICA                 
+74,"Gambia, The ",SUB-SAHARAN AFRICA                 
+75,Gaza Strip ,NEAR EAST                          
+76,Georgia ,C.W. OF IND. STATES 
+77,Germany ,WESTERN EUROPE                     
+78,Ghana ,SUB-SAHARAN AFRICA                 
+79,Gibraltar ,WESTERN EUROPE                     
+80,Greece ,WESTERN EUROPE                     
+81,Greenland ,NORTHERN AMERICA                   
+82,Grenada ,LATIN AMER. & CARIB    
+83,Guadeloupe ,LATIN AMER. & CARIB    
+84,Guam ,OCEANIA                            
+85,Guatemala ,LATIN AMER. & CARIB    
+86,Guernsey ,WESTERN EUROPE                     
+87,Guinea ,SUB-SAHARAN AFRICA                 
+88,Guinea-Bissau ,SUB-SAHARAN AFRICA                 
+89,Guyana ,LATIN AMER. & CARIB    
+90,Haiti ,LATIN AMER. & CARIB    
+91,Honduras ,LATIN AMER. & CARIB    
+92,Hong Kong ,ASIA (EX. NEAR EAST)         
+93,Hungary ,EASTERN EUROPE                     
+94,Iceland ,WESTERN EUROPE                     
+95,India ,ASIA (EX. NEAR EAST)         
+96,Indonesia ,ASIA (EX. NEAR EAST)         
+97,Iran ,ASIA (EX. NEAR EAST)         
+98,Iraq ,NEAR EAST                          
+99,Ireland ,WESTERN EUROPE                     
+100,Isle of Man ,WESTERN EUROPE                     
+101,Israel ,NEAR EAST                          
+102,Italy ,WESTERN EUROPE                     
+103,Jamaica ,LATIN AMER. & CARIB    
+104,Japan ,ASIA (EX. NEAR EAST)         
+105,Jersey ,WESTERN EUROPE                     
+106,Jordan ,NEAR EAST                          
+107,Kazakhstan ,C.W. OF IND. STATES 
+108,Kenya ,SUB-SAHARAN AFRICA                 
+109,Kiribati ,OCEANIA                            
+110,"Korea, North ",ASIA (EX. NEAR EAST)         
+111,"Korea, South ",ASIA (EX. NEAR EAST)         
+112,Kuwait ,NEAR EAST                          
+113,Kyrgyzstan ,C.W. OF IND. STATES 
+114,Laos ,ASIA (EX. NEAR EAST)         
+115,Latvia ,BALTICS                            
+116,Lebanon ,NEAR EAST                          
+117,Lesotho ,SUB-SAHARAN AFRICA                 
+118,Liberia ,SUB-SAHARAN AFRICA                 
+119,Libya ,NORTHERN AFRICA                    
+120,Liechtenstein ,WESTERN EUROPE                     
+121,Lithuania ,BALTICS                            
+122,Luxembourg ,WESTERN EUROPE                     
+123,Macau ,ASIA (EX. NEAR EAST)         
+124,Macedonia ,EASTERN EUROPE                     
+125,Madagascar ,SUB-SAHARAN AFRICA                 
+126,Malawi ,SUB-SAHARAN AFRICA                 
+127,Malaysia ,ASIA (EX. NEAR EAST)         
+128,Maldives ,ASIA (EX. NEAR EAST)         
+129,Mali ,SUB-SAHARAN AFRICA                 
+130,Malta ,WESTERN EUROPE                     
+131,Marshall Islands ,OCEANIA                            
+132,Martinique ,LATIN AMER. & CARIB    
+133,Mauritania ,SUB-SAHARAN AFRICA                 
+134,Mauritius ,SUB-SAHARAN AFRICA                 
+135,Mayotte ,SUB-SAHARAN AFRICA                 
+136,Mexico ,LATIN AMER. & CARIB    
+137,"Micronesia, Fed. St. ",OCEANIA                            
+138,Moldova ,C.W. OF IND. STATES 
+139,Monaco ,WESTERN EUROPE                     
+140,Mongolia ,ASIA (EX. NEAR EAST)         
+141,Montserrat ,LATIN AMER. & CARIB    
+142,Morocco ,NORTHERN AFRICA                    
+143,Mozambique ,SUB-SAHARAN AFRICA                 
+144,Namibia ,SUB-SAHARAN AFRICA                 
+145,Nauru ,OCEANIA                            
+146,Nepal ,ASIA (EX. NEAR EAST)         
+147,Netherlands ,WESTERN EUROPE                     
+148,Netherlands Antilles ,LATIN AMER. & CARIB    
+149,New Caledonia ,OCEANIA                            
+150,New Zealand ,OCEANIA                            
+151,Nicaragua ,LATIN AMER. & CARIB    
+152,Niger ,SUB-SAHARAN AFRICA                 
+153,Nigeria ,SUB-SAHARAN AFRICA                 
+154,N. Mariana Islands ,OCEANIA                            
+155,Norway ,WESTERN EUROPE                     
+156,Oman ,NEAR EAST                          
+157,Pakistan ,ASIA (EX. NEAR EAST)         
+158,Palau ,OCEANIA                            
+159,Panama ,LATIN AMER. & CARIB    
+160,Papua New Guinea ,OCEANIA                            
+161,Paraguay ,LATIN AMER. & CARIB    
+162,Peru ,LATIN AMER. & CARIB    
+163,Philippines ,ASIA (EX. NEAR EAST)         
+164,Poland ,EASTERN EUROPE                     
+165,Portugal ,WESTERN EUROPE                     
+166,Puerto Rico ,LATIN AMER. & CARIB    
+167,Qatar ,NEAR EAST                          
+168,Reunion ,SUB-SAHARAN AFRICA                 
+169,Romania ,EASTERN EUROPE                     
+170,Russia ,C.W. OF IND. STATES 
+171,Rwanda ,SUB-SAHARAN AFRICA                 
+172,Saint Helena ,SUB-SAHARAN AFRICA                 
+173,Saint Kitts & Nevis ,LATIN AMER. & CARIB    
+174,Saint Lucia ,LATIN AMER. & CARIB    
+175,St Pierre & Miquelon ,NORTHERN AMERICA                   
+176,Saint Vincent and the Grenadines ,LATIN AMER. & CARIB    
+177,Samoa ,OCEANIA                            
+178,San Marino ,WESTERN EUROPE                     
+179,Sao Tome & Principe ,SUB-SAHARAN AFRICA                 
+180,Saudi Arabia ,NEAR EAST                          
+181,Senegal ,SUB-SAHARAN AFRICA                 
+182,Serbia ,EASTERN EUROPE                     
+183,Seychelles ,SUB-SAHARAN AFRICA                 
+184,Sierra Leone ,SUB-SAHARAN AFRICA                 
+185,Singapore ,ASIA (EX. NEAR EAST)         
+186,Slovakia ,EASTERN EUROPE                     
+187,Slovenia ,EASTERN EUROPE                     
+188,Solomon Islands ,OCEANIA                            
+189,Somalia ,SUB-SAHARAN AFRICA                 
+190,South Africa ,SUB-SAHARAN AFRICA                 
+191,Spain ,WESTERN EUROPE                     
+192,Sri Lanka ,ASIA (EX. NEAR EAST)         
+193,Sudan ,SUB-SAHARAN AFRICA                 
+194,Suriname ,LATIN AMER. & CARIB    
+195,Swaziland ,SUB-SAHARAN AFRICA                 
+196,Sweden ,WESTERN EUROPE                     
+197,Switzerland ,WESTERN EUROPE                     
+198,Syria ,NEAR EAST                          
+199,Taiwan ,ASIA (EX. NEAR EAST)         
+200,Tajikistan ,C.W. OF IND. STATES 
+201,Tanzania ,SUB-SAHARAN AFRICA                 
+202,Thailand ,ASIA (EX. NEAR EAST)         
+203,Togo ,SUB-SAHARAN AFRICA                 
+204,Tonga ,OCEANIA                            
+205,Trinidad & Tobago ,LATIN AMER. & CARIB    
+206,Tunisia ,NORTHERN AFRICA                    
+207,Turkey ,NEAR EAST                          
+208,Turkmenistan ,C.W. OF IND. STATES 
+209,Turks & Caicos Is ,LATIN AMER. & CARIB    
+210,Tuvalu ,OCEANIA                            
+211,Uganda ,SUB-SAHARAN AFRICA                 
+212,Ukraine ,C.W. OF IND. STATES 
+213,United Arab Emirates ,NEAR EAST                          
+214,United Kingdom ,WESTERN EUROPE                     
+215,United States ,NORTHERN AMERICA                   
+216,Uruguay ,LATIN AMER. & CARIB    
+217,Uzbekistan ,C.W. OF IND. STATES 
+218,Vanuatu ,OCEANIA                            
+219,Venezuela ,LATIN AMER. & CARIB    
+220,Vietnam ,ASIA (EX. NEAR EAST)         
+221,Virgin Islands ,LATIN AMER. & CARIB    
+222,Wallis and Futuna ,OCEANIA                            
+223,West Bank ,NEAR EAST                          
+224,Western Sahara ,NORTHERN AFRICA                    
+225,Yemen ,NEAR EAST                          
+226,Zambia ,SUB-SAHARAN AFRICA                 
+227,Zimbabwe ,SUB-SAHARAN AFRICA                 

@@ -5,3 +5,9 @@ jolie insert_events.ol
 jolie insert_recipe2ingredients.ol
 jolie insert_recipe2events.ol
 jolie insert_recipe2tools.ol
+jolie insert_users.ol
+jolie insert_authors2recipes.ol
+jolie insert_cookingtechniques.ol
+jolie insert_countries.ol
+jolie insert_tools.ol
+jolie insert_recipe2categories.ol
