@@ -24,7 +24,8 @@ main {
       with( req ) {
           .name = ingredients.line[ i ].name;
           .properties = ingredients.line[ i ].properties;
-          .allergene = ingredients.line[ i ].allergene
+          .allergene = ingredients.line[ i ].allergene;
+          .ingredient_class = ingredients.line[i].ingredient_class
       };
       valueToPrettyString@StringUtils( req )( s );
       println@Console( s )();

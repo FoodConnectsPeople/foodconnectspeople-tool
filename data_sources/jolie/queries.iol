@@ -1,6 +1,7 @@
 define __queries {
   with( queries ) {
-    .insert_ingredient = "INSERT INTO FCP.ingredients ( name, properties, allergene ) VALUES ( :name, :properties, :allergene )";
+    .insert_ingredient = "INSERT INTO FCP.ingredients ( name, properties, allergene, ingredient_class ) VALUES ( :name, :properties, :allergene, :ingredient_class )";
+    .insert_unit_conversion = "INSERT INTO FCP.unitconversions ( ingredient, unit_of_measure, grocery_list_unit, conversion_rate, is_standard_conversion ) VALUES ( :ingredient, :unit_of_measure, :grocery_list_unit, :conversion_rate, :is_standard_conversion)";
     /** .insert_ingredient_property = "INSERT INTO FCP.ingredientsproperties ( ingredient_id, property_id ) VALUES ( :ingredient_id, :property_id )"; **/
     .insert_recipeingredient = "INSERT INTO FCP.recipeingredients ( recipe_id, ingredient, quantity, unit_of_measure, preparation_technique, alternate_ingredient ) VALUES ( :recipe_id, :ingredient, :quantity, :unit_of_measure, :preparation_technique, :alternate_ingredient )";
     .insert_event = "INSERT into FCP.events ( name, place, start_date, end_date, category ) VALUES ( :name, :place, :start_date, :end_date, :category )";

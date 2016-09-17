@@ -54,6 +54,7 @@ CREATE TABLE FCP.Ingredients (
   , name VARCHAR(1024)
   , properties VARCHAR
   , allergene VARCHAR
+  , ingredient_class VARCHAR
   , CONSTRAINT unique_ingredient_name UNIQUE (name)
 );
 
@@ -92,6 +93,15 @@ CREATE TABLE FCP.RecipeCategories (
   category_id SERIAL
   , name VARCHAR(128)
   , PRIMARY KEY (category_id)
+);
+
+CREATE TABLE FCP.UnitConversions (
+  ingredient VARCHAR
+  , unit_of_measure VARCHAR(30)
+  , grocery_list_unit VARCHAR(30)
+  , conversion_rate VARCHAR(30)
+  , is_standard_conversion BOOLEAN
+  , PRIMARY KEY (ingredient,unit_of_measure)
 );
 
 --CREATE TABLE FCP.RecipeCountries (

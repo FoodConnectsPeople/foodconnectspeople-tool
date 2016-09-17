@@ -134,6 +134,7 @@ main {
               q.name = request.name;
               q.properties = request.properties;
               q.allergene = request.allergene;
+              q.ingredient_class = request.ingredient_class;
               update@Database( q )( )
 
         }
@@ -151,6 +152,23 @@ main {
               q.start_date = request.start_date;
               q.end_date = request.end_date;
               q.category = request.category;
+              update@Database( q )( )
+
+        }
+  }]
+
+  [ insertUnitConversion( request )( response ) {
+        scope( sql ) {
+              install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                       throw( DatabaseError )
+              );
+
+              q = queries.insert_unit_conversion;
+              q.ingredient = request.ingredient;
+              q.unit_of_measure = request.unit_of_measure;
+              q.grocery_list_unit = request.grocery_list_unit;
+              q.conversion_rate = request.conversion_rate;
+              q.is_standard_conversion = request.is_standard_conversion;
               update@Database( q )( )
 
         }

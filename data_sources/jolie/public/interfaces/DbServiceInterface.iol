@@ -81,6 +81,7 @@ type InsertIngredientRequest: void {
   .name: string
   .properties*: string
   .allergene*: string
+  .ingredient_class* : string
 }
 
 type InsertEventRequest: void {
@@ -134,6 +135,14 @@ type InsertUserRequest: void {
   .full_name : string
   .is_author : bool
   .is_cook: bool
+}
+
+type InsertUnitConversionRequest: void {
+  .ingredient: string
+  .unit_of_measure: string
+  .grocery_list_unit: string
+  .conversion_rate: double
+  .is_standard_conversion: bool
 }
 
 type InsertAuthorRecipeRequest: void {
@@ -190,6 +199,7 @@ interface DbServiceInterface {
     getProperties( void )( GetPropertiesResponse ) throws DatabaseError,
     insertIngredient( InsertIngredientRequest )( void ) throws DatabaseError,
     insertEvent( InsertEventRequest )( void ) throws DatabaseError,
+    insertUnitConversion( InsertUnitConversionRequest )( void ) throws DatabaseError,
     insertRecipe( InsertRecipeRequest )( void ) throws DatabaseError,
     insertRecipeIngredient( InsertRecipeIngredientRequest )( void ) throws DatabaseError,
     insertRecipeEvent( InsertRecipeEventRequest )( void ) throws DatabaseError,
