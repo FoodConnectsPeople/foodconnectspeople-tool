@@ -96,7 +96,7 @@ type InsertEventRequest: void {
 type InsertRecipeIngredientRequest: void {
   .recipe_id: int
   .ingredient: string
-  .quantity : int
+  .quantity : string
   .unit_of_measure : string
   .preparation_technique* : string
   .alternate_ingredient : string
@@ -170,6 +170,14 @@ type InsertRecipeCategoryRequest: void {
   .name: string
 }
 
+type BuildGroceryListRequest: void {
+  .convert_all : bool
+  .rec_persons*: void {
+    .recipe_id : int
+    .persons   : int
+  }
+}
+
 type GetRecipeResponse: void {
   .recipe*: void {
     .name: string
@@ -187,6 +195,7 @@ interface DbServiceInterface {
 
   RequestResponse:
     mostGeneralRecipeQuery( MostGeneralQueryRequest )( MostGeneralQueryResponse ) throws DatabaseError,
+    buildGroceryList( BuildGroceryListRequest )( void ) throws DatabaseError,
     buildList( BuildListRequest )( string ) throws DatabaseError,
     buildCommaSeparatedString( buildCommaRequest )( string ) throws DatabaseError,
     buildIntList( BuildIntListRequest )( string ) throws DatabaseError,

@@ -426,47 +426,208 @@ main {
           }
     }]
 
-  /*  [ tester( request ) ] {
-          scope( sql ) {
-                install( SQLException => println@Console( sql.SQLException.stackTrace )();
-                                         throw( DatabaseError )
-                );
 
-                t.recipe_name = "curry";
-                t.max_preparation_time = 45;
-                t.difficulty_value[0] = 2;
-                t.difficulty_value[1] = 3;
-                t.country[0] = "thailand";
-                t.country[1] = "greece";
-                t.recipe_category = "main";
-                t.main_ingredient = "shrimp";
-                t.cooking_technique[0] = "pan-fried";
-                t.cooking_technique[1] = "roasted";
-                t.eater_category[0] = "onnivore";
-                t.not_allergene[0] = "gluten";
-                t.not_allergene[1] = "lactose";
-                t.yes_ingredient[0] = "garlic";
-                t.yes_ingredient[1] = "red hot chilli pepper";
-                t.not_ingredient[0] = "cocumber";
-                t.not_ingredient[1] = "cream";
-                t.yes_tool[0] = "frying pan";
-                t.not_tool[0] = "spoon";
-                t.not_tool[1] = "scissors";
-                t.appears_in_event = "2nd Meze Workshop";
-                t.language = "English";
 
-                mostGeneralRecipeQuery@MySelf(t)(res);
+    [ buildGroceryList( request )( response ) {
+      scope( sql ) {
+        install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                 throw( DatabaseError )
+        );
+        undef( grocery_list );
+        undef( alternate_notes);
 
-                println@Console("Number of recipes satisfying the query :" + #res.recipe)();
-                for( i = 0, i < #res.recipe, i++ ) {
-                  println@Console("Recipe #" + i + " : ")();
-                  println@Console("  ID : " + res.recipe[i].recipe_id)();
-                  println@Console("  Name : " + res.recipe[i].recipe_name)();
-                  println@Console("  Link : " + res.recipe[i].recipe_link)()
+        // Main loop: takes every recipe and persons for whom to cook it, and adds its ingredients and qties to the grocery list
+
+        for( rr = 0, rr < #request.rec_persons, rr++ ) {
+            recipe_id  = request.rec_persons[rr].recipe_id;
+            persons = request.rec_persons[rr].persons;
+
+            // println@Console("Handling recipe #" + recipe_id)();
+            // Detects for how many persons is the recipe described
+            q = "SELECT persons FROM fcp.recipes WHERE recipe_id = " + recipe_id;
+            query@Database( q )( result1 );
+            if (#result1.row == 0) {
+              println@Console("Error: recipe #" + recipe_id + " not found!")()
+            };
+            if (#result1.row > 1) {
+              println@Console("Error: recipe #" + recipe_id + " found multiple times!")()
+            };
+            number_of_persons = result1.row[0].persons;
+
+            // Detects the ingredients for the recipe
+
+            q = "SELECT ingredient, quantity, unit_of_measure, alternate_ingredient FROM fcp.recipeingredientsproperties WHERE recipe_id = " + recipe_id;
+            query@Database( q )( result );
+            if (#result.row == 0) {
+              println@Console("Error: no ingredient found for recipe #" + recipe_id + " !")()
+            };
+
+            // Loop that handles every ingredient of the current recipe, adding it to the list
+
+            for (j = 0, j < #result.row, j++ ) {
+                ingredient = result.row[j].ingredient;
+                quantity   = result.row[j].quantity;
+                unit       = result.row[j].unit_of_measure;
+                alternate_ingredient  = result.row[j].alternate_ingredient;
+
+                // println@Console("Ingredient " + (j+1) + " of " + #result.row + " for recipe " + recipe_id + " : " + ingredient + " , " + quantity + " " + unit )();
+
+                if ( (quantity == "") && (unit != "") ) {
+                  println@Console("Error: unspecified quantity but specified unit for ingredient " + ingredient + " in recipe #" + recipe_id + " !")()
+                };
+                if ( (quantity != "") && (unit == "") ) {
+                  println@Console("Error: specified quantity but unspecified unit for ingredient " + ingredient + " in recipe #" + recipe_id + " !")()
+                };
+
+                // Here we convert (if needed) the quantity and unit of measure
+                // - if quantity and unit are unspecified, they remain so
+                // - if conversion is standard, or everything has to be converted, apply the rate; otherwise, leave as is
+
+                undef(target_unit);
+                undef(target_quantity);
+
+                if ( quantity == "" ) {
+                  target_quantity = "";
+                  target_unit = ""
                 }
+                else {
 
-          }
-    }*/
+                  q = "SELECT grocery_list_unit, conversion_rate, is_standard_conversion FROM fcp.unitconversions WHERE ingredient = '" + ingredient + "' AND unit_of_measure = '" + unit + "'";
+
+                  // println@Console(" NOW QUERYING CONVERSION:" + q)();
+
+                  query@Database( q )( result2 );
+                  if (#result2.row == 0) {
+                    println@Console("Error: no conversion found for ingredient " + ingredient + " on unit " + unit + " (recipe #" + recipe_id + ") !")()
+                  };
+                  if (#result2.row > 1) {
+                    println@Console("Error: multiple conversions found for ingredient " + ingredient + " on unit " + unit + " (recipe #" + recipe_id + ") !")()
+                  };
+
+                  grocery_unit = string(result2.row[0].grocery_list_unit);
+                  rate         = double(result2.row[0].conversion_rate);
+                  is_standard  = bool(result2.row[0].is_standard_conversion);
+
+                  if (is_standard || request.convert_all) {
+                    // println@Console("Converting....")();
+                    target_unit = grocery_unit;
+                    target_quantity = double(quantity) * rate * persons / number_of_persons
+                  } else {
+                    // println@Console("Keeping....")();
+                    target_unit = unit;
+                    target_quantity = double(quantity) * persons / number_of_persons
+                  }
+                };
+
+
+                // End of conversion: here target_unit and target_quantity are set
+                // println@Console(" Targets for " + ingredient + " : " + target_quantity + " " + target_unit)();
+
+                // Identifies the class of the ingredient
+                q = "SELECT ingredient_class FROM fcp.ingredients WHERE name = '" + ingredient + "'";
+                query@Database( q )( result3 );
+                if (#result3.row != 1) {
+                  println@Console("Error: non-univoque or unspecified ingredient " + ingredient + " !")()
+                };
+                ingredient_class = result3.row[0].ingredient_class;
+
+                // Finds whether the ingredient is already in the list:
+                // - if possible, with the same target unit
+                // - otherwise, with no unit of measure at all
+
+                ingposition = -1;
+                sameunit = false;
+                someentry = false;
+                for (k = 0, k < #grocery_list, k++) {
+                  someentry = someentry || (grocery_list[k].ingredient == ingredient);
+                  if ( (grocery_list[k].ingredient == ingredient) && (grocery_list[k].unit_of_measure == target_unit) ) {
+                    sameunit = true;
+                    ingposition = k
+                  }
+                };
+
+                if (!sameunit) {
+                  for (k = 0, k < #grocery_list, k++) {
+                    if ( (grocery_list[k].ingredient == ingredient) && (grocery_list[k].unit_of_measure == "") ){
+                      ingposition = k
+                    }
+                  }
+                };
+
+
+                // Now handles the adding into the grocery list, by cases:
+
+                // Case 1: quantity is unspecified and ingredient is not in list. Add it with no unit of measure
+                if ( (target_quantity == "") && (someentry == false) ) {
+                  //println@Console("Case 1")();
+                  pos = #grocery_list;
+                  grocery_list[pos].ingredient       = ingredient;
+                  grocery_list[pos].ingredient_class = ingredient_class;
+                  grocery_list[pos].quantity         = "Quantity not specified";
+                  grocery_list[pos].unit_of_measure  = ""
+                };
+
+                // Case 2: quantity is unspecified and already ingredient is in list. Do nothing
+                if ( (target_quantity == "") && (someentry == true) ) {
+                  //println@Console("Case 2")();
+                  no_op = no_op
+                };
+
+
+                // Case 3: Specified quantity and unit, and exists with same unit in list. Add it.
+                if ( ( target_quantity != "") && (sameunit == true) ) {
+                    //println@Console("Case 3")();
+                    pos = ingposition;
+                    grocery_list[pos].quantity = grocery_list[pos].quantity + target_quantity
+                  };
+
+                // Case 4: Specified unit and quantity but not in list with same unit.
+                // Either replace existing unknown quantity, or adds brand new entry to grocery list
+
+                if ( ( target_quantity != "") && (sameunit == false) ) {
+                  //println@Console("Case 4")();
+
+                  if (ingposition == -1) {
+                    pos = #grocery_list
+                  } else {
+                    pos = ingposition
+                  };
+
+                  grocery_list[pos].ingredient = ingredient;
+                  grocery_list[pos].ingredient_class = ingredient_class;
+                  grocery_list[pos].unit_of_measure = target_unit;
+                  grocery_list[pos].quantity = target_quantity
+
+                };
+
+                // Handling alternate ingredient if needed (for unknown or known quantity)
+
+                if (alternate_ingredient != "") {
+                  //println@Console("Handling alternate ingredient '" + alternate_ingredient + "'")();
+                  pos = #alternate_notes;
+                  if (target_quantity == "") {
+                    alternate_notes[pos] = "Note: " + alternate_ingredient + " can substitute " + ingredient + " in some quantity, for recipe " + recipe_id
+                  }
+                  else {
+                    alternate_notes[pos] = "Note: " + alternate_ingredient + " can substitute " + ingredient + " for " + target_quantity + " " + target_unit + ", for recipe " + recipe_id
+                  }
+                }
+            }
+        };
+
+        println@Console(" -- Grocery list (size: " + #grocery_list + " )")();
+        for (l = 0, l < #grocery_list, l++ ) {
+          println@Console (" Ingredient : " + grocery_list[l].ingredient + ", classed as " + grocery_list[l].ingredient_class + " : " + grocery_list[l].quantity + " " + grocery_list[l].unit_of_measure)()
+        };
+
+        println@Console(" -- ALT notes (total: " + #alternate_notes + " )")();
+        for (l = 0, l < #alternate_notes, l++) {
+            println@Console(" ALT note: " + alternate_notes[l])()
+        }
+
+      }
+    }]
+
 
     [ mostGeneralRecipeQuery( request )( response ) {
           scope( sql ) {

@@ -24,7 +24,7 @@ main {
       with( req ) {
           .recipe_id = int(recipe2ingredients.line[ i ].recipe_id);
           .ingredient = recipe2ingredients.line[ i ].ingredient;
-          .quantity = int(recipe2ingredients.line[ i ].quantity);
+          .quantity = recipe2ingredients.line[ i ].quantity;
           .unit_of_measure = recipe2ingredients.line[ i ].unit_of_measure;
           .preparation_technique = recipe2ingredients.line[ i ].preparation_technique;
           .alternate_ingredient = recipe2ingredients.line[ i ].alternate_ingredient

@@ -62,7 +62,7 @@ CREATE TABLE FCP.RecipeIngredients (
   recipe_id INTEGER
   , ingredient VARCHAR(1024)
   -- , is_main BOOLEAN
-  , quantity SMALLINT
+  , quantity VARCHAR(10)
   , unit_of_measure VARCHAR(128)
   , preparation_technique VARCHAR(1024)
   , alternate_ingredient VARCHAR(1024)
