@@ -2,6 +2,7 @@ include "head.iol"
 
 main {
       t.convert_all = true;
+      t.verbose     = false;
       t.rec_persons[0].recipe_id = 1;
       t.rec_persons[0].persons   = 4;
       t.rec_persons[1].recipe_id = 2;
@@ -23,7 +24,17 @@ main {
       t.rec_persons[9].recipe_id = 41;
       t.rec_persons[9].persons   = 8;
 
-      buildGroceryList@DbService(t)()
+      buildGroceryList@DbService(t)(response);
+
+      for (l = 0, l < #response.classes, l++) {
+        println@Console ("Class of ingredients: " + response.classes[l].class)();
+        for (m = 0, m < #response.classes[l].ingredients, m++) {
+          println@Console (" Ingredient : " + response.classes[l].ingredients[m].ingredient + " : " +
+                                              response.classes[l].ingredients[m].quantity + " " +
+                                              response.classes[l].ingredients[m].unit_of_measure) ()
+        }
+      }
+
 
       /**
       println@Console("Number of recipes satisfying the query :" + #res.recipe)();

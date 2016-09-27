@@ -442,7 +442,8 @@ main {
             recipe_id  = request.rec_persons[rr].recipe_id;
             persons = request.rec_persons[rr].persons;
 
-            // println@Console("Handling recipe #" + recipe_id)();
+            if (request.verbose) { println@Console("Handling recipe #" + recipe_id)()  };
+
             // Detects for how many persons is the recipe described
             q = "SELECT persons FROM fcp.recipes WHERE recipe_id = " + recipe_id;
             query@Database( q )( result1 );
@@ -470,7 +471,7 @@ main {
                 unit       = result.row[j].unit_of_measure;
                 alternate_ingredient  = result.row[j].alternate_ingredient;
 
-                // println@Console("Ingredient " + (j+1) + " of " + #result.row + " for recipe " + recipe_id + " : " + ingredient + " , " + quantity + " " + unit )();
+                if (request.verbose) { println@Console("Ingredient " + (j+1) + " of " + #result.row + " for recipe " + recipe_id + " : " + ingredient + " , " + quantity + " " + unit )() };
 
                 if ( (quantity == "") && (unit != "") ) {
                   println@Console("Error: unspecified quantity but specified unit for ingredient " + ingredient + " in recipe #" + recipe_id + " !")()
@@ -493,8 +494,6 @@ main {
                 else {
 
                   q = "SELECT grocery_list_unit, conversion_rate, is_standard_conversion FROM fcp.unitconversions WHERE ingredient = '" + ingredient + "' AND unit_of_measure = '" + unit + "'";
-
-                  // println@Console(" NOW QUERYING CONVERSION:" + q)();
 
                   query@Database( q )( result2 );
                   if (#result2.row == 0) {
@@ -521,7 +520,7 @@ main {
 
 
                 // End of conversion: here target_unit and target_quantity are set
-                // println@Console(" Targets for " + ingredient + " : " + target_quantity + " " + target_unit)();
+                if (request.verbose) { println@Console(" Targets for " + ingredient + " : " + target_quantity + " " + target_unit)() };
 
                 // Identifies the class of the ingredient
                 q = "SELECT ingredient_class FROM fcp.ingredients WHERE name = '" + ingredient + "'";
@@ -603,7 +602,7 @@ main {
                 // Handling alternate ingredient if needed (for unknown or known quantity)
 
                 if (alternate_ingredient != "") {
-                  //println@Console("Handling alternate ingredient '" + alternate_ingredient + "'")();
+                  if (request.verbose) { println@Console("Handling alternate ingredient '" + alternate_ingredient + "'")() };
                   pos = #alternate_notes;
                   if (target_quantity == "") {
                     alternate_notes[pos] = "Note: " + alternate_ingredient + " can substitute " + ingredient + " in some quantity, for recipe " + recipe_id
@@ -615,30 +614,22 @@ main {
             }
         };
 
-        undef(classes);
+        undef(response);
         for (l = 0, l < #grocery_list, l++) {
-            idxclass      = #classes;
+            idxclass      = #response.classes;
             idxingredient = 0;
-            for (m = 0, m < #classes, m++) {
-              if (classes[m].class == grocery_list[l].ingredient_class) {
+            for (m = 0, m < #response.classes, m++) {
+              if (response.classes[m].class == grocery_list[l].ingredient_class) {
                 idxclass = m;
-                idxingredient   = #classes[idxclass].ingredients
+                idxingredient   = #response.classes[idxclass].ingredients
               }
             };
-            classes[idxclass].class = grocery_list[l].ingredient_class;
-            classes[idxclass].ingredients[idxingredient].ingredient = grocery_list[l].ingredient;
-            classes[idxclass].ingredients[idxingredient].quantity = grocery_list[l].quantity;
-            classes[idxclass].ingredients[idxingredient].unit_of_measure = grocery_list[l].unit_of_measure
-        };
-
-        for (l = 0, l < #classes, l++) {
-          println@Console ("Class of ingredients: " + classes[l].class)();
-          for (m = 0, m < #classes[l].ingredients, m++) {
-            println@Console (" Ingredient : " + classes[l].ingredients[m].ingredient + " : " +
-                                                classes[l].ingredients[m].quantity + " " +
-                                                classes[l].ingredients[m].unit_of_measure) ()
-          }
+            response.classes[idxclass].class = grocery_list[l].ingredient_class;
+            response.classes[idxclass].ingredients[idxingredient].ingredient = grocery_list[l].ingredient;
+            response.classes[idxclass].ingredients[idxingredient].quantity = grocery_list[l].quantity;
+            response.classes[idxclass].ingredients[idxingredient].unit_of_measure = grocery_list[l].unit_of_measure
         }
+
 /***
         println@Console(" -- Grocery list (size: " + #grocery_list + " )")();
         for (l = 0, l < #grocery_list, l++ ) {
@@ -736,13 +727,6 @@ main {
                   constraint_adder = " AND "
                 };
 
-                //println@Console(" ")();
-                //println@Console("------------------------------------------------------")();
-                //println@Console("Query on Recipe : " + q)();
-                //query@Database( q )( recipe_ids_from_recipe_table_query );
-                //buildList@MySelf({.vector = recipe_ids_from_recipe_table_query, .sep = "" })
-                //                   (ids_from_recipe);
-
                 ////////////////////////////////////////////////////////////////////////
                 // Section 1: select the recipe_ids from the portion of query involving only
                 // the recipeIngredients table, i.e. : ingredients to be contained,
@@ -781,14 +765,6 @@ main {
                     }
                   };
 
-                //println@Console(" ")();
-                //println@Console("------------------------------------------------------")();
-                //println@Console("Query on Recipe and RecipeIngredients : " + q)();
-                //query@Database( q )( recipe_ids_from_recipeIngredients_table_query );
-                //buildList@MySelf({.vector = recipe_ids_from_recipeIngredients_table_query, .sep = "" })
-                //                   (ids_from_recipeIngredients);
-
-
                 ////////////////////////////////////////////////////////////////////////
                 // Section 2: select the recipe_ids from the portion of query involving only
                 // the recipeTools table, i.e. : tools to be used, tools to be avoided
@@ -826,13 +802,6 @@ main {
                     }
                   };
 
-                //println@Console(" ")();
-                //println@Console("------------------------------------------------------")();
-                //println@Console("Query on recipe, recipe Ingredients and recipeTools : " + q)();
-                //query@Database( q )( recipe_ids_from_recipeTools_table_query );
-                //buildList@MySelf({.vector = recipe_ids_from_recipeTools_table_query, .sep = "" })
-                //                   (ids_from_recipeTools);
-
                 ////////////////////////////////////////////////////////////////////////
                 // Section 3: select the recipe_ids from the portion of query involving only
                 // the recipeEvents table, namely the recipes of an event
@@ -849,13 +818,6 @@ main {
                   q = q + constraint_adder + constraint;
                   constraint_adder = " AND "
                 };
-
-                //println@Console(" ")();
-                //println@Console("------------------------------------------------------")();
-                //println@Console("Query on Recipe, Ingredients, Events : " + q)();
-                //query@Database( q )( recipe_ids_from_recipeEvents_table_query );
-                //buildList@MySelf({.vector = recipe_ids_from_recipeEvents_table_query, .sep = "" })
-                //                   (ids_from_recipeEvents);
 
                 ////////////////////////////////////////////////////////////////////////
                 // Section 4: select the recipe_ids from the portion of query involving only
@@ -900,10 +862,6 @@ main {
                 println@Console(" ")();
                 println@Console("------------------------------------------------------")();
                 println@Console("Query on Recipe, Ingredients, Events, Tools, Eaters : " + q)();
-
-                //response.recipe[0].recipe_id = 1;
-                //response.recipe[0].recipe_name = "Foo";
-                //response.recipe[0].recipe_link = "www"
 
                 query@Database( q )( result );
 

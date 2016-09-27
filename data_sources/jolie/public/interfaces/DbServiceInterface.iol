@@ -171,10 +171,22 @@ type InsertRecipeCategoryRequest: void {
 }
 
 type BuildGroceryListRequest: void {
+  .verbose     : bool
   .convert_all : bool
   .rec_persons*: void {
     .recipe_id : int
     .persons   : int
+  }
+}
+
+type BuildGroceryListResponse: void {
+  .classes*     : void {
+    .class : string
+    .ingredients* : void {
+      .ingredient : string
+      .quantity   : double
+      .unit_of_measure : string
+    }
   }
 }
 
@@ -195,7 +207,7 @@ interface DbServiceInterface {
 
   RequestResponse:
     mostGeneralRecipeQuery( MostGeneralQueryRequest )( MostGeneralQueryResponse ) throws DatabaseError,
-    buildGroceryList( BuildGroceryListRequest )( void ) throws DatabaseError,
+    buildGroceryList( BuildGroceryListRequest )( BuildGroceryListResponse ) throws DatabaseError,
     buildList( BuildListRequest )( string ) throws DatabaseError,
     buildCommaSeparatedString( buildCommaRequest )( string ) throws DatabaseError,
     buildIntList( BuildIntListRequest )( string ) throws DatabaseError,
