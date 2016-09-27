@@ -615,6 +615,31 @@ main {
             }
         };
 
+        undef(classes);
+        for (l = 0, l < #grocery_list, l++) {
+            idxclass      = #classes;
+            idxingredient = 0;
+            for (m = 0, m < #classes, m++) {
+              if (classes[m].class == grocery_list[l].ingredient_class) {
+                idxclass = m;
+                idxingredient   = #classes[idxclass].ingredients
+              }
+            };
+            classes[idxclass].class = grocery_list[l].ingredient_class;
+            classes[idxclass].ingredients[idxingredient].ingredient = grocery_list[l].ingredient;
+            classes[idxclass].ingredients[idxingredient].quantity = grocery_list[l].quantity;
+            classes[idxclass].ingredients[idxingredient].unit_of_measure = grocery_list[l].unit_of_measure
+        };
+
+        for (l = 0, l < #classes, l++) {
+          println@Console ("Class of ingredients: " + classes[l].class)();
+          for (m = 0, m < #classes[l].ingredients, m++) {
+            println@Console (" Ingredient : " + classes[l].ingredients[m].ingredient + " : " +
+                                                classes[l].ingredients[m].quantity + " " +
+                                                classes[l].ingredients[m].unit_of_measure) ()
+          }
+        }
+/***
         println@Console(" -- Grocery list (size: " + #grocery_list + " )")();
         for (l = 0, l < #grocery_list, l++ ) {
           println@Console (" Ingredient : " + grocery_list[l].ingredient + ", classed as " + grocery_list[l].ingredient_class + " : " + grocery_list[l].quantity + " " + grocery_list[l].unit_of_measure)()
@@ -624,7 +649,7 @@ main {
         for (l = 0, l < #alternate_notes, l++) {
             println@Console(" ALT note: " + alternate_notes[l])()
         }
-
+***/
       }
     }]
 
