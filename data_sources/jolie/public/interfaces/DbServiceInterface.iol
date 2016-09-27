@@ -48,6 +48,7 @@ type GetIngredientsResponse: void {
       .name: string
       .properties: string
       .allergene: string
+      .ingredient_class: string
   }
 }
 

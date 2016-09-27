@@ -2,48 +2,42 @@
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script type="text/javascript" src="js/spin.min.js"></script>
     <script type="text/javascript" src="js/jolie-client.js"></script>
+    <script type="text/javascript" src="js/fcp.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/fcp.css">
     <title>Food Connects People</title>
   </head>
+
   <body>
-    <button onclick="getIngredients()">Get Ingredients</button>
-    <button onclick="getRecipes()">Get Recipes</button>
-    <div id="panel">
+    <div id="header"><div class="site-title">Food Connects People Tools</div></div>
+    <div id="body">
+        <table width="100%">        
+          <td id="menu-container">
+            <ul id="menu">
+                <li><div>Ingredients</div></li>
+            </ul>
+          </td>
+          <td id="workpanel">
+            <div id="workarea"></div>
+          </td>
+        </table>
     </div>
-    <script>
-    function onError( data ) {
-        alert( data.error.message );
-    }
-
-    function getIngredients() {
-      JolieClient.getIngredients({}, function( data ) {
-          for( var i = 0; i < data.ingredient.length; i++ ) {
-              var properties = "";
-              for( var x = 0; x < data.ingredient[ i ].properties.length; x++ ) {
-                  properties = properties + data.ingredient[ i ].properties[ x ] + " "
-              }
-              $("#panel").append( "<div>" + data.ingredient[ i ].name + "," + properties + "</div>");
-          }
-      }, onError);
-    }
-
-    function capitalizeFirstLetter(string) {
-        return string.charAt(0).toUpperCase() + string.slice(1);
-    }
-
-    function getRecipes() {
-      JolieClient.getRecipes({}, function( data ) {
-        var recipeList = "<ul>";
-        for (var i = 0; i < data.recipe.length; i++) {
-          recipeList += "<li>" + data.recipe[ i ].name + " [" +
-                capitalizeFirstLetter(data.recipe[ i ].place_of_origin) + "]</li>";
-        }
-        recipeList += "</ul>";
-        $("#panel").html(recipeList);
-      }, onError);
-    }
-   </script>
   </body>
+  <script>
+  var menu = $('#menu');
+
+  $(document).ready(function(){
+    menu.menu({
+        select: function(event, ui) {
+            if ( ui.item.text() == "Ingredients" ) {
+               showIngredients();
+            }
+        }
+    });
+  });
+  </script>
 </html>

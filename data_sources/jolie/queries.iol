@@ -20,7 +20,7 @@ define __queries {
         :preparation_time_minutes, :persons, :difficulty, :place_of_origin,
         :is_from_latitude, :is_from_longitude, :category, :main_ingredient, :cooking_technique)";
     .select_properties = "SELECT name, property_id FROM FCP.properties";
-    .select_ingredients = "SELECT ingredient_id, name, properties, allergene FROM FCP.ingredients";
+    .select_ingredients = "SELECT ingredient_id, name, properties, allergene, ingredient_class FROM FCP.ingredients ORDER BY ingredient_class, name ";
     .get_recipes = "SELECT recipe_id, name, preparation_time_minutes,
       difficulty, place_of_origin, category, cooking_technique
       FROM FCP.recipes"

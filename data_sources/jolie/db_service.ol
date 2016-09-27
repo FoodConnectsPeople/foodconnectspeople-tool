@@ -87,7 +87,8 @@ main {
                       .ingredient_id = result.row[ i ].ingredient_id;
                       .name = result.row[ i ].name;
                       .properties = result.row[ i ].properties;
-                      .allergene = result.row[ i ].allergene
+                      .allergene = result.row[ i ].allergene;
+                      .ingredient_class = result.row[ i ].ingredient_class
                   }
               }
         }
