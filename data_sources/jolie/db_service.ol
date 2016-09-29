@@ -310,6 +310,26 @@ main {
         }
   }]
 
+  [ insertTranslation( request )( response ) {
+        scope( sql ) {
+              install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                       throw( DatabaseError )
+              );
+              q = queries.insert_translation;
+              q.italian   = request.italian;
+              q.english   = request.english;
+              q.table_1   = request.table_1;
+              q.column_1  = request.column_1;
+              q.table_2   = request.table_2;
+              q.column_2  = request.column_2;
+              q.table_3   = request.table_3;
+              q.column_3  = request.column_3;
+              q.table_4   = request.table_4;
+              q.column_4  = request.column_4;
+              update@Database( q )( )
+        }
+  }]
+
   [ insertRecipe( request )( response ) {
     scope( sql ) {
       install( SQLException => println@Console( sql.SQLException.stackTrace )();
@@ -629,20 +649,26 @@ main {
             response.classes[idxclass].ingredients[idxingredient].ingredient = grocery_list[l].ingredient;
             response.classes[idxclass].ingredients[idxingredient].quantity = grocery_list[l].quantity;
             response.classes[idxclass].ingredients[idxingredient].unit_of_measure = grocery_list[l].unit_of_measure
-        }
-
-/***
-        println@Console(" -- Grocery list (size: " + #grocery_list + " )")();
-        for (l = 0, l < #grocery_list, l++ ) {
-          println@Console (" Ingredient : " + grocery_list[l].ingredient + ", classed as " + grocery_list[l].ingredient_class + " : " + grocery_list[l].quantity + " " + grocery_list[l].unit_of_measure)()
         };
 
-        println@Console(" -- ALT notes (total: " + #alternate_notes + " )")();
-        for (l = 0, l < #alternate_notes, l++) {
-            println@Console(" ALT note: " + alternate_notes[l])()
+      // Finally, the translation into the target language:
+
+      req. from = "english";
+      req.to = request.language;
+      for (l = 0, l < #response.classes, l++) {
+        req.str = response.classes[l].class;
+        translate@MySelf(req)(res);
+        response.classes[l].class = res;
+        for (m = 0, m < #response.classes[l].ingredients, m++) {
+          req.str = response.classes[l].ingredients[m].ingredient;
+          translate@MySelf(req)(res);
+          response.classes[l].ingredients[m].ingredient = res;
+          req.str = response.classes[l].ingredients[m].unit_of_measure;
+          translate@MySelf(req)(res);
+          response.classes[l].ingredients[m].unit_of_measure = res
         }
-***/
       }
+    }
     }]
 
 
@@ -987,6 +1013,46 @@ main {
                         .name = result.row[ i ].name;
                         .properties = result.row[ i ].properties
                     }
+                }
+          }
+    }]
+
+    [ translate ( request )( response ) {
+          scope( sql ) {
+                install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                         throw( DatabaseError )
+                );
+
+                if ((request.from != "english") && (request.from != "italian")) {
+                  println@Console ("Error: unknown origin language " + request.from)()
+                };
+                if ((request.to != "english") && (request.to != "italian")) {
+                  println@Console ("Error: unknown target language " + request.to)()
+                };
+
+                if ( (request.str == "") || (request.from == request.to) ) {
+                  response = request.str
+                } else {
+                  q = "SELECT " + request.to + " FROM fcp.translations WHERE (" + request.from + " = '" + request.str + "' ) ";
+                  if (is_defined(request.table) && is_defined(request.column)) {
+                    q = q + "AND ( ( table_1 = '" + request.table + "' AND column_1 = '" + request.column + ") OR ";
+                    q = q + "      ( table_2 = '" + request.table + "' AND column_2 = '" + request.column + ") OR ";
+                    q = q + "      ( table_3 = '" + request.table + "' AND column_3 = '" + request.column + ") OR ";
+                    q = q + "      ( table_4 = '" + request.table + "' AND column_4 = '" + request.column + ") )  "
+                  };
+
+                  // println@Console ("Now querying translation: {" + q + "}" )();
+                  query@Database( q )( result );
+                  if (#result.row != 1 ) {
+                    println@Console("Error: non-univoque o non-existing translation for '" + request.str + "' in ( " + request.table + ", " + request.column + ")")()
+                  };
+                  undef(response.translation);
+                  if (request.to == "english") {
+                     response = result.row[0].english
+                  };
+                  if (request.to == "italian") {
+                     response = result.row[0].italian
+                  }
                 }
           }
     }]

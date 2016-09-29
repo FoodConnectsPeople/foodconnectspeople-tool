@@ -171,13 +171,35 @@ type InsertRecipeCategoryRequest: void {
   .name: string
 }
 
+type InsertTranslationRequest: void {
+  .italian  : string
+  .english  : string
+  .table_1  : string
+  .column_1 : string
+  .table_2  : string
+  .column_2 : string
+  .table_3  : string
+  .column_3 : string
+  .table_4  : string
+  .column_4 : string
+}
+
 type BuildGroceryListRequest: void {
   .verbose     : bool
   .convert_all : bool
+  .language    : string
   .rec_persons*: void {
     .recipe_id : int
     .persons   : int
   }
+}
+
+type TranslateRequest: void {
+  .str     : string
+  .from    : string
+  .to      : string
+  .table   [0,1] : string
+  .column  [0,1] : string
 }
 
 type BuildGroceryListResponse: void {
@@ -209,6 +231,7 @@ interface DbServiceInterface {
   RequestResponse:
     mostGeneralRecipeQuery( MostGeneralQueryRequest )( MostGeneralQueryResponse ) throws DatabaseError,
     buildGroceryList( BuildGroceryListRequest )( BuildGroceryListResponse ) throws DatabaseError,
+    translate( TranslateRequest )( string ) throws DatabaseError,
     buildList( BuildListRequest )( string ) throws DatabaseError,
     buildCommaSeparatedString( buildCommaRequest )( string ) throws DatabaseError,
     buildIntList( BuildIntListRequest )( string ) throws DatabaseError,
@@ -234,5 +257,6 @@ interface DbServiceInterface {
     insertCountry( InsertCountryRequest )( void ) throws DatabaseError,
     insertTool( InsertToolRequest )( void ) throws DatabaseError,
     insertRecipeCategory( InsertRecipeCategoryRequest )( void ) throws DatabaseError,
+    insertTranslation( InsertTranslationRequest )( void ) throws DatabaseError,
     getRecipes( void )( GetRecipeResponse ) throws DatabaseError
 }

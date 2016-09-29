@@ -3,6 +3,7 @@ define __queries {
     .insert_ingredient = "INSERT INTO FCP.ingredients ( name, properties, allergene, ingredient_class ) VALUES ( :name, :properties, :allergene, :ingredient_class )";
     .insert_unit_conversion = "INSERT INTO FCP.unitconversions ( ingredient, unit_of_measure, grocery_list_unit, conversion_rate, is_standard_conversion ) VALUES ( :ingredient, :unit_of_measure, :grocery_list_unit, :conversion_rate, :is_standard_conversion)";
     /** .insert_ingredient_property = "INSERT INTO FCP.ingredientsproperties ( ingredient_id, property_id ) VALUES ( :ingredient_id, :property_id )"; **/
+    .insert_translation = "INSERT INTO FCP.translations ( italian, english, table_1, column_1, table_2, column_2, table_3, column_3, table_4, column_4 ) VALUES ( :italian, :english, :table_1, :column_1, :table_2, :column_2, :table_3, :column_3, :table_4, :column_4 )";
     .insert_recipeingredient = "INSERT INTO FCP.recipeingredients ( recipe_id, ingredient, quantity, unit_of_measure, preparation_technique, alternate_ingredient ) VALUES ( :recipe_id, :ingredient, :quantity, :unit_of_measure, :preparation_technique, :alternate_ingredient )";
     .insert_event = "INSERT into FCP.events ( name, place, start_date, end_date, category ) VALUES ( :name, :place, :start_date, :end_date, :category )";
     .insert_user = "INSERT into FCP.fcpusers ( fcp_user_id, username, full_name, is_author, is_cook ) VALUES ( :fcp_user_id, :username, :full_name, :is_author, :is_cook ) ";

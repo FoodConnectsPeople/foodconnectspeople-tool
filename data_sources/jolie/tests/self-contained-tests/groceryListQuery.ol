@@ -3,6 +3,7 @@ include "head.iol"
 main {
       t.convert_all = true;
       t.verbose     = false;
+      t.language    = "italian";
       t.rec_persons[0].recipe_id = 1;
       t.rec_persons[0].persons   = 4;
       t.rec_persons[1].recipe_id = 2;

@@ -135,13 +135,29 @@ CREATE TABLE FCP.RecipeTools(
   , FOREIGN KEY (recipe_id) REFERENCES FCP.Recipes(recipe_id)
 );
 
-CREATE TABLE FCP.Multilanguage (
-  table_name VARCHAR(128)
-  , field_name VARCHAR(128)
-  , item_id INTEGER
-  , language_id INTEGER
-  , content VARCHAR(2048)
+--CREATE TABLE FCP.Multilanguage (
+--  table_name VARCHAR(128)
+--  , field_name VARCHAR(128)
+--  , item_id INTEGER
+--  , language_id INTEGER
+--  , content VARCHAR(2048)
+--);
+
+
+CREATE TABLE FCP.Translations (
+    english VARCHAR(128)
+  , italian VARCHAR(128)
+  , table_1 VARCHAR(128)
+  , column_1 VARCHAR(128)
+  , table_2 VARCHAR(128)
+  , column_2 VARCHAR(128)
+  , table_3 VARCHAR(128)
+  , column_3 VARCHAR(128)
+  , table_4 VARCHAR(128)
+  , column_4 VARCHAR(128)
+  , PRIMARY KEY (english,italian)
 );
+
 
 CREATE TABLE FCP.Languages (
   language_id SERIAL
