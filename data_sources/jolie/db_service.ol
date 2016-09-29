@@ -657,15 +657,12 @@ main {
       req.to = request.language;
       for (l = 0, l < #response.classes, l++) {
         req.str = response.classes[l].class;
-        translate@MySelf(req)(res);
-        response.classes[l].class = res;
+        translate@MySelf(req)(response.classes[l].class);
         for (m = 0, m < #response.classes[l].ingredients, m++) {
           req.str = response.classes[l].ingredients[m].ingredient;
-          translate@MySelf(req)(res);
-          response.classes[l].ingredients[m].ingredient = res;
+          translate@MySelf(req)(response.classes[l].ingredients[m].ingredient);
           req.str = response.classes[l].ingredients[m].unit_of_measure;
-          translate@MySelf(req)(res);
-          response.classes[l].ingredients[m].unit_of_measure = res
+          translate@MySelf(req)(response.classes[l].ingredients[m].unit_of_measure )
         }
       }
     }
@@ -687,9 +684,14 @@ main {
                 q = "SELECT recipe_id, name, link FROM FCP.recipes";
                 constraint_adder = " WHERE ";
 
+                transla.from = request.language;
+                transla.to   = "english";
+
                 // DB.name LIKE *user_specified_name*
                 if (is_defined(request.recipe_name)) {
-                    constraint = " ( name LIKE '%" + request.recipe_name + "%' ) ";
+                    transla.str = request.recipe_name;
+                    translate@MySelf(transla)(recipe_name);
+                    constraint = " ( name LIKE '%" + recipe_name + "%' ) ";
                     println@Console ("Adding name constraint: '" + constraint + "'")();
                     q = q + constraint_adder + constraint;
                     constraint_adder = " AND "
@@ -719,6 +721,10 @@ main {
                 if (is_defined(request.country)) {
                   req.field = "place_of_origin";
                   req.vector << request.country;
+                  for (t = 0, t < #req.vector, t++) {
+                    transla.str = req.vector[t];
+                    translate@MySelf(transla)(req.vector[t])
+                  };
                   req.sep = "";
                   buildSetVsSet@MySelf(req)(constraint);
                   println@Console ("Adding place of origin constraint: '" + constraint + "'")();
@@ -728,7 +734,9 @@ main {
 
                 // DB.recipe_category LIKE *user_specified_category*
                 if (is_defined(request.recipe_category)) {
-                    constraint = " ( category LIKE '%" + request.recipe_category + "%' ) ";
+                    transla.str = request.recipe_category;
+                    translate@MySelf(transla)(recipe_category);
+                    constraint = " ( category LIKE '%" + recipe_category + "%' ) ";
                     println@Console ("Adding category constraint: '" + constraint + "'")();
                     q = q + constraint_adder + constraint;
                     constraint_adder = " AND "
@@ -736,7 +744,9 @@ main {
 
                 // DB.main_ingredient LIKE *user_specified_main_ingredient*
                 if (is_defined(request.main_ingredient)) {
-                    constraint = " ( main_ingredient LIKE '%" + request.main_ingredient + "%' ) ";
+                    transla.str = request.main_ingredient;
+                    translate@MySelf(transla)(main_ingredient);
+                    constraint = " ( main_ingredient LIKE '%" + main_ingredient + "%' ) ";
                     println@Console ("Adding main ingredient constraint: '" + constraint + "'")();
                     q = q + constraint_adder + constraint;
                     constraint_adder = " AND "
@@ -746,6 +756,10 @@ main {
                 if (is_defined(request.cooking_technique)) {
                   req.field = "cooking_technique";
                   req.vector << request.cooking_technique;
+                  for (t = 0, t < #req.vector, t++) {
+                    transla.str = req.vector[t];
+                    translate@MySelf(transla)(req.vector[t])
+                  };
                   req.sep = "";
                   buildSetVsSet@MySelf(req)(constraint);
                   // buildSetVsSet@MySelf({.field = "cooking_technique", .vector << request.cooking_technique, .sep = "" })(constraint);
@@ -768,7 +782,8 @@ main {
 
                 if (is_defined(request.yes_ingredient)) {
                   for (idx = 0, idx < #request.yes_ingredient, idx++) {
-                    yes_ingr = request.yes_ingredient[idx];
+                    transla.str = request.yes_ingredient[idx];
+                    translate@MySelf(transla)(yes_ingr);
                     constraint1 = " ( EXISTS ( SELECT * FROM FCP.recipeIngredients WHERE  ";
                     constraint2 = " FCP.recipes.recipe_id = FCP.recipeIngredients.recipe_id AND ";
                     constraint3 = " FCP.recipeIngredients.ingredient = '" + yes_ingr + "' ) ) ";
@@ -781,7 +796,8 @@ main {
 
                 if (is_defined(request.not_ingredient)) {
                   for (idx = 0, idx < #request.not_ingredient, idx++) {
-                    not_ingr = request.not_ingredient[idx];
+                    transla.str = request.not_ingredient[idx];
+                    translate@MySelf(transla)(not_ingr);
                     constraint1 = " ( NOT EXISTS ( SELECT * FROM FCP.recipeIngredients WHERE  ";
                     constraint2 = " FCP.recipes.recipe_id = FCP.recipeIngredients.recipe_id AND ";
                     constraint3 = " FCP.recipeIngredients.ingredient = '" + not_ingr + "' ) ) ";
@@ -805,7 +821,8 @@ main {
 
                 if (is_defined(request.yes_tool)) {
                   for (idx = 0, idx < #request.yes_tool, idx++) {
-                    yes_tool = request.yes_tool[idx];
+                    transla.str = request.yes_tool[idx];
+                    translate@MySelf(transla)(yes_tool);
                     constraint1  = " ( EXISTS ( SELECT * FROM FCP.recipeTools WHERE  ";
                     constraint2 = " FCP.recipes.recipe_id = FCP.recipeTools.recipe_id AND ";
                     constraint3 = " FCP.recipeTools.tool_name = '" + yes_tool + "' ) ) ";
@@ -818,7 +835,8 @@ main {
 
                 if (is_defined(request.not_tool)) {
                   for (idx = 0, idx < #request.not_tool, idx++) {
-                    not_tool = request.not_tool[idx];
+                    transla.str = request.not_tool[idx];
+                    translate@MySelf(transla)(not_tool);
                     constraint1 = " ( NOT EXISTS ( SELECT * FROM FCP.recipeTools WHERE  ";
                     constraint2 = " FCP.recipes.recipe_id = FCP.recipeTools.recipe_id AND ";
                     constraint3 = " FCP.recipeTools.tool_name = '" + not_tool + "' ) ) ";
@@ -837,9 +855,11 @@ main {
                 // constraint_adder = " WHERE ";
 
                 if (is_defined(request.appears_in_event)) {
+                  transla.str = request.appears_in_event;
+                  translate@MySelf(transla)(appears_in_event);
                   constraint1 = " (EXISTS ( SELECT * FROM FCP.recipeEventsNames WHERE ";
                   constraint2 = " FCP.recipes.recipe_id = FCP.recipeEventsNames.recipe_id AND ";
-                  constraint3 = " FCP.recipeEventsNames.name = '" + request.appears_in_event + "' ) ) ";
+                  constraint3 = " FCP.recipeEventsNames.name = '" + appears_in_event + "' ) ) ";
                   constraint = constraint1 + constraint2 + constraint3;
                   println@Console ("Adding event constraint: '" + constraint + "'")();
                   q = q + constraint_adder + constraint;
@@ -862,7 +882,8 @@ main {
 
                 if (is_defined(request.not_allergene)) {
                   for (idx = 0, idx < #request.not_allergene, idx ++) {
-                    not_allergene = request.not_allergene[idx];
+                    transla.str = request.not_allergene[idx];
+                    translate@MySelf(transla)(not_allergene);
                     constraint1 = " ( NOT EXISTS ( SELECT * FROM FCP.recipeIngredientsProperties WHERE  ";
                     constraint2 = " FCP.recipes.recipe_id = FCP.recipeIngredientsProperties.recipe_id AND ";
                     constraint3 = " FCP.recipeIngredientsProperties.properties LIKE '%" + not_allergene + "%' ) ) ";
@@ -875,7 +896,8 @@ main {
 
                 if (is_defined(request.eater_category)) {
                   for (idx = 0, idx < #request.eater_category, idx++) {
-                    eater = request.eater_category[idx];
+                    transla.str = request.eater_category[idx];
+                    translate@MySelf(transla)(eater);
                     constraint1 = " ( NOT EXISTS ( SELECT * FROM FCP.recipeIngredientsProperties WHERE  ";
                     constraint2 = " FCP.recipes.recipe_id = FCP.recipeIngredientsProperties.recipe_id AND ";
                     constraint3 = " FCP.recipeIngredientsProperties.properties NOT LIKE '%" + eater + "%' ) ) ";
@@ -895,7 +917,12 @@ main {
                 for( i = 0, i < #result.row, i++ ) {
                     with( response.recipe[ i ] ) {
                         .recipe_id   = result.row[ i ].recipe_id;
-                        .recipe_name = result.row[ i ].name;
+
+                        transla.from = "english";
+                        transla.to   = request.language;
+                        transla.str  = result.row[ i ].name;
+                        translate@MySelf(transla)(recname);
+                        .recipe_name = recname;
                         .recipe_link = result.row[ i ].link
                     }
                 }
