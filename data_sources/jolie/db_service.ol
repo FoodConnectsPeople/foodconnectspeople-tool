@@ -64,13 +64,6 @@ init {
       println@Console("Connected to Database " + DBNAME + "@" + HOST )()
     };
     println@Console("DbService is running...")()
-
-/*
-    println@Console("Now self-calling test funcion")();
-    tester@DbService();
-    println@Console (" Called test function ") ()
-*/
-
 }
 
 main {
@@ -655,6 +648,7 @@ main {
 
       req. from = "english";
       req.to = request.language;
+      req.fuzzy = false;
       for (l = 0, l < #response.classes, l++) {
         req.str = response.classes[l].class;
         translate@MySelf(req)(response.classes[l].class);
@@ -686,21 +680,26 @@ main {
 
                 transla.from = request.language;
                 transla.to   = "english";
+                transla.fuzzy = true;
 
                 // DB.name LIKE *user_specified_name*
                 if (is_defined(request.recipe_name)) {
                     transla.str = request.recipe_name;
                     translate@MySelf(transla)(recipe_name);
                     constraint = " ( name LIKE '%" + recipe_name + "%' ) ";
-                    println@Console ("Adding name constraint: '" + constraint + "'")();
+                    if (request.verbose) { println@Console ("Adding name constraint: '" + constraint + "'")() };
                     q = q + constraint_adder + constraint;
                     constraint_adder = " AND "
                 };
 
+                transla.from = request.language;
+                transla.to   = "english";
+                transla.fuzzy = false;
+
                 // DB.preparation_time <= user_specified_time
                 if (is_defined(request.max_preparation_time)) {
                   constraint = " ( preparation_time_minutes <= " + request.max_preparation_time + " ) ";
-                  println@Console ("Adding prep. time constraint: '" + constraint + "'")();
+                  if (request.verbose) { println@Console ("Adding prep. time constraint: '" + constraint + "'")() };
                   q = q + constraint_adder + constraint;
                   constraint_adder = " AND "
                 };
@@ -712,7 +711,7 @@ main {
                   req.sep = "";
                   buildIntList@MySelf(req)(list);
                   //buildIntList@MySelf({.vector << request.difficulty_value, .sep = "" })(list);
-                  println@Console ("Adding diff. level constraint: '( difficulty IN " + list + ")'")();
+                  if (request.verbose) { println@Console ("Adding diff. level constraint: '( difficulty IN " + list + ")'")() };
                   q = q + constraint_adder + "( difficulty IN " + list + ")";
                   constraint_adder = " AND "
                 };
@@ -727,7 +726,7 @@ main {
                   };
                   req.sep = "";
                   buildSetVsSet@MySelf(req)(constraint);
-                  println@Console ("Adding place of origin constraint: '" + constraint + "'")();
+                  if (request.verbose) { println@Console ("Adding place of origin constraint: '" + constraint + "'")() };
                   q = q + constraint_adder + constraint;
                   constraint_adder = " AND "
                 };
@@ -737,7 +736,7 @@ main {
                     transla.str = request.recipe_category;
                     translate@MySelf(transla)(recipe_category);
                     constraint = " ( category LIKE '%" + recipe_category + "%' ) ";
-                    println@Console ("Adding category constraint: '" + constraint + "'")();
+                    if (request.verbose) { println@Console ("Adding category constraint: '" + constraint + "'")() };
                     q = q + constraint_adder + constraint;
                     constraint_adder = " AND "
                 };
@@ -747,7 +746,7 @@ main {
                     transla.str = request.main_ingredient;
                     translate@MySelf(transla)(main_ingredient);
                     constraint = " ( main_ingredient LIKE '%" + main_ingredient + "%' ) ";
-                    println@Console ("Adding main ingredient constraint: '" + constraint + "'")();
+                    if (request.verbose) { println@Console ("Adding main ingredient constraint: '" + constraint + "'")() };
                     q = q + constraint_adder + constraint;
                     constraint_adder = " AND "
                 };
@@ -763,7 +762,7 @@ main {
                   req.sep = "";
                   buildSetVsSet@MySelf(req)(constraint);
                   // buildSetVsSet@MySelf({.field = "cooking_technique", .vector << request.cooking_technique, .sep = "" })(constraint);
-                  println@Console ("Adding cooking constraint: '" + constraint + "'")();
+                  if (request.verbose) { println@Console ("Adding cooking constraint: '" + constraint + "'")() };
                   q = q + constraint_adder + constraint;
                   constraint_adder = " AND "
                 };
@@ -788,7 +787,7 @@ main {
                     constraint2 = " FCP.recipes.recipe_id = FCP.recipeIngredients.recipe_id AND ";
                     constraint3 = " FCP.recipeIngredients.ingredient = '" + yes_ingr + "' ) ) ";
                     constraint = constraint1 + constraint2 + constraint3;
-                    println@Console ("Adding yes ingredient constraint: '" + constraint + "'")();
+                    if (request.verbose) { println@Console ("Adding yes ingredient constraint: '" + constraint + "'")() };
                     q = q + constraint_adder + constraint;
                     constraint_adder = " AND "
                   }
@@ -802,7 +801,7 @@ main {
                     constraint2 = " FCP.recipes.recipe_id = FCP.recipeIngredients.recipe_id AND ";
                     constraint3 = " FCP.recipeIngredients.ingredient = '" + not_ingr + "' ) ) ";
                     constraint = constraint1 + constraint2 + constraint3;
-                    println@Console ("Adding not ingredient constraint: '" + constraint + "'")();
+                    if (request.verbose) { println@Console ("Adding not ingredient constraint: '" + constraint + "'")() };
                     q = q + constraint_adder + constraint;
                     constraint_adder = " AND "
                     }
@@ -827,7 +826,7 @@ main {
                     constraint2 = " FCP.recipes.recipe_id = FCP.recipeTools.recipe_id AND ";
                     constraint3 = " FCP.recipeTools.tool_name = '" + yes_tool + "' ) ) ";
                     constraint = constraint1 + constraint2 + constraint3;
-                    println@Console ("Adding yes tool constraint: '" + constraint + "'")();
+                    if (request.verbose) { println@Console ("Adding yes tool constraint: '" + constraint + "'")() };
                     q = q + constraint_adder + constraint;
                     constraint_adder = " AND "
                   }
@@ -841,7 +840,7 @@ main {
                     constraint2 = " FCP.recipes.recipe_id = FCP.recipeTools.recipe_id AND ";
                     constraint3 = " FCP.recipeTools.tool_name = '" + not_tool + "' ) ) ";
                     constraint = constraint1 + constraint2 + constraint3;
-                    println@Console ("Adding not tool constraint: '" + constraint + "'")();
+                    if (request.verbose) { println@Console ("Adding not tool constraint: '" + constraint + "'")() };
                     q = q + constraint_adder + constraint;
                     constraint_adder = " AND "
                     }
@@ -861,7 +860,7 @@ main {
                   constraint2 = " FCP.recipes.recipe_id = FCP.recipeEventsNames.recipe_id AND ";
                   constraint3 = " FCP.recipeEventsNames.name = '" + appears_in_event + "' ) ) ";
                   constraint = constraint1 + constraint2 + constraint3;
-                  println@Console ("Adding event constraint: '" + constraint + "'")();
+                  if (request.verbose) { println@Console ("Adding event constraint: '" + constraint + "'")() };
                   q = q + constraint_adder + constraint;
                   constraint_adder = " AND "
                 };
@@ -888,7 +887,7 @@ main {
                     constraint2 = " FCP.recipes.recipe_id = FCP.recipeIngredientsProperties.recipe_id AND ";
                     constraint3 = " FCP.recipeIngredientsProperties.properties LIKE '%" + not_allergene + "%' ) ) ";
                     constraint = constraint1 + constraint2 + constraint3;
-                    println@Console ("Adding not allergene constraint: '" + constraint + "'")();
+                    if (request.verbose) { println@Console ("Adding not allergene constraint: '" + constraint + "'")() };
                     q = q + constraint_adder + constraint;
                     constraint_adder = " AND "
                   }
@@ -902,15 +901,17 @@ main {
                     constraint2 = " FCP.recipes.recipe_id = FCP.recipeIngredientsProperties.recipe_id AND ";
                     constraint3 = " FCP.recipeIngredientsProperties.properties NOT LIKE '%" + eater + "%' ) ) ";
                     constraint = constraint1 + constraint2 + constraint3;
-                    println@Console ("Adding eater category constraint: '" + constraint + "'")();
+                    if (request.verbose) { println@Console ("Adding eater category constraint: '" + constraint + "'")() };
                     q = q + constraint_adder + constraint;
                     constraint_adder = " AND "
                   }
                 };
 
-                println@Console(" ")();
-                println@Console("------------------------------------------------------")();
-                println@Console("Query on Recipe, Ingredients, Events, Tools, Eaters : " + q)();
+                if (request.verbose) {
+                  println@Console(" ")();
+                  println@Console("------------------------------------------------------")();
+                  println@Console("Query on Recipe, Ingredients, Events, Tools, Eaters : " + q)()
+                };
 
                 query@Database( q )( result );
 
@@ -1060,7 +1061,12 @@ main {
                 if ( (request.str == "") || (request.from == request.to) ) {
                   response = request.str
                 } else {
-                  q = "SELECT " + request.to + " FROM fcp.translations WHERE (" + request.from + " = '" + request.str + "' ) ";
+                  q = "SELECT " + request.to + " FROM fcp.translations WHERE " ;
+                  if (request.fuzzy) {
+                     q = q + " ( "+ request.from + " LIKE '%" + request.str + "%' ) "
+                  } else {
+                     q = q + " ( "+ request.from + " = '" + request.str + "' ) "
+                  };
                   if (is_defined(request.table) && is_defined(request.column)) {
                     q = q + "AND ( ( table_1 = '" + request.table + "' AND column_1 = '" + request.column + ") OR ";
                     q = q + "      ( table_2 = '" + request.table + "' AND column_2 = '" + request.column + ") OR ";
@@ -1070,15 +1076,20 @@ main {
 
                   // println@Console ("Now querying translation: {" + q + "}" )();
                   query@Database( q )( result );
-                  if (#result.row != 1 ) {
-                    println@Console("Error: non-univoque o non-existing translation for '" + request.str + "' in ( " + request.table + ", " + request.column + ")")()
+                  if (#result.row > 1 ) {
+                    println@Console("WARNING: non-univoque translation for '" + request.str + "' in ( " + request.table + ", " + request.column + ")")()
                   };
-                  undef(response.translation);
-                  if (request.to == "english") {
-                     response = result.row[0].english
+                  if (#result.row < 1 ) {
+                    println@Console("ERROR: non-existing translation for '" + request.str + "' in ( " + request.table + ", " + request.column + ")")();
+                    response = "**********"
                   };
-                  if (request.to == "italian") {
-                     response = result.row[0].italian
+                  if (#result.row > 0) {
+                    if (request.to == "english") {
+                       response = result.row[0].english
+                    };
+                    if (request.to == "italian") {
+                       response = result.row[0].italian
+                    }
                   }
                 }
           }

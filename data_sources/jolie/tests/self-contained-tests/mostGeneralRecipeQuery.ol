@@ -3,10 +3,11 @@ include "head.iol"
 main {
 
         language = "italian";
+        t.verbose = false;
 
         if (language == "english") {
           t.language = "english";
-          t.recipe_name = "curry sauced shrimps";
+          t.recipe_name = "sauced shrimps";
           t.max_preparation_time = 45;
           t.difficulty_value[0] = 2;
           t.difficulty_value[1] = 3;
@@ -31,7 +32,7 @@ main {
 
         if (language == "italian") {
             t.language = "italian";
-            t.recipe_name = "Gamberi alla salsa curry";
+            t.recipe_name = "Gamberi alla salsa";
             t.max_preparation_time = 45;
             t.difficulty_value[0] = 2;
             t.difficulty_value[1] = 3;

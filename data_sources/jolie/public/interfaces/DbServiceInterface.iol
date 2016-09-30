@@ -1,5 +1,6 @@
 
 type MostGeneralQueryRequest: void {
+  .verbose                    : bool
   .recipe_name          [0,1] : string
   .max_preparation_time [0,1] : int
   .difficulty_value     [0,*] : int
@@ -198,6 +199,7 @@ type TranslateRequest: void {
   .str     : string
   .from    : string
   .to      : string
+  .fuzzy   : bool
   .table   [0,1] : string
   .column  [0,1] : string
 }
