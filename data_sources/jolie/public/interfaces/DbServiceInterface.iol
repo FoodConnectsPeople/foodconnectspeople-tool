@@ -211,6 +211,11 @@ type MostGeneralQueryResponse: void {
       .recipe_id: int
       .recipe_name: string
       .recipe_link: string
+      .preparation_time_minutes: int
+      .difficulty: int
+      .place_of_origin: string
+      .category: string
+      .cooking_technique: string
   }
 }
 
@@ -230,7 +235,8 @@ type TranslateRequest: void {
 type GetRecipeResponse: void {
   .recipe*: void {
     .recipe_id: int
-    .name: string
+    .recipe_name: string
+    .recipe_link: string
     .preparation_time_minutes: int
     .difficulty: int
     .place_of_origin: string

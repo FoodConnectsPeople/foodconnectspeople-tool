@@ -387,7 +387,8 @@ main {
           for( i = 0, i < #result.row, i++ ) {
               with( response.recipe[ i ] ) {
                   .recipe_id = result.row[ i ].recipe_id;
-                  .name = result.row[ i ].name;
+                  .recipe_name = result.row[ i ].name;
+                  .recipe_link = result.row[ i ].link;
                   .preparation_time_minutes = result.row[ i ].preparation_time_minutes;
                   .difficulty = result.row[ i ].difficulty;
                   .place_of_origin = result.row[ i ].place_of_origin;
@@ -796,6 +797,7 @@ main {
                   constraint_adder = " AND "
                 };
 
+
                 ////////////////////////////////////////////////////////////////////////
                 // Section 1: select the recipe_ids from the portion of query involving only
                 // the recipeIngredients table, i.e. : ingredients to be contained,
@@ -883,6 +885,8 @@ main {
                 // constraint_adder = " WHERE ";
 
                 if (is_defined(request.appears_in_event)) {
+                  transla.str = request.appears_in_event;
+                  translate@MySelf(transla)(appears_in_event);
                   constraint1 = " (EXISTS ( SELECT * FROM FCP.recipeEventsNames WHERE ";
                   constraint2 = " FCP.recipes.recipe_id = FCP.recipeEventsNames.recipe_id AND ";
                   constraint3 = " FCP.recipeEventsNames.name = '" + appears_in_event + "' ) ) ";
@@ -950,10 +954,8 @@ main {
                         transla.to   = request.language;
                         transla.str  = result.row[ i ].name;
                         translate@MySelf(transla)(recname);
-                        //.recipe_name = recname;
-                        //.recipe_link = result.row[ i ].link
-
-                        .name = recname;
+                        .recipe_name = recname;
+                        .recipe_link = result.row[ i ].link;
                         .preparation_time_minutes = result.row[ i ].preparation_time_minutes;
                         .difficulty = result.row[ i ].difficulty;
                         .place_of_origin = result.row[ i ].place_of_origin;
