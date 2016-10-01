@@ -348,16 +348,31 @@ main {
     }
   }]
 
+  [ getCountries( request )( response ) {
+    scope( sql ) {
+          install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                   throw( DatabaseError )
+          );
+
+          q = queries.select_countries;
+          query@Database( q )( result );
+          for( i = 0, i < #result.row, i++ ) {
+              response.name[ i ] = result.row[ i ].name
+          }
+    }
+  }]
+
   [ getRecipes( request )( response ) {
     scope( sql ) {
           install( SQLException => println@Console( sql.SQLException.stackTrace )();
                                    throw( DatabaseError )
           );
 
-          q = queries.get_recipes;
+          q = queries.get_recipes + " ORDER BY name";
           query@Database( q )( result );
           for( i = 0, i < #result.row, i++ ) {
               with( response.recipe[ i ] ) {
+                  .recipe_id = result.row[ i ].recipe_id;
                   .name = result.row[ i ].name;
                   .preparation_time_minutes = result.row[ i ].preparation_time_minutes;
                   .difficulty = result.row[ i ].difficulty;
@@ -675,7 +690,7 @@ main {
                 // recipe category, main ingredient, cooking technique
 
 
-                q = "SELECT recipe_id, name, link FROM FCP.recipes";
+                q = queries.get_recipes;
                 constraint_adder = " WHERE ";
 
                 transla.from = request.language;
@@ -776,7 +791,7 @@ main {
                 // in recipeIngredients, it exists (resp. does not exist)
                 // a pair <recipe_id,ingredient> (resp. <recipe_id,not_ingredient>)
 
-                //q = "SELECT recipe_id FROM FCP.recipe";
+                //q = queries.get_recipes;
                 //constraint_adder = " WHERE ";
 
                 if (is_defined(request.yes_ingredient)) {
@@ -815,7 +830,7 @@ main {
                 // in recipeTools, it exists (resp. does not exist)
                 // a pair <recipe_id,tool> (resp. <recipe_id,not_tool>)
 
-                //q = "SELECT recipe_id FROM FCP.recipe";
+                //q = queries.get_recipes;
                 //constraint_adder = " WHERE ";
 
                 if (is_defined(request.yes_tool)) {
@@ -850,12 +865,10 @@ main {
                 // Section 3: select the recipe_ids from the portion of query involving only
                 // the recipeEvents table, namely the recipes of an event
 
-                // q = "SELECT recipe_id FROM FCP.recipe";
+                // q = queries.get_recipes;
                 // constraint_adder = " WHERE ";
 
                 if (is_defined(request.appears_in_event)) {
-                  transla.str = request.appears_in_event;
-                  translate@MySelf(transla)(appears_in_event);
                   constraint1 = " (EXISTS ( SELECT * FROM FCP.recipeEventsNames WHERE ";
                   constraint2 = " FCP.recipes.recipe_id = FCP.recipeEventsNames.recipe_id AND ";
                   constraint3 = " FCP.recipeEventsNames.name = '" + appears_in_event + "' ) ) ";
@@ -876,7 +889,7 @@ main {
                 // in recipeIngredientsProperties, it does not exist a pair <recipe_id,properties>
                 // s.t. properties contains allergene[idx]
 
-                //q = "SELECT recipe_id FROM FCP.recipe";
+                //q = queries.get_recipes;
                 //constraint_adder = " WHERE ";
 
                 if (is_defined(request.not_allergene)) {
@@ -923,8 +936,15 @@ main {
                         transla.to   = request.language;
                         transla.str  = result.row[ i ].name;
                         translate@MySelf(transla)(recname);
-                        .recipe_name = recname;
-                        .recipe_link = result.row[ i ].link
+                        //.recipe_name = recname;
+                        //.recipe_link = result.row[ i ].link
+
+                        .name = recname;
+                        .preparation_time_minutes = result.row[ i ].preparation_time_minutes;
+                        .difficulty = result.row[ i ].difficulty;
+                        .place_of_origin = result.row[ i ].place_of_origin;
+                        .category = result.row[ i ].category;
+                        .cooking_technique = result.row[ i ].cooking_technique
                     }
                 }
 

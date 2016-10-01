@@ -1,28 +1,11 @@
 
-type MostGeneralQueryRequest: void {
-  .verbose                    : bool
-  .recipe_name          [0,1] : string
-  .max_preparation_time [0,1] : int
-  .difficulty_value     [0,*] : int
-  .country              [0,*] : string
-  .recipe_category      [0,1] : string
-  .main_ingredient      [0,1] : string
-  .cooking_technique    [0,*] : string
-  .eater_category       [0,*] : string
-  .not_allergene        [0,*] : string
-  .yes_ingredient       [0,*] : string
-  .not_ingredient       [0,*] : string
-  .yes_tool             [0,*] : string
-  .not_tool             [0,*] : string
-  .appears_in_event     [0,1] : string
-  .language             [0,1] : string
-}
-
-type MostGeneralQueryResponse: void {
-  .recipe*: void {
-      .recipe_id: int
-      .recipe_name: string
-      .recipe_link: string
+type BuildGroceryListRequest: void {
+  .verbose     : bool
+  .convert_all : bool
+  .language    : string
+  .rec_persons*: void {
+    .recipe_id : int
+    .persons   : int
   }
 }
 
@@ -42,6 +25,9 @@ type BuildSetVsSetRequest: void {
   .sep:     string
 }
 
+type GetCountriesResponse: void {
+  .name*: string
+}
 
 type GetIngredientsResponse: void {
   .ingredient*: void {
@@ -185,15 +171,34 @@ type InsertTranslationRequest: void {
   .column_4 : string
 }
 
-type BuildGroceryListRequest: void {
-  .verbose     : bool
-  .convert_all : bool
-  .language    : string
-  .rec_persons*: void {
-    .recipe_id : int
-    .persons   : int
+type MostGeneralQueryRequest: void {
+  .verbose                    : bool
+  .recipe_name          [0,1] : string
+  .max_preparation_time [0,1] : int
+  .difficulty_value     [0,*] : int
+  .country              [0,*] : string
+  .recipe_category      [0,1] : string
+  .main_ingredient      [0,1] : string
+  .cooking_technique    [0,*] : string
+  .eater_category       [0,*] : string
+  .not_allergene        [0,*] : string
+  .yes_ingredient       [0,*] : string
+  .not_ingredient       [0,*] : string
+  .yes_tool             [0,*] : string
+  .not_tool             [0,*] : string
+  .appears_in_event     [0,1] : string
+  .language             [0,1] : string
+}
+
+type MostGeneralQueryResponse: void {
+  .recipe*: void {
+      .recipe_id: int
+      .recipe_name: string
+      .recipe_link: string
   }
 }
+
+
 
 type TranslateRequest: void {
   .str     : string
@@ -217,6 +222,7 @@ type BuildGroceryListResponse: void {
 
 type GetRecipeResponse: void {
   .recipe*: void {
+    .recipe_id: int
     .name: string
     .preparation_time_minutes: int
     .difficulty: int
@@ -231,13 +237,13 @@ interface DbServiceInterface {
     tester( void )
 
   RequestResponse:
-    mostGeneralRecipeQuery( MostGeneralQueryRequest )( MostGeneralQueryResponse ) throws DatabaseError,
     buildGroceryList( BuildGroceryListRequest )( BuildGroceryListResponse ) throws DatabaseError,
     translate( TranslateRequest )( string ) throws DatabaseError,
     buildList( BuildListRequest )( string ) throws DatabaseError,
     buildCommaSeparatedString( buildCommaRequest )( string ) throws DatabaseError,
     buildIntList( BuildIntListRequest )( string ) throws DatabaseError,
     buildSetVsSet( BuildSetVsSetRequest )( string ) throws DatabaseError,
+    getCountries( void )( GetCountriesResponse ) throws DatabaseError,
     getIngredients( void )( GetIngredientsResponse ) throws DatabaseError,
     getIngredients_exact_match( GetIngredients_nameRequest )( GetIngredients_namepropResponse ) throws DatabaseError,
     getIngredients_fuzzy_match( GetIngredients_nameRequest )( GetIngredients_namepropResponse ) throws DatabaseError,
@@ -260,5 +266,6 @@ interface DbServiceInterface {
     insertTool( InsertToolRequest )( void ) throws DatabaseError,
     insertRecipeCategory( InsertRecipeCategoryRequest )( void ) throws DatabaseError,
     insertTranslation( InsertTranslationRequest )( void ) throws DatabaseError,
+    mostGeneralRecipeQuery( MostGeneralQueryRequest )( GetRecipeResponse ) throws DatabaseError,
     getRecipes( void )( GetRecipeResponse ) throws DatabaseError
 }
