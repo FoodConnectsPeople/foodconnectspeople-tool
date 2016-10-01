@@ -1,4 +1,6 @@
-<button class="btn btn-info" data-toggle="collapse" data-target="#filter">Filter</button>
+
+
+<button onclick="initializeRecipeFilter()" class="btn btn-sm btn-info glyphicon glyphicon-cog" data-toggle="collapse" data-target="#filter"></button>
 
 <div id="filter" class="collapse">
   <form>
@@ -16,8 +18,8 @@
         </div>
       </td><td>
         <div class="form-group">
-          <label>Country:</label>
-          <input type="text" class="form-control" id="country">
+          <label for"country">Country:</label>
+          <input type="text" class="form-control typeahead" id="country">
         </div>
       </td></tr>
       <tr><td>
@@ -49,7 +51,7 @@
       </td><td>
         <div class="form-group">
             <label>Must avoid ingredients:</label>
-            <input type="text" class="form-control" id="no_ingredient">
+            <input type="text" class="form-control" id="not_ingredient">
         </div>
       </td></tr>
       <tr><td>
@@ -60,20 +62,23 @@
       </td><td>
         <div class="form-group">
             <label>Don't use tools:</label>
-            <input type="text" class="form-control" id="no_tool">
+            <input type="text" class="form-control" id="not_tool">
         </div>
       </td><td>
         <div class="form-group">
           <label>Category:</label>
-          <input type="text" class="form-control" id="category">
+          <input type="text" class="form-control" id="recipe_category">
         </div>
       </td></tr>
       <tr><td>
-        <div class="checkbox">
-          <label><input type="checkbox">Appears in events</label>
+        <div class="form-group">
+          <label>Appears in event:</label>
+          <input type="text" class="form-control" id="appears_in_event">
         </div>
+      </td><td>
+        <button onclick="searchForRecipes()" class="btn btn-success glyphicon glyphicon-search"></button>
       </td></tr>
   </table>
-    <button onclick="searchForRecipes()" class="btn btn-default">Search</button>
+
   </form>
 </div>

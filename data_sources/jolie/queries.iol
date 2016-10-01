@@ -21,6 +21,7 @@ define __queries {
         :preparation_time_minutes, :persons, :difficulty, :place_of_origin,
         :is_from_latitude, :is_from_longitude, :category, :main_ingredient, :cooking_technique)";
     .select_countries = "SELECT country_id, name FROM FCP.countries ORDER BY name";
+    .select_cooking_techniques = "SELECT cooking_technique_id, name FROM FCP.cookingtechniques ORDER BY name";
     .select_properties = "SELECT name, property_id FROM FCP.properties";
     .select_ingredients = "SELECT ingredient_id, name, properties, allergene, ingredient_class FROM FCP.ingredients ORDER BY ingredient_class, name ";
     .get_recipes = "SELECT recipe_id, name, preparation_time_minutes,

@@ -9,6 +9,17 @@ type BuildGroceryListRequest: void {
   }
 }
 
+type BuildGroceryListResponse: void {
+  .classes*     : void {
+    .class : string
+    .ingredients* : void {
+      .ingredient : string
+      .quantity   : double
+      .unit_of_measure : string
+    }
+  }
+}
+
 type BuildListRequest: void {
   .vector*: string
   .sep:     string
@@ -24,6 +35,11 @@ type BuildSetVsSetRequest: void {
   .vector*: string
   .sep:     string
 }
+
+type GetCookingTechniquesResponse: void {
+  .name*: string
+}
+
 
 type GetCountriesResponse: void {
   .name*: string
@@ -209,16 +225,7 @@ type TranslateRequest: void {
   .column  [0,1] : string
 }
 
-type BuildGroceryListResponse: void {
-  .classes*     : void {
-    .class : string
-    .ingredients* : void {
-      .ingredient : string
-      .quantity   : double
-      .unit_of_measure : string
-    }
-  }
-}
+
 
 type GetRecipeResponse: void {
   .recipe*: void {
@@ -243,7 +250,9 @@ interface DbServiceInterface {
     buildCommaSeparatedString( buildCommaRequest )( string ) throws DatabaseError,
     buildIntList( BuildIntListRequest )( string ) throws DatabaseError,
     buildSetVsSet( BuildSetVsSetRequest )( string ) throws DatabaseError,
+    getCookingTechniques( void )( GetCookingTechniquesResponse ) throws DatabaseError,
     getCountries( void )( GetCountriesResponse ) throws DatabaseError,
+    getRecipes( void )( GetRecipeResponse ) throws DatabaseError,
     getIngredients( void )( GetIngredientsResponse ) throws DatabaseError,
     getIngredients_exact_match( GetIngredients_nameRequest )( GetIngredients_namepropResponse ) throws DatabaseError,
     getIngredients_fuzzy_match( GetIngredients_nameRequest )( GetIngredients_namepropResponse ) throws DatabaseError,
@@ -266,6 +275,5 @@ interface DbServiceInterface {
     insertTool( InsertToolRequest )( void ) throws DatabaseError,
     insertRecipeCategory( InsertRecipeCategoryRequest )( void ) throws DatabaseError,
     insertTranslation( InsertTranslationRequest )( void ) throws DatabaseError,
-    mostGeneralRecipeQuery( MostGeneralQueryRequest )( GetRecipeResponse ) throws DatabaseError,
-    getRecipes( void )( GetRecipeResponse ) throws DatabaseError
+    mostGeneralRecipeQuery( MostGeneralQueryRequest )( GetRecipeResponse ) throws DatabaseError
 }

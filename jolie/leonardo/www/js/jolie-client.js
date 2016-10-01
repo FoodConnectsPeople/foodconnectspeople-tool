@@ -39,6 +39,10 @@ var JolieClient = JolieClient || (function() {
         jolieCall( "getRecipes", request, callback, errorHandler );
     }
 
+    API.getCookingTechniques = function( request, callback, errorHandler ) {
+        jolieCall( "getCookingTechniques", request, callback, errorHandler );
+    }
+
     API.getCountries = function( request, callback, errorHandler ) {
         jolieCall( "getCountries", request, callback, errorHandler );
     }

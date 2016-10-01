@@ -362,6 +362,20 @@ main {
     }
   }]
 
+  [ getCookingTechniques( request )( response ) {
+    scope( sql ) {
+          install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                   throw( DatabaseError )
+          );
+
+          q = queries.select_cooking_techniques;
+          query@Database( q )( result );
+          for( i = 0, i < #result.row, i++ ) {
+              response.name[ i ] = result.row[ i ].name
+          }
+    }
+  }]
+
   [ getRecipes( request )( response ) {
     scope( sql ) {
           install( SQLException => println@Console( sql.SQLException.stackTrace )();
