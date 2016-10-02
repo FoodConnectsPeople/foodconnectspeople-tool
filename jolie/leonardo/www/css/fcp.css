@@ -26,6 +26,22 @@ a:hover {
   margin-top: 5px;
 }
 
+#tags_form_group .tt-hint {
+  display:none !important;
+}
+
+.yes_tag {
+  background-color: green;
+  padding:5px;
+  border-radius:5px;
+}
+
+.not_tag {
+  background-color: #aa0000;
+  padding:5px;
+  border-radius:5px;
+}
+
 /* typeahead css */
 .tt-query, /* UPDATE: newer versions use tt-input instead of tt-query */
 .tt-hint {
@@ -78,6 +94,11 @@ a:hover {
 
 .tt-suggestion p {
     margin: 0;
+}
+
+/* tagsinput */
+.bootstrap-tagsinput {
+  width: 100% !important;
 }
 
 /* Remove the navbar's default margin-bottom and rounded borders */

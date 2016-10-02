@@ -31,6 +31,16 @@ var JolieClient = JolieClient || (function() {
         });
     }
 
+
+
+    API.getCookingTechniques = function( request, callback, errorHandler ) {
+        jolieCall( "getCookingTechniques", request, callback, errorHandler );
+    }
+
+    API.getCountries = function( request, callback, errorHandler ) {
+        jolieCall( "getCountries", request, callback, errorHandler );
+    }
+
     API.getIngredients = function( request, callback, errorHandler ) {
         jolieCall( "getIngredients", request, callback, errorHandler );
     }
@@ -39,12 +49,12 @@ var JolieClient = JolieClient || (function() {
         jolieCall( "getRecipes", request, callback, errorHandler );
     }
 
-    API.getCookingTechniques = function( request, callback, errorHandler ) {
-        jolieCall( "getCookingTechniques", request, callback, errorHandler );
+    API.getRecipeCategories = function( request, callback, errorHandler ) {
+        jolieCall( "getRecipeCategories", request, callback, errorHandler );
     }
 
-    API.getCountries = function( request, callback, errorHandler ) {
-        jolieCall( "getCountries", request, callback, errorHandler );
+    API.getTools = function( request, callback, errorHandler ) {
+        jolieCall( "getTools", request, callback, errorHandler );
     }
 
     API.mostGeneralRecipeQuery = function( request, callback, errorHandler ) {

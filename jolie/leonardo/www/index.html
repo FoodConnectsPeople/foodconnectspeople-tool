@@ -5,13 +5,20 @@
   <title>Food Connects People Tools</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="css/fcp.css">
+  <link rel="stylesheet" href="css/bootstrap-tagsinput.css">
   <script src="js/jquery1.12.4.min.js"></script>
-  <script src="js/bootstrap3.3.7.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/typeahead.js"></script>
+  <script src="js/bootstrap-select.min.js"></script>
+  <script src="js/bootstrap-tagsinput.min.js"></script>
   <script type="text/javascript" src="js/jolie-client.js"></script>
   <script type="text/javascript" src="js/fcp.js"></script>
+
 </head>
 <body>
   <script>
@@ -47,10 +54,12 @@
       <p><a onclick="showRecipes()">Recipes</a></p>
     </div>
     <div class="col-sm-10 text-left">
-      <div id="workarea"></div>
+      <div id="workarea">
+      </div>
     </div>
   </div>
 </div>
+
 
 <footer class="container-fluid text-center">
   <p>Food Connects People<br>http://www.foodconnectsopeople.com</p>
@@ -58,46 +67,3 @@
 
 </body>
 </html>
-<!--<html>
-  <head>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script type="text/javascript" src="js/spin.min.js"></script>
-    <script type="text/javascript" src="js/jolie-client.js"></script>
-    <script type="text/javascript" src="js/fcp.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="css/fcp.css">
-    <title>Food Connects People</title>
-  </head>
-
-  <body>
-    <div id="header"><div class="site-title">Food Connects People Tools</div></div>
-    <div id="body">
-        <table width="100%">
-          <td id="menu-container">
-            <ul id="menu">
-                <li><div>Ingredients</div></li>
-            </ul>
-          </td>
-          <td id="workpanel">
-            <div id="workarea"></div>
-          </td>
-        </table>
-    </div>
-  </body>
-  <script>
-  var menu = $('#menu');
-
-  $(document).ready(function(){
-    menu.menu({
-        select: function(event, ui) {
-            if ( ui.item.text() == "Ingredients" ) {
-               showIngredients();
-            }
-        }
-    });
-  });
-  </script>
-</html>-->

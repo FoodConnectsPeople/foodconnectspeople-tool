@@ -245,6 +245,14 @@ type GetRecipeResponse: void {
   }
 }
 
+type GetRecipeCategoriesResponse: void {
+  .name*: string
+}
+
+type GetToolsResponse: void {
+  .name*: string
+}
+
 interface DbServiceInterface {
   OneWay:
     tester( void )
@@ -258,6 +266,7 @@ interface DbServiceInterface {
     buildSetVsSet( BuildSetVsSetRequest )( string ) throws DatabaseError,
     getCookingTechniques( void )( GetCookingTechniquesResponse ) throws DatabaseError,
     getCountries( void )( GetCountriesResponse ) throws DatabaseError,
+    getRecipeCategories( void )( GetRecipeCategoriesResponse ) throws DatabaseError,
     getRecipes( void )( GetRecipeResponse ) throws DatabaseError,
     getIngredients( void )( GetIngredientsResponse ) throws DatabaseError,
     getIngredients_exact_match( GetIngredients_nameRequest )( GetIngredients_namepropResponse ) throws DatabaseError,
@@ -265,6 +274,7 @@ interface DbServiceInterface {
     getIngredients_into_set( GetIngredients_namelistRequest )( GetIngredients_namepropResponse ) throws DatabaseError,
     getIngredients_set_vs_set( GetIngredients_namelistRequest )( GetIngredients_namepropResponse ) throws DatabaseError,
     getProperties( void )( GetPropertiesResponse ) throws DatabaseError,
+    getTools( void )( GetToolsResponse ) throws DatabaseError,
     insertIngredient( InsertIngredientRequest )( void ) throws DatabaseError,
     insertEvent( InsertEventRequest )( void ) throws DatabaseError,
     insertUnitConversion( InsertUnitConversionRequest )( void ) throws DatabaseError,

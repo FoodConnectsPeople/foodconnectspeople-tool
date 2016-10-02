@@ -348,56 +348,7 @@ main {
     }
   }]
 
-  [ getCountries( request )( response ) {
-    scope( sql ) {
-          install( SQLException => println@Console( sql.SQLException.stackTrace )();
-                                   throw( DatabaseError )
-          );
 
-          q = queries.select_countries;
-          query@Database( q )( result );
-          for( i = 0, i < #result.row, i++ ) {
-              response.name[ i ] = result.row[ i ].name
-          }
-    }
-  }]
-
-  [ getCookingTechniques( request )( response ) {
-    scope( sql ) {
-          install( SQLException => println@Console( sql.SQLException.stackTrace )();
-                                   throw( DatabaseError )
-          );
-
-          q = queries.select_cooking_techniques;
-          query@Database( q )( result );
-          for( i = 0, i < #result.row, i++ ) {
-              response.name[ i ] = result.row[ i ].name
-          }
-    }
-  }]
-
-  [ getRecipes( request )( response ) {
-    scope( sql ) {
-          install( SQLException => println@Console( sql.SQLException.stackTrace )();
-                                   throw( DatabaseError )
-          );
-
-          q = queries.get_recipes + " ORDER BY name";
-          query@Database( q )( result );
-          for( i = 0, i < #result.row, i++ ) {
-              with( response.recipe[ i ] ) {
-                  .recipe_id = result.row[ i ].recipe_id;
-                  .recipe_name = result.row[ i ].name;
-                  .recipe_link = result.row[ i ].link;
-                  .preparation_time_minutes = result.row[ i ].preparation_time_minutes;
-                  .difficulty = result.row[ i ].difficulty;
-                  .place_of_origin = result.row[ i ].place_of_origin;
-                  .category = result.row[ i ].category;
-                  .cooking_technique = result.row[ i ].cooking_technique
-              }
-          }
-    }
-  }]
 
   [ buildCommaSeparatedString( request )( response ) {
         scope( sql ) {
@@ -690,6 +641,85 @@ main {
         }
       }
     }
+    }]
+
+    [ getCountries( request )( response ) {
+      scope( sql ) {
+            install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                     throw( DatabaseError )
+            );
+
+            q = queries.select_countries;
+            query@Database( q )( result );
+            for( i = 0, i < #result.row, i++ ) {
+                response.name[ i ] = result.row[ i ].name
+            }
+      }
+    }]
+
+    [ getCookingTechniques( request )( response ) {
+      scope( sql ) {
+            install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                     throw( DatabaseError )
+            );
+
+            q = queries.select_cooking_techniques;
+            query@Database( q )( result );
+            for( i = 0, i < #result.row, i++ ) {
+                response.name[ i ] = result.row[ i ].name
+            }
+      }
+    }]
+
+    [ getRecipes( request )( response ) {
+      scope( sql ) {
+            install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                     throw( DatabaseError )
+            );
+
+            q = queries.get_recipes + " ORDER BY name";
+            query@Database( q )( result );
+            for( i = 0, i < #result.row, i++ ) {
+                with( response.recipe[ i ] ) {
+                    .recipe_id = result.row[ i ].recipe_id;
+                    .recipe_name = result.row[ i ].name;
+                    .recipe_link = result.row[ i ].link;
+                    .preparation_time_minutes = result.row[ i ].preparation_time_minutes;
+                    .difficulty = result.row[ i ].difficulty;
+                    .place_of_origin = result.row[ i ].place_of_origin;
+                    .category = result.row[ i ].category;
+                    .cooking_technique = result.row[ i ].cooking_technique
+                }
+            }
+      }
+    }]
+
+    [ getRecipeCategories( request )( response ) {
+      scope( sql ) {
+            install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                     throw( DatabaseError )
+            );
+
+            q = queries.select_recipe_categories;
+            query@Database( q )( result );
+            for( i = 0, i < #result.row, i++ ) {
+                response.name[ i ] = result.row[ i ].name
+            }
+      }
+    }]
+
+    [ getTools( request )( response ) {
+      scope( sql ) {
+            install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                     throw( DatabaseError )
+            );
+
+            q = queries.select_tools;
+            query@Database( q )( result );
+            for( i = 0, i < #result.row, i++ ) {
+                response.name[ i ] = result.row[ i ].name
+            }
+      }
     }]
 
 

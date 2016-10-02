@@ -1,5 +1,9 @@
 var countries;
 var cooking_techniques;
+var ingredients;
+var ingredient_names = [];
+var recipe_categories;
+var tools;
 
 function onError( data ) {
     alert( data.error.message );
@@ -16,6 +20,18 @@ function initData() {
   }, onError);
   JolieClient.getCookingTechniques({}, function( data ) {
     cooking_techniques = data.name;
+  }, onError);
+  JolieClient.getRecipeCategories({}, function( data ) {
+    recipe_categories = data.name;
+  }, onError);
+  JolieClient.getTools({}, function( data ) {
+    tools = data.name;
+  }, onError);
+  JolieClient.getIngredients({}, function( data ) {
+    ingredients = data.ingredient;
+    for( var i = 0; i < ingredients.length; i++ ) {
+      ingredient_names.push( ingredients[ i ].name );
+    }
   }, onError);
 }
 
@@ -43,7 +59,7 @@ function createRecipeTable( data ) {
             }
 
             $("#recipes-table").append( "<tr>"
-              + "<td>" + '<a href= "http://www.foodconnectspeople.com/recipes/' + link + '">' + name + "</a></td>"            
+              + "<td>" + '<a href= "http://www.foodconnectspeople.com/recipes/' + link + '">' + name + "</a></td>"
               // + "<td>" + name + "</td>"
               + "<td>" + category + "</td>"
               + "<td>" + cooking_technique + "</td>"
@@ -64,10 +80,16 @@ function initializeRecipeFilter() {
     local: countries
   });
 
-  var ctBloodhound = new Bloodhound({
+  var ingredientsBloodhound = new Bloodhound({
     datumTokenizer: Bloodhound.tokenizers.whitespace,
     queryTokenizer: Bloodhound.tokenizers.whitespace,
-    local: cooking_techniques
+    local: ingredient_names
+  });
+
+  var toolsBloodhound = new Bloodhound({
+    datumTokenizer: Bloodhound.tokenizers.whitespace,
+    queryTokenizer: Bloodhound.tokenizers.whitespace,
+    local: tools
   });
 
   $('#country').typeahead({
@@ -80,33 +102,70 @@ function initializeRecipeFilter() {
     source: countriesBloodhound
   });
 
-  $('#cooking_technique').typeahead({
+  $('#main_ingredient').typeahead({
     hint: false,
     highlight: true,
     minLength: 1
   },
   {
-    name: 'cooking_technique',
-    source: ctBloodhound
+    name: 'main_ingredient',
+    source: ingredientsBloodhound
+  });
+
+  $('#yes_tool').tagsinput({
+    typeaheadjs: {
+      name: 'yes_tool',
+      source: toolsBloodhound
+    },
+    tagClass: 'yes_tag'
+  });
+
+  $('#not_tool').tagsinput({
+    typeaheadjs: {
+      name: 'not_tool',
+      source: toolsBloodhound
+    },
+    tagClass: 'not_tag'
+  });
+
+  $('#yes_ingredient').tagsinput({
+    typeaheadjs: {
+      name: 'yes_ingredient',
+      source: ingredientsBloodhound
+    },
+    tagClass: 'yes_tag'
+  });
+
+  $('#not_ingredient').tagsinput({
+    typeaheadjs: {
+      name: 'not_ingredient',
+      source: ingredientsBloodhound
+    },
+    tagClass: 'not_tag'
   });
 
   $("#country").parent().css("display","");
-  $("#cooking_technique").parent().css("display","");
+  $("#main_ingredient").parent().css("display","");
+
+  for( var c = 0; c < cooking_techniques.length; c++ ) {
+    $("#cooking_technique").append("<option>" + cooking_techniques[ c ] + "</option>")
+  }
+  $("#recipe_category").append("<option></option>");
+  for( var c = 0; c < recipe_categories.length; c++ ) {
+    $("#recipe_category").append("<option>" + recipe_categories[ c ] + "</option>")
+  }
 }
 
 /* it shows the result of a filtered search on recipes */
 function searchForRecipes() {
   var request = { "verbose":false, "language":"english" };
   var max_preparation_time = $("#max_preparation_time").val();
-  var difficulty_value = $("#difficulty_value").val();
   var country = $("#country").val();
   var recipe_category = $("#recipe_category").val();
   var main_ingredient = $("#main_ingredient").val();
-  var cooking_technique = $("#cooking_technique").val();
   var eater_category = $("#eater_category").val();
   var not_allergene = $("#not_allergene").val();
-  var yes_ingredient = $("#yes_ingredient").val();
-  var not_ingredient = $("#not_ingredient").val();
+  var not_ingredient = $("#not_ingredient").val().split(",");
   var yes_tool = $("#yes_tool").val();
   var not_tool = $("#not_tool").val();
   var appears_in_event = $("#appears_in_event").is(":checked");
@@ -114,8 +173,11 @@ function searchForRecipes() {
   if ( max_preparation_time != "" ) {
     request.max_preparation_time = max_preparation_time.toLowerCase().trim()
   }
-  if ( difficulty_value != "" ) {
-    request.difficulty_value = difficulty_value.toLowerCase().trim()
+  if ( $("#difficulty_value :selected").length > 0 ) {
+    request.difficulty_value = [];
+    $("#difficulty_value option:selected").each( function() {
+      request.difficulty_value.push( $(this).text()  );
+    });
   }
   if ( country != "" ) {
     request.country = country.toLowerCase().trim()
@@ -126,20 +188,32 @@ function searchForRecipes() {
   if ( main_ingredient != "" ) {
     request.main_ingredient = main_ingredient.toLowerCase().trim()
   }
-  if ( cooking_technique != "" ) {
-    request.cooking_technique = cooking_technique.toLowerCase().trim()
+  if ( $("#cooking_technique :selected").length > 0 ) {
+    request.cooking_technique = [];
+    $("#cooking_technique option:selected").each( function() {
+      request.cooking_technique.push( $(this).text()  );
+    });
   }
+
   if ( eater_category != "" ) {
     request.eater_category = eater_category.toLowerCase().trim()
   }
   if ( not_allergene != "" ) {
     request.not_allergene = not_allergene.toLowerCase().trim()
   }
-  if ( yes_ingredient != "" ) {
-    request.yes_ingredient = yes_ingredient.toLowerCase().trim()
+  if ( $("#yes_ingredient").val() != "" ) {
+    var yes_ingredient = $("#yes_ingredient").val().split(",");
+    request.yes_ingredient = [];
+    for( var i = 0; i < yes_ingredient.length; i++ ) {
+        request.yes_ingredient.push( yes_ingredient[ i ].toLowerCase().trim() );
+    }
   }
-  if ( not_ingredient != "" ) {
-    request.not_ingredient = not_ingredient.toLowerCase().trim()
+  if ( $("#not_ingredient").val() != "" ) {
+    var not_ingredient = $("#not_ingredient").val().split(",");
+    request.not_ingredient = [];
+    for( var i = 0; i < not_ingredient.length; i++ ) {
+        request.not_ingredient.push( not_ingredient[ i ].toLowerCase().trim() );
+    }
   }
   if ( yes_tool != "" ) {
     request.yes_tool = yes_tool.toLowerCase().trim()
@@ -158,30 +232,29 @@ function searchForRecipes() {
 /* it shows the list of ingredients calling the operation getIngredients */
 function showIngredients() {
   $("#workarea").empty();
-  JolieClient.getIngredients({}, function( data ) {
+  $("#workarea").append("<table id=\"ingredient-table\" class=\"table table-striped\"></table>");
+  $("#ingredient-table").append( "<tr><th>Ingredient</th><th>Class</th><th>Properties</th><th>Allergene</th></tr>");
+  for( var i = 0; i < ingredients.length; i++ ) {
+      var name = ingredients[ i ].name;
+      var ingredient_class = ingredients[ i ].ingredient_class;
+      var ingredient_properties = ingredients[ i ].properties.replace(/_/g," ");
+      var ingredient_allergene = ingredients[ i ].allergene.replace(/_/g," ");
 
-      $("#workarea").append("<table id=\"ingredient-table\" class=\"table table-striped\"></table>");
-      $("#ingredient-table").append( "<tr><th>Ingredient</th><th>Class</th><th>Properties</th><th>Allergene</th></tr>");
-      for( var i = 0; i < data.ingredient.length; i++ ) {
-          var name = data.ingredient[ i ].name;
-          var ingredient_class = data.ingredient[ i ].ingredient_class;
-          var ingredient_properties = data.ingredient[ i ].properties.replace(/_/g," ");
-          var ingredient_allergene = data.ingredient[ i ].allergene.replace(/_/g," ");
-
-          $("#ingredient-table").append( "<tr><td>"
-            + name + "</td><td>" +
-            "<img src=\"images/ingredients/" + ingredient_class.replace(" ","-") + ".png\"></td><td>" +
-             ingredient_properties + "</td><td>" + ingredient_allergene + "</td></tr>");
-      }
-  }, onError);
+      $("#ingredient-table").append( "<tr><td>"
+        + name + "</td><td>" +
+        "<img src=\"images/ingredients/" + ingredient_class.replace(" ","-") + ".png\"></td><td>" +
+         ingredient_properties + "</td><td>" + ingredient_allergene + "</td></tr>");
+  }
 }
 
 /* it shows all the recipes */
 function showRecipes() {
     $("#workarea").empty();
-    $("#workarea").load( "recipe_filter.html" );
-
-
+    $("#workarea").load( "recipe_filter.html", function() {
+      initializeRecipeFilter();
+      $(".selectpicker").selectpicker('refresh');
+      $("#workarea input[data-role='tagsinput']").tagsinput('refresh');
+    } );
     JolieClient.getRecipes({}, function( data ) {
         createRecipeTable( data )
     }, onError);
