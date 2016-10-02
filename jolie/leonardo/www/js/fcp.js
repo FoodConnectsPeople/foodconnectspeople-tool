@@ -30,7 +30,8 @@ function createRecipeTable( data ) {
     + "<th>Place of Origin</th><th>Preparation Time</th><th>Difficulty</th></tr>");
     if ( data.hasOwnProperty( "recipe") ) {
         for( var i = 0; i < data.recipe.length; i++ ) {
-            var name = data.recipe[ i ].name;
+            var name = data.recipe[ i ].recipe_name;
+            var link = data.recipe[ i ].recipe_link;
             var category = data.recipe[ i ].category;
             var cooking_technique = data.recipe[ i ].cooking_technique;
             var place_of_origin = data.recipe[ i ].place_of_origin;
@@ -41,12 +42,15 @@ function createRecipeTable( data ) {
               difficulty_stars = difficulty_stars + "<img src=\"images/star-icon.png\">"
             }
 
-            $("#recipes-table").append( "<tr><td>"
-              + name + "</td><td>" + category +
-              "</td><td>" + cooking_technique + "</td><td>"
-              + place_of_origin + "</td><td>"
-              + preparation_time + "</td><td>"
-              + difficulty_stars + "</td></tr>");
+            $("#recipes-table").append( "<tr>"
+              + "<td>" + '<a href= "http://www.foodconnectspeople.com/recipes/' + link + '">' + name + "</a></td>"            
+              // + "<td>" + name + "</td>"
+              + "<td>" + category + "</td>"
+              + "<td>" + cooking_technique + "</td>"
+              + "<td>" + place_of_origin + "</td>"
+              + "<td>" + preparation_time + "</td>"
+              + "<td>" + difficulty_stars + "</td>"
+              + "</tr>");
         }
     }
 }
