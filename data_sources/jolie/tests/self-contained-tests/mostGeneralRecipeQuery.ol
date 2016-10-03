@@ -65,24 +65,41 @@ main {
         println@Console("  Link : " + res.recipe[i].recipe_link)()
       }
 
-      /**
+
       ;
 
+      println@Console("-------------------")();
       getEaterCategories@DbService()(res);
       for (i = 0, i < #res.name, i++) {
         println@Console("Eater category : " + res.name[i])()
       };
 
+      println@Console("-------------------")();
+      getEventCategories@DbService()(res);
+      for (i = 0, i < #res.name, i++) {
+        println@Console("Event category : " + res.name[i])()
+      };
+
+      println@Console("-------------------")();
       getAllergenes@DbService()(res);
       for (i = 0, i < #res.name, i++) {
         println@Console("Allergene : " + res.name[i])()
       };
 
+      println@Console("-------------------")();
       getTools@DbService()(res);
       for (i = 0, i < #res.name, i++) {
         println@Console("Tool : " + res.name[i])()
+      };
+
+      println@Console("-------------------")();
+      getEvents@DbService()(res);
+      for (i = 0, i < #res.event, i++) {
+        println@Console("Event : #"
+            + res.event[i].event_id + " " + res.event[i].name + " , "
+            + res.event[i].start_date + "-" + res.event[i].end_date + " , "
+            + res.event[i].place + " ( " + res.event[i].category + " )")()
       }
-      ***/
-      
+
 
 }

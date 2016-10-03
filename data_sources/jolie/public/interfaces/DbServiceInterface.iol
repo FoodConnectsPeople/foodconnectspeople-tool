@@ -245,7 +245,22 @@ type GetRecipeResponse: void {
   }
 }
 
+type GetEventsResponse: void {
+  .event*: void {
+    .event_id: int
+    .name: string
+    .place: string
+    .start_date: string
+    .end_date: string
+    .category: string
+  }
+}
+
 type GetEaterCategoriesResponse: void {
+  .name*: string
+}
+
+type GetEventCategoriesResponse: void {
   .name*: string
 }
 
@@ -275,6 +290,7 @@ interface DbServiceInterface {
     getCookingTechniques( void )( GetCookingTechniquesResponse ) throws DatabaseError,
     getCountries( void )( GetCountriesResponse ) throws DatabaseError,
     getEaterCategories( void )( GetEaterCategoriesResponse ) throws DatabaseError,
+    getEventCategories( void )( GetEventCategoriesResponse ) throws DatabaseError,
     getAllergenes( void )( GetAllergenesResponse ) throws DatabaseError,
     getRecipeCategories( void )( GetRecipeCategoriesResponse ) throws DatabaseError,
     getRecipes( void )( GetRecipeResponse ) throws DatabaseError,
@@ -285,6 +301,7 @@ interface DbServiceInterface {
     getIngredients_set_vs_set( GetIngredients_namelistRequest )( GetIngredients_namepropResponse ) throws DatabaseError,
     getProperties( void )( GetPropertiesResponse ) throws DatabaseError,
     getTools( void )( GetToolsResponse ) throws DatabaseError,
+    getEvents( void )( GetEventsResponse ) throws DatabaseError,
     insertIngredient( InsertIngredientRequest )( void ) throws DatabaseError,
     insertEvent( InsertEventRequest )( void ) throws DatabaseError,
     insertUnitConversion( InsertUnitConversionRequest )( void ) throws DatabaseError,

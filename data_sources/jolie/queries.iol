@@ -25,6 +25,7 @@ define __queries {
     .select_properties = "SELECT name, property_id FROM FCP.properties";
     .select_recipe_categories = "SELECT name, category_id FROM FCP.recipecategories ORDER BY name";
     .select_tools = "SELECT name, tool_id FROM FCP.tools ORDER BY name";
+    .select_events = "SELECT name, event_id, place, start_date, end_date, category FROM FCP.events ORDER BY name";
     .select_ingredients = "SELECT ingredient_id, name, properties, allergene, ingredient_class FROM FCP.ingredients ORDER BY ingredient_class, name ";
     .get_recipes = "SELECT recipe_id, name, preparation_time_minutes,
       difficulty, place_of_origin, category, cooking_technique, link

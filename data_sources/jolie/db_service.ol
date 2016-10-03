@@ -676,6 +676,24 @@ main {
       }
     }]
 
+    [ getEventCategories( request )( response ) {
+      scope( sql ) {
+            install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                     throw( DatabaseError )
+            );
+
+            // TO BE DONE:
+            // q = queries.FOO;
+            // query@Database( q )( result );
+            //for( i = 0, i < #result.row, i++ ) {
+            //    response.name[ i ] = result.row[ i ].name
+            //}
+
+            response.name[0] = "workshop";
+            response.name[1] = "charity dinner"
+      }
+    }]
+
     [ getAllergenes( request )( response ) {
       scope( sql ) {
             install( SQLException => println@Console( sql.SQLException.stackTrace )();
@@ -760,6 +778,25 @@ main {
       }
     }]
 
+
+    [ getEvents( request )( response ) {
+      scope( sql ) {
+            install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                     throw( DatabaseError )
+            );
+
+            q = queries.select_events;
+            query@Database( q )( result );
+            for( i = 0, i < #result.row, i++ ) {
+                response.event[ i ].event_id = result.row[ i ].event_id;
+                response.event[ i ].name = result.row[ i ].name;
+                response.event[ i ].place = result.row[ i ].place;
+                response.event[ i ].start_date = result.row[ i ].start_date;
+                response.event[ i ].end_date = result.row[ i ].end_date;
+                response.event[ i ].category = result.row[ i ].category                
+            }
+      }
+    }]
 
     [ mostGeneralRecipeQuery( request )( response ) {
           scope( sql ) {
