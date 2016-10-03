@@ -1,7 +1,15 @@
 - Align transform-ingredients.py to generate ingredients.csv in current format
+
 - Improve multilanguage by having a simple multi-context string with separators (add python script to generate proper csv)
-- Add instructions for data entry in xsl file to keep it aligned
+
 - Implement "real" (vs. hardcoded) getEaterCategories
+
 - Implement "real" (vs. hardcoded) getAllergenes
+
 - Implement "real" (vs. hardcoded)  get EventCategories
-- implement getFullRecipe
+
+- Implement getFullRecipe
+
+- Fix links of all recipes in Excel file (and export .csv)
+
+- Verify and de-ambiguate/normalize synonimic ingredients
