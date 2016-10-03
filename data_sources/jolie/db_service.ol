@@ -657,6 +657,44 @@ main {
       }
     }]
 
+    [ getEaterCategories( request )( response ) {
+      scope( sql ) {
+            install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                     throw( DatabaseError )
+            );
+
+            // TO BE DONE:
+            // q = queries.FOO;
+            // query@Database( q )( result );
+            //for( i = 0, i < #result.row, i++ ) {
+            //    response.name[ i ] = result.row[ i ].name
+            //}
+
+            response.name[0] = "onnivore";
+            response.name[1] = "vegetarian";
+            response.name[2] = "vegan"
+      }
+    }]
+
+    [ getAllergenes( request )( response ) {
+      scope( sql ) {
+            install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                     throw( DatabaseError )
+            );
+
+            // TO BE DONE:
+            // q = queries.FOO;
+            // query@Database( q )( result );
+            //for( i = 0, i < #result.row, i++ ) {
+            //    response.name[ i ] = result.row[ i ].name
+            //}
+
+            response.name[0] = "gluten";
+            response.name[1] = "lactose"
+      }
+    }]
+
+
     [ getCookingTechniques( request )( response ) {
       scope( sql ) {
             install( SQLException => println@Console( sql.SQLException.stackTrace )();

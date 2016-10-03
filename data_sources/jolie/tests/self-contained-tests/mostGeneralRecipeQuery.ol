@@ -64,4 +64,25 @@ main {
         println@Console("  Name : " + res.recipe[i].recipe_name)();
         println@Console("  Link : " + res.recipe[i].recipe_link)()
       }
+
+      /**
+      ;
+
+      getEaterCategories@DbService()(res);
+      for (i = 0, i < #res.name, i++) {
+        println@Console("Eater category : " + res.name[i])()
+      };
+
+      getAllergenes@DbService()(res);
+      for (i = 0, i < #res.name, i++) {
+        println@Console("Allergene : " + res.name[i])()
+      };
+
+      getTools@DbService()(res);
+      for (i = 0, i < #res.name, i++) {
+        println@Console("Tool : " + res.name[i])()
+      }
+      ***/
+      
+
 }

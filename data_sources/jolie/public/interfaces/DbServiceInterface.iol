@@ -245,6 +245,14 @@ type GetRecipeResponse: void {
   }
 }
 
+type GetEaterCategoriesResponse: void {
+  .name*: string
+}
+
+type GetAllergenesResponse: void {
+  .name*: string
+}
+
 type GetRecipeCategoriesResponse: void {
   .name*: string
 }
@@ -266,6 +274,8 @@ interface DbServiceInterface {
     buildSetVsSet( BuildSetVsSetRequest )( string ) throws DatabaseError,
     getCookingTechniques( void )( GetCookingTechniquesResponse ) throws DatabaseError,
     getCountries( void )( GetCountriesResponse ) throws DatabaseError,
+    getEaterCategories( void )( GetEaterCategoriesResponse ) throws DatabaseError,
+    getAllergenes( void )( GetAllergenesResponse ) throws DatabaseError,
     getRecipeCategories( void )( GetRecipeCategoriesResponse ) throws DatabaseError,
     getRecipes( void )( GetRecipeResponse ) throws DatabaseError,
     getIngredients( void )( GetIngredientsResponse ) throws DatabaseError,
