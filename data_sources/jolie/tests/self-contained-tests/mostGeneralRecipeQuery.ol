@@ -63,10 +63,7 @@ main {
         println@Console("  ID : " + res.recipe[i].recipe_id)();
         println@Console("  Name : " + res.recipe[i].recipe_name)();
         println@Console("  Link : " + res.recipe[i].recipe_link)()
-      }
-
-
-      ;
+      };
 
       println@Console("-------------------")();
       getEaterCategories@DbService()(res);
@@ -99,7 +96,47 @@ main {
             + res.event[i].event_id + " " + res.event[i].name + " , "
             + res.event[i].start_date + "-" + res.event[i].end_date + " , "
             + res.event[i].place + " ( " + res.event[i].category + " )")()
-      }
+      };
 
+      recipe_id = 28;
+      getRecipeDetails@DbService(recipe_id)(response);
+
+      println@Console("Name : " + response.name)();
+      println@Console("Prep. time : " + response.preparation_time)();
+      println@Console("Lat. : " + response.is_from_latitude)();
+      println@Console("Lon. : " + response.is_from_longitude)();
+      println@Console("Number of persons : " + response.persons)();
+      println@Console("Difficulty : " + response.difficulty)();
+      println@Console("Origin : " + response.place_of_origin)();
+      println@Console("Category : " + response.category)();
+      println@Console("Main ingredient : " + response.main_ingredient)();
+      println@Console("Cooking_technique : " + response.cooking_technique)();
+      println@Console("Link : " + response.link)();
+
+      println@Console(" --- Ingredients : ")();
+      for (i = 0, i < #response.ingredient, i++) {
+        println@Console(" Ingredient #" + (i+1)+ " : ")();
+        println@Console("     Name : " + response.ingredient[i].ingredient_name)();
+        println@Console("     Qty  : " + response.ingredient[i].ingredient_quantity + " " + response.ingredient[i].unit_of_measure)();
+        println@Console("     Prep.: " + response.ingredient[i].preparation_technique)();
+        println@Console("     Alt. : " + response.ingredient[i].alternate_ingredient)()
+      };
+
+      println@Console(" --- Tools : ")();
+      for (i = 0, i < #response.tool, i++) {
+        println@Console(" Tool #" + (i+1)+ " : ")();
+        println@Console("   Name : " + response.tool[i].tool_name)();
+        println@Console("   Qty  : " + response.tool[i].tool_quantity)()
+      };
+
+      println@Console(" --- Events : ")();
+      for (i = 0, i < #response.event, i++) {
+        println@Console(" Event #" + (i+1)+ " : ")();
+        println@Console("   Name : " + response.event[i].event_name)();
+        println@Console("   Place : " + response.event[i].event_place)();
+        println@Console("   From : " + response.event[i].event_start_date)();
+        println@Console("   To   : " + response.event[i].event_end_date)();
+        println@Console("   Type : " + response.event[i].event_category)()
+      }
 
 }

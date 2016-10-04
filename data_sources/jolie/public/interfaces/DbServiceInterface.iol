@@ -276,6 +276,38 @@ type GetToolsResponse: void {
   .name*: string
 }
 
+type GetRecipeDetailsResponse: void {
+  .name: string
+  .link: string
+  .preparation_time : int
+  .persons: int
+  .difficulty: int
+  .place_of_origin: string
+  .is_from_latitude : double
+  .is_from_longitude : double
+  .category: string
+  .main_ingredient: string
+  .cooking_technique: string
+  .ingredient * : void {
+    .ingredient_name : string
+    .ingredient_quantity : string
+    .unit_of_measure : string
+    .preparation_technique : string
+    .alternate_ingredient : string
+  }
+  .tool * : void {
+    .tool_name : string
+    .tool_quantity: int
+  }
+  .event * : void {
+    .event_name : string
+    .event_place : string
+    .event_start_date : string
+    .event_end_date : string
+    .event_category : string
+  }
+}
+
 interface DbServiceInterface {
   OneWay:
     tester( void )
@@ -302,6 +334,7 @@ interface DbServiceInterface {
     getProperties( void )( GetPropertiesResponse ) throws DatabaseError,
     getTools( void )( GetToolsResponse ) throws DatabaseError,
     getEvents( void )( GetEventsResponse ) throws DatabaseError,
+    getRecipeDetails( int ) (GetRecipeDetailsResponse) throws DatabaseError,
     insertIngredient( InsertIngredientRequest )( void ) throws DatabaseError,
     insertEvent( InsertEventRequest )( void ) throws DatabaseError,
     insertUnitConversion( InsertUnitConversionRequest )( void ) throws DatabaseError,

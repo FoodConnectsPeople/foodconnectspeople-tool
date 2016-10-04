@@ -793,7 +793,63 @@ main {
                 response.event[ i ].place = result.row[ i ].place;
                 response.event[ i ].start_date = result.row[ i ].start_date;
                 response.event[ i ].end_date = result.row[ i ].end_date;
-                response.event[ i ].category = result.row[ i ].category                
+                response.event[ i ].category = result.row[ i ].category
+            }
+      }
+    }]
+
+    [ getRecipeDetails( request )( response ) {
+      scope( sql ) {
+            install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                     throw( DatabaseError )
+            );
+
+            q = "SELECT name, link, preparation_time_minutes, persons, difficulty, place_of_origin, is_from_latitude, is_from_longitude, category, main_ingredient, cooking_technique FROM fcp.recipes WHERE recipe_id = " + request;
+            query@Database( q )( result );
+            if (#result.row != 1) { println@Console("ERROR: recipe #" + request + " has no (unambiguous) entry in table recipes")() };
+
+            response.name = result.row[0].name;
+            response.link = result.row[0].link;
+            response.preparation_time = result.row[0].preparation_time_minutes;
+            response.is_from_latitude = result.row[0].is_from_latitude;
+            response.is_from_longitude = result.row[0].is_from_longitude;
+            response.persons = result.row[0].persons;
+            response.difficulty = result.row[0].difficulty;
+            response.place_of_origin = result.row[0].place_of_origin;
+            response.category = result.row[0].category;
+            response.main_ingredient = result.row[0].main_ingredient;
+            response.cooking_technique = result.row[0].cooking_technique;
+
+            q = "SELECT ingredient, quantity, unit_of_measure, preparation_technique, alternate_ingredient FROM fcp.recipeingredients WHERE recipe_id = " + request;
+            query@Database( q )( result );
+            if (#result.row == 0) { println@Console("ERROR: recipe #" + request + " has no ingredients")() };
+            for (i = 0, i < #result.row, i++) {
+              response.ingredient[i].ingredient_name = result.row[i].ingredient;
+              response.ingredient[i].ingredient_quantity = result.row[i].quantity;
+              response.ingredient[i].unit_of_measure = result.row[i].unit_of_measure;
+              response.ingredient[i].preparation_technique = result.row[i].preparation_technique;
+              response.ingredient[i].alternate_ingredient = result.row[i].alternate_ingredient
+            };
+
+            q = "SELECT tool_name, tool_quantity FROM fcp.recipetools WHERE recipe_id = " + request;
+            query@Database( q )( result );
+            for (i = 0, i < #result.row, i++) {
+              response.tool[i].tool_name = result.row[i].tool_name;
+              response.tool[i].tool_quantity = result.row[i].tool_quantity
+            };
+
+            q = "SELECT event_id FROM fcp.recipeevents WHERE recipe_id = " + request;
+            query@Database( q )( result );
+            if (#result.row == 0) { println@Console("ERROR: recipe #" + request + " appears in no event")() };
+            for (i = 0, i < #result.row, i++) {
+              q2 = "SELECT name, place, start_date, end_date, category FROM fcp.events WHERE event_id = " + result.row[i].event_id;
+              query@Database( q2 )( result2 );
+              if (#result2.row != 1) { println@Console("ERROR: event #" + result.row[i].event_id + " is not (univoquely) defined ")() };
+              response.event[i].event_name = result2.row[0].name;
+              response.event[i].event_place = result2.row[0].place;
+              response.event[i].event_start_date = result2.row[0].start_date;
+              response.event[i].event_end_date = result2.row[0].end_date;
+              response.event[i].event_category = result2.row[0].category
             }
       }
     }]
