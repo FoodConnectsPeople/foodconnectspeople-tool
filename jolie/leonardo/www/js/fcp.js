@@ -4,6 +4,9 @@ var ingredients;
 var ingredient_names = [];
 var recipe_categories;
 var tools;
+var allergenes;
+var eater_categories;
+var events;
 
 function onError( data ) {
     alert( data.error.message );
@@ -24,8 +27,17 @@ function initData() {
   JolieClient.getRecipeCategories({}, function( data ) {
     recipe_categories = data.name;
   }, onError);
+  JolieClient.getEaterCategories({}, function( data ) {
+    eater_categories = data.name;
+  }, onError);
   JolieClient.getTools({}, function( data ) {
     tools = data.name;
+  }, onError);
+  JolieClient.getAllergenes({}, function( data ) {
+    allergenes = data.name;
+  }, onError);
+  JolieClient.getEvents({}, function( data ) {
+    events = data.event;
   }, onError);
   JolieClient.getIngredients({}, function( data ) {
     ingredients = data.ingredient;
@@ -150,9 +162,19 @@ function initializeRecipeFilter() {
   for( var c = 0; c < cooking_techniques.length; c++ ) {
     $("#cooking_technique").append("<option>" + cooking_techniques[ c ] + "</option>")
   }
+  for( var c = 0; c < eater_categories.length; c++ ) {
+    $("#eater_category").append("<option>" + eater_categories[ c ] + "</option>")
+  }
+  for( var c = 0; c < allergenes.length; c++ ) {
+    $("#not_allergene").append("<option>" + allergenes[ c ] + "</option>")
+  }
   $("#recipe_category").append("<option></option>");
   for( var c = 0; c < recipe_categories.length; c++ ) {
     $("#recipe_category").append("<option>" + recipe_categories[ c ] + "</option>")
+  }
+  $("#appears_in_event").append("<option></option>");
+  for( var c = 0; c < events.length; c++ ) {
+    $("#appears_in_event").append("<option>" + events[ c ].name + "</option>")
   }
 }
 
@@ -168,7 +190,7 @@ function searchForRecipes() {
   var not_ingredient = $("#not_ingredient").val().split(",");
   var yes_tool = $("#yes_tool").val();
   var not_tool = $("#not_tool").val();
-  var appears_in_event = $("#appears_in_event").is(":checked");
+  var appears_in_event = $("#appears_in_event").val();
 
   if ( max_preparation_time != "" ) {
     request.max_preparation_time = max_preparation_time.toLowerCase().trim()
@@ -195,11 +217,17 @@ function searchForRecipes() {
     });
   }
 
-  if ( eater_category != "" ) {
-    request.eater_category = eater_category.toLowerCase().trim()
+  if ( $("#eater_category :selected").length > 0 ) {
+    request.eater_category = [];
+    $("#eater_category option:selected").each( function() {
+      request.eater_category.push( $(this).text()  );
+    });
   }
-  if ( not_allergene != "" ) {
-    request.not_allergene = not_allergene.toLowerCase().trim()
+  if ( $("#not_allergene :selected").length > 0 ) {
+    request.not_allergene = [];
+    $("#not_allergene option:selected").each( function() {
+      request.not_allergene.push( $(this).text()  );
+    });
   }
   if ( $("#yes_ingredient").val() != "" ) {
     var yes_ingredient = $("#yes_ingredient").val().split(",");
@@ -216,10 +244,10 @@ function searchForRecipes() {
     }
   }
   if ( yes_tool != "" ) {
-    request.yes_tool = yes_tool.toLowerCase().trim()
+    request.yes_tool = yes_tool.toLowerCase().trim().split(",")
   }
   if ( not_tool != "" ) {
-    request.not_tool = not_tool.toLowerCase().trim()
+    request.not_tool = not_tool.toLowerCase().trim().split(",")
   }
   if ( appears_in_event != "" ) {
     request.appears_in_event = appears_in_event.toLowerCase().trim()
@@ -229,7 +257,28 @@ function searchForRecipes() {
   }, onError);
 }
 
-/* it shows the list of ingredients calling the operation getIngredients */
+/* it shows the list of events */
+function showEvents() {
+  $("#workarea").empty();
+  $("#workarea").append("<table id=\"events-table\" class=\"table table-striped\"></table>");
+  $("#events-table").append( "<tr><th>Event</th><th>Place</th><th>Start Date</th><th>End Date</th><th>Category</th></tr>");
+  for( var i = 0; i < events.length; i++ ) {
+      var name = events[ i ].name;
+      var event_place = events[ i ].place;
+      var event_start_date = events[ i ].start_date;
+      var event_end_date = events[ i ].end_date;
+      var category = events[ i ].category;
+
+      $("#events-table").append( "<tr><td>"
+        + name + "</td><td>"
+        + event_place + "</td><td>"
+        + event_start_date + "</td><td>"
+        + event_end_date + "</td><td>"
+        + category + "</td></tr>");
+  }
+}
+
+/* it shows the list of ingredients */
 function showIngredients() {
   $("#workarea").empty();
   $("#workarea").append("<table id=\"ingredient-table\" class=\"table table-striped\"></table>");

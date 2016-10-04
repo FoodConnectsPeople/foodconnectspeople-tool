@@ -32,6 +32,14 @@ var JolieClient = JolieClient || (function() {
     }
 
 
+    API.getAllergenes = function( request, callback, errorHandler ) {
+        jolieCall( "getAllergenes", request, callback, errorHandler );
+    }
+
+    API.getEaterCategories = function( request, callback, errorHandler ) {
+        jolieCall( "getEaterCategories", request, callback, errorHandler );
+    }
+
 
     API.getCookingTechniques = function( request, callback, errorHandler ) {
         jolieCall( "getCookingTechniques", request, callback, errorHandler );
@@ -39,6 +47,10 @@ var JolieClient = JolieClient || (function() {
 
     API.getCountries = function( request, callback, errorHandler ) {
         jolieCall( "getCountries", request, callback, errorHandler );
+    }
+
+    API.getEvents = function( request, callback, errorHandler ) {
+        jolieCall( "getEvents", request, callback, errorHandler );
     }
 
     API.getIngredients = function( request, callback, errorHandler ) {
