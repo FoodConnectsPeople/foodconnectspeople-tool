@@ -10,6 +10,8 @@
 
 - Implement getFullRecipe
 
+- implement getEventRecipes: given an event id it returns all the recipes for that event. Use type GetRecipesResponse
+
 - Fix links of all recipes in Excel file (and export .csv)
 
 - Verify and de-ambiguate/normalize synonimic ingredients

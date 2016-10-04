@@ -77,6 +77,50 @@ type GetIngredients_namelistRequest: void {
   .name*: string
 }
 
+type GetRecipeResponse: void {
+  .recipe*: void {
+    .recipe_id: int
+    .recipe_name: string
+    .recipe_link: string
+    .preparation_time_minutes: int
+    .difficulty: int
+    .place_of_origin: string
+    .category: string
+    .cooking_technique: string
+  }
+}
+
+type GetEventsResponse: void {
+  .event*: void {
+    .event_id: int
+    .name: string
+    .place: string
+    .start_date: string
+    .end_date: string
+    .category: string
+  }
+}
+
+type GetEaterCategoriesResponse: void {
+  .name*: string
+}
+
+type GetEventCategoriesResponse: void {
+  .name*: string
+}
+
+type GetAllergenesResponse: void {
+  .name*: string
+}
+
+type GetRecipeCategoriesResponse: void {
+  .name*: string
+}
+
+type GetToolsResponse: void {
+  .name*: string
+}
+
 type buildCommaRequest: void {
   .str* : string
 }
@@ -232,49 +276,6 @@ type TranslateRequest: void {
 
 
 
-type GetRecipeResponse: void {
-  .recipe*: void {
-    .recipe_id: int
-    .recipe_name: string
-    .recipe_link: string
-    .preparation_time_minutes: int
-    .difficulty: int
-    .place_of_origin: string
-    .category: string
-    .cooking_technique: string
-  }
-}
-
-type GetEventsResponse: void {
-  .event*: void {
-    .event_id: int
-    .name: string
-    .place: string
-    .start_date: string
-    .end_date: string
-    .category: string
-  }
-}
-
-type GetEaterCategoriesResponse: void {
-  .name*: string
-}
-
-type GetEventCategoriesResponse: void {
-  .name*: string
-}
-
-type GetAllergenesResponse: void {
-  .name*: string
-}
-
-type GetRecipeCategoriesResponse: void {
-  .name*: string
-}
-
-type GetToolsResponse: void {
-  .name*: string
-}
 
 type GetRecipeDetailsResponse: void {
   .name: string
