@@ -1340,10 +1340,36 @@ main {
                   println@Console ("Error: unknown target language " + request.to)()
                 };
 
-                if (request.str == ",,") {
+
+                str = request.str;
+
+                if ( (str == ",," ) || (str == ",") ) {
                   str = ""
                 } else {
-                  str = request.str
+                  str.prefix = ",";
+                  startsWith@StringUtils(str)(swith);
+                  undef(str.prefix);
+                  if (swith) {
+                    length@StringUtils(str)(len);
+                    str.begin = 1;
+                    str.end   = len - 1;
+                    substring@StringUtils(str)(str1);
+                    str = str1;
+                    undef(str.begin);
+                    undef(str.end)
+                  };
+                  str.suffix = ",";
+                  endsWith@StringUtils(str)(ewith);
+                  undef(str.suffix);
+                  if (ewith) {
+                    length@StringUtils(str)(len);
+                    str.begin = 0;
+                    str.end   = len - 2;
+                    substring@StringUtils(str)(str1);
+                    str = str1;
+                    undef(str.begin);
+                    undef(str.end)
+                  }
                 };
 
                 if ( (str == "") || (request.from == request.to) ) {
@@ -1365,10 +1391,10 @@ main {
                   // println@Console ("Now querying translation: {" + q + "}" )();
                   query@Database( q )( result );
                   if (#result.row > 1 ) {
-                    println@Console("WARNING: non-univoque translation for '" + request.str + "' in ( " + request.table + ", " + request.column + ")")()
+                    println@Console("WARNING: non-univoque translation for '" + str + "' in ( " + request.table + ", " + request.column + ")")()
                   };
                   if (#result.row < 1 ) {
-                    println@Console("ERROR: non-existing translation for '" + request.str + "' in ( " + request.table + ", " + request.column + ")")();
+                    println@Console("ERROR: non-existing translation for '" + str + "' in ( " + request.table + ", " + request.column + ")")();
                     response = "**********"
                   };
                   if (#result.row > 0) {

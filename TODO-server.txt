@@ -8,8 +8,6 @@
 
 - Implement "real" (vs. hardcoded)  get EventCategories
 
-- fix translation of comma-separated lists (remove trailing and finishing ",")
-
 - fix typo in bulgur entry (worked as ", ,")
 
 - Verify links of recipes via client
