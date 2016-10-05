@@ -263,8 +263,6 @@ type MostGeneralQueryResponse: void {
   }
 }
 
-
-
 type TranslateRequest: void {
   .str     : string
   .from    : string
@@ -274,8 +272,15 @@ type TranslateRequest: void {
   .column  [0,1] : string
 }
 
+type GetEventRecipesRequest: void {
+  .event_id     : int
+  .language     : string
+}
 
-
+type GetRecipeDetailsRequest: void {
+  .recipe_id     : int
+  .language     : string
+}
 
 type GetRecipeDetailsResponse: void {
   .name: string
@@ -327,6 +332,7 @@ interface DbServiceInterface {
     getAllergenes( void )( GetAllergenesResponse ) throws DatabaseError,
     getRecipeCategories( void )( GetRecipeCategoriesResponse ) throws DatabaseError,
     getRecipes( void )( GetRecipeResponse ) throws DatabaseError,
+    getEventRecipes( GetEventRecipesRequest )( GetRecipeResponse ) throws DatabaseError,
     getIngredients( void )( GetIngredientsResponse ) throws DatabaseError,
     getIngredients_exact_match( GetIngredients_nameRequest )( GetIngredients_namepropResponse ) throws DatabaseError,
     getIngredients_fuzzy_match( GetIngredients_nameRequest )( GetIngredients_namepropResponse ) throws DatabaseError,
@@ -335,7 +341,7 @@ interface DbServiceInterface {
     getProperties( void )( GetPropertiesResponse ) throws DatabaseError,
     getTools( void )( GetToolsResponse ) throws DatabaseError,
     getEvents( void )( GetEventsResponse ) throws DatabaseError,
-    getRecipeDetails( int ) (GetRecipeDetailsResponse) throws DatabaseError,
+    getRecipeDetails( GetRecipeDetailsRequest ) (GetRecipeDetailsResponse) throws DatabaseError,
     insertIngredient( InsertIngredientRequest )( void ) throws DatabaseError,
     insertEvent( InsertEventRequest )( void ) throws DatabaseError,
     insertUnitConversion( InsertUnitConversionRequest )( void ) throws DatabaseError,

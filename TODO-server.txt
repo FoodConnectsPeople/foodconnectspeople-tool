@@ -8,10 +8,10 @@
 
 - Implement "real" (vs. hardcoded)  get EventCategories
 
-- Implement getFullRecipe
+- fix translation of comma-separated lists (remove trailing and finishing ",")
 
-- implement getEventRecipes: given an event id it returns all the recipes for that event. Use type GetRecipesResponse
+- fix typo in bulgur entry (worked as ", ,")
 
-- Fix links of all recipes in Excel file (and export .csv)
+- Verify links of recipes via client
 
 - Verify and de-ambiguate/normalize synonimic ingredients

@@ -98,8 +98,10 @@ main {
             + res.event[i].place + " ( " + res.event[i].category + " )")()
       };
 
-      recipe_id = 28;
-      getRecipeDetails@DbService(recipe_id)(response);
+      undef(request);
+      request.recipe_id = 28;
+      request.language = language;
+      getRecipeDetails@DbService(request)(response);
 
       println@Console("Name : " + response.name)();
       println@Console("Prep. time : " + response.preparation_time)();
@@ -137,6 +139,18 @@ main {
         println@Console("   From : " + response.event[i].event_start_date)();
         println@Console("   To   : " + response.event[i].event_end_date)();
         println@Console("   Type : " + response.event[i].event_category)()
+      };
+
+      undef(request);
+      request.language = language;
+      request.event_id = 2;
+      getEventRecipes@DbService(request)(res);
+      println@Console("Number of recipes for event #" + request.event_id + " : " + #res.recipe)();
+      for( i = 0, i < #res.recipe, i++ ) {
+        println@Console("Recipe #" + i + " : ")();
+        println@Console("  ID : " + res.recipe[i].recipe_id)();
+        println@Console("  Name : " + res.recipe[i].recipe_name)();
+        println@Console("  Link : " + res.recipe[i].recipe_link)()
       }
 
 }
