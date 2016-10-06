@@ -24,13 +24,14 @@ if __name__ == '__main__':
         for line in ingredients:
             # Skip 1st line (headers)
             if line_number == 0:
+                print("ingredient_id,name,properties,allergene,ingredient_class")
                 line_number += 1
                 continue
 
-            # A line contains 6 fields:
-            #ingredient,is_vegetarian,is_vegan,is_gluten_free,is_lactose_free,is_spice
+            # A line contains 7 fields:
+            #ingredient,is_vegetarian,is_vegan,is_gluten_free,is_lactose_free,is_spice,class
             fields = line.split(separator)
-            if len(fields) != 6:
+            if len(fields) != 7:
                 print("Corrupted line " + str(line_number))
                 print(line)
                 continue
@@ -47,14 +48,11 @@ if __name__ == '__main__':
                 properties.append('vegetarian')
             if fields[2] == "TRUE":
                 properties.append('vegan')
-            if fields[5] == "TRUE":
-                properties.append('spice')
-            if len(properties) > 0:
-                res += '__'
-                res += ('__').join(properties)
-                res += '__' + separator
-            else:
-                res += separator
+            properties.append('onnivore')
+
+            res += '__'
+            res += ('__').join(properties)
+            res += '__' + separator
 
             allergenes = []
             if fields[3] == "FALSE":
@@ -66,6 +64,7 @@ if __name__ == '__main__':
                 res += ('__').join(allergenes)
                 res += '__'
 
-            print(res)
-            line_number += 1
+            res += separator + fields[6]
 
+            print(res,end="")
+            line_number += 1
