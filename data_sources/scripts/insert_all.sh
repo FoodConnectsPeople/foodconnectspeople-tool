@@ -1,4 +1,11 @@
 #! /bin/sh
+
+rm ./ingredients.csv
+rm files/ingredients-transformed.csv
+cp files/ingredients.csv .
+python transform-ingredients.py > files/ingredients-transformed.csv
+rm ./ingredients.csv
+
 jolie insert_ingredients.ol
 jolie insert_recipes.ol
 jolie insert_events.ol

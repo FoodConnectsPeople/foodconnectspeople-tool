@@ -1,241 +1,241 @@
-ingredient_id,name,properties,allergene,ingredient_class
-1,almond,__vegetarian__vegan__onnivore__,,dry seed
-2,anchovy,__onnivore__,,fish
-3,aneto,__vegetarian__vegan__onnivore__,,spice
-4,anise for dessert,__vegetarian__vegan__onnivore__,,spice
-5,apple cider vinegar,__vegetarian__vegan__onnivore__,,oils
-6,avocado,__vegetarian__vegan__onnivore__,,fruit
-7,baby chard,__vegetarian__vegan__onnivore__,,vegetable
-8,baking powder,__vegetarian__vegan__onnivore__,,powders
-9,baking soda,__vegetarian__vegan__onnivore__,,powders
-10,banana,__vegetarian__vegan__onnivore__,,fruit
-11,basil,__vegetarian__vegan__onnivore__,,spice
-12,basil leaf,__vegetarian__vegan__onnivore__,,spice
-13,basmati rice,__vegetarian__vegan__onnivore__,__gluten__,cereals
-14,bay leaf,__vegetarian__vegan__onnivore__,,spice
-15,beef meat,__onnivore__,,meat
-16,bell pepper,__vegetarian__vegan__onnivore__,,vegetable
-17,black cardamom,__vegetarian__vegan__onnivore__,,spice
-18,black olive,__vegetarian__vegan__onnivore__,,vegetable
-19,black pepper,__vegetarian__vegan__onnivore__,,spice
-20,black pepper seed,__vegetarian__vegan__onnivore__,,spice
-21,black-eyed pea,__vegetarian__vegan__onnivore__,,vegetable
-22,boiled chickpea,__vegetarian__vegan__onnivore__,,vegetable
-23,boneless chicken thigh,__onnivore__,,meat
-24,breadcrumb,__vegetarian__vegan__onnivore__,__gluten__,powders
-25,brown mustard seed,__vegetarian__vegan__onnivore__,,spice
-26,brown sugar,__vegetarian__vegan__onnivore__,,sweeteners
-27,bulgur,__vegetarian__vegan__onnivore__,__gluten__,cereals
-28,butter,__vegetarian__onnivore__,__lactose__,dairy
-29,cabbage,__vegetarian__vegan__onnivore__,,vegetable
-30,calamari,__onnivore__,,fish
-31,caper,__vegetarian__vegan__onnivore__,,canned items
-32,carrot,__vegetarian__vegan__onnivore__,,vegetable
-33,cashew,__vegetarian__vegan__onnivore__,,dry seed
-34,celery root,__vegetarian__vegan__onnivore__,,vegetable
-35,chaat masala,__vegetarian__vegan__onnivore__,,spice
-36,champignon mushroom,__vegetarian__vegan__onnivore__,,vegetable
-37,cherry in sirup,__vegetarian__vegan__onnivore__,,canned fruit
-38,cherry sirup,__vegetarian__vegan__onnivore__,,canned fruit
-39,cherry tomato,__vegetarian__vegan__onnivore__,,vegetable
-40,chicken,__onnivore__,,meat
-41,chicken breast,__onnivore__,,meat
-42,chicken leg,__onnivore__,,meat
-43,chicken thigh,__onnivore__,,meat
-44,chickpea,__vegetarian__vegan__onnivore__,,vegetable
-45,chickpea flour,__vegetarian__vegan__onnivore__,,flours
-46,chili powder,__vegetarian__vegan__onnivore__,,spice
-47,chives,__vegetarian__vegan__onnivore__,,spice
-48,cilantro,__vegetarian__vegan__onnivore__,,spice
-49,cinnamon,__vegetarian__vegan__onnivore__,,spice
-50,cinnamon powder,__vegetarian__vegan__onnivore__,,spice
-51,cinnamon stick,__vegetarian__vegan__onnivore__,,spice
-52,clove,__vegetarian__vegan__onnivore__,,spice
-53,coconut,__vegetarian__vegan__onnivore__,,fruit
-54,coconut milk,__vegetarian__vegan__onnivore__,,canned fruit
-55,concentrated tomato paste,__vegetarian__vegan__onnivore__,,canned items
-56,coriander,__vegetarian__vegan__onnivore__,,spice
-57,coriander powder,__vegetarian__vegan__onnivore__,,spice
-58,coriander seed,__vegetarian__vegan__onnivore__,,spice
-59,corn meal flour,__vegetarian__vegan__onnivore__,,flours
-60,corn oil,__vegetarian__vegan__onnivore__,,oils
-61,cornstarch,__vegetarian__vegan__onnivore__,,powders
-62,cottage cheese,__vegetarian__onnivore__,__lactose__,dairy
-63,couscous,__vegetarian__vegan__onnivore__,,cereals
-64,cucumber,__vegetarian__vegan__onnivore__,,vegetable
-65,cumin,__vegetarian__vegan__onnivore__,,spice
-66,cumin powder,__vegetarian__vegan__onnivore__,,spice
-67,cumin seed,__vegetarian__vegan__onnivore__,,spice
-68,curry,__vegetarian__vegan__onnivore__,,spice
-69,curry leaf,__vegetarian__vegan__onnivore__,,spice
-70,curry powder,__vegetarian__vegan__onnivore__,,spice
-71,dijon mustard,__vegetarian__vegan__onnivore__,,canned items
-72,dried apricot,__vegetarian__vegan__onnivore__,,fruit
-73,dried cherries,__vegetarian__vegan__onnivore__,,fruit
-74,dried plum,__vegetarian__vegan__onnivore__,,fruit
-75,dry blackcurrant,__vegetarian__vegan__onnivore__,,fruit
-76,dry chickpea,__vegetarian__vegan__onnivore__,,fruit
-77,dry coconut shred,__vegetarian__vegan__onnivore__,,fruit
-78,dry mint,__vegetarian__vegan__onnivore__,,spice
-79,dry oregano,__vegetarian__vegan__onnivore__,,spice
-80,dry pomegranate seed,__vegetarian__vegan__onnivore__,,spice
-81,dulce de leche,__vegetarian__onnivore__,__lactose__,dairy
-82,egg,__onnivore__,,eggs
-83,egg yolk,__onnivore__,,eggs
-84,eggplant,__vegetarian__vegan__onnivore__,,vegetable
-85,extra-virgin olive oil,__vegetarian__vegan__onnivore__,,oils
-86,feta cheese,__vegetarian__onnivore__,__lactose__,dairy
-87,flour,__vegetarian__vegan__onnivore__,__gluten__,flours
-88,flour type 0,__vegetarian__vegan__onnivore__,__gluten__,flours
-89,flour type 00,__vegetarian__vegan__onnivore__,__gluten__,flours
-90,fontina cheese,__vegetarian__onnivore__,__lactose__,dairy
-91,french baguette,__vegetarian__vegan__onnivore__,__gluten__,bakery
-92,fresh basil,__vegetarian__vegan__onnivore__,,spice
-93,fresh coriander leaf,__vegetarian__vegan__onnivore__,,spice
-94,fresh green hot chilli pepper,__vegetarian__vegan__onnivore__,,spice
-95,fresh habanero chili,__vegetarian__vegan__onnivore__,,spice
-96,fresh mint,__vegetarian__vegan__onnivore__,,spice
-97,fresh oregano,__vegetarian__vegan__onnivore__,,spice
-98,fresh red hot chilli pepper,__vegetarian__vegan__onnivore__,,spice
-99,fresh rosemary,__vegetarian__vegan__onnivore__,,spice
-100,fresh thyme,__vegetarian__vegan__onnivore__,,spice
-101,frozen pea,__vegetarian__vegan__onnivore__,,frozen items
-102,garam masala,__vegetarian__vegan__onnivore__,,spice
-103,garlic,__vegetarian__vegan__onnivore__,,vegetable
-104,ginger,__vegetarian__vegan__onnivore__,,spice
-105,ginger paste,__vegetarian__vegan__onnivore__,,spice
-106,ginger root,__vegetarian__vegan__onnivore__,,spice
-107,greek yogurt,__vegetarian__onnivore__,__lactose__,dairy
-108,green bean,__vegetarian__vegan__onnivore__,,vegetable
-109,green cardamom seed,__vegetarian__vegan__onnivore__,,spice
-110,green chilly,__vegetarian__vegan__onnivore__,,spice
-111,green grape,__vegetarian__vegan__onnivore__,,fruit
-112,green lentil,__vegetarian__vegan__onnivore__,,vegetable
-113,green onion,__vegetarian__vegan__onnivore__,,vegetable
-114,green onion leave,__vegetarian__vegan__onnivore__,,vegetable
-115,green pepper,__vegetarian__vegan__onnivore__,,vegetable
-116,ground cinnamon,__vegetarian__vegan__onnivore__,,spice
-117,ground coriander,__vegetarian__vegan__onnivore__,,spice
-118,ground cumin,__vegetarian__vegan__onnivore__,,spice
-119,ground pepper,__vegetarian__vegan__onnivore__,,spice
-120,ground turmeric,__vegetarian__vegan__onnivore__,,spice
-121,half peach,__vegetarian__vegan__onnivore__,,fruit
-122,harissa,__vegetarian__vegan__onnivore__,,spice
-123,honey,__vegetarian__vegan__onnivore__,,sweeteners
-124,iceberg salad,__vegetarian__vegan__onnivore__,,vegetable
-125,icing sugar,__vegetarian__vegan__onnivore__,,sweeteners
-126,instant yeast,__vegetarian__vegan__onnivore__,,powders
-127,isot,__vegetarian__vegan__onnivore__,,spice
-128,kidney bean,__vegetarian__vegan__onnivore__,,vegetable
-129,kurdish red pepper paste,__vegetarian__vegan__onnivore__,,spice
-130,lamb meat,__onnivore__,,meat
-131,leak,__vegetarian__vegan__onnivore__,,vegetable
-132,lemon,__vegetarian__vegan__onnivore__,,fruit
-133,lemon juice,__vegetarian__vegan__onnivore__,,fruit
-134,lemon peel,__vegetarian__vegan__onnivore__,,fruit
-135,lettuce,__vegetarian__vegan__onnivore__,,vegetable
-136,lime,__vegetarian__vegan__onnivore__,,fruit
-137,lime peel,__vegetarian__vegan__onnivore__,,fruit
-138,maggi,__vegetarian__vegan__onnivore__,__lactose__,canned items
-139,mango,__vegetarian__vegan__onnivore__,,fruit
-140,manioc,__vegetarian__vegan__onnivore__,,vegetable
-141,mastic gum,__vegetarian__vegan__onnivore__,,spice
-142,mastic powder,__vegetarian__vegan__onnivore__,,spice
-143,melon seed,__vegetarian__vegan__onnivore__,,dry seed
-144,mozzarella cheese,__vegetarian__onnivore__,__lactose__,dairy
-145,muenster cheese,__vegetarian__onnivore__,__lactose__,dairy
-146,mushroom,__vegetarian__vegan__onnivore__,,vegetable
-147,mussel,__onnivore__,,fish
-148,mutton meat,__onnivore__,,meat
-149,non-salted butter,__vegetarian__onnivore__,,dairy
-150,non-sweetened cocoa powder,__vegetarian__vegan__onnivore__,,powders
-151,non-sweetened coconut milk,__vegetarian__vegan__onnivore__,,canned items
-152,nutmeg,__vegetarian__vegan__onnivore__,,spice
-153,okra,__vegetarian__vegan__onnivore__,,vegetable
-154,onion,__vegetarian__vegan__onnivore__,,vegetable
-155,orange,__vegetarian__vegan__onnivore__,,fruit
-156,orange juice,__vegetarian__vegan__onnivore__,,fruit
-157,orange peel,__vegetarian__vegan__onnivore__,,fruit
-158,ouzo,__vegetarian__vegan__onnivore__,,alcohol
-159,palm oil,__vegetarian__vegan__onnivore__,,oils
-160,paprika,__vegetarian__vegan__onnivore__,,spice
-161,parmesan cheese,__vegetarian__onnivore__,__lactose__,dairy
-162,parsley,__vegetarian__vegan__onnivore__,,vegetable
-163,peanut paste,__vegetarian__vegan__onnivore__,,canned items
-164,pepper,__vegetarian__vegan__onnivore__,,spice
-165,phyllo pastry,__vegetarian__vegan__onnivore__,,frozen items
-166,piccadilly tomato,__vegetarian__vegan__onnivore__,,vegetable
-167,pine nut,__vegetarian__vegan__onnivore__,,dry seed
-168,pistachio,__vegetarian__vegan__onnivore__,,dry seed
-169,plum,__vegetarian__vegan__onnivore__,,fruit
-170,pomegranate sauce,__vegetarian__vegan__onnivore__,,canned items
-171,potato,__vegetarian__vegan__onnivore__,__gluten__,vegetable
-172,pumpkin,__vegetarian__vegan__onnivore__,,vegetable
-173,raisin,__vegetarian__vegan__onnivore__,,dry seed
-174,raki,__vegetarian__vegan__onnivore__,,alcohol
-175,red bell pepper,__vegetarian__vegan__onnivore__,,vegetable
-176,red chili ,__vegetarian__vegan__onnivore__,,spice
-177,red chili powder,__vegetarian__vegan__onnivore__,,spice
-178,red hot chilli pepper,__vegetarian__vegan__onnivore__,,spice
-179,red mullet,__onnivore__,,fish
-180,red onion,__vegetarian__vegan__onnivore__,,vegetable
-181,red pepper,__vegetarian__vegan__onnivore__,,vegetable
-182,red radish,__vegetarian__vegan__onnivore__,,vegetable
-183,rice,__vegetarian__vegan__onnivore__,__gluten__,cereals
-184,ricotta cheese,__vegetarian__onnivore__,,dairy
-185,rocket,__vegetarian__vegan__onnivore__,,vegetable
-186,rose pepper,__vegetarian__vegan__onnivore__,,spice
-187,salmon,__onnivore__,,fish
-188,salt,__vegetarian__vegan__onnivore__,,oils
-189,sardine,__onnivore__,,fish
-190,scallion,__vegetarian__vegan__onnivore__,,vegetable
-191,semolina,__vegetarian__vegan__onnivore__,__gluten__,cereals
-192,semolina flour,__vegetarian__vegan__onnivore__,__gluten__,flours
-193,sesame seed,__vegetarian__vegan__onnivore__,,dry seed
-194,shallot,__vegetarian__vegan__onnivore__,,vegetable
-195,shrimp,__onnivore__,,fish
-196,small green pepper,__vegetarian__vegan__onnivore__,,vegetable
-197,small tomato,__vegetarian__vegan__onnivore__,,vegetable
-198,smoked paprika,__vegetarian__vegan__onnivore__,,spice
-199,soy sauce,__vegetarian__vegan__onnivore__,,canned items
-200,soya mince,__vegetarian__vegan__onnivore__,,spice
-201,spelt flour,__vegetarian__vegan__onnivore__,,flours
-202,spinach,__vegetarian__vegan__onnivore__,,vegetable
-203,spring onion,__vegetarian__vegan__onnivore__,,vegetable
-204,stale bread,__vegetarian__vegan__onnivore__,__gluten__,bakery
-205,sugar,__vegetarian__vegan__onnivore__,,sweeteners
-206,sugar powder,__vegetarian__vegan__onnivore__,,sweeteners
-207,sumak,__vegetarian__vegan__onnivore__,,spice
-208,sundried tomato,__vegetarian__vegan__onnivore__,,vegetable
-209,sweet potato,__vegetarian__vegan__onnivore__,,vegetable
-210,sweet vinegar,__vegetarian__vegan__onnivore__,,oils
-211,tahini,__vegetarian__vegan__onnivore__,,canned items
-212,taleggio cheese,__vegetarian__onnivore__,__lactose__,dairy
-213,tamarind paste,__vegetarian__vegan__onnivore__,,spice
-214,thai green curry paste,__vegetarian__vegan__onnivore__,,spice
-215,tomato,__vegetarian__vegan__onnivore__,,vegetable
-216,tomato paste,__vegetarian__vegan__onnivore__,,canned items
-217,tomato sauce,__vegetarian__vegan__onnivore__,,canned items
-218,tomato sauce in cubes,__vegetarian__vegan__onnivore__,,canned items
-219,tosella cheese,__vegetarian__onnivore__,__lactose__,dairy
-220,tuna fish,__onnivore__,,canned items
-221,turkish allspice,__vegetarian__vegan__onnivore__,,spice
-222,turkish pepper paste,__vegetarian__vegan__onnivore__,,spice
-223,turkish phyllo pastry,__vegetarian__vegan__onnivore__,,frozen items
-224,turmeric powder,__vegetarian__vegan__onnivore__,,spice
-225,vanilla bean,__vegetarian__vegan__onnivore__,,spice
-226,vanilla extract,__vegetarian__vegan__onnivore__,,powders
-227,vanillin,__vegetarian__vegan__onnivore__,,powders
-228,vegetable broth,__vegetarian__vegan__onnivore__,,canned items
-229,walnut,__vegetarian__vegan__onnivore__,,dry seed
-230,water,__vegetarian__vegan__onnivore__,,water
-231,white vinegar,__vegetarian__vegan__onnivore__,,oils
-232,white wine,__vegetarian__vegan__onnivore__,,alcohol
-233,white yogurt,__vegetarian__onnivore__,__lactose__,dairy
-234,white/kamut flour,__vegetarian__vegan__onnivore__,__gluten__,flours
-235,whole milk,__vegetarian__onnivore__,__lactose__,dairy
-236,yeast for dessert,__vegetarian__vegan__onnivore__,,powders
-237,yellow bell pepper,__vegetarian__vegan__onnivore__,,vegetable
-238,yellow pepper,__vegetarian__vegan__onnivore__,,vegetable
-239,yenibahar,__vegetarian__vegan__onnivore__,,spice
-240,zucchini,__vegetarian__vegan__onnivore__,,vegetable
+ingredient,is_vegetarian,is_vegan,is_gluten_free,is_lactose_free,is_spice,ingredient_class
+almond,TRUE,TRUE,TRUE,TRUE,FALSE,dry seed
+anchovy,FALSE,FALSE,TRUE,TRUE,FALSE,fish
+aneto,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+anise for dessert,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+apple cider vinegar,TRUE,TRUE,TRUE,TRUE,FALSE,oils
+avocado,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
+baby chard,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+baking powder,TRUE,TRUE,TRUE,TRUE,FALSE,powders
+baking soda,TRUE,TRUE,TRUE,TRUE,FALSE,powders
+banana,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
+basil,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+basil leaf,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+basmati rice,TRUE,TRUE,FALSE,TRUE,FALSE,cereals
+bay leaf,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+beef meat,FALSE,FALSE,TRUE,TRUE,FALSE,meat
+bell pepper,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+black cardamom,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+black olive,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+black pepper,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+black pepper seed,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+black-eyed pea,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+boiled chickpea,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+boneless chicken thigh,FALSE,FALSE,TRUE,TRUE,FALSE,meat
+breadcrumb,TRUE,TRUE,FALSE,TRUE,FALSE,powders
+brown mustard seed,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+brown sugar,TRUE,TRUE,TRUE,TRUE,FALSE,sweeteners
+bulgur,TRUE,TRUE,FALSE,TRUE,FALSE,cereals
+butter,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
+cabbage,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+calamari,FALSE,FALSE,TRUE,TRUE,FALSE,fish
+caper,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
+carrot,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+cashew,TRUE,TRUE,TRUE,TRUE,FALSE,dry seed
+celery root,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+chaat masala,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+champignon mushroom,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+cherry in sirup,TRUE,TRUE,TRUE,TRUE,FALSE,canned fruit
+cherry sirup,TRUE,TRUE,TRUE,TRUE,FALSE,canned fruit
+cherry tomato,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+chicken,FALSE,FALSE,TRUE,TRUE,FALSE,meat
+chicken breast,FALSE,FALSE,TRUE,TRUE,FALSE,meat
+chicken leg,FALSE,FALSE,TRUE,TRUE,FALSE,meat
+chicken thigh,FALSE,FALSE,TRUE,TRUE,FALSE,meat
+chickpea,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+chickpea flour,TRUE,TRUE,TRUE,TRUE,FALSE,flours
+chili powder,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+chives,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+cilantro,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+cinnamon,TRUE,TRUE,TRUE,TRUE,FALSE,spice
+cinnamon powder,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+cinnamon stick,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+clove,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+coconut,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
+coconut milk,TRUE,TRUE,TRUE,TRUE,FALSE,canned fruit
+concentrated tomato paste,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
+coriander,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+coriander powder,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+coriander seed,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+corn meal flour,TRUE,TRUE,TRUE,TRUE,FALSE,flours
+corn oil,TRUE,TRUE,TRUE,TRUE,FALSE,oils
+cornstarch,TRUE,TRUE,TRUE,TRUE,FALSE,powders
+cottage cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
+couscous,TRUE,TRUE,TRUE,TRUE,FALSE,cereals
+cucumber,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+cumin,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+cumin powder,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+cumin seed,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+curry,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+curry leaf,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+curry powder,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+dijon mustard,TRUE,TRUE,TRUE,TRUE,TRUE,canned items
+dried apricot,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
+dried cherries,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
+dried plum,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
+dry blackcurrant,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
+dry chickpea,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
+dry coconut shred,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
+dry mint,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+dry oregano,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+dry pomegranate seed,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+dulce de leche,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
+egg,FALSE,FALSE,TRUE,TRUE,FALSE,eggs
+egg yolk,FALSE,FALSE,TRUE,TRUE,FALSE,eggs
+eggplant,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+extra-virgin olive oil,TRUE,TRUE,TRUE,TRUE,FALSE,oils
+feta cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
+flour,TRUE,TRUE,FALSE,TRUE,FALSE,flours
+flour type 0,TRUE,TRUE,FALSE,TRUE,FALSE,flours
+flour type 00,TRUE,TRUE,FALSE,TRUE,FALSE,flours
+fontina cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
+french baguette,TRUE,TRUE,FALSE,TRUE,FALSE,bakery
+fresh basil,TRUE,TRUE,TRUE,TRUE,FALSE,spice
+fresh coriander leaf,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+fresh green hot chilli pepper,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+fresh habanero chili,TRUE,TRUE,TRUE,TRUE,FALSE,spice
+fresh mint,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+fresh oregano,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+fresh red hot chilli pepper,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+fresh rosemary,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+fresh thyme,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+frozen pea,TRUE,TRUE,TRUE,TRUE,FALSE,frozen items
+garam masala,TRUE,TRUE,TRUE,TRUE,FALSE,spice
+garlic,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+ginger,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+ginger paste,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+ginger root,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+greek yogurt,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
+green bean,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+green cardamom seed,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+green chilly,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+green grape,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
+green lentil,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+green onion,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+green onion leave,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+green pepper,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+ground cinnamon,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+ground coriander,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+ground cumin,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+ground pepper,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+ground turmeric,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+half peach,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
+harissa,TRUE,TRUE,TRUE,TRUE,FALSE,spice
+honey,TRUE,TRUE,TRUE,TRUE,FALSE,sweeteners
+iceberg salad,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+icing sugar,TRUE,TRUE,TRUE,TRUE,FALSE,sweeteners
+instant yeast,TRUE,TRUE,TRUE,TRUE,FALSE,powders
+isot,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+kidney bean,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+kurdish red pepper paste,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+lamb meat,FALSE,FALSE,TRUE,TRUE,FALSE,meat
+leak,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+lemon,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
+lemon juice,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
+lemon peel,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
+lettuce,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+lime,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
+lime peel,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
+maggi,TRUE,TRUE,TRUE,FALSE,FALSE,canned items
+mango,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
+manioc,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+mastic gum,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+mastic powder,TRUE,TRUE,TRUE,TRUE,FALSE,spice
+melon seed,TRUE,TRUE,TRUE,TRUE,TRUE,dry seed
+mozzarella cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
+muenster cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
+mushroom,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+mussel,FALSE,FALSE,TRUE,TRUE,FALSE,fish
+mutton meat,FALSE,FALSE,TRUE,TRUE,FALSE,meat
+non-salted butter,TRUE,FALSE,TRUE,TRUE,FALSE,dairy
+non-sweetened cocoa powder,TRUE,TRUE,TRUE,TRUE,FALSE,powders
+non-sweetened coconut milk,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
+nutmeg,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+okra,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+onion,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+orange,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
+orange juice,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
+orange peel,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
+ouzo,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
+palm oil,TRUE,TRUE,TRUE,TRUE,FALSE,oils
+paprika,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+parmesan cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
+parsley,TRUE,TRUE,TRUE,TRUE,TRUE,vegetable
+peanut paste,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
+pepper,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+phyllo pastry,TRUE,TRUE,TRUE,TRUE,FALSE,frozen items
+piccadilly tomato,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+pine nut,TRUE,TRUE,TRUE,TRUE,FALSE,dry seed
+pistachio,TRUE,TRUE,TRUE,TRUE,FALSE,dry seed
+plum,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
+pomegranate sauce,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
+potato,TRUE,TRUE,FALSE,TRUE,FALSE,vegetable
+pumpkin,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+raisin,TRUE,TRUE,TRUE,TRUE,FALSE,dry seed
+raki,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
+red bell pepper,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+red chili ,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+red chili powder,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+red hot chilli pepper,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+red mullet,FALSE,FALSE,TRUE,TRUE,FALSE,fish
+red onion,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+red pepper,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+red radish,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+rice,TRUE,TRUE,FALSE,TRUE,FALSE,cereals
+ricotta cheese,TRUE,FALSE,TRUE,TRUE,FALSE,dairy
+rocket,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+rose pepper,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+salmon,FALSE,FALSE,TRUE,TRUE,FALSE,fish
+salt,TRUE,TRUE,TRUE,TRUE,FALSE,oils
+sardine,FALSE,FALSE,TRUE,TRUE,FALSE,fish
+scallion,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+semolina,TRUE,TRUE,FALSE,TRUE,FALSE,cereals
+semolina flour,TRUE,TRUE,FALSE,TRUE,FALSE,flours
+sesame seed,TRUE,TRUE,TRUE,TRUE,TRUE,dry seed
+shallot,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+shrimp,FALSE,FALSE,TRUE,TRUE,FALSE,fish
+small green pepper,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+small tomato,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+smoked paprika,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+soy sauce,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
+soya mince,TRUE,TRUE,TRUE,TRUE,FALSE,spice
+spelt flour,TRUE,TRUE,TRUE,TRUE,FALSE,flours
+spinach,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+spring onion,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+stale bread,TRUE,TRUE,FALSE,TRUE,FALSE,bakery
+sugar,TRUE,TRUE,TRUE,TRUE,FALSE,sweeteners
+sugar powder,TRUE,TRUE,TRUE,TRUE,FALSE,sweeteners
+sumak,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+sundried tomato,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+sweet potato,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+sweet vinegar,TRUE,TRUE,TRUE,TRUE,FALSE,oils
+tahini,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
+taleggio cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
+tamarind paste,TRUE,TRUE,TRUE,TRUE,FALSE,spice
+thai green curry paste,TRUE,TRUE,TRUE,TRUE,FALSE,spice
+tomato,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+tomato paste,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
+tomato sauce,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
+tomato sauce in cubes,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
+tosella cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
+tuna fish,FALSE,FALSE,TRUE,TRUE,FALSE,canned items
+turkish allspice,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+turkish pepper paste,TRUE,TRUE,TRUE,TRUE,FALSE,spice
+turkish phyllo pastry,TRUE,TRUE,TRUE,TRUE,FALSE,frozen items
+turmeric powder,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+vanilla bean,TRUE,TRUE,TRUE,TRUE,FALSE,spice
+vanilla extract,TRUE,TRUE,TRUE,TRUE,FALSE,powders
+vanillin,TRUE,TRUE,TRUE,TRUE,TRUE,powders
+vegetable broth,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
+walnut,TRUE,TRUE,TRUE,TRUE,FALSE,dry seed
+water,TRUE,TRUE,TRUE,TRUE,FALSE,water
+white vinegar,TRUE,TRUE,TRUE,TRUE,FALSE,oils
+white wine,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
+white yogurt,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
+white/kamut flour,TRUE,TRUE,FALSE,TRUE,FALSE,flours
+whole milk,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
+yeast for dessert,TRUE,TRUE,TRUE,TRUE,FALSE,powders
+yellow bell pepper,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+yellow pepper,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+yenibahar,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+zucchini,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable

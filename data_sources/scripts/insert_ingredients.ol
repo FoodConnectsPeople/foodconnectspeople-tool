@@ -17,7 +17,7 @@ main {
     .separator = ",";
     .verbose = true
   };
-  import.filename = "./files/ingredients.csv";
+  import.filename = "./files/ingredients-transformed.csv";
 	importFile@CSVImport( import )( ingredients );
   for( i = 0, i < #ingredients.line, i++ ) {
       undef( req );

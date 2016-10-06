@@ -1,5 +1,3 @@
-- Insert python transformation into automated fillup script
-
 - Improve multilanguage by having a simple multi-context string with separators (add python script to generate proper csv)
 
 - Implement "real" (vs. hardcoded) getEaterCategories
