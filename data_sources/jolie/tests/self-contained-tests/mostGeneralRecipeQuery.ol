@@ -66,25 +66,37 @@ main {
       };
 
       println@Console("-------------------")();
-      getEaterCategories@DbService()(res);
+      getCookingTechniques@DbService(language)(res);
+      for (i = 0, i < #res.name, i++) {
+        println@Console("Cooking technique : " + res.name[i])()
+      };
+
+      println@Console("-------------------")();
+      getEaterCategories@DbService(language)(res);
       for (i = 0, i < #res.name, i++) {
         println@Console("Eater category : " + res.name[i])()
       };
 
       println@Console("-------------------")();
-      getEventCategories@DbService()(res);
+      getRecipeCategories@DbService(language)(res);
+      for (i = 0, i < #res.name, i++) {
+        println@Console("Recipe category : " + res.name[i])()
+      };
+
+      println@Console("-------------------")();
+      getEventCategories@DbService(language)(res);
       for (i = 0, i < #res.name, i++) {
         println@Console("Event category : " + res.name[i])()
       };
 
       println@Console("-------------------")();
-      getAllergenes@DbService()(res);
+      getAllergenes@DbService(language)(res);
       for (i = 0, i < #res.name, i++) {
         println@Console("Allergene : " + res.name[i])()
       };
 
       println@Console("-------------------")();
-      getTools@DbService()(res);
+      getTools@DbService(language)(res);
       for (i = 0, i < #res.name, i++) {
         println@Console("Tool : " + res.name[i])()
       };

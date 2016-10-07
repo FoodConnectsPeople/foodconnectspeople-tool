@@ -682,15 +682,15 @@ main {
                                      throw( DatabaseError )
             );
 
-            // TO BE DONE:
-            // q = queries.FOO;
-            // query@Database( q )( result );
-            //for( i = 0, i < #result.row, i++ ) {
-            //    response.name[ i ] = result.row[ i ].name
-            //}
 
-            response.name[0] = "workshop";
-            response.name[1] = "charity dinner"
+            q = "SELECT DISTINCT category FROM fcp.events";
+            query@Database( q )( result );
+            for( i = 0, i < #result.row, i++ ) {
+                response.name[ i ] = result.row[ i ].category
+              }
+
+            //response.name[0] = "workshop";
+            //response.name[1] = "charity dinner"
       }
     }]
 
@@ -722,7 +722,12 @@ main {
             q = queries.select_cooking_techniques;
             query@Database( q )( result );
             for( i = 0, i < #result.row, i++ ) {
-                response.name[ i ] = result.row[ i ].name
+              transla.fuzzy = false;
+              transla.from = "english";
+              transla.to = request;
+              transla.str = result.row[i].name;
+              translate@MySelf(transla)(str);
+              response.name[i] = str
             }
       }
     }]
@@ -756,10 +761,15 @@ main {
                                      throw( DatabaseError )
             );
 
-            q = queries.select_recipe_categories;
+            q = "SELECT DISTINCT category FROM fcp.recipes";
             query@Database( q )( result );
             for( i = 0, i < #result.row, i++ ) {
-                response.name[ i ] = result.row[ i ].name
+                transla.fuzzy = false;
+                transla.from = "english";
+                transla.to = request;
+                transla.str = result.row[i].category;
+                translate@MySelf(transla)(str);
+                response.name[i] = str
             }
       }
     }]
@@ -773,7 +783,13 @@ main {
             q = queries.select_tools;
             query@Database( q )( result );
             for( i = 0, i < #result.row, i++ ) {
-                response.name[ i ] = result.row[ i ].name
+
+              transla.fuzzy = false;
+              transla.from = "english";
+              transla.to = request;
+              transla.str = result.row[i].name;
+              translate@MySelf(transla)(str);
+              response.name[i] = str
             }
       }
     }]
@@ -1341,7 +1357,7 @@ main {
                 };
 
 
-                str = request.str;
+                trim@StringUtils(request.str)(str);
 
                 if ( (str == ",," ) || (str == ",") ) {
                   str = ""
@@ -1371,6 +1387,10 @@ main {
                     undef(str.end)
                   }
                 };
+
+                str2 = str;
+                trim@StringUtils(str2)(str);
+                undef(str2);
 
                 if ( (str == "") || (request.from == request.to) ) {
                   response = str

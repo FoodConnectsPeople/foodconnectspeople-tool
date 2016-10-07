@@ -4,9 +4,7 @@
 
 - Implement "real" (vs. hardcoded) getAllergenes
 
-- Implement "real" (vs. hardcoded)  get EventCategories
-
-- Make translation robust to empty spaces
+- Check/implement support of multilanguage in all getters (some do not yet support it)
 
 - Verify links of recipes via client
 
