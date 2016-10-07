@@ -2,7 +2,7 @@
 type BuildGroceryListRequest: void {
   .verbose     : bool
   .convert_all : bool
-  .language    : string
+  .language?   : string
   .rec_persons*: void {
     .recipe_id : int
     .persons   : int
@@ -274,12 +274,16 @@ type TranslateRequest: void {
 
 type GetEventRecipesRequest: void {
   .event_id     : int
-  .language     : string
+  .language?     : string
 }
 
 type GetRecipeDetailsRequest: void {
   .recipe_id     : int
-  .language     : string
+  .language?     : string
+}
+
+type OptionalLanguage: void {
+  .language?     : string
 }
 
 type GetRecipeDetailsResponse: void {
@@ -325,12 +329,12 @@ interface DbServiceInterface {
     buildCommaSeparatedString( buildCommaRequest )( string ) throws DatabaseError,
     buildIntList( BuildIntListRequest )( string ) throws DatabaseError,
     buildSetVsSet( BuildSetVsSetRequest )( string ) throws DatabaseError,
-    getCookingTechniques( string )( GetCookingTechniquesResponse ) throws DatabaseError,
+    getCookingTechniques( OptionalLanguage )( GetCookingTechniquesResponse ) throws DatabaseError,
     getCountries( void )( GetCountriesResponse ) throws DatabaseError,
-    getEaterCategories( string )( GetEaterCategoriesResponse ) throws DatabaseError,
-    getEventCategories( string )( GetEventCategoriesResponse ) throws DatabaseError,
-    getAllergenes( string )( GetAllergenesResponse ) throws DatabaseError,
-    getRecipeCategories( string )( GetRecipeCategoriesResponse ) throws DatabaseError,
+    getEaterCategories( OptionalLanguage )( GetEaterCategoriesResponse ) throws DatabaseError,
+    getEventCategories( OptionalLanguage )( GetEventCategoriesResponse ) throws DatabaseError,
+    getAllergenes( OptionalLanguage )( GetAllergenesResponse ) throws DatabaseError,
+    getRecipeCategories( OptionalLanguage )( GetRecipeCategoriesResponse ) throws DatabaseError,
     getRecipes( void )( GetRecipeResponse ) throws DatabaseError,
     getEventRecipes( GetEventRecipesRequest )( GetRecipeResponse ) throws DatabaseError,
     getIngredients( void )( GetIngredientsResponse ) throws DatabaseError,
@@ -339,7 +343,7 @@ interface DbServiceInterface {
     getIngredients_into_set( GetIngredients_namelistRequest )( GetIngredients_namepropResponse ) throws DatabaseError,
     getIngredients_set_vs_set( GetIngredients_namelistRequest )( GetIngredients_namepropResponse ) throws DatabaseError,
     getProperties( void )( GetPropertiesResponse ) throws DatabaseError,
-    getTools( string )( GetToolsResponse ) throws DatabaseError,
+    getTools( OptionalLanguage )( GetToolsResponse ) throws DatabaseError,
     getEvents( void )( GetEventsResponse ) throws DatabaseError,
     getRecipeDetails( GetRecipeDetailsRequest ) (GetRecipeDetailsResponse) throws DatabaseError,
     insertIngredient( InsertIngredientRequest )( void ) throws DatabaseError,

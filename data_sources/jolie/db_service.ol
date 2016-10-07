@@ -67,6 +67,24 @@ init {
 }
 
 main {
+
+/***
+  [ defLanguage( request )( response ) {
+        scope( sql ) {
+              install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                       throw( DatabaseError )
+              );
+
+              if (is_defined(request.language)) {
+                response = request.language
+              } else {
+                response = "english"
+              }
+        }
+  }]
+***/
+
+
   [ getIngredients( request )( response ) {
         scope( sql ) {
               install( SQLException => println@Console( sql.SQLException.stackTrace )();
@@ -111,18 +129,6 @@ main {
               install( SQLException => println@Console( sql.SQLException.stackTrace )();
                                        throw( DatabaseError )
               );
-
-              /*
-              // prepare properties
-              properties = "";
-              for( i = 0, i < #request.properties, i++ ) {
-                 properties = properties + request.properties[ i ] + SEPARATOR
-              };
-              allergene = "";
-              for( i = 0, i < #request.allergene, i++ ) {
-                 allergene = allergene + request.allergene[ i ] + SEPARATOR
-              };
-              */
 
               q = queries.insert_ingredient;
               q.name = request.name;
@@ -255,15 +261,6 @@ main {
               install( SQLException => println@Console( sql.SQLException.stackTrace )();
                                        throw( DatabaseError )
               );
-
-
-              /*
-              // prepare properties
-              preparation_techniques = "";
-              for( i = 0, i < #request.preparation_technique, i++ ) {
-                 preparation_techniques = preparation_techniques + request.preparation_technique[ i ] + SEPARATOR
-              };
-              */
 
               q = queries.insert_recipeingredient;
               q.recipe_id = request.recipe_id;
@@ -430,6 +427,12 @@ main {
         );
         undef( grocery_list );
         undef( alternate_notes);
+
+        if (is_defined(request.language)) {
+          language = request.language
+        } else {
+          language = "english"
+        };
 
         // Main loop: takes every recipe and persons for whom to cook it, and adds its ingredients and qties to the grocery list
 
@@ -628,7 +631,7 @@ main {
       // Finally, the translation into the target language:
 
       req. from = "english";
-      req.to = request.language;
+      req.to = language;
       req.fuzzy = false;
       for (l = 0, l < #response.classes, l++) {
         req.str = response.classes[l].class;
@@ -682,15 +685,23 @@ main {
                                      throw( DatabaseError )
             );
 
+            transla.from = "english";
+            transla.fuzzy = false;
+
+            if (is_defined(request.language)) {
+              language = request.language
+            } else {
+              language = "english"
+            };
+
+            transla.to = language;
 
             q = "SELECT DISTINCT category FROM fcp.events";
             query@Database( q )( result );
             for( i = 0, i < #result.row, i++ ) {
-                response.name[ i ] = result.row[ i ].category
+                transla.str = result.row[ i ].category;
+                translate@MySelf(transla)(response.name[ i ])
               }
-
-            //response.name[0] = "workshop";
-            //response.name[1] = "charity dinner"
       }
     }]
 
@@ -719,12 +730,18 @@ main {
                                      throw( DatabaseError )
             );
 
+            if (is_defined(request.language)) {
+              language = request.language
+            } else {
+              language = "english"
+            };
+
             q = queries.select_cooking_techniques;
             query@Database( q )( result );
             for( i = 0, i < #result.row, i++ ) {
               transla.fuzzy = false;
               transla.from = "english";
-              transla.to = request;
+              transla.to = language;
               transla.str = result.row[i].name;
               translate@MySelf(transla)(str);
               response.name[i] = str
@@ -761,12 +778,18 @@ main {
                                      throw( DatabaseError )
             );
 
+            if (is_defined(request.language)) {
+              language = request.language
+            } else {
+              language = "english"
+            };
+
             q = "SELECT DISTINCT category FROM fcp.recipes";
             query@Database( q )( result );
             for( i = 0, i < #result.row, i++ ) {
                 transla.fuzzy = false;
                 transla.from = "english";
-                transla.to = request;
+                transla.to = language;
                 transla.str = result.row[i].category;
                 translate@MySelf(transla)(str);
                 response.name[i] = str
@@ -780,13 +803,19 @@ main {
                                      throw( DatabaseError )
             );
 
+            if (is_defined(request.language)) {
+              language = request.language
+            } else {
+              language = "english"
+            };
+
             q = queries.select_tools;
             query@Database( q )( result );
             for( i = 0, i < #result.row, i++ ) {
 
               transla.fuzzy = false;
               transla.from = "english";
-              transla.to = request;
+              transla.to = language;
               transla.str = result.row[i].name;
               translate@MySelf(transla)(str);
               response.name[i] = str
@@ -820,7 +849,13 @@ main {
                                      throw( DatabaseError )
             );
 
-            transla.to = request.language;
+            if (is_defined(request.language)) {
+              language = request.language
+            } else {
+              language = "english"
+            };
+
+            transla.to = language;
             transla.from   = "english";
             transla.fuzzy = false;
 
@@ -917,6 +952,12 @@ main {
                                          throw( DatabaseError )
                 );
 
+                if (is_defined(request.language)) {
+                  language = request.language
+                } else {
+                  language = "english"
+                };
+
                 ////////////////////////////////////////////////////////////////////////
                 // Section 0: select the recipe_ids from the portion of query involving only
                 // the recipe table, i.e. : name, preparation time, difficulty, country,
@@ -925,8 +966,7 @@ main {
                 verbose = request.verbose;
                 q = queries.get_recipes;
                 constraint_adder = " WHERE ";
-
-                transla.from = request.language;
+                transla.from = language;
                 transla.to   = "english";
                 transla.fuzzy = true;
 
@@ -940,7 +980,7 @@ main {
                     constraint_adder = " AND "
                 };
 
-                transla.from = request.language;
+                transla.from = language;
                 transla.to   = "english";
                 transla.fuzzy = false;
 
@@ -1166,26 +1206,33 @@ main {
 
                 if (verbose) { println@Console(" Result consists of " + #result.row + " recipes.")() };
 
+                transla.from = "english";
+                transla.to   = language;
+
                 for( i = 0, i < #result.row, i++ ) {
                     with( response.recipe[ i ] ) {
                         .recipe_id   = result.row[ i ].recipe_id;
-                        transla.from = "english";
-                        transla.to   = request.language;
+
                         transla.str  = result.row[ i ].name;
                         translate@MySelf(transla)(recname);
                         .recipe_name = recname;
 
                         if (verbose) { println@Console( (i+1) + " - Recipe #" + result.row[i].recipe_id + " : " + recname)() };
+
                         .recipe_link = result.row[ i ].link;
                         .preparation_time_minutes = result.row[ i ].preparation_time_minutes;
                         .difficulty = result.row[ i ].difficulty;
                         .place_of_origin = result.row[ i ].place_of_origin;
-                        .category = result.row[ i ].category;
-                        .cooking_technique = result.row[ i ].cooking_technique
+
+                        transla.str = result.row[ i ].category;
+                        translate@MySelf(transla)(catname);
+                        .category = catname;
+
+                        transla.str = result.row[ i ].cooking_technique;
+                        translate@MySelf(transla)(ckname);
+                        .cooking_technique = ckname
                     }
                 }
-
-
           }
     }]
 
@@ -1196,6 +1243,12 @@ main {
                     install( SQLException => println@Console( sql.SQLException.stackTrace )();
                                              throw( DatabaseError )
                     );
+
+                    if (is_defined(request.language)) {
+                      language = request.language
+                    } else {
+                      language = "english"
+                    };
 
                     q = "SELECT recipe_id FROM fcp.recipeevents WHERE event_id = " + request.event_id;
                     query@Database( q )( result0 );
@@ -1212,16 +1265,25 @@ main {
                             .recipe_id   = result.row[ 0].recipe_id;
                             transla.fuzzy = false;
                             transla.from = "english";
-                            transla.to   = request.language;
+                            transla.to = language;
+
                             transla.str  = result.row[ 0 ].name;
                             translate@MySelf(transla)(recname);
                             .recipe_name = recname;
+
                             .recipe_link = result.row[ 0 ].link;
                             .preparation_time_minutes = result.row[ 0 ].preparation_time_minutes;
                             .difficulty = result.row[ 0 ].difficulty;
                             .place_of_origin = result.row[ 0 ].place_of_origin;
-                            .category = result.row[ 0 ].category;
-                            .cooking_technique = result.row[ 0 ].cooking_technique
+
+                            transla.str = result.row[ 0 ].category;
+                            translate@MySelf(transla)(catname);
+                            .category = catname;
+
+                            transla.str = result.row[ 0 ].cooking_technique;
+                            translate@MySelf(transla)(ckname);
+                            .cooking_technique = ckname
+
                         }
                     }
 

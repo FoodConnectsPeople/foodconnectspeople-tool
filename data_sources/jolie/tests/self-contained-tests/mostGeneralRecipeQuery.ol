@@ -65,38 +65,41 @@ main {
         println@Console("  Link : " + res.recipe[i].recipe_link)()
       };
 
+
+      optlanguage.language = language;
+
       println@Console("-------------------")();
-      getCookingTechniques@DbService(language)(res);
+      getCookingTechniques@DbService(optlanguage)(res);
       for (i = 0, i < #res.name, i++) {
         println@Console("Cooking technique : " + res.name[i])()
       };
 
       println@Console("-------------------")();
-      getEaterCategories@DbService(language)(res);
+      getEaterCategories@DbService(optlanguage)(res);
       for (i = 0, i < #res.name, i++) {
         println@Console("Eater category : " + res.name[i])()
       };
 
       println@Console("-------------------")();
-      getRecipeCategories@DbService(language)(res);
+      getRecipeCategories@DbService(optlanguage)(res);
       for (i = 0, i < #res.name, i++) {
         println@Console("Recipe category : " + res.name[i])()
       };
 
       println@Console("-------------------")();
-      getEventCategories@DbService(language)(res);
+      getEventCategories@DbService(optlanguage)(res);
       for (i = 0, i < #res.name, i++) {
         println@Console("Event category : " + res.name[i])()
       };
 
       println@Console("-------------------")();
-      getAllergenes@DbService(language)(res);
+      getAllergenes@DbService(optlanguage)(res);
       for (i = 0, i < #res.name, i++) {
         println@Console("Allergene : " + res.name[i])()
       };
 
       println@Console("-------------------")();
-      getTools@DbService(language)(res);
+      getTools@DbService(optlanguage)(res);
       for (i = 0, i < #res.name, i++) {
         println@Console("Tool : " + res.name[i])()
       };
