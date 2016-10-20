@@ -1,0 +1,562 @@
+Connected to Database foodconnectspeople@localhost
+DbService is running...
+   
+ ======== Test of MostGeneralQuery =============
+Number of recipes satisfying the query :1
+Recipe #0 : 
+  ID : 28
+  Name : Gamberi alla salsa curry
+  Link : asia/thailand/curry-sauced-shrimps
+   
+ ======== Test of GroceryList =============
+Class of ingredients: Olii
+ Ingredient : olio di girasole : 200.0 ml
+ Ingredient : olio di oliva extra-vergine : 967.0 ml
+ Ingredient : sale : 16.375 gr
+Class of ingredients: Verdure
+ Ingredient : melanzane : 1000.0 gr
+ Ingredient : aglio : 25.5 chiodo di garofano
+ Ingredient : prezzemolo : 145.0 gr
+ Ingredient : patate : 1040.0 gr
+ Ingredient : pomodori : 1250.0 gr
+ Ingredient : zucchine : 13.5 unita'
+ Ingredient : cipollotti : 90.0 gr
+ Ingredient : cipolle : 690.0 gr
+ Ingredient : olive nere : 60.0 gr
+ Ingredient : pomodorini : 5.0 unita'
+ Ingredient : fagioli rossi : 1.5 bicchiere
+ Ingredient : cipolla rossa : 1.0 unita'
+ Ingredient : peperoni verdi piccoli (friarelli) : 2.5 unita'
+ Ingredient : foglie di cipolle verdi : 6.0 unita'
+ Ingredient : peperone rosso : 4.0 unita'
+ Ingredient : ceci : 1.5 bicchiere
+ Ingredient : ceci bolliti : 300.0 gr
+ Ingredient : cavolo : 300.0 gr
+ Ingredient : carote : 4.0 unita'
+ Ingredient : patata dolce : 900.0 gr
+Class of ingredients: Dolcificanti
+ Ingredient : zucchero : 5.0 gr
+Class of ingredients: Spezie
+ Ingredient : menta secca : 1.5 cucchiaino
+ Ingredient : peperoncino piccante rosso : 1.275 cucchiaino
+ Ingredient : isot : 4.5 cucchiaino
+ Ingredient : pepe : 0.25 cucchiaino
+ Ingredient : sumak : 0.5 cucchiaino
+ Ingredient : pepe nero : 0.25 cucchiaino
+ Ingredient : crema di pepe rosso curda : 0.5 cucchiaio
+ Ingredient : cumino in polvere : 0.125 cucchiaino
+ Ingredient : paprika : 0.125 cucchiaino
+ Ingredient : cilandro (coriandolo) : 0.4 mazzo
+ Ingredient : semi di coriandolo : 0.8 cucchiaino
+ Ingredient : garam masala : 0.8 cucchiaino
+ Ingredient : zenzero : 17.0 gr
+ Ingredient : peperoncino verde : 2.4 unita'
+ Ingredient : curcuma in polvere : 1.3 cucchiaino
+ Ingredient : alloro : 3.0 unita'
+ Ingredient : cannella : 0.5 cucchiaino
+ Ingredient : coriandolo : 3.0 cucchiaino
+ Ingredient : cumino : 1.0 cucchiaino
+ Ingredient : harissa : 1.0 cucchiaio
+Class of ingredients: Prodotti caseari
+ Ingredient : formaggio feta : 265.0 gr
+ Ingredient : yogurt greco : 600.0 gr
+ Ingredient : yogurt bianco : 1500.0 gr
+ Ingredient : ricotta : 100.0 gr
+Class of ingredients: Frutta
+ Ingredient : limoni : 2.8 unita'
+ Ingredient : succo di limone : 37.5 ml
+ Ingredient : albicocche disidratate : 120.0 gr
+Class of ingredients: Frutta secca
+ Ingredient : noci : 237.5 gr
+ Ingredient : uvetta : 20.0 gr
+Class of ingredients: Lattine
+ Ingredient : salsa di melograno : 45.0 ml
+ Ingredient : tahini : 30.0 gr
+ Ingredient : pasta di pomodori : 60.0 ml
+ Ingredient : brodo vegetale : 600.0 ml
+Class of ingredients: Polveri
+ Ingredient : bicarbonato : 0.4 cucchiaino
+Class of ingredients: Farine
+ Ingredient : farina di farro : 400.0 gr
+Class of ingredients: Cereali lavorati e non
+ Ingredient : couscous : 450.0 gr
+Class of ingredients: acqua
+ Ingredient : acqua : 600.0 ml
+   
+========= Test of getCookingTechniques ===========
+Cooking technique : quasi crudista
+Cooking technique : al forno
+Cooking technique : bollito
+Cooking technique : fritto
+Cooking technique : in padella
+Cooking technique : crudista
+Cooking technique : arrosto
+   
+======== Test of getCountries =================
+Country : Afghanistan 
+Country : Albania 
+Country : Algeria 
+Country : Samoa Americane
+Country : Andorra 
+Country : Angola 
+Country : Anguilla 
+Country : Antigua e Barbuda 
+Country : Argentina 
+Country : Armenia 
+Country : Aruba 
+Country : Australia 
+Country : Austria 
+Country : Azerbaijan 
+Country : Bahamas
+Country : Bahrain 
+Country : Bangladesh 
+Country : Barbados 
+Country : Bielorussia
+Country : Belgio
+Country : Belize 
+Country : Benin 
+Country : Bermuda 
+Country : Bhutan 
+Country : Bolivia 
+Country : Bosnia-Herzegovina 
+Country : Botswana 
+Country : Brazil 
+Country : Isole Vergini Inglesi
+Country : Brunei 
+Country : Bulgaria 
+Country : Burkina Faso 
+Country : Burma 
+Country : Burundi 
+Country : Cambogia
+Country : Camerun
+Country : Canada 
+Country : Capoverde
+Country : Isole Cayman
+Country : Repubblica Centroafricana
+Country : Ciad
+Country : Cile
+Country : Cina
+Country : Colombia 
+Country : Comore
+Country : Isole Cook
+Country : Costa Rica 
+Country : Costa di Avorio
+Country : Croazia
+Country : Cuba 
+Country : Cipro
+Country : Repubblica Ceca
+Country : Repubblica Democratica del Congo
+Country : Danimarca
+Country : Gibuti
+Country : Dominica 
+Country : Repubblica Dominicana
+Country : Timor Est
+Country : Equador
+Country : Egitto
+Country : El Salvador 
+Country : Guinea Equatoriale
+Country : Eritrea 
+Country : Estonia 
+Country : Etiopia
+Country : Isole Faroer
+Country : Isole Figi
+Country : Finlandia
+Country : Francia
+Country : Guyana Francese
+Country : Polinesia Francese
+Country : Gabon 
+Country : Striscia di Gaza
+Country : Georgia 
+Country : Germania
+Country : Ghana 
+Country : Gibilterra
+Country : Grecia
+Country : Groenlandia
+Country : Granada
+Country : Guadalupe
+Country : Guam 
+Country : Guatemala 
+Country : Guernsey 
+Country : Guinea 
+Country : Guinea-Bissau 
+Country : Guyana 
+Country : Haiti 
+Country : Honduras 
+Country : Hong Kong 
+Country : Ungheria
+Country : Islanda
+Country : India 
+Country : Indonesia 
+Country : Iran 
+Country : Iraq 
+Country : Irlanda
+Country : Isola di Man
+Country : Israele
+Country : Italia
+Country : Giamaica
+Country : Giappone
+Country : Jersey 
+Country : Giordania
+Country : Kazakhstan 
+Country : Kenya 
+Country : Kiribati 
+Country : Kuwait 
+Country : Kyrgyzstan 
+Country : Laos 
+Country : Latvia 
+Country : Libano
+Country : Lesotho 
+Country : Liberia 
+Country : Libia
+Country : Liechtenstein 
+Country : Lituania
+Country : Lussemburgo
+Country : Macao
+Country : Macedonia 
+Country : Madagascar 
+Country : Malawi 
+Country : Malesia
+Country : Isole Maldive
+Country : Mali 
+Country : Malta 
+Country : Isole Marianne
+Country : Isole Marshall
+Country : Martinica
+Country : Mauritania 
+Country : Isole Mauritius
+Country : Mayotte 
+Country : Messico
+Country : Micronesia
+Country : Moldova 
+Country : Monaco 
+Country : Mongolia 
+Country : Montserrat 
+Country : Marocco
+Country : Mozambico
+Country : Namibia 
+Country : Nauru 
+Country : Nepal 
+Country : Olanda
+Country : Antille Olandesi
+Country : Nuova Caledonia
+Country : Nuova Zelanda
+Country : Nicaragua 
+Country : Niger 
+Country : Nigeria 
+Country : Corea del Nord
+Country : Norvegia
+Country : Oman 
+Country : Pakistan 
+Country : Palau 
+Country : Panama 
+Country : Papua Nuova Guinea
+Country : Paraguay 
+Country : Peru 
+Country : Filippine
+Country : Polonia
+Country : Portogallo
+Country : Portorico
+Country : Qatar 
+Country : Repubblica del Congo
+Country : Isole Reunion
+Country : Romania 
+Country : Russia 
+Country : Rwanda 
+Country : Saint Helena 
+Country : Saint Kitts e Nevis 
+Country : Santa Lucia
+Country : Saint Vincent e le Grenadines 
+Country : Samoa 
+Country : San Marino 
+Country : Sao Tome e Principe 
+Country : Saudi Arabia 
+Country : Senegal 
+Country : Serbia 
+Country : Isole Seychelles
+Country : Sierra Leone 
+Country : Singapore 
+Country : Slovacchia
+Country : Slovenia 
+Country : Isole Salomone
+Country : Somalia 
+Country : Sud Africa
+Country : Corea del Sud
+Country : Spagna
+Country : Sri Lanka 
+Country : St Pierre e Miquelon 
+Country : Sudan 
+Country : Suriname 
+Country : Swaziland 
+Country : Svezia
+Country : Svizzera
+Country : Siria
+Country : Taiwan 
+Country : Tajikistan 
+Country : Tanzania 
+Country : Tailandia
+Country : Gambia
+Country : Togo 
+Country : Tonga 
+Country : Trinidad e Tobago 
+Country : Tunisia 
+Country : Turchia
+Country : Turkmenistan 
+Country : Isole Turks e Caicos 
+Country : Tuvalu 
+Country : Uganda 
+Country : Ucraina
+Country : Emirati Arabi Uniti
+Country : Gran Bretagna
+Country : Stati Uniti
+Country : Uruguay 
+Country : Uzbekistan 
+Country : Vanuatu 
+Country : Venezuela 
+Country : Vietnam 
+Country : Isole Vergini 
+Country : Wallis e Futuna 
+Country : Costa Ovest
+Country : Sahara Occidentale
+Country : Yemen 
+Country : Zambia 
+Country : Zimbabwe 
+   
+======== Test of getEaterCategories =================
+Eater category : onnivoro
+Eater category : vegetariano
+Eater category : vegano
+   
+========= Test of getRecipeCategories ============
+Recipe category : contorno
+Recipe category : piatto principale
+Recipe category : dessert
+Recipe category : antipasto
+   
+=========== Test of getEventCategories ===========
+Event category : seminario
+   
+============= Test of getAllergenes ===============
+Allergene : glutine
+Allergene : lattosio
+   
+============ Test of getTools ===================
+Tool : tritatutto
+Tool : ciotola
+Tool : padella per torte
+Tool : padella per crepes
+Tool : robot da cucina
+Tool : padella da frittura
+Tool : padella in acciaio
+Tool : mestolo
+Tool : ciotola grande
+Tool : padella grande
+Tool : pentolone
+Tool : fazzoletto
+Tool : forno
+Tool : casseruola da forno
+Tool : carta da forno
+Tool : vassoio da forno
+Tool : padella
+Tool : pentola
+Tool : schiacciapassatelli
+Tool : pentolino
+Tool : pellicola trasparente
+Tool : vassoio
+   
+============== Test of getEvents =================
+Event : #1 Primo Seminario sui Meze , 26/1/2013-26/1/2013 , Camaldoli, Italy ( seminario )
+Event : #2 Secondo Seminario sui Meze , UNKNOWN-UNKNOWN , Forli', Italy ( seminario )
+Event : #3 Terzo Seminario sui Meze , UNKNOWN-UNKNOWN , UNKNOWN ( seminario )
+Event : #4 Troviamoci in cucina al di la' dei confini , 26/6/2016-26/6/2016 , S. Arcangelo in Romagna ( seminario )
+   
+============== Test of getRecipeDetails =================
+Name : Gamberi alla salsa curry
+Prep. time : 40
+Lat. : 0.0
+Lon. : 0.0
+Number of persons : 6
+Difficulty : 3
+Origin : thailandia
+Category : piatto principale
+Main ingredient : gamberetti
+Cooking_technique : in padella
+Link : asia/thailand/curry-sauced-shrimps
+ --- Ingredients : 
+ Ingredient #1 : 
+     Name : avocado
+     Qty  : 2 unita'
+     Prep.: tagliato a fette sottili
+     Alt. : 
+ Ingredient #2 : 
+     Name : pepe nero
+     Qty  : 0.25 cucchiaino
+     Prep.: 
+     Alt. : 
+ Ingredient #3 : 
+     Name : curry
+     Qty  : 4 cucchiaino
+     Prep.: 
+     Alt. : 
+ Ingredient #4 : 
+     Name : olio di oliva extra-vergine
+     Qty  : 1 bicchiere
+     Prep.: 
+     Alt. : 
+ Ingredient #5 : 
+     Name : olio di oliva extra-vergine
+     Qty  : 2 cucchiaio
+     Prep.: 
+     Alt. : 
+ Ingredient #6 : 
+     Name : aglio
+     Qty  : 8 chiodo di garofano
+     Prep.: schiacciato
+     Alt. : 
+ Ingredient #7 : 
+     Name : zenzero
+     Qty  : 3 cucchiaio
+     Prep.: schiacciato
+     Alt. : 
+ Ingredient #8 : 
+     Name : cipolle verdi
+     Qty  : 3 unita'
+     Prep.: affettato finemente
+     Alt. : 
+ Ingredient #9 : 
+     Name : insalata iceberg
+     Qty  : 1 unita'
+     Prep.: 
+     Alt. : 
+ Ingredient #10 : 
+     Name : lime
+     Qty  : 3 unita'
+     Prep.: spremuto
+     Alt. : 
+ Ingredient #11 : 
+     Name : lime
+     Qty  : 1 unita'
+     Prep.: spremuto
+     Alt. : 
+ Ingredient #12 : 
+     Name : mango
+     Qty  : 2 unita'
+     Prep.: tagliato a fette sottili
+     Alt. : 
+ Ingredient #13 : 
+     Name : prezzemolo
+     Qty  : 0.5 mazzo
+     Prep.: 
+     Alt. : 
+ Ingredient #14 : 
+     Name : peperoncino piccante rosso
+     Qty  : 0.25 cucchiaino
+     Prep.: 
+     Alt. : 
+ Ingredient #15 : 
+     Name : sale
+     Qty  : 1.5 cucchiaino
+     Prep.: 
+     Alt. : 
+ Ingredient #16 : 
+     Name : sale
+     Qty  : 0.3 cucchiaino
+     Prep.: 
+     Alt. : 
+ Ingredient #17 : 
+     Name : gamberetti
+     Qty  : 1.25 kg
+     Prep.: lavato, rimosso il guscio
+     Alt. : 
+ --- Tools : 
+ Tool #1 : 
+   Name : ciotola
+   Qty  : 1
+ Tool #2 : 
+   Name : padella da frittura
+   Qty  : 1
+ --- Events : 
+ Event #1 : 
+   Name : Secondo Seminario sui Meze
+   Place : Forli', Italy
+   From : UNKNOWN
+   To   : UNKNOWN
+   Type : seminario
+   
+============== Test of getEventRecipes =================
+Number of recipes for event #2 : 19
+Recipe #0 : 
+  ID : 12
+  Name : Sfoglia agli spinaci (borek)
+  Link : middle-east-2/turkey/ispanakli-borek
+Recipe #1 : 
+  ID : 13
+  Name : Polpette piccanti vegetariane (yalanci cig kofte)
+  Link : middle-east-2/turkey/yalanci-cig-kofte
+Recipe #2 : 
+  ID : 17
+  Name : Polpette di zucchini (kolokithokeftedes)
+  Link : mediterranea/greece/kolokithokeftedes
+Recipe #3 : 
+  ID : 4
+  Name : Insalata di zucchini
+  Link : middle-east-2/turkey/kabak-salatasi
+Recipe #4 : 
+  ID : 20
+  Name : Falafel
+  Link : middle-east-2/syria/falafel
+Recipe #5 : 
+  ID : 21
+  Name : Okra in stile indiano
+  Link : asia/india/bhindi
+Recipe #6 : 
+  ID : 22
+  Name : Pollo al curry
+  Link : asia/pakistan/chicken-curry
+Recipe #7 : 
+  ID : 23
+  Name : Riso alla pakistana (channa pulao)
+  Link : asia/pakistan/channa-pulao
+Recipe #8 : 
+  ID : 24
+  Name : Spiedini di agnello con verdure
+  Link : middel-east-2/turkey/sebzeli-kuzu-sis
+Recipe #9 : 
+  ID : 25
+  Name : Crema di carote (tarator)
+  Link : middle-east-2/turkey/turkish-carrot-dip
+Recipe #10 : 
+  ID : 26
+  Name : Melanzane al forno con formaggio
+  Link : middle-east-2/turkey/firinda-peynirli-karniyarik
+Recipe #11 : 
+  ID : 27
+  Name : Pomodori ripieni al formaggio
+  Link : middle-east-2/turkey/peynirly-domates-sepeti
+Recipe #12 : 
+  ID : 28
+  Name : Gamberi alla salsa curry
+  Link : asia/thailand/curry-sauced-shrimps
+Recipe #13 : 
+  ID : 29
+  Name : Kebab con pistacchio e basilico
+  Link : middle-east-2/turkey/fistikli-reyhanli-kebap
+Recipe #14 : 
+  ID : 30
+  Name : Cozze alla greca in salsa rossa (mydia saganaki)
+  Link : mediterranea/greece/midia-saganaki
+Recipe #15 : 
+  ID : 31
+  Name : Calamari ripieni alla cretese
+  Link : mediterranea/greece/kalamaria-gemista
+Recipe #16 : 
+  ID : 32
+  Name : Crescione romagnolo con ripieno di samosa
+  Link : world-fusion/crescione-romagnolo-with-samosa-filling
+Recipe #17 : 
+  ID : 33
+  Name : Melanzane alla armena
+  Link : asia/armenia/armenian-style-eggplants
+Recipe #18 : 
+  ID : 34
+  Name : Sfoglia alla armena
+  Link : asia/armenia/armenian-style-boreg

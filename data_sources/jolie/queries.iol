@@ -9,6 +9,7 @@ define __queries {
     .insert_user = "INSERT into FCP.fcpusers ( fcp_user_id, username, full_name, is_author, is_cook ) VALUES ( :fcp_user_id, :username, :full_name, :is_author, :is_cook ) ";
     .insert_authorrecipe = "INSERT into FCP.authorrecipe ( author_id, recipe_id ) VALUES ( :author_id, :recipe_id ) ";
     .insert_cookingtechnique = "INSERT into FCP.cookingtechniques ( cooking_technique_id, name ) VALUES ( :cooking_technique_id, :name ) ";
+    .insert_category = "INSERT into FCP.categories ( id, name, category ) VALUES ( :id, :name, :category ) ";
     .insert_country = "INSERT into FCP.countries ( country_id, name ) VALUES ( :country_id, :name )";
     .insert_tool = "INSERT into FCP.tools ( tool_id, name ) VALUES ( :tool_id, :name )";
     .insert_recipecategory = "INSERT into FCP.recipecategories ( category_id, name ) VALUES ( :category_id, :name )";

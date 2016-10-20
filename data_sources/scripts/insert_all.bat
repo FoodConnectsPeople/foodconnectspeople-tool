@@ -18,3 +18,4 @@ call jolie insert_tools.ol
 call jolie insert_recipe2categories.ol
 call jolie insert_unitconversions.ol
 call jolie insert_translations.ol
+call jolie insert_categories.ol

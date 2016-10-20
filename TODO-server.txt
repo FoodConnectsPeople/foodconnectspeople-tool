@@ -9,3 +9,7 @@
 - Verify links of recipes via client
 
 - Verify and de-ambiguate/normalize synonimic ingredients
+
+- Remove trailing blanks from italian translations of countries
+
+- Clean up from redundant tables embedded into "categories" table

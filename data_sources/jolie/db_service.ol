@@ -217,6 +217,20 @@ main {
         }
   }]
 
+  [ insertCategory( request )( response ) {
+        scope( sql ) {
+              install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                       throw( DatabaseError )
+              );
+
+              q = queries.insert_category;
+              q.id = request.id;
+              q.name = request.name;
+              q.category = request.category;
+              update@Database( q )( )
+        }
+  }]
+
   [ insertCountry( request )( response ) {
         scope( sql ) {
               install( SQLException => println@Console( sql.SQLException.stackTrace )();
@@ -652,10 +666,27 @@ main {
                                      throw( DatabaseError )
             );
 
+            if (is_defined(request.language)) {
+              language = request.language
+            } else {
+              language = "english"
+            };
+
             q = queries.select_countries;
             query@Database( q )( result );
+
+            //for( i = 0, i < #result.row, i++ ) {
+            //  println@Console("Country " + i + " is '" + result.row[i].name + "'")();
+            //  response.name[i] = str
+            //};
+
             for( i = 0, i < #result.row, i++ ) {
-                response.name[ i ] = result.row[ i ].name
+              transla.fuzzy = false;
+              transla.from = "english";
+              transla.to = language;
+              transla.str = result.row[i].name;
+              translate@MySelf(transla)(str);
+              response.name[i] = str
             }
       }
     }]
@@ -666,6 +697,12 @@ main {
                                      throw( DatabaseError )
             );
 
+            if (is_defined(request.language)) {
+              language = request.language
+            } else {
+              language = "english"
+            };
+
             // TO BE DONE:
             // q = queries.FOO;
             // query@Database( q )( result );
@@ -675,7 +712,17 @@ main {
 
             response.name[0] = "onnivore";
             response.name[1] = "vegetarian";
-            response.name[2] = "vegan"
+            response.name[2] = "vegan";
+
+            for( i = 0, i < #response.name, i++ ) {
+              transla.fuzzy = false;
+              transla.from = "english";
+              transla.to = language;
+              transla.str = response.name[i];
+              translate@MySelf(transla)(str);
+              response.name[i] = str
+            }
+
       }
     }]
 
@@ -685,8 +732,6 @@ main {
                                      throw( DatabaseError )
             );
 
-            transla.from = "english";
-            transla.fuzzy = false;
 
             if (is_defined(request.language)) {
               language = request.language
@@ -694,11 +739,12 @@ main {
               language = "english"
             };
 
-            transla.to = language;
-
             q = "SELECT DISTINCT category FROM fcp.events";
             query@Database( q )( result );
             for( i = 0, i < #result.row, i++ ) {
+                transla.from = "english";
+                transla.fuzzy = false;
+                transla.to = language;
                 transla.str = result.row[ i ].category;
                 translate@MySelf(transla)(response.name[ i ])
               }
@@ -711,6 +757,12 @@ main {
                                      throw( DatabaseError )
             );
 
+            if (is_defined(request.language)) {
+              language = request.language
+            } else {
+              language = "english"
+            };
+
             // TO BE DONE:
             // q = queries.FOO;
             // query@Database( q )( result );
@@ -719,7 +771,17 @@ main {
             //}
 
             response.name[0] = "gluten";
-            response.name[1] = "lactose"
+            response.name[1] = "lactose";
+
+            for( i = 0, i < #response.name, i++ ) {
+              transla.fuzzy = false;
+              transla.from = "english";
+              transla.to = language;
+              transla.str = response.name[i];
+              translate@MySelf(transla)(str);
+              response.name[i] = str
+            }
+
       }
     }]
 
@@ -830,15 +892,29 @@ main {
                                      throw( DatabaseError )
             );
 
+            if (is_defined(request.language)) {
+              language = request.language
+            } else {
+              language = "english"
+            };
+
+            transla.fuzzy = false;
+            transla.from = "english";
+            transla.to = language;
+
             q = queries.select_events;
             query@Database( q )( result );
             for( i = 0, i < #result.row, i++ ) {
                 response.event[ i ].event_id = result.row[ i ].event_id;
-                response.event[ i ].name = result.row[ i ].name;
+                transla.str = result.row[i].name;
+                translate@MySelf(transla)(str);
+                response.event[ i ].name = str;
                 response.event[ i ].place = result.row[ i ].place;
                 response.event[ i ].start_date = result.row[ i ].start_date;
                 response.event[ i ].end_date = result.row[ i ].end_date;
-                response.event[ i ].category = result.row[ i ].category
+                transla.str = result.row[i].category;
+                translate@MySelf(transla)(str);
+                response.event[ i ].category = str
             }
       }
     }]

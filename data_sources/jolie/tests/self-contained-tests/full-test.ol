@@ -5,8 +5,10 @@ main {
         language = "italian";
         t.verbose = false;
 
+        /****** Section 1 : test of MostGeneralQueryRequest ******/
+
         if (language == "english") {
-          t.language = "english";
+          t.language = language;
           t.recipe_name = "sauced shrimps";
           t.max_preparation_time = 45;
           t.difficulty_value[0] = 2;
@@ -31,7 +33,7 @@ main {
         };
 
         if (language == "italian") {
-            t.language = "italian";
+            t.language = language;
             t.recipe_name = "Gamberi alla salsa";
             t.max_preparation_time = 45;
             t.difficulty_value[0] = 2;
@@ -57,6 +59,8 @@ main {
 
       mostGeneralRecipeQuery@DbService(t)(res);
 
+      println@Console("   ")();
+      println@Console(" ======== Test of MostGeneralQuery =============")();
       println@Console("Number of recipes satisfying the query :" + #res.recipe)();
       for( i = 0, i < #res.recipe, i++ ) {
         println@Console("Recipe #" + i + " : ")();
@@ -66,46 +70,104 @@ main {
       };
 
 
+      /******************** Section 2: test of grocerylist *********/
+
+      undef(t);
+      t.convert_all = true;
+      t.verbose     = false;
+      t.language    = language;
+      t.rec_persons[0].recipe_id = 1;
+      t.rec_persons[0].persons   = 4;
+      t.rec_persons[1].recipe_id = 2;
+      t.rec_persons[1].persons   = 6;
+      t.rec_persons[2].recipe_id = 3;
+      t.rec_persons[2].persons   = 6;
+      t.rec_persons[3].recipe_id = 4;
+      t.rec_persons[3].persons   = 6;
+      t.rec_persons[4].recipe_id = 5;
+      t.rec_persons[4].persons   = 2;
+      t.rec_persons[5].recipe_id = 6;
+      t.rec_persons[5].persons   = 2;
+      t.rec_persons[6].recipe_id = 7;
+      t.rec_persons[6].persons   = 2;
+      t.rec_persons[7].recipe_id = 8;
+      t.rec_persons[7].persons   = 2;
+      t.rec_persons[8].recipe_id = 32;
+      t.rec_persons[8].persons   = 4;
+      t.rec_persons[9].recipe_id = 41;
+      t.rec_persons[9].persons   = 8;
+
+      buildGroceryList@DbService(t)(response);
+
+      println@Console("   ")();
+      println@Console(" ======== Test of GroceryList =============")();
+      for (l = 0, l < #response.classes, l++) {
+        println@Console ("Class of ingredients: " + response.classes[l].class)();
+        for (m = 0, m < #response.classes[l].ingredients, m++) {
+          println@Console (" Ingredient : " + response.classes[l].ingredients[m].ingredient + " : " +
+                                              response.classes[l].ingredients[m].quantity + " " +
+                                              response.classes[l].ingredients[m].unit_of_measure) ()
+        }
+      };
+
+
+
+
+
       optlanguage.language = language;
 
-      println@Console("-------------------")();
+      println@Console("   ")();
+      println@Console("========= Test of getCookingTechniques ===========")();
       getCookingTechniques@DbService(optlanguage)(res);
       for (i = 0, i < #res.name, i++) {
         println@Console("Cooking technique : " + res.name[i])()
       };
 
-      println@Console("-------------------")();
+      println@Console("   ")();
+      println@Console("======== Test of getCountries =================")();
+      getCountries@DbService(optlanguage)(res);
+      for (i = 0, i < #res.name, i++) {
+        println@Console("Country : " + res.name[i])()
+      };
+
+      println@Console("   ")();
+      println@Console("======== Test of getEaterCategories =================")();
       getEaterCategories@DbService(optlanguage)(res);
       for (i = 0, i < #res.name, i++) {
         println@Console("Eater category : " + res.name[i])()
       };
 
-      println@Console("-------------------")();
+      println@Console("   ")();
+      println@Console("========= Test of getRecipeCategories ============")();
       getRecipeCategories@DbService(optlanguage)(res);
       for (i = 0, i < #res.name, i++) {
         println@Console("Recipe category : " + res.name[i])()
       };
 
-      println@Console("-------------------")();
+      println@Console("   ")();
+      println@Console("=========== Test of getEventCategories ===========")();
       getEventCategories@DbService(optlanguage)(res);
       for (i = 0, i < #res.name, i++) {
         println@Console("Event category : " + res.name[i])()
       };
 
-      println@Console("-------------------")();
+      println@Console("   ")();
+      println@Console("============= Test of getAllergenes ===============")();
       getAllergenes@DbService(optlanguage)(res);
       for (i = 0, i < #res.name, i++) {
         println@Console("Allergene : " + res.name[i])()
       };
 
-      println@Console("-------------------")();
+      println@Console("   ")();
+      println@Console("============ Test of getTools ===================")();
       getTools@DbService(optlanguage)(res);
       for (i = 0, i < #res.name, i++) {
         println@Console("Tool : " + res.name[i])()
       };
 
-      println@Console("-------------------")();
-      getEvents@DbService()(res);
+      println@Console("   ")();
+      println@Console("============== Test of getEvents =================")();
+      getEvents@DbService(optlanguage)(res);
       for (i = 0, i < #res.event, i++) {
         println@Console("Event : #"
             + res.event[i].event_id + " " + res.event[i].name + " , "
@@ -113,6 +175,8 @@ main {
             + res.event[i].place + " ( " + res.event[i].category + " )")()
       };
 
+      println@Console("   ")();
+      println@Console("============== Test of getRecipeDetails =================")();
       undef(request);
       request.recipe_id = 28;
       request.language = language;
@@ -155,6 +219,10 @@ main {
         println@Console("   To   : " + response.event[i].event_end_date)();
         println@Console("   Type : " + response.event[i].event_category)()
       };
+
+
+      println@Console("   ")();
+      println@Console("============== Test of getEventRecipes =================")();
 
       undef(request);
       request.language = language;

@@ -77,6 +77,13 @@ CREATE TABLE FCP.CookingTechniques (
   , CONSTRAINT unique_cooking_technique_name UNIQUE (name)
 );
 
+CREATE TABLE FCP.Categories (
+  id SERIAL
+  , name VARCHAR(1024)
+  , category VARCHAR(1024)
+  , CONSTRAINT unique_name UNIQUE (name)
+);
+
 CREATE TABLE FCP.Countries (
   country_id SERIAL
   , name VARCHAR(128)

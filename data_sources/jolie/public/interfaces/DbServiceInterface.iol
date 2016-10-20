@@ -203,6 +203,12 @@ type InsertCookingTechniqueRequest: void {
   .name: string
 }
 
+type InsertCategoryRequest: void {
+  .id: int
+  .name: string
+  .category: string
+}
+
 type InsertCountryRequest: void {
   .country_id: int
   .name: string
@@ -330,7 +336,7 @@ interface DbServiceInterface {
     buildIntList( BuildIntListRequest )( string ) throws DatabaseError,
     buildSetVsSet( BuildSetVsSetRequest )( string ) throws DatabaseError,
     getCookingTechniques( OptionalLanguage )( GetCookingTechniquesResponse ) throws DatabaseError,
-    getCountries( void )( GetCountriesResponse ) throws DatabaseError,
+    getCountries( OptionalLanguage )( GetCountriesResponse ) throws DatabaseError,
     getEaterCategories( OptionalLanguage )( GetEaterCategoriesResponse ) throws DatabaseError,
     getEventCategories( OptionalLanguage )( GetEventCategoriesResponse ) throws DatabaseError,
     getAllergenes( OptionalLanguage )( GetAllergenesResponse ) throws DatabaseError,
@@ -344,7 +350,7 @@ interface DbServiceInterface {
     getIngredients_set_vs_set( GetIngredients_namelistRequest )( GetIngredients_namepropResponse ) throws DatabaseError,
     getProperties( void )( GetPropertiesResponse ) throws DatabaseError,
     getTools( OptionalLanguage )( GetToolsResponse ) throws DatabaseError,
-    getEvents( void )( GetEventsResponse ) throws DatabaseError,
+    getEvents( OptionalLanguage )( GetEventsResponse ) throws DatabaseError,
     getRecipeDetails( GetRecipeDetailsRequest ) (GetRecipeDetailsResponse) throws DatabaseError,
     insertIngredient( InsertIngredientRequest )( void ) throws DatabaseError,
     insertEvent( InsertEventRequest )( void ) throws DatabaseError,
@@ -358,6 +364,7 @@ interface DbServiceInterface {
     insertUser( InsertUserRequest )( void ) throws DatabaseError,
     insertAuthorRecipe( InsertAuthorRecipeRequest )( void ) throws DatabaseError,
     insertCookingTechnique( InsertCookingTechniqueRequest )( void ) throws DatabaseError,
+    insertCategory( InsertCategoryRequest )( void ) throws DatabaseError,
     insertCountry( InsertCountryRequest )( void ) throws DatabaseError,
     insertTool( InsertToolRequest )( void ) throws DatabaseError,
     insertRecipeCategory( InsertRecipeCategoryRequest )( void ) throws DatabaseError,

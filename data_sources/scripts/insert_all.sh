@@ -20,3 +20,4 @@ jolie insert_tools.ol
 jolie insert_recipe2categories.ol
 jolie insert_unitconversions.ol
 jolie insert_translations.ol
+jolie insert_categories.ol
