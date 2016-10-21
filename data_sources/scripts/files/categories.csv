@@ -1,17 +1,19 @@
-Id,Name,Category
-1,almost raw,cooking-technique
-2,baked,cooking-technique
-3,boiled,cooking-technique
-4,fried,cooking-technique
-5,pan-fried,cooking-technique
-6,raw,cooking-technique
-7,roasted,cooking-technique
-8,entrée,recipe-category
-9,main,recipe-category
-10,side dish,recipe-category
-11,dessert,recipe-category
-12,onnivore,eater-category
-13,vegetarian,eater-category
-14,vegan,eater-category
-15,workshop,event-category
-16,charity dinner,event-category
+Id,Name,Category,
+1,almost raw,cooking-technique,
+2,baked,cooking-technique,
+3,boiled,cooking-technique,
+4,fried,cooking-technique,
+5,pan-fried,cooking-technique,
+6,raw,cooking-technique,
+7,roasted,cooking-technique,
+8,entrée,recipe-category,
+9,main,recipe-category,
+10,side dish,recipe-category,
+11,dessert,recipe-category,
+12,onnivore,eater-category,
+13,vegetarian,eater-category,
+14,vegan,eater-category,
+15,workshop,event-category,
+16,charity dinner,event-category,
+17,gluten,allergene,
+18,lactose,allergene,

@@ -1,11 +1,5 @@
 - Improve multilanguage by having a simple multi-context string with separators (add python script to generate proper csv)
 
-- Implement "real" (vs. hardcoded) getEaterCategories
-
-- Implement "real" (vs. hardcoded) getAllergenes
-
-- Check/implement support of multilanguage in all getters (some do not yet support it)
-
 - Verify links of recipes via client
 
 - Verify and de-ambiguate/normalize synonimic ingredients
@@ -13,3 +7,5 @@
 - Remove trailing blanks from italian translations of countries
 
 - Clean up from redundant tables embedded into "categories" table
+
+- Verify that "'" is handled correctly in all queries of all getters

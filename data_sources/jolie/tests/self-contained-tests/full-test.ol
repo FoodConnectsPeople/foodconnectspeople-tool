@@ -70,7 +70,54 @@ main {
       };
 
 
-      /******************** Section 2: test of grocerylist *********/
+      /******************** Section 3: test of getRecipeDetails *********/
+
+      println@Console("   ")();
+      println@Console("============== Test of getRecipeDetails =================")();
+      undef(request);
+      request.recipe_id = 28;
+      request.language = language;
+      getRecipeDetails@DbService(request)(response);
+
+      println@Console("Name : " + response.name)();
+      println@Console("Prep. time : " + response.preparation_time)();
+      println@Console("Lat. : " + response.is_from_latitude)();
+      println@Console("Lon. : " + response.is_from_longitude)();
+      println@Console("Number of persons : " + response.persons)();
+      println@Console("Difficulty : " + response.difficulty)();
+      println@Console("Origin : " + response.place_of_origin)();
+      println@Console("Category : " + response.category)();
+      println@Console("Main ingredient : " + response.main_ingredient)();
+      println@Console("Cooking_technique : " + response.cooking_technique)();
+      println@Console("Link : " + response.link)();
+
+      println@Console(" --- Ingredients : ")();
+      for (i = 0, i < #response.ingredient, i++) {
+        println@Console(" Ingredient #" + (i+1)+ " : ")();
+        println@Console("     Name : " + response.ingredient[i].ingredient_name)();
+        println@Console("     Qty  : " + response.ingredient[i].ingredient_quantity + " " + response.ingredient[i].unit_of_measure)();
+        println@Console("     Prep.: " + response.ingredient[i].preparation_technique)();
+        println@Console("     Alt. : " + response.ingredient[i].alternate_ingredient)()
+      };
+
+      println@Console(" --- Tools : ")();
+      for (i = 0, i < #response.tool, i++) {
+        println@Console(" Tool #" + (i+1)+ " : ")();
+        println@Console("   Name : " + response.tool[i].tool_name)();
+        println@Console("   Qty  : " + response.tool[i].tool_quantity)()
+      };
+
+      println@Console(" --- Events : ")();
+      for (i = 0, i < #response.event, i++) {
+        println@Console(" Event #" + (i+1)+ " : ")();
+        println@Console("   Name : " + response.event[i].event_name)();
+        println@Console("   Place : " + response.event[i].event_place)();
+        println@Console("   From : " + response.event[i].event_start_date)();
+        println@Console("   To   : " + response.event[i].event_end_date)();
+        println@Console("   Type : " + response.event[i].event_category)()
+      };
+
+      /******************** Section 3: test of grocerylist *********/
 
       undef(t);
       t.convert_all = true;
@@ -112,6 +159,20 @@ main {
 
 
 
+      println@Console("   ")();
+      println@Console("============== Test of getEventRecipes =================")();
+
+      undef(request);
+      request.language = language;
+      request.event_id = 2;
+      getEventRecipes@DbService(request)(res);
+      println@Console("Number of recipes for event #" + request.event_id + " : " + #res.recipe)();
+      for( i = 0, i < #res.recipe, i++ ) {
+        println@Console("Recipe #" + i + " : ")();
+        println@Console("  ID : " + res.recipe[i].recipe_id)();
+        println@Console("  Name : " + res.recipe[i].recipe_name)();
+        println@Console("  Link : " + res.recipe[i].recipe_link)()
+      };
 
 
       optlanguage.language = language;
@@ -176,64 +237,29 @@ main {
       };
 
       println@Console("   ")();
-      println@Console("============== Test of getRecipeDetails =================")();
-      undef(request);
-      request.recipe_id = 28;
-      request.language = language;
-      getRecipeDetails@DbService(request)(response);
-
-      println@Console("Name : " + response.name)();
-      println@Console("Prep. time : " + response.preparation_time)();
-      println@Console("Lat. : " + response.is_from_latitude)();
-      println@Console("Lon. : " + response.is_from_longitude)();
-      println@Console("Number of persons : " + response.persons)();
-      println@Console("Difficulty : " + response.difficulty)();
-      println@Console("Origin : " + response.place_of_origin)();
-      println@Console("Category : " + response.category)();
-      println@Console("Main ingredient : " + response.main_ingredient)();
-      println@Console("Cooking_technique : " + response.cooking_technique)();
-      println@Console("Link : " + response.link)();
-
-      println@Console(" --- Ingredients : ")();
-      for (i = 0, i < #response.ingredient, i++) {
-        println@Console(" Ingredient #" + (i+1)+ " : ")();
-        println@Console("     Name : " + response.ingredient[i].ingredient_name)();
-        println@Console("     Qty  : " + response.ingredient[i].ingredient_quantity + " " + response.ingredient[i].unit_of_measure)();
-        println@Console("     Prep.: " + response.ingredient[i].preparation_technique)();
-        println@Console("     Alt. : " + response.ingredient[i].alternate_ingredient)()
-      };
-
-      println@Console(" --- Tools : ")();
-      for (i = 0, i < #response.tool, i++) {
-        println@Console(" Tool #" + (i+1)+ " : ")();
-        println@Console("   Name : " + response.tool[i].tool_name)();
-        println@Console("   Qty  : " + response.tool[i].tool_quantity)()
-      };
-
-      println@Console(" --- Events : ")();
-      for (i = 0, i < #response.event, i++) {
-        println@Console(" Event #" + (i+1)+ " : ")();
-        println@Console("   Name : " + response.event[i].event_name)();
-        println@Console("   Place : " + response.event[i].event_place)();
-        println@Console("   From : " + response.event[i].event_start_date)();
-        println@Console("   To   : " + response.event[i].event_end_date)();
-        println@Console("   Type : " + response.event[i].event_category)()
-      };
-
-
-      println@Console("   ")();
-      println@Console("============== Test of getEventRecipes =================")();
-
-      undef(request);
-      request.language = language;
-      request.event_id = 2;
-      getEventRecipes@DbService(request)(res);
-      println@Console("Number of recipes for event #" + request.event_id + " : " + #res.recipe)();
+      println@Console("============== Test of getRecipes =================")();
+      getRecipes@DbService(optlanguage)(res);
       for( i = 0, i < #res.recipe, i++ ) {
         println@Console("Recipe #" + i + " : ")();
         println@Console("  ID : " + res.recipe[i].recipe_id)();
         println@Console("  Name : " + res.recipe[i].recipe_name)();
-        println@Console("  Link : " + res.recipe[i].recipe_link)()
+        println@Console("  Link : " + res.recipe[i].recipe_link)();
+        println@Console("  Difficulty : " + res.recipe[i].difficulty)();
+        println@Console("  Origin : " + res.recipe[i].place_of_origin)();
+        println@Console("  Category : " + res.recipe[i].category)();
+        println@Console("  Cooking technique : " + res.recipe[i].cooking_technique)()
+      };
+
+      println@Console("   ")();
+      println@Console("============== Test of getIngredients =================")();
+      getIngredients@DbService(optlanguage)(res);
+      for( i = 0, i < #res.ingredient, i++ ) {
+        println@Console("Ingredient #" + i + " : ")();
+        println@Console("  ID : " + res.ingredient[i].ingredient_id)();
+        println@Console("  Name : " + res.ingredient[i].name)();
+        println@Console("  Properties : " + res.ingredient[i].properties)();
+        println@Console("  Allergene : " + res.ingredient[i].allergene)();
+        println@Console("  Ingredient class : " + res.ingredient[i].ingredient_class)()
       }
 
 }

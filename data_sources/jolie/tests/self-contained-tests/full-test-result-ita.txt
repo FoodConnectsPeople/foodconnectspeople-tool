@@ -8,6 +8,119 @@ Recipe #0 :
   Name : Gamberi alla salsa curry
   Link : asia/thailand/curry-sauced-shrimps
    
+============== Test of getRecipeDetails =================
+Name : Gamberi alla salsa curry
+Prep. time : 40
+Lat. : 0.0
+Lon. : 0.0
+Number of persons : 6
+Difficulty : 3
+Origin : thailandia
+Category : piatto principale
+Main ingredient : gamberetti
+Cooking_technique : in padella
+Link : asia/thailand/curry-sauced-shrimps
+ --- Ingredients : 
+ Ingredient #1 : 
+     Name : avocado
+     Qty  : 2 unita'
+     Prep.: tagliato a fette sottili
+     Alt. : 
+ Ingredient #2 : 
+     Name : pepe nero
+     Qty  : 0.25 cucchiaino
+     Prep.: 
+     Alt. : 
+ Ingredient #3 : 
+     Name : curry
+     Qty  : 4 cucchiaino
+     Prep.: 
+     Alt. : 
+ Ingredient #4 : 
+     Name : olio di oliva extra-vergine
+     Qty  : 1 bicchiere
+     Prep.: 
+     Alt. : 
+ Ingredient #5 : 
+     Name : olio di oliva extra-vergine
+     Qty  : 2 cucchiaio
+     Prep.: 
+     Alt. : 
+ Ingredient #6 : 
+     Name : aglio
+     Qty  : 8 chiodo di garofano
+     Prep.: schiacciato
+     Alt. : 
+ Ingredient #7 : 
+     Name : zenzero
+     Qty  : 3 cucchiaio
+     Prep.: schiacciato
+     Alt. : 
+ Ingredient #8 : 
+     Name : cipolle verdi
+     Qty  : 3 unita'
+     Prep.: affettato finemente
+     Alt. : 
+ Ingredient #9 : 
+     Name : insalata iceberg
+     Qty  : 1 unita'
+     Prep.: 
+     Alt. : 
+ Ingredient #10 : 
+     Name : lime
+     Qty  : 3 unita'
+     Prep.: spremuto
+     Alt. : 
+ Ingredient #11 : 
+     Name : lime
+     Qty  : 1 unita'
+     Prep.: spremuto
+     Alt. : 
+ Ingredient #12 : 
+     Name : mango
+     Qty  : 2 unita'
+     Prep.: tagliato a fette sottili
+     Alt. : 
+ Ingredient #13 : 
+     Name : prezzemolo
+     Qty  : 0.5 mazzo
+     Prep.: 
+     Alt. : 
+ Ingredient #14 : 
+     Name : peperoncino piccante rosso
+     Qty  : 0.25 cucchiaino
+     Prep.: 
+     Alt. : 
+ Ingredient #15 : 
+     Name : sale
+     Qty  : 1.5 cucchiaino
+     Prep.: 
+     Alt. : 
+ Ingredient #16 : 
+     Name : sale
+     Qty  : 0.3 cucchiaino
+     Prep.: 
+     Alt. : 
+ Ingredient #17 : 
+     Name : gamberetti
+     Qty  : 1.25 kg
+     Prep.: lavato, rimosso il guscio
+     Alt. : 
+ --- Tools : 
+ Tool #1 : 
+   Name : ciotola
+   Qty  : 1
+ Tool #2 : 
+   Name : padella da frittura
+   Qty  : 1
+ --- Events : 
+ Event #1 : 
+   Name : Secondo Seminario sui Meze
+   Place : Forli', Italy
+   From : UNKNOWN
+   To   : UNKNOWN
+   Type : seminario
+   
  ======== Test of GroceryList =============
 Class of ingredients: Olii
  Ingredient : olio di girasole : 200.0 ml
@@ -82,6 +195,85 @@ Class of ingredients: Cereali lavorati e non
  Ingredient : couscous : 450.0 gr
 Class of ingredients: acqua
  Ingredient : acqua : 600.0 ml
+   
+============== Test of getEventRecipes =================
+Number of recipes for event #2 : 19
+Recipe #0 : 
+  ID : 12
+  Name : Sfoglia agli spinaci (borek)
+  Link : middle-east-2/turkey/ispanakli-borek
+Recipe #1 : 
+  ID : 13
+  Name : Polpette piccanti vegetariane (yalanci cig kofte)
+  Link : middle-east-2/turkey/yalanci-cig-kofte
+Recipe #2 : 
+  ID : 17
+  Name : Polpette di zucchini (kolokithokeftedes)
+  Link : mediterranea/greece/kolokithokeftedes
+Recipe #3 : 
+  ID : 4
+  Name : Insalata di zucchini
+  Link : middle-east-2/turkey/kabak-salatasi
+Recipe #4 : 
+  ID : 20
+  Name : Falafel
+  Link : middle-east-2/syria/falafel
+Recipe #5 : 
+  ID : 21
+  Name : Okra in stile indiano
+  Link : asia/india/bhindi
+Recipe #6 : 
+  ID : 22
+  Name : Pollo al curry
+  Link : asia/pakistan/chicken-curry
+Recipe #7 : 
+  ID : 23
+  Name : Riso alla pakistana (channa pulao)
+  Link : asia/pakistan/channa-pulao
+Recipe #8 : 
+  ID : 24
+  Name : Spiedini di agnello con verdure
+  Link : middel-east-2/turkey/sebzeli-kuzu-sis
+Recipe #9 : 
+  ID : 25
+  Name : Crema di carote (tarator)
+  Link : middle-east-2/turkey/turkish-carrot-dip
+Recipe #10 : 
+  ID : 26
+  Name : Melanzane al forno con formaggio
+  Link : middle-east-2/turkey/firinda-peynirli-karniyarik
+Recipe #11 : 
+  ID : 27
+  Name : Pomodori ripieni al formaggio
+  Link : middle-east-2/turkey/peynirly-domates-sepeti
+Recipe #12 : 
+  ID : 28
+  Name : Gamberi alla salsa curry
+  Link : asia/thailand/curry-sauced-shrimps
+Recipe #13 : 
+  ID : 29
+  Name : Kebab con pistacchio e basilico
+  Link : middle-east-2/turkey/fistikli-reyhanli-kebap
+Recipe #14 : 
+  ID : 30
+  Name : Cozze alla greca in salsa rossa (mydia saganaki)
+  Link : mediterranea/greece/midia-saganaki
+Recipe #15 : 
+  ID : 31
+  Name : Calamari ripieni alla cretese
+  Link : mediterranea/greece/kalamaria-gemista
+Recipe #16 : 
+  ID : 32
+  Name : Crescione romagnolo con ripieno di samosa
+  Link : world-fusion/crescione-romagnolo-with-samosa-filling
+Recipe #17 : 
+  ID : 33
+  Name : Melanzane alla armena
+  Link : asia/armenia/armenian-style-eggplants
+Recipe #18 : 
+  ID : 34
+  Name : Sfoglia alla armena
+  Link : asia/armenia/armenian-style-boreg
    
 ========= Test of getCookingTechniques ===========
 Cooking technique : quasi crudista
@@ -327,13 +519,14 @@ Eater category : vegetariano
 Eater category : vegano
    
 ========= Test of getRecipeCategories ============
-Recipe category : contorno
-Recipe category : piatto principale
-Recipe category : dessert
 Recipe category : antipasto
+Recipe category : piatto principale
+Recipe category : contorno
+Recipe category : dessert
    
 =========== Test of getEventCategories ===========
 Event category : seminario
+Event category : cena di beneficenza
    
 ============= Test of getAllergenes ===============
 Allergene : glutine
@@ -369,194 +562,2070 @@ Event : #2 Secondo Seminario sui Meze , UNKNOWN-UNKNOWN , Forli', Italy ( semina
 Event : #3 Terzo Seminario sui Meze , UNKNOWN-UNKNOWN , UNKNOWN ( seminario )
 Event : #4 Troviamoci in cucina al di la' dei confini , 26/6/2016-26/6/2016 , S. Arcangelo in Romagna ( seminario )
    
-============== Test of getRecipeDetails =================
-Name : Gamberi alla salsa curry
-Prep. time : 40
-Lat. : 0.0
-Lon. : 0.0
-Number of persons : 6
-Difficulty : 3
-Origin : thailandia
-Category : piatto principale
-Main ingredient : gamberetti
-Cooking_technique : in padella
-Link : asia/thailand/curry-sauced-shrimps
- --- Ingredients : 
- Ingredient #1 : 
-     Name : avocado
-     Qty  : 2 unita'
-     Prep.: tagliato a fette sottili
-     Alt. : 
- Ingredient #2 : 
-     Name : pepe nero
-     Qty  : 0.25 cucchiaino
-     Prep.: 
-     Alt. : 
- Ingredient #3 : 
-     Name : curry
-     Qty  : 4 cucchiaino
-     Prep.: 
-     Alt. : 
- Ingredient #4 : 
-     Name : olio di oliva extra-vergine
-     Qty  : 1 bicchiere
-     Prep.: 
-     Alt. : 
- Ingredient #5 : 
-     Name : olio di oliva extra-vergine
-     Qty  : 2 cucchiaio
-     Prep.: 
-     Alt. : 
- Ingredient #6 : 
-     Name : aglio
-     Qty  : 8 chiodo di garofano
-     Prep.: schiacciato
-     Alt. : 
- Ingredient #7 : 
-     Name : zenzero
-     Qty  : 3 cucchiaio
-     Prep.: schiacciato
-     Alt. : 
- Ingredient #8 : 
-     Name : cipolle verdi
-     Qty  : 3 unita'
-     Prep.: affettato finemente
-     Alt. : 
- Ingredient #9 : 
-     Name : insalata iceberg
-     Qty  : 1 unita'
-     Prep.: 
-     Alt. : 
- Ingredient #10 : 
-     Name : lime
-     Qty  : 3 unita'
-     Prep.: spremuto
-     Alt. : 
- Ingredient #11 : 
-     Name : lime
-     Qty  : 1 unita'
-     Prep.: spremuto
-     Alt. : 
- Ingredient #12 : 
-     Name : mango
-     Qty  : 2 unita'
-     Prep.: tagliato a fette sottili
-     Alt. : 
- Ingredient #13 : 
-     Name : prezzemolo
-     Qty  : 0.5 mazzo
-     Prep.: 
-     Alt. : 
- Ingredient #14 : 
-     Name : peperoncino piccante rosso
-     Qty  : 0.25 cucchiaino
-     Prep.: 
-     Alt. : 
- Ingredient #15 : 
-     Name : sale
-     Qty  : 1.5 cucchiaino
-     Prep.: 
-     Alt. : 
- Ingredient #16 : 
-     Name : sale
-     Qty  : 0.3 cucchiaino
-     Prep.: 
-     Alt. : 
- Ingredient #17 : 
-     Name : gamberetti
-     Qty  : 1.25 kg
-     Prep.: lavato, rimosso il guscio
-     Alt. : 
- --- Tools : 
- Tool #1 : 
-   Name : ciotola
-   Qty  : 1
- Tool #2 : 
-   Name : padella da frittura
-   Qty  : 1
- --- Events : 
- Event #1 : 
-   Name : Secondo Seminario sui Meze
-   Place : Forli', Italy
-   From : UNKNOWN
-   To   : UNKNOWN
-   Type : seminario
-   
-============== Test of getEventRecipes =================
-Number of recipes for event #2 : 19
+============== Test of getRecipes =================
 Recipe #0 : 
-  ID : 12
-  Name : Sfoglia agli spinaci (borek)
-  Link : middle-east-2/turkey/ispanakli-borek
+  ID : 51
+  Name : Ajoblanco
+  Link : mediterranea/spain/ajoblanco
+  Difficulty : 1
+  Origin : spagna
+  Category : antipasto
+  Cooking technique : quasi crudista
 Recipe #1 : 
-  ID : 13
-  Name : Polpette piccanti vegetariane (yalanci cig kofte)
-  Link : middle-east-2/turkey/yalanci-cig-kofte
-Recipe #2 : 
-  ID : 17
-  Name : Polpette di zucchini (kolokithokeftedes)
-  Link : mediterranea/greece/kolokithokeftedes
-Recipe #3 : 
-  ID : 4
-  Name : Insalata di zucchini
-  Link : middle-east-2/turkey/kabak-salatasi
-Recipe #4 : 
-  ID : 20
-  Name : Falafel
-  Link : middle-east-2/syria/falafel
-Recipe #5 : 
-  ID : 21
-  Name : Okra in stile indiano
-  Link : asia/india/bhindi
-Recipe #6 : 
-  ID : 22
-  Name : Pollo al curry
-  Link : asia/pakistan/chicken-curry
-Recipe #7 : 
-  ID : 23
-  Name : Riso alla pakistana (channa pulao)
-  Link : asia/pakistan/channa-pulao
-Recipe #8 : 
-  ID : 24
-  Name : Spiedini di agnello con verdure
-  Link : middel-east-2/turkey/sebzeli-kuzu-sis
-Recipe #9 : 
-  ID : 25
-  Name : Crema di carote (tarator)
-  Link : middle-east-2/turkey/turkish-carrot-dip
-Recipe #10 : 
-  ID : 26
-  Name : Melanzane al forno con formaggio
-  Link : middle-east-2/turkey/firinda-peynirli-karniyarik
-Recipe #11 : 
-  ID : 27
-  Name : Pomodori ripieni al formaggio
-  Link : middle-east-2/turkey/peynirly-domates-sepeti
-Recipe #12 : 
-  ID : 28
-  Name : Gamberi alla salsa curry
-  Link : asia/thailand/curry-sauced-shrimps
-Recipe #13 : 
-  ID : 29
-  Name : Kebab con pistacchio e basilico
-  Link : middle-east-2/turkey/fistikli-reyhanli-kebap
-Recipe #14 : 
-  ID : 30
-  Name : Cozze alla greca in salsa rossa (mydia saganaki)
-  Link : mediterranea/greece/midia-saganaki
-Recipe #15 : 
-  ID : 31
-  Name : Calamari ripieni alla cretese
-  Link : mediterranea/greece/kalamaria-gemista
-Recipe #16 : 
-  ID : 32
-  Name : Crescione romagnolo con ripieno di samosa
-  Link : world-fusion/crescione-romagnolo-with-samosa-filling
-Recipe #17 : 
   ID : 33
   Name : Melanzane alla armena
   Link : asia/armenia/armenian-style-eggplants
-Recipe #18 : 
+  Difficulty : 3
+  Origin : armenia
+  Category : antipasto
+  Cooking technique : al forno
+Recipe #2 : 
   ID : 34
   Name : Sfoglia alla armena
   Link : asia/armenia/armenian-style-boreg
+  Difficulty : 3
+  Origin : armenia
+  Category : piatto principale
+  Cooking technique : al forno
+Recipe #3 : 
+  ID : 56
+  Name : Zucca ripiena alla armena (ghapama)
+  Link : asia/armenia/ghapama
+  Difficulty : 3
+  Origin : armenia
+  Category : piatto principale
+  Cooking technique : al forno
+Recipe #4 : 
+  ID : 26
+  Name : Melanzane al forno con formaggio
+  Link : middle-east-2/turkey/firinda-peynirli-karniyarik
+  Difficulty : 3
+  Origin : turchia
+  Category : piatto principale
+  Cooking technique : al forno
+Recipe #5 : 
+  ID : 76
+  Name : Peperoni al forno
+  Link : mediterranea/italy/baked-mix-peppers
+  Difficulty : 2
+  Origin : italia
+  Category : antipasto
+  Cooking technique : al forno
+Recipe #6 : 
+  ID : 62
+  Name : Birani
+  Link : asia/bangladesh/birani
+  Difficulty : 3
+  Origin : bangladesh
+  Category : piatto principale
+  Cooking technique : bollito
+Recipe #7 : 
+  ID : 25
+  Name : Crema di carote (tarator)
+  Link : middle-east-2/turkey/turkish-carrot-dip
+  Difficulty : 2
+  Origin : turchia
+  Category : antipasto
+  Cooking technique : in padella
+Recipe #8 : 
+  ID : 47
+  Name : Crema di carote ai peperoni (biberli tarator)
+  Link : middle-east-2/turkey/carrot-dip-with-bell-pepper
+  Difficulty : 2
+  Origin : turchia
+  Category : antipasto
+  Cooking technique : al forno
+Recipe #9 : 
+  ID : 36
+  Name : Nastri di carote
+  Link : world-fusion/carrot-ribbons
+  Difficulty : 3
+  Origin : fusion
+  Category : antipasto
+  Cooking technique : crudista
+Recipe #10 : 
+  ID : 59
+  Name : Chapli kebab
+  Link : asia/pakistan/chapli-kebab
+  Difficulty : 3
+  Origin : pakistan
+  Category : piatto principale
+  Cooking technique : in padella
+Recipe #11 : 
+  ID : 14
+  Name : Funghi ripieni al formaggio
+  Link : middle-east-2/turkey/firinda-kasarli-mantar
+  Difficulty : 2
+  Origin : turchia
+  Category : antipasto
+  Cooking technique : al forno
+Recipe #12 : 
+  ID : 52
+  Name : Torta al formaggio alla mastica
+  Link : world-fusion/cheese-tart-with-mastic
+  Difficulty : 3
+  Origin : fusion
+  Category : piatto principale
+  Cooking technique : al forno
+Recipe #13 : 
+  ID : 22
+  Name : Pollo al curry
+  Link : asia/pakistan/chicken-curry
+  Difficulty : 3
+  Origin : pakistan
+  Category : piatto principale
+  Cooking technique : in padella
+Recipe #14 : 
+  ID : 8
+  Name : Crema di ceci (hummus)
+  Link : middle-east-2/lebanon/hummus
+  Difficulty : 1
+  Origin : medio oriente
+  Category : antipasto
+  Cooking technique : bollito
+Recipe #15 : 
+  ID : 9
+  Name : Pollo alla circassa
+  Link : asia/russia/cerkez-tavugu
+  Difficulty : 3
+  Origin : russia
+  Category : piatto principale
+  Cooking technique : bollito
+Recipe #16 : 
+  ID : 73
+  Name : Crescione alle erbette
+  Link : mediterranea/italy/crescione-pie-with-herbs
+  Difficulty : 4
+  Origin : italia
+  Category : piatto principale
+  Cooking technique : al forno
+Recipe #17 : 
+  ID : 32
+  Name : Crescione romagnolo con ripieno di samosa
+  Link : world-fusion/crescione-romagnolo-with-samosa-filling
+  Difficulty : 4
+  Origin : fusion
+  Category : piatto principale
+  Cooking technique : al forno
+Recipe #18 : 
+  ID : 10
+  Name : Crema cretese
+  Link : middle-east-2/turkey/girit-ezmesi
+  Difficulty : 1
+  Origin : turchia
+  Category : antipasto
+  Cooking technique : crudista
+Recipe #19 : 
+  ID : 31
+  Name : Calamari ripieni alla cretese
+  Link : mediterranea/greece/kalamaria-gemista
+  Difficulty : 4
+  Origin : grecia
+  Category : piatto principale
+  Cooking technique : al forno
+Recipe #20 : 
+  ID : 28
+  Name : Gamberi alla salsa curry
+  Link : asia/thailand/curry-sauced-shrimps
+  Difficulty : 3
+  Origin : thailandia
+  Category : piatto principale
+  Cooking technique : in padella
+Recipe #21 : 
+  ID : 58
+  Name : Dahi baray
+  Link : asia/pakistan/dahi-baray
+  Difficulty : 4
+  Origin : pakistan
+  Category : piatto principale
+  Cooking technique : fritto
+Recipe #22 : 
+  ID : 66
+  Name : Deghe
+  Link : africa/mali/deghe
+  Difficulty : 2
+  Origin : mali
+  Category : dessert
+  Cooking technique : quasi crudista
+Recipe #23 : 
+  ID : 48
+  Name : Stufato di melanzane e lenticchie verdi (mualle)
+  Link : middle-east-2/turkey/turkish-eggplant-and-green-lentils-stew
+  Difficulty : 3
+  Origin : turchia
+  Category : piatto principale
+  Cooking technique : bollito
+Recipe #24 : 
+  ID : 75
+  Name : Parmigiana di melanzane leggera
+  Link : mediterranea/italy/eggplant-light-parmigiana
+  Difficulty : 3
+  Origin : italia
+  Category : piatto principale
+  Cooking technique : al forno
+Recipe #25 : 
+  ID : 11
+  Name : Crema di melanzane (babaganoush)
+  Link : middle-east-2/syria/babaganoush
+  Difficulty : 2
+  Origin : medio oriente
+  Category : antipasto
+  Cooking technique : arrosto
+Recipe #26 : 
+  ID : 70
+  Name : Zuppa egusi
+  Link : africa/nigeria/egusi-soup
+  Difficulty : 3
+  Origin : nigeria
+  Category : piatto principale
+  Cooking technique : in padella
+Recipe #27 : 
+  ID : 20
+  Name : Falafel
+  Link : middle-east-2/syria/falafel
+  Difficulty : 3
+  Origin : medio oriente
+  Category : piatto principale
+  Cooking technique : fritto
+Recipe #28 : 
+  ID : 67
+  Name : Ghorme gosht
+  Link : asia/afghanistan/ghorme-gosht
+  Difficulty : 3
+  Origin : afghanistan
+  Category : piatto principale
+  Cooking technique : in padella
+Recipe #29 : 
+  ID : 78
+  Name : Ciambella romagnola della nonna
+  Link : mediterranea/italy/grandparents-romagna-donut
+  Difficulty : 3
+  Origin : italia
+  Category : dessert
+  Cooking technique : al forno
+Recipe #30 : 
+  ID : 30
+  Name : Cozze alla greca in salsa rossa (mydia saganaki)
+  Link : mediterranea/greece/midia-saganaki
+  Difficulty : 3
+  Origin : grecia
+  Category : piatto principale
+  Cooking technique : in padella
+Recipe #31 : 
+  ID : 54
+  Name : Calamari grigliati alla feta
+  Link : mediterranea/greece/grilled-calamari-with-feta
+  Difficulty : 2
+  Origin : grecia
+  Category : piatto principale
+  Cooking technique : arrosto
+Recipe #32 : 
+  ID : 42
+  Name : Guacamole
+  Link : central-america/mexico/guacamole
+  Difficulty : 1
+  Origin : messico
+  Category : antipasto
+  Cooking technique : crudista
+Recipe #33 : 
+  ID : 18
+  Name : Crema piccante alla feta (tirokafteri)
+  Link : mediterranea/greece/tirokafteri
+  Difficulty : 2
+  Origin : grecia
+  Category : antipasto
+  Cooking technique : in padella
+Recipe #34 : 
+  ID : 13
+  Name : Polpette piccanti vegetariane (yalanci cig kofte)
+  Link : middle-east-2/turkey/yalanci-cig-kofte
+  Difficulty : 4
+  Origin : turchia
+  Category : piatto principale
+  Cooking technique : quasi crudista
+Recipe #35 : 
+  ID : 21
+  Name : Okra in stile indiano
+  Link : asia/india/bhindi
+  Difficulty : 3
+  Origin : india
+  Category : piatto principale
+  Cooking technique : in padella
+Recipe #36 : 
+  ID : 40
+  Name : Riso alla indonesiana
+  Link : asia/indonesia/indonesian-rice
+  Difficulty : 3
+  Origin : indonesia
+  Category : contorno
+  Cooking technique : bollito
+Recipe #37 : 
+  ID : 68
+  Name : Jamweli
+  Link : africa/gambia/jamweli
+  Difficulty : 3
+  Origin : gambia
+  Category : piatto principale
+  Cooking technique : bollito
+Recipe #38 : 
+  ID : 71
+  Name : Kebab
+  Link : asia/afghanistan/kebab
+  Difficulty : 3
+  Origin : afghanistan
+  Category : piatto principale
+  Cooking technique : arrosto
+Recipe #39 : 
+  ID : 29
+  Name : Kebab con pistacchio e basilico
+  Link : middle-east-2/turkey/fistikli-reyhanli-kebap
+  Difficulty : 3
+  Origin : turchia
+  Category : piatto principale
+  Cooking technique : al forno
+Recipe #40 : 
+  ID : 5
+  Name : Insalata di fagioli borlotti
+  Link : middle-east-2/turkey/piyaz
+  Difficulty : 1
+  Origin : turchia
+  Category : antipasto
+  Cooking technique : bollito
+Recipe #41 : 
+  ID : 63
+  Name : Konnto
+  Link : africa/guinea-bissau/konnto
+  Difficulty : 3
+  Origin : guinea-bissau
+  Category : piatto principale
+  Cooking technique : in padella
+Recipe #42 : 
+  ID : 24
+  Name : Spiedini di agnello con verdure
+  Link : middel-east-2/turkey/sebzeli-kuzu-sis
+  Difficulty : 3
+  Origin : mediterraneo
+  Category : piatto principale
+  Cooking technique : al forno
+Recipe #43 : 
+  ID : 60
+  Name : Dolce di cocco
+  Link : south-america/brazil/manjar-de-coco
+  Difficulty : 2
+  Origin : brasile
+  Category : dessert
+  Cooking technique : bollito
+Recipe #44 : 
+  ID : 46
+  Name : Tapenade mediterranea alle olive
+  Link : middle-east-2/turkey/mediterranean-olive-tapenade
+  Difficulty : 1
+  Origin : mediterraneo
+  Category : antipasto
+  Cooking technique : quasi crudista
+Recipe #45 : 
+  ID : 2
+  Name : Crema alla menta (haydari)
+  Link : middle-east-2/turkey/haydari
+  Difficulty : 1
+  Origin : turchia
+  Category : antipasto
+  Cooking technique : crudista
+Recipe #46 : 
+  ID : 45
+  Name : Torta alla arancia con crema di mastica
+  Link : middle-east-2/turkey/turkish-moist-orange-cake-with-mastic-cream
+  Difficulty : 3
+  Origin : turchia
+  Category : dessert
+  Cooking technique : al forno
+Recipe #47 : 
+  ID : 43
+  Name : Salsiccia estiva
+  Link : mediterranea/spain/morcilla-de-verano
+  Difficulty : 3
+  Origin : spagna
+  Category : antipasto
+  Cooking technique : arrosto
+Recipe #48 : 
+  ID : 23
+  Name : Riso alla pakistana (channa pulao)
+  Link : asia/pakistan/channa-pulao
+  Difficulty : 3
+  Origin : pakistan
+  Category : piatto principale
+  Cooking technique : bollito
+Recipe #49 : 
+  ID : 61
+  Name : Frittelle di dolce di latte
+  Link : south-america/argentina/panquecas-de-doce-de-leite
+  Difficulty : 3
+  Origin : argentina
+  Category : dessert
+  Cooking technique : in padella
+Recipe #50 : 
+  ID : 74
+  Name : Passatelli asciutti alla salsa di funghi
+  Link : mediterranea/italy/passatelli-asciutti-with-mushroom-sauce
+  Difficulty : 3
+  Origin : italia
+  Category : piatto principale
+  Cooking technique : bollito
+Recipe #51 : 
+  ID : 49
+  Name : Involtini di pasta di patate
+  Link : middle-east-2/turkey/turkish-potatoes-dough-rolls
+  Difficulty : 4
+  Origin : turchia
+  Category : piatto principale
+  Cooking technique : al forno
+Recipe #52 : 
+  ID : 38
+  Name : Spaghetti di zucca
+  Link : world-fusion/pumpkin-noodles
+  Difficulty : 2
+  Origin : fusion
+  Category : antipasto
+  Cooking technique : crudista
+Recipe #53 : 
+  ID : 19
+  Name : Torta al rum
+  Link : middle-east-2/turkey/rum-tatlisi
+  Difficulty : 2
+  Origin : turchia
+  Category : dessert
+  Cooking technique : al forno
+Recipe #54 : 
+  ID : 3
+  Name : Insalata di melanzane arrosto
+  Link : middle-east-2/turkey/turkish-roasted-eggplant-salad
+  Difficulty : 2
+  Origin : turchia
+  Category : antipasto
+  Cooking technique : arrosto
+Recipe #55 : 
+  ID : 6
+  Name : Involtini di peperoni al forno con formaggio
+  Link : middle-east-2/turkey/peynirli-koz-biber
+  Difficulty : 4
+  Origin : turchia
+  Category : piatto principale
+  Cooking technique : arrosto
+Recipe #56 : 
+  ID : 77
+  Name : Pesche romagnole alla crema
+  Link : mediterranea/italy/romagna-peaches-with-cream
+  Difficulty : 2
+  Origin : italia
+  Category : dessert
+  Cooking technique : quasi crudista
+Recipe #57 : 
+  ID : 15
+  Name : Insalata di sedano rapa
+  Link : middle-east-2/turkey/turkish-root-celery-salad
+  Difficulty : 1
+  Origin : turchia
+  Category : antipasto
+  Cooking technique : crudista
+Recipe #58 : 
+  ID : 57
+  Name : Ciambelle di San Giuseppe (zeppole)
+  Link : mediterranea/italy/saint-joseph-donuts
+  Difficulty : 4
+  Origin : italia
+  Category : dessert
+  Cooking technique : fritto
+Recipe #59 : 
+  ID : 53
+  Name : Salmone con sfoglia di pinoli e crema alla mastica
+  Link : world-fusion/salmon-with-crust-of-pine-nuts-and-mastic-sauce
+  Difficulty : 3
+  Origin : fusion
+  Category : piatto principale
+  Cooking technique : al forno
+Recipe #60 : 
+  ID : 50
+  Name : Salmorejo
+  Link : mediterranea/spain/salmorejo
+  Difficulty : 1
+  Origin : spagna
+  Category : antipasto
+  Cooking technique : quasi crudista
+Recipe #61 : 
+  ID : 55
+  Name : Calamari saltati all'ouzo su letto di pure' di patate
+  Link : mediterranea/greece/sauteed-calamari-with-ouzo-on-potato-pouree-bed
+  Difficulty : 3
+  Origin : grecia
+  Category : piatto principale
+  Cooking technique : in padella
+Recipe #62 : 
+  ID : 1
+  Name : Melanzane saltate (shakshuka)
+  Link : middle-east-2/turkey/shakshuka
+  Difficulty : 3
+  Origin : turchia
+  Category : piatto principale
+  Cooking technique : in padella
+Recipe #63 : 
+  ID : 16
+  Name : Insalata di gamberetti
+  Link : middle-east-2/turkey/karides-salatasi
+  Difficulty : 2
+  Origin : turchia
+  Category : antipasto
+  Cooking technique : in padella
+Recipe #64 : 
+  ID : 64
+  Name : Simaumo
+  Link : africa/gambia/simaumo
+  Difficulty : 3
+  Origin : gambia
+  Category : piatto principale
+  Cooking technique : in padella
+Recipe #65 : 
+  ID : 37
+  Name : Formaggio di spinaci
+  Link : world-fusion/spinach-cheese
+  Difficulty : 2
+  Origin : fusion
+  Category : antipasto
+  Cooking technique : crudista
+Recipe #66 : 
+  ID : 12
+  Name : Sfoglia agli spinaci (borek)
+  Link : middle-east-2/turkey/ispanakli-borek
+  Difficulty : 4
+  Origin : medio oriente
+  Category : piatto principale
+  Cooking technique : al forno
+Recipe #67 : 
+  ID : 7
+  Name : Insalata al cucchiaio
+  Link : middle-east-2/turkey/kasik-salatasi
+  Difficulty : 1
+  Origin : turchia
+  Category : antipasto
+  Cooking technique : crudista
+Recipe #68 : 
+  ID : 44
+  Name : Cigni del lago Sarmasi (lahana sarmasi)
+  Link : middle-east-2/turkey/turkish-swans-of-lake-sarmasi
+  Difficulty : 4
+  Origin : turchia
+  Category : piatto principale
+  Cooking technique : bollito
+Recipe #69 : 
+  ID : 39
+  Name : Pollo alla tailandese con curry verde
+  Link : asia/thailand/thai-chicken-in-green-curry
+  Difficulty : 3
+  Origin : thailandia
+  Category : piatto principale
+  Cooking technique : bollito
+Recipe #70 : 
+  ID : 65
+  Name : Tigadeghena
+  Link : africa/mali/tigadeghena
+  Difficulty : 3
+  Origin : mali
+  Category : piatto principale
+  Cooking technique : in padella
+Recipe #71 : 
+  ID : 27
+  Name : Pomodori ripieni al formaggio
+  Link : middle-east-2/turkey/peynirly-domates-sepeti
+  Difficulty : 2
+  Origin : turchia
+  Category : antipasto
+  Cooking technique : crudista
+Recipe #72 : 
+  ID : 41
+  Name : Cous cous vegetariano
+  Link : africa/morocco/vegetable-cous-cous
+  Difficulty : 3
+  Origin : marocco
+  Category : piatto principale
+  Cooking technique : bollito
+Recipe #73 : 
+  ID : 72
+  Name : Wake
+  Link : africa/togo/wake
+  Difficulty : 4
+  Origin : togo
+  Category : piatto principale
+  Cooking technique : fritto
+Recipe #74 : 
+  ID : 35
+  Name : Taco alle noci e funghi
+  Link : central-america/mexico/walnut-mushroom-taco
+  Difficulty : 2
+  Origin : messico
+  Category : antipasto
+  Cooking technique : quasi crudista
+Recipe #75 : 
+  ID : 17
+  Name : Polpette di zucchini (kolokithokeftedes)
+  Link : mediterranea/greece/kolokithokeftedes
+  Difficulty : 4
+  Origin : grecia
+  Category : piatto principale
+  Cooking technique : fritto
+Recipe #76 : 
+  ID : 4
+  Name : Insalata di zucchini
+  Link : middle-east-2/turkey/kabak-salatasi
+  Difficulty : 2
+  Origin : turchia
+  Category : antipasto
+  Cooking technique : in padella
+Recipe #77 : 
+  ID : 69
+  Name : Zucchini alla besciamella
+  Link : mediterranea/italy/zucchini-with-bechamel-sauce
+  Difficulty : 3
+  Origin : italia
+  Category : piatto principale
+  Cooking technique : al forno
+   
+============== Test of getIngredients =================
+Ingredient #0 : 
+  ID : 158
+  Name : ouzo
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Alcolici
+Ingredient #1 : 
+  ID : 174
+  Name : raki
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Alcolici
+Ingredient #2 : 
+  ID : 232
+  Name : vino bianco
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Alcolici
+Ingredient #3 : 
+  ID : 91
+  Name : baguette francese
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : __glutine__
+  Ingredient class : Panetteria
+Ingredient #4 : 
+  ID : 204
+  Name : pane vecchio
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : __glutine__
+  Ingredient class : Panetteria
+Ingredient #5 : 
+  ID : 37
+  Name : ciliege in sciroppo
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Frutta in scatola
+Ingredient #6 : 
+  ID : 38
+  Name : sciroppo di ciliege
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Frutta in scatola
+Ingredient #7 : 
+  ID : 54
+  Name : latte di cocco
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Frutta in scatola
+Ingredient #8 : 
+  ID : 31
+  Name : capperi
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Lattine
+Ingredient #9 : 
+  ID : 55
+  Name : salsa concentrata di pomodoro
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Lattine
+Ingredient #10 : 
+  ID : 71
+  Name : mostarda di Digione
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Lattine
+Ingredient #11 : 
+  ID : 138
+  Name : maggi
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : __lattosio__
+  Ingredient class : Lattine
+Ingredient #12 : 
+  ID : 151
+  Name : latte di cocco senza zucchero
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Lattine
+Ingredient #13 : 
+  ID : 163
+  Name : burro di arachidi
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Lattine
+Ingredient #14 : 
+  ID : 170
+  Name : salsa di melograno
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Lattine
+Ingredient #15 : 
+  ID : 199
+  Name : salsa di soia
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Lattine
+Ingredient #16 : 
+  ID : 211
+  Name : tahini
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Lattine
+Ingredient #17 : 
+  ID : 216
+  Name : pasta di pomodori
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Lattine
+Ingredient #18 : 
+  ID : 217
+  Name : salsa di pomodori
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Lattine
+Ingredient #19 : 
+  ID : 218
+  Name : salsa di pomodori a cubetti
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Lattine
+Ingredient #20 : 
+  ID : 220
+  Name : tonno
+  Properties : __onnivoro__
+  Allergene : 
+  Ingredient class : Lattine
+Ingredient #21 : 
+  ID : 228
+  Name : brodo vegetale
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Lattine
+Ingredient #22 : 
+  ID : 13
+  Name : riso basmati
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : __glutine__
+  Ingredient class : Cereali lavorati e non
+Ingredient #23 : 
+  ID : 27
+  Name : bulgur
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : __glutine__
+  Ingredient class : Cereali lavorati e non
+Ingredient #24 : 
+  ID : 63
+  Name : couscous
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Cereali lavorati e non
+Ingredient #25 : 
+  ID : 183
+  Name : riso
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : __glutine__
+  Ingredient class : Cereali lavorati e non
+Ingredient #26 : 
+  ID : 191
+  Name : semolino
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : __glutine__
+  Ingredient class : Cereali lavorati e non
+Ingredient #27 : 
+  ID : 28
+  Name : burro
+  Properties : __vegetariano__onnivoro__
+  Allergene : __lattosio__
+  Ingredient class : Prodotti caseari
+Ingredient #28 : 
+  ID : 62
+  Name : fiocchi di latte
+  Properties : __vegetariano__onnivoro__
+  Allergene : __lattosio__
+  Ingredient class : Prodotti caseari
+Ingredient #29 : 
+  ID : 81
+  Name : dolce di latte
+  Properties : __vegetariano__onnivoro__
+  Allergene : __lattosio__
+  Ingredient class : Prodotti caseari
+Ingredient #30 : 
+  ID : 86
+  Name : formaggio feta
+  Properties : __vegetariano__onnivoro__
+  Allergene : __lattosio__
+  Ingredient class : Prodotti caseari
+Ingredient #31 : 
+  ID : 90
+  Name : fontina
+  Properties : __vegetariano__onnivoro__
+  Allergene : __lattosio__
+  Ingredient class : Prodotti caseari
+Ingredient #32 : 
+  ID : 107
+  Name : yogurt greco
+  Properties : __vegetariano__onnivoro__
+  Allergene : __lattosio__
+  Ingredient class : Prodotti caseari
+Ingredient #33 : 
+  ID : 144
+  Name : mozzarella
+  Properties : __vegetariano__onnivoro__
+  Allergene : __lattosio__
+  Ingredient class : Prodotti caseari
+Ingredient #34 : 
+  ID : 145
+  Name : formaggio muenster
+  Properties : __vegetariano__onnivoro__
+  Allergene : __lattosio__
+  Ingredient class : Prodotti caseari
+Ingredient #35 : 
+  ID : 149
+  Name : burro sciapo
+  Properties : __vegetariano__onnivoro__
+  Allergene : 
+  Ingredient class : Prodotti caseari
+Ingredient #36 : 
+  ID : 161
+  Name : parmigiano
+  Properties : __vegetariano__onnivoro__
+  Allergene : __lattosio__
+  Ingredient class : Prodotti caseari
+Ingredient #37 : 
+  ID : 184
+  Name : ricotta
+  Properties : __vegetariano__onnivoro__
+  Allergene : 
+  Ingredient class : Prodotti caseari
+Ingredient #38 : 
+  ID : 212
+  Name : taleggio
+  Properties : __vegetariano__onnivoro__
+  Allergene : __lattosio__
+  Ingredient class : Prodotti caseari
+Ingredient #39 : 
+  ID : 219
+  Name : tosella
+  Properties : __vegetariano__onnivoro__
+  Allergene : __lattosio__
+  Ingredient class : Prodotti caseari
+Ingredient #40 : 
+  ID : 233
+  Name : yogurt bianco
+  Properties : __vegetariano__onnivoro__
+  Allergene : __lattosio__
+  Ingredient class : Prodotti caseari
+Ingredient #41 : 
+  ID : 235
+  Name : latte intero
+  Properties : __vegetariano__onnivoro__
+  Allergene : __lattosio__
+  Ingredient class : Prodotti caseari
+Ingredient #42 : 
+  ID : 1
+  Name : mandorle
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Frutta secca
+Ingredient #43 : 
+  ID : 33
+  Name : anacardi
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Frutta secca
+Ingredient #44 : 
+  ID : 143
+  Name : semi di melone
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Frutta secca
+Ingredient #45 : 
+  ID : 167
+  Name : pinoli
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Frutta secca
+Ingredient #46 : 
+  ID : 168
+  Name : pistacchi
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Frutta secca
+Ingredient #47 : 
+  ID : 173
+  Name : uvetta
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Frutta secca
+Ingredient #48 : 
+  ID : 193
+  Name : semi di sesamo
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Frutta secca
+Ingredient #49 : 
+  ID : 229
+  Name : noci
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Frutta secca
+Ingredient #50 : 
+  ID : 82
+  Name : uova
+  Properties : __onnivoro__
+  Allergene : 
+  Ingredient class : Uova
+Ingredient #51 : 
+  ID : 83
+  Name : tuorlo d'uovo
+  Properties : __onnivoro__
+  Allergene : 
+  Ingredient class : Uova
+Ingredient #52 : 
+  ID : 2
+  Name : acciughe
+  Properties : __onnivoro__
+  Allergene : 
+  Ingredient class : Pesce
+Ingredient #53 : 
+  ID : 30
+  Name : calamari
+  Properties : __onnivoro__
+  Allergene : 
+  Ingredient class : Pesce
+Ingredient #54 : 
+  ID : 147
+  Name : cozze
+  Properties : __onnivoro__
+  Allergene : 
+  Ingredient class : Pesce
+Ingredient #55 : 
+  ID : 179
+  Name : triglie
+  Properties : __onnivoro__
+  Allergene : 
+  Ingredient class : Pesce
+Ingredient #56 : 
+  ID : 187
+  Name : salmone
+  Properties : __onnivoro__
+  Allergene : 
+  Ingredient class : Pesce
+Ingredient #57 : 
+  ID : 189
+  Name : sardine
+  Properties : __onnivoro__
+  Allergene : 
+  Ingredient class : Pesce
+Ingredient #58 : 
+  ID : 195
+  Name : gamberetti
+  Properties : __onnivoro__
+  Allergene : 
+  Ingredient class : Pesce
+Ingredient #59 : 
+  ID : 45
+  Name : farina di ceci
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Farine
+Ingredient #60 : 
+  ID : 59
+  Name : farina di mais
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Farine
+Ingredient #61 : 
+  ID : 87
+  Name : farina
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : __glutine__
+  Ingredient class : Farine
+Ingredient #62 : 
+  ID : 88
+  Name : farina tipo 0
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : __glutine__
+  Ingredient class : Farine
+Ingredient #63 : 
+  ID : 89
+  Name : farina tipo 00
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : __glutine__
+  Ingredient class : Farine
+Ingredient #64 : 
+  ID : 192
+  Name : farina di semolino
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : __glutine__
+  Ingredient class : Farine
+Ingredient #65 : 
+  ID : 201
+  Name : farina di farro
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Farine
+Ingredient #66 : 
+  ID : 234
+  Name : farina di kamut/bianca
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : __glutine__
+  Ingredient class : Farine
+Ingredient #67 : 
+  ID : 101
+  Name : piselli surgelati
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Surgelati
+Ingredient #68 : 
+  ID : 165
+  Name : pasta sfoglia fillo
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Surgelati
+Ingredient #69 : 
+  ID : 223
+  Name : pasta sfoglia turca
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Surgelati
+Ingredient #70 : 
+  ID : 6
+  Name : avocado
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Frutta
+Ingredient #71 : 
+  ID : 10
+  Name : banane
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Frutta
+Ingredient #72 : 
+  ID : 53
+  Name : cocco
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Frutta
+Ingredient #73 : 
+  ID : 72
+  Name : albicocche disidratate
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Frutta
+Ingredient #74 : 
+  ID : 73
+  Name : ciliege disidratate
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Frutta
+Ingredient #75 : 
+  ID : 74
+  Name : prugne secche
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Frutta
+Ingredient #76 : 
+  ID : 75
+  Name : ribes nero secco
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Frutta
+Ingredient #77 : 
+  ID : 76
+  Name : ceci secchi
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Frutta
+Ingredient #78 : 
+  ID : 77
+  Name : cocco grattugiato
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Frutta
+Ingredient #79 : 
+  ID : 111
+  Name : uva bianca
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Frutta
+Ingredient #80 : 
+  ID : 121
+  Name : mezza pesca
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Frutta
+Ingredient #81 : 
+  ID : 132
+  Name : limoni
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Frutta
+Ingredient #82 : 
+  ID : 133
+  Name : succo di limone
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Frutta
+Ingredient #83 : 
+  ID : 134
+  Name : buccia di limone
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Frutta
+Ingredient #84 : 
+  ID : 136
+  Name : lime
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Frutta
+Ingredient #85 : 
+  ID : 137
+  Name : buccia di lime
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Frutta
+Ingredient #86 : 
+  ID : 139
+  Name : mango
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Frutta
+Ingredient #87 : 
+  ID : 155
+  Name : arance
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Frutta
+Ingredient #88 : 
+  ID : 156
+  Name : succo di arancia
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Frutta
+Ingredient #89 : 
+  ID : 157
+  Name : buccia di arancia
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Frutta
+Ingredient #90 : 
+  ID : 169
+  Name : prugne
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Frutta
+Ingredient #91 : 
+  ID : 15
+  Name : carne di manzo
+  Properties : __onnivoro__
+  Allergene : 
+  Ingredient class : Carni
+Ingredient #92 : 
+  ID : 23
+  Name : cosce di pollo disossate
+  Properties : __onnivoro__
+  Allergene : 
+  Ingredient class : Carni
+Ingredient #93 : 
+  ID : 40
+  Name : pollo
+  Properties : __onnivoro__
+  Allergene : 
+  Ingredient class : Carni
+Ingredient #94 : 
+  ID : 41
+  Name : petto di pollo
+  Properties : __onnivoro__
+  Allergene : 
+  Ingredient class : Carni
+Ingredient #95 : 
+  ID : 42
+  Name : zampa di pollo
+  Properties : __onnivoro__
+  Allergene : 
+  Ingredient class : Carni
+Ingredient #96 : 
+  ID : 43
+  Name : coscia di pollo
+  Properties : __onnivoro__
+  Allergene : 
+  Ingredient class : Carni
+Ingredient #97 : 
+  ID : 130
+  Name : carne di agnello
+  Properties : __onnivoro__
+  Allergene : 
+  Ingredient class : Carni
+Ingredient #98 : 
+  ID : 148
+  Name : carne di montone
+  Properties : __onnivoro__
+  Allergene : 
+  Ingredient class : Carni
+Ingredient #99 : 
+  ID : 5
+  Name : aceto di mele
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Olii
+Ingredient #100 : 
+  ID : 60
+  Name : olio di girasole
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Olii
+Ingredient #101 : 
+  ID : 85
+  Name : olio di oliva extra-vergine
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Olii
+Ingredient #102 : 
+  ID : 159
+  Name : olio di palma
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Olii
+Ingredient #103 : 
+  ID : 188
+  Name : sale
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Olii
+Ingredient #104 : 
+  ID : 210
+  Name : aceto dolce
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Olii
+Ingredient #105 : 
+  ID : 231
+  Name : aceto bianco
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Olii
+Ingredient #106 : 
+  ID : 8
+  Name : lievito in polvere
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Polveri
+Ingredient #107 : 
+  ID : 9
+  Name : bicarbonato
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Polveri
+Ingredient #108 : 
+  ID : 24
+  Name : briciole di pane
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : __glutine__
+  Ingredient class : Polveri
+Ingredient #109 : 
+  ID : 61
+  Name : amido di mais
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Polveri
+Ingredient #110 : 
+  ID : 126
+  Name : lievito istantaneo
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Polveri
+Ingredient #111 : 
+  ID : 150
+  Name : polvere di cacao amara
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Polveri
+Ingredient #112 : 
+  ID : 226
+  Name : estratto di vaniglia
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Polveri
+Ingredient #113 : 
+  ID : 227
+  Name : vanillina
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Polveri
+Ingredient #114 : 
+  ID : 236
+  Name : lievito per dolci
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Polveri
+Ingredient #115 : 
+  ID : 3
+  Name : aneto
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #116 : 
+  ID : 4
+  Name : anice per dolci
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #117 : 
+  ID : 11
+  Name : basilico
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #118 : 
+  ID : 12
+  Name : foglie di basilico
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #119 : 
+  ID : 14
+  Name : alloro
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #120 : 
+  ID : 17
+  Name : cardamomo nero
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #121 : 
+  ID : 19
+  Name : pepe nero
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #122 : 
+  ID : 20
+  Name : pepe nero in semi
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #123 : 
+  ID : 25
+  Name : semi di mostarda scura
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #124 : 
+  ID : 35
+  Name : chaat masala
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #125 : 
+  ID : 46
+  Name : peperoncino in polvere
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #126 : 
+  ID : 47
+  Name : erba cipollina
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #127 : 
+  ID : 48
+  Name : cilandro (coriandolo)
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #128 : 
+  ID : 49
+  Name : cannella
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #129 : 
+  ID : 50
+  Name : cannella in polvere
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #130 : 
+  ID : 51
+  Name : bastoncino di cannella
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #131 : 
+  ID : 52
+  Name : chiodo di garofano
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #132 : 
+  ID : 56
+  Name : coriandolo
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #133 : 
+  ID : 57
+  Name : coriandolo in polvere
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #134 : 
+  ID : 58
+  Name : semi di coriandolo
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #135 : 
+  ID : 65
+  Name : cumino
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #136 : 
+  ID : 66
+  Name : cumino in polvere
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #137 : 
+  ID : 67
+  Name : cumino in semi
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #138 : 
+  ID : 68
+  Name : curry
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #139 : 
+  ID : 69
+  Name : foglie di curry
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #140 : 
+  ID : 70
+  Name : curry in polvere
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #141 : 
+  ID : 78
+  Name : menta secca
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #142 : 
+  ID : 79
+  Name : origano secco
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #143 : 
+  ID : 80
+  Name : semi di melograno secchi
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #144 : 
+  ID : 92
+  Name : basilico fresco
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #145 : 
+  ID : 93
+  Name : coriandolo fresco
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #146 : 
+  ID : 94
+  Name : peperoncini verdi freschi
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #147 : 
+  ID : 95
+  Name : peperoncini habanero freschi
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #148 : 
+  ID : 96
+  Name : menta fresca
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #149 : 
+  ID : 97
+  Name : origano fresco
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #150 : 
+  ID : 98
+  Name : peperoncini rossi freschi
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #151 : 
+  ID : 99
+  Name : rosmarino fresco
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #152 : 
+  ID : 100
+  Name : timo fresco
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #153 : 
+  ID : 102
+  Name : garam masala
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #154 : 
+  ID : 104
+  Name : zenzero
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #155 : 
+  ID : 105
+  Name : crema di zenzero
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #156 : 
+  ID : 106
+  Name : radice di zenzero
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #157 : 
+  ID : 109
+  Name : semi di cardamomo verdi
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #158 : 
+  ID : 110
+  Name : peperoncino verde
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #159 : 
+  ID : 116
+  Name : polvere di cannella
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #160 : 
+  ID : 117
+  Name : polvere di coriandolo
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #161 : 
+  ID : 118
+  Name : polvere di cumino
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #162 : 
+  ID : 119
+  Name : polvere di pepe
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #163 : 
+  ID : 120
+  Name : polvere di curcuma
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #164 : 
+  ID : 122
+  Name : harissa
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #165 : 
+  ID : 127
+  Name : isot
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #166 : 
+  ID : 129
+  Name : crema di pepe rosso curda
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #167 : 
+  ID : 141
+  Name : mastica in pezzi
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #168 : 
+  ID : 142
+  Name : polvere di mastica
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #169 : 
+  ID : 152
+  Name : noce moscata
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #170 : 
+  ID : 160
+  Name : paprika
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #171 : 
+  ID : 164
+  Name : pepe
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #172 : 
+  ID : 176
+  Name : peperoncino rosso
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #173 : 
+  ID : 177
+  Name : peperoncino rosso in polvere
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #174 : 
+  ID : 178
+  Name : peperoncino piccante rosso
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #175 : 
+  ID : 186
+  Name : pepe rosa
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #176 : 
+  ID : 198
+  Name : paprika affumicata
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #177 : 
+  ID : 200
+  Name : soya tritata
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #178 : 
+  ID : 207
+  Name : sumak
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #179 : 
+  ID : 213
+  Name : crema di tamarindo
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #180 : 
+  ID : 214
+  Name : crema di curry verde tailandese
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #181 : 
+  ID : 221
+  Name : spezie miste turche
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #182 : 
+  ID : 222
+  Name : crema di pepe turca
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #183 : 
+  ID : 224
+  Name : curcuma in polvere
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #184 : 
+  ID : 225
+  Name : semi di vaniglia
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #185 : 
+  ID : 239
+  Name : yenibahar
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Spezie
+Ingredient #186 : 
+  ID : 26
+  Name : zucchero di canna
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Dolcificanti
+Ingredient #187 : 
+  ID : 123
+  Name : miele
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Dolcificanti
+Ingredient #188 : 
+  ID : 125
+  Name : zucchero a velo
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Dolcificanti
+Ingredient #189 : 
+  ID : 205
+  Name : zucchero
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Dolcificanti
+Ingredient #190 : 
+  ID : 206
+  Name : zucchero in polvere
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Dolcificanti
+Ingredient #191 : 
+  ID : 7
+  Name : cardi
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #192 : 
+  ID : 16
+  Name : peperoni
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #193 : 
+  ID : 21
+  Name : fagioli dall'occchio nero
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #194 : 
+  ID : 18
+  Name : olive nere
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #195 : 
+  ID : 22
+  Name : ceci bolliti
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #196 : 
+  ID : 29
+  Name : cavolo
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #197 : 
+  ID : 32
+  Name : carote
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #198 : 
+  ID : 34
+  Name : sedano rapa
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #199 : 
+  ID : 36
+  Name : funghi champignon
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #200 : 
+  ID : 39
+  Name : pomodorini
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #201 : 
+  ID : 44
+  Name : ceci
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #202 : 
+  ID : 64
+  Name : cetriolo
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #203 : 
+  ID : 84
+  Name : melanzane
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #204 : 
+  ID : 103
+  Name : aglio
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #205 : 
+  ID : 108
+  Name : fagioli verdi
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #206 : 
+  ID : 112
+  Name : lenticchie verdi
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #207 : 
+  ID : 113
+  Name : cipolle verdi
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #208 : 
+  ID : 114
+  Name : foglie di cipolle verdi
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #209 : 
+  ID : 115
+  Name : peperoni verdi
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #210 : 
+  ID : 124
+  Name : insalata iceberg
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #211 : 
+  ID : 128
+  Name : fagioli rossi
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #212 : 
+  ID : 131
+  Name : porri
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #213 : 
+  ID : 135
+  Name : lattuga
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #214 : 
+  ID : 140
+  Name : manioca
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #215 : 
+  ID : 146
+  Name : funghi
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #216 : 
+  ID : 153
+  Name : okra
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #217 : 
+  ID : 154
+  Name : cipolle
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #218 : 
+  ID : 162
+  Name : prezzemolo
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #219 : 
+  ID : 166
+  Name : pomodorino piccadilly
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #220 : 
+  ID : 171
+  Name : patate
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : __glutine__
+  Ingredient class : Verdure
+Ingredient #221 : 
+  ID : 172
+  Name : zucca
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #222 : 
+  ID : 175
+  Name : peperoni rossi
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #223 : 
+  ID : 180
+  Name : cipolla rossa
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #224 : 
+  ID : 181
+  Name : peperone rosso
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #225 : 
+  ID : 182
+  Name : radicchio rosso
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #226 : 
+  ID : 185
+  Name : rucola
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #227 : 
+  ID : 190
+  Name : scalogno
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #228 : 
+  ID : 194
+  Name : cipollotto
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #229 : 
+  ID : 196
+  Name : peperoni verdi piccoli (friarelli)
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #230 : 
+  ID : 197
+  Name : pomodori piccoli
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #231 : 
+  ID : 202
+  Name : spinaci
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #232 : 
+  ID : 203
+  Name : cipollotti
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #233 : 
+  ID : 208
+  Name : pomodorini secchi
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #234 : 
+  ID : 209
+  Name : patata dolce
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #235 : 
+  ID : 215
+  Name : pomodori
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #236 : 
+  ID : 237
+  Name : peperone giallo
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #237 : 
+  ID : 238
+  Name : peperone giallo
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #238 : 
+  ID : 240
+  Name : zucchine
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : Verdure
+Ingredient #239 : 
+  ID : 230
+  Name : acqua
+  Properties : __vegetariano__vegano__onnivoro__
+  Allergene : 
+  Ingredient class : acqua

@@ -278,6 +278,16 @@ type TranslateRequest: void {
   .column  [0,1] : string
 }
 
+type TranslateListRequest: void {
+  .str     : string
+  .from    : string
+  .to      : string
+  .fuzzy   : bool
+  .separator : string
+  .table   [0,1] : string
+  .column  [0,1] : string
+}
+
 type GetEventRecipesRequest: void {
   .event_id     : int
   .language?     : string
@@ -329,8 +339,10 @@ interface DbServiceInterface {
     tester( void )
 
   RequestResponse:
+    mostGeneralRecipeQuery( MostGeneralQueryRequest )( GetRecipeResponse ) throws DatabaseError,
     buildGroceryList( BuildGroceryListRequest )( BuildGroceryListResponse ) throws DatabaseError,
     translate( TranslateRequest )( string ) throws DatabaseError,
+    translateList( TranslateListRequest )( string ) throws DatabaseError,
     buildList( BuildListRequest )( string ) throws DatabaseError,
     buildCommaSeparatedString( buildCommaRequest )( string ) throws DatabaseError,
     buildIntList( BuildIntListRequest )( string ) throws DatabaseError,
@@ -341,14 +353,14 @@ interface DbServiceInterface {
     getEventCategories( OptionalLanguage )( GetEventCategoriesResponse ) throws DatabaseError,
     getAllergenes( OptionalLanguage )( GetAllergenesResponse ) throws DatabaseError,
     getRecipeCategories( OptionalLanguage )( GetRecipeCategoriesResponse ) throws DatabaseError,
-    getRecipes( void )( GetRecipeResponse ) throws DatabaseError,
+    getRecipes( OptionalLanguage )( GetRecipeResponse ) throws DatabaseError,
     getEventRecipes( GetEventRecipesRequest )( GetRecipeResponse ) throws DatabaseError,
-    getIngredients( void )( GetIngredientsResponse ) throws DatabaseError,
-    getIngredients_exact_match( GetIngredients_nameRequest )( GetIngredients_namepropResponse ) throws DatabaseError,
-    getIngredients_fuzzy_match( GetIngredients_nameRequest )( GetIngredients_namepropResponse ) throws DatabaseError,
-    getIngredients_into_set( GetIngredients_namelistRequest )( GetIngredients_namepropResponse ) throws DatabaseError,
-    getIngredients_set_vs_set( GetIngredients_namelistRequest )( GetIngredients_namepropResponse ) throws DatabaseError,
-    getProperties( void )( GetPropertiesResponse ) throws DatabaseError,
+    getIngredients( OptionalLanguage )( GetIngredientsResponse ) throws DatabaseError,
+    // //////// getIngredients_exact_match( GetIngredients_nameRequest )( GetIngredients_namepropResponse ) throws DatabaseError,
+    // //////// getIngredients_fuzzy_match( GetIngredients_nameRequest )( GetIngredients_namepropResponse ) throws DatabaseError,
+    // //////// getIngredients_into_set( GetIngredients_namelistRequest )( GetIngredients_namepropResponse ) throws DatabaseError,
+    // //////// getIngredients_set_vs_set( GetIngredients_namelistRequest )( GetIngredients_namepropResponse ) throws DatabaseError,
+    // //////// getProperties( void )( GetPropertiesResponse ) throws DatabaseError,
     getTools( OptionalLanguage )( GetToolsResponse ) throws DatabaseError,
     getEvents( OptionalLanguage )( GetEventsResponse ) throws DatabaseError,
     getRecipeDetails( GetRecipeDetailsRequest ) (GetRecipeDetailsResponse) throws DatabaseError,
@@ -368,6 +380,5 @@ interface DbServiceInterface {
     insertCountry( InsertCountryRequest )( void ) throws DatabaseError,
     insertTool( InsertToolRequest )( void ) throws DatabaseError,
     insertRecipeCategory( InsertRecipeCategoryRequest )( void ) throws DatabaseError,
-    insertTranslation( InsertTranslationRequest )( void ) throws DatabaseError,
-    mostGeneralRecipeQuery( MostGeneralQueryRequest )( GetRecipeResponse ) throws DatabaseError
+    insertTranslation( InsertTranslationRequest )( void ) throws DatabaseError
 }

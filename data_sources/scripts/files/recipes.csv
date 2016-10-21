@@ -73,7 +73,7 @@ id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from
 72,Wake,africa/togo/wake,45,12,4,togo,,,main,"sardine, red mullet",fried,FALSE,FALSE,FALSE,TRUE
 73,Crescione pie with herbs,mediterranea/italy/crescione-pie-with-herbs,60,4,4,italy,,,main,"flour, spinach, chard",baked,TRUE,TRUE,FALSE,TRUE
 74,Passatelli asciutti with mushroom sauce,mediterranea/italy/passatelli-asciutti-with-mushroom-sauce,45,4,3,italy,,,main,"flour, mushroom",boiled,FALSE,FALSE,FALSE,FALSE
-75,Light parmigiana,mediterranea/italy/eggplant-light-parmigiana,75,4,3,italy,,,main,eggplant,baked,TRUE,FALSE,TRUE,FALSE
+75,Eggplant light parmigiana,mediterranea/italy/eggplant-light-parmigiana,75,4,3,italy,,,main,eggplant,baked,TRUE,FALSE,TRUE,FALSE
 76,Baked mix peppers,mediterranea/italy/baked-mix-peppers,45,4,2,italy,,,entrée,bell pepper,baked,TRUE,TRUE,TRUE,TRUE
 77,Romagna peaches with cream,mediterranea/italy/romagna-peaches-with-cream,45,12,2,italy,,,dessert,peach,almost raw,TRUE,FALSE,FALSE,FALSE
 78,Grandparents' Romagna donut,mediterranea/italy/grandparents-romagna-donut,45,8,3,italy,,,dessert,"flour, butter, sugar",baked,TRUE,FALSE,FALSE,FALSE

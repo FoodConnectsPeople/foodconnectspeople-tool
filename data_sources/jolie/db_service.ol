@@ -91,37 +91,44 @@ main {
                                        throw( DatabaseError )
               );
 
+              if (is_defined(request.language)) {
+                language = request.language
+              } else {
+                language = "english"
+              };
+              transla.fuzzy = false;
+              transla.from = "english";
+              transla.to = language;
+              translal.fuzzy = false;
+              translal.from = "english";
+              translal.to = language;
+              translal.separator = "__";
+
               q = queries.select_ingredients;
               query@Database( q )( result );
               for( i = 0, i < #result.row, i++ ) {
                   with( response.ingredient[ i ] ) {
                       .ingredient_id = result.row[ i ].ingredient_id;
-                      .name = result.row[ i ].name;
-                      .properties = result.row[ i ].properties;
-                      .allergene = result.row[ i ].allergene;
-                      .ingredient_class = result.row[ i ].ingredient_class
+
+                      transla.str = result.row[i].name;
+                      translate@MySelf(transla)(str);
+                      .name = str;
+
+                      translal.str = result.row[ i ].properties;
+                      translateList@MySelf(translal)(str);
+                      .properties = str;
+
+                      translal.str = result.row[i].allergene;
+                      translateList@MySelf(translal)(str);
+                      .allergene = str;
+
+                      transla.str = result.row[i].ingredient_class;
+                      translate@MySelf(transla)(str);
+                      .ingredient_class = str
+
                   }
               }
         }
-  }]
-
-  [ getProperties( request )( response ) {
-        scope( sql ) {
-              install( SQLException => println@Console( sql.SQLException.stackTrace )();
-                                       throw( DatabaseError )
-              );
-
-              q = queries.select_properties;
-              query@Database( q )( result );
-
-              for( i = 0, i < #result.row, i++ ) {
-                  with( response.property[ i ] ) {
-                      .name = result.row[ i ].name;
-                      .property_id = result.row[ i ].property_id
-                  }
-              }
-        }
-
   }]
 
   [ insertIngredient( request )( response ) {
@@ -703,16 +710,12 @@ main {
               language = "english"
             };
 
-            // TO BE DONE:
-            // q = queries.FOO;
-            // query@Database( q )( result );
-            //for( i = 0, i < #result.row, i++ ) {
-            //    response.name[ i ] = result.row[ i ].name
-            //}
 
-            response.name[0] = "onnivore";
-            response.name[1] = "vegetarian";
-            response.name[2] = "vegan";
+            q = "SELECT name FROM FCP.categories WHERE (category = 'eater-category')";
+            query@Database( q )( result );
+            for( i = 0, i < #result.row, i++ ) {
+                response.name[ i ] = result.row[ i ].name
+            };
 
             for( i = 0, i < #response.name, i++ ) {
               transla.fuzzy = false;
@@ -739,13 +742,15 @@ main {
               language = "english"
             };
 
-            q = "SELECT DISTINCT category FROM fcp.events";
+            // q = "SELECT DISTINCT category FROM fcp.events";
+            q = "SELECT name FROM fcp.categories WHERE (category = 'event-category')";
             query@Database( q )( result );
             for( i = 0, i < #result.row, i++ ) {
                 transla.from = "english";
                 transla.fuzzy = false;
                 transla.to = language;
-                transla.str = result.row[ i ].category;
+                // transla.str = result.row[ i ].category;
+                transla.str = result.row[ i ].name;
                 translate@MySelf(transla)(response.name[ i ])
               }
       }
@@ -763,15 +768,11 @@ main {
               language = "english"
             };
 
-            // TO BE DONE:
-            // q = queries.FOO;
-            // query@Database( q )( result );
-            //for( i = 0, i < #result.row, i++ ) {
-            //    response.name[ i ] = result.row[ i ].name
-            //}
-
-            response.name[0] = "gluten";
-            response.name[1] = "lactose";
+            q = "SELECT name FROM FCP.categories WHERE (category = 'allergene')";
+            query@Database( q )( result );
+            for( i = 0, i < #result.row, i++ ) {
+                response.name[ i ] = result.row[ i ].name
+            };
 
             for( i = 0, i < #response.name, i++ ) {
               transla.fuzzy = false;
@@ -817,18 +818,40 @@ main {
                                      throw( DatabaseError )
             );
 
+            if (is_defined(request.language)) {
+              language = request.language
+            } else {
+              language = "english"
+            };
+            transla.fuzzy = false;
+            transla.from = "english";
+            transla.to = language;
+
             q = queries.get_recipes + " ORDER BY name";
             query@Database( q )( result );
             for( i = 0, i < #result.row, i++ ) {
                 with( response.recipe[ i ] ) {
                     .recipe_id = result.row[ i ].recipe_id;
-                    .recipe_name = result.row[ i ].name;
+
+                    transla.str = result.row[ i ].name;
+                    translate@MySelf(transla)(str);
+                    .recipe_name = str;
+
                     .recipe_link = result.row[ i ].link;
                     .preparation_time_minutes = result.row[ i ].preparation_time_minutes;
                     .difficulty = result.row[ i ].difficulty;
-                    .place_of_origin = result.row[ i ].place_of_origin;
-                    .category = result.row[ i ].category;
-                    .cooking_technique = result.row[ i ].cooking_technique
+
+                    transla.str = result.row[ i ].place_of_origin;
+                    translate@MySelf(transla)(str);
+                    .place_of_origin = str;
+
+                    transla.str = result.row[ i ].category;
+                    translate@MySelf(transla)(str);
+                    .category = str;
+
+                    transla.str = result.row[ i ].cooking_technique;
+                    translate@MySelf(transla)(str);
+                    .cooking_technique = str
                 }
             }
       }
@@ -846,13 +869,15 @@ main {
               language = "english"
             };
 
-            q = "SELECT DISTINCT category FROM fcp.recipes";
+            // q = "SELECT DISTINCT category FROM fcp.recipes";
+            q = "SELECT name FROM fcp.categories WHERE (category = 'recipe-category')";
             query@Database( q )( result );
             for( i = 0, i < #result.row, i++ ) {
                 transla.fuzzy = false;
                 transla.from = "english";
                 transla.to = language;
-                transla.str = result.row[i].category;
+                // transla.str = result.row[i].category;
+                transla.str = result.row[i].name;
                 translate@MySelf(transla)(str);
                 response.name[i] = str
             }
@@ -1369,6 +1394,164 @@ main {
         }]
 
 
+    [ translate ( request )( response ) {
+          scope( sql ) {
+                install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                         throw( DatabaseError )
+                );
+
+                if ((request.from != "english") && (request.from != "italian")) {
+                  println@Console ("Error: unknown origin language " + request.from)()
+                };
+                if ((request.to != "english") && (request.to != "italian")) {
+                  println@Console ("Error: unknown target language " + request.to)()
+                };
+
+
+                trim@StringUtils(request.str)(str);
+
+                if ( (str == ",," ) || (str == ",") ) {
+                  str = ""
+                } else {
+                  str.prefix = ",";
+                  startsWith@StringUtils(str)(swith);
+                  undef(str.prefix);
+                  if (swith) {
+                    length@StringUtils(str)(len);
+                    str.begin = 1;
+                    str.end   = len - 1;
+                    substring@StringUtils(str)(str1);
+                    str = str1;
+                    undef(str.begin);
+                    undef(str.end)
+                  };
+                  str.suffix = ",";
+                  endsWith@StringUtils(str)(ewith);
+                  undef(str.suffix);
+                  if (ewith) {
+                    length@StringUtils(str)(len);
+                    str.begin = 0;
+                    str.end   = len - 2;
+                    substring@StringUtils(str)(str1);
+                    str = str1;
+                    undef(str.begin);
+                    undef(str.end)
+                  }
+                };
+
+                str2 = str;
+                trim@StringUtils(str2)(str);
+                undef(str2);
+
+                if ( (str == "") || (request.from == request.to) ) {
+                  response = str
+                } else {
+
+                  str2 = str;
+                  str2.replacement = "''";
+                  str2.regex       = "'";
+                  replaceAll@StringUtils(str2)(str);
+
+                  q = "SELECT " + request.to + " FROM fcp.translations WHERE " ;
+                  if (request.fuzzy) {
+                     q = q + " ( "+ request.from + " LIKE '%" + str + "%' ) "
+                  } else {
+                     q = q + " ( "+ request.from + " = '" + str + "' ) "
+                  };
+                  if (is_defined(request.table) && is_defined(request.column)) {
+                    q = q + "AND ( ( table_1 = '" + request.table + "' AND column_1 = '" + request.column + ") OR ";
+                    q = q + "      ( table_2 = '" + request.table + "' AND column_2 = '" + request.column + ") OR ";
+                    q = q + "      ( table_3 = '" + request.table + "' AND column_3 = '" + request.column + ") OR ";
+                    q = q + "      ( table_4 = '" + request.table + "' AND column_4 = '" + request.column + ") )  "
+                  };
+
+                  //println@Console ("Now querying translation: {" + q + "}" )();
+                  query@Database( q )( result );
+                  if (#result.row > 1 ) {
+                    println@Console("WARNING: non-univoque translation for '" + str + "' in ( " + request.table + ", " + request.column + ")")();
+                    println@Console("(DB query was " + q + ")")()
+                  };
+                  if (#result.row < 1 ) {
+                    println@Console("ERROR: non-existing translation for '" + str + "' in ( " + request.table + ", " + request.column + ")")();
+                    println@Console("(DB query was " + q + ")")();
+                    response = "**********"
+                  };
+                  if (#result.row > 0) {
+                    if (request.to == "english") {
+                       response = result.row[0].english
+                    };
+                    if (request.to == "italian") {
+                       response = result.row[0].italian
+                    }
+                  }
+                }
+          }
+    }]
+
+[ translateList ( request )( response ) {
+      scope( sql ) {
+            install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                     throw( DatabaseError )
+            );
+
+            if ((request.from != "english") && (request.from != "italian")) {
+              println@Console ("Error: unknown origin language " + request.from)()
+            };
+            if ((request.to != "english") && (request.to != "italian")) {
+              println@Console ("Error: unknown target language " + request.to)()
+            };
+
+            response = "";
+            if (request.str != "") {
+
+              transla.from = request.from;
+              transla.to    = request.to;
+              transla.fuzzy = request.fuzzy;
+              if (is_defined(request.table)) {
+                transla.table = request.table
+              };
+              if (is_defined(request.column)) {
+                transla.column = request.column
+              };
+
+              tosplit       = request.str;
+              tosplit.regex = request.separator;
+              split@StringUtils(tosplit)(splitted);
+              for (i = 0 , i < #splitted.result, i++) {
+
+                // println@Console("Splitted #" + i + " : '" + splitted.result[i] + "'")();
+                if (splitted.result[i] != "") {
+                  transla.str = splitted.result[i];
+                  translate@MySelf(transla)(translated);
+                  response = response + request.separator + translated
+                }
+              };
+            response = response + request.separator
+          }
+    }
+}]
+
+/******   OLD-REDUNDANT STUFF
+
+[ getProperties( request )( response ) {
+      scope( sql ) {
+            install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                     throw( DatabaseError )
+            );
+
+            q = queries.select_properties;
+            query@Database( q )( result );
+
+            for( i = 0, i < #result.row, i++ ) {
+                with( response.property[ i ] ) {
+                    .name = result.row[ i ].name;
+                    .property_id = result.row[ i ].property_id
+                }
+            }
+      }
+}]
+
+
     // Input: a list of strings.
     // Output: all those entries where one property in the comma-separated value in the cell
     // matches at least one in the input list
@@ -1481,90 +1664,6 @@ main {
           }
     }]
 
-    [ translate ( request )( response ) {
-          scope( sql ) {
-                install( SQLException => println@Console( sql.SQLException.stackTrace )();
-                                         throw( DatabaseError )
-                );
-
-                if ((request.from != "english") && (request.from != "italian")) {
-                  println@Console ("Error: unknown origin language " + request.from)()
-                };
-                if ((request.to != "english") && (request.to != "italian")) {
-                  println@Console ("Error: unknown target language " + request.to)()
-                };
-
-
-                trim@StringUtils(request.str)(str);
-
-                if ( (str == ",," ) || (str == ",") ) {
-                  str = ""
-                } else {
-                  str.prefix = ",";
-                  startsWith@StringUtils(str)(swith);
-                  undef(str.prefix);
-                  if (swith) {
-                    length@StringUtils(str)(len);
-                    str.begin = 1;
-                    str.end   = len - 1;
-                    substring@StringUtils(str)(str1);
-                    str = str1;
-                    undef(str.begin);
-                    undef(str.end)
-                  };
-                  str.suffix = ",";
-                  endsWith@StringUtils(str)(ewith);
-                  undef(str.suffix);
-                  if (ewith) {
-                    length@StringUtils(str)(len);
-                    str.begin = 0;
-                    str.end   = len - 2;
-                    substring@StringUtils(str)(str1);
-                    str = str1;
-                    undef(str.begin);
-                    undef(str.end)
-                  }
-                };
-
-                str2 = str;
-                trim@StringUtils(str2)(str);
-                undef(str2);
-
-                if ( (str == "") || (request.from == request.to) ) {
-                  response = str
-                } else {
-                  q = "SELECT " + request.to + " FROM fcp.translations WHERE " ;
-                  if (request.fuzzy) {
-                     q = q + " ( "+ request.from + " LIKE '%" + str + "%' ) "
-                  } else {
-                     q = q + " ( "+ request.from + " = '" + str + "' ) "
-                  };
-                  if (is_defined(request.table) && is_defined(request.column)) {
-                    q = q + "AND ( ( table_1 = '" + request.table + "' AND column_1 = '" + request.column + ") OR ";
-                    q = q + "      ( table_2 = '" + request.table + "' AND column_2 = '" + request.column + ") OR ";
-                    q = q + "      ( table_3 = '" + request.table + "' AND column_3 = '" + request.column + ") OR ";
-                    q = q + "      ( table_4 = '" + request.table + "' AND column_4 = '" + request.column + ") )  "
-                  };
-
-                  // println@Console ("Now querying translation: {" + q + "}" )();
-                  query@Database( q )( result );
-                  if (#result.row > 1 ) {
-                    println@Console("WARNING: non-univoque translation for '" + str + "' in ( " + request.table + ", " + request.column + ")")()
-                  };
-                  if (#result.row < 1 ) {
-                    println@Console("ERROR: non-existing translation for '" + str + "' in ( " + request.table + ", " + request.column + ")")();
-                    response = "**********"
-                  };
-                  if (#result.row > 0) {
-                    if (request.to == "english") {
-                       response = result.row[0].english
-                    };
-                    if (request.to == "italian") {
-                       response = result.row[0].italian
-                    }
-                  }
-                }
-          }
-    }]
+*********/
 
 }
