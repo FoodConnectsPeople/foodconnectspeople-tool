@@ -71,11 +71,11 @@ CREATE TABLE FCP.RecipeIngredients (
 );
 
 
-CREATE TABLE FCP.CookingTechniques (
-  cooking_technique_id SERIAL
-  , name VARCHAR(1024)
-  , CONSTRAINT unique_cooking_technique_name UNIQUE (name)
-);
+-- CREATE TABLE FCP.CookingTechniques (
+--  cooking_technique_id SERIAL
+--  , name VARCHAR(1024)
+--  , CONSTRAINT unique_cooking_technique_name UNIQUE (name)
+-- );
 
 CREATE TABLE FCP.Categories (
   id SERIAL
@@ -96,11 +96,11 @@ CREATE TABLE FCP.Tools (
   , PRIMARY KEY (tool_id)
 );
 
-CREATE TABLE FCP.RecipeCategories (
-  category_id SERIAL
-  , name VARCHAR(128)
-  , PRIMARY KEY (category_id)
-);
+-- CREATE TABLE FCP.RecipeCategories (
+--   category_id SERIAL
+--   , name VARCHAR(128)
+--   , PRIMARY KEY (category_id)
+--  );
 
 CREATE TABLE FCP.UnitConversions (
   ingredient VARCHAR

@@ -12,8 +12,10 @@ call jolie insert_recipe2events.ol
 call jolie insert_recipe2tools.ol
 call jolie insert_users.ol
 call jolie insert_authors2recipes.ol
+call jolie insert_cookingtechniques.ol
 call jolie insert_countries.ol
 call jolie insert_tools.ol
+call jolie insert_recipe2categories.ol
 call jolie insert_unitconversions.ol
 call jolie insert_translations.ol
 call jolie insert_categories.ol

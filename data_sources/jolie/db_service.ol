@@ -211,18 +211,7 @@ main {
         }
   }]
 
-  [ insertCookingTechnique( request )( response ) {
-        scope( sql ) {
-              install( SQLException => println@Console( sql.SQLException.stackTrace )();
-                                       throw( DatabaseError )
-              );
 
-              q = queries.insert_cookingtechnique;
-              q.cooking_technique_id = request.cooking_technique_id;
-              q.name = request.name;
-              update@Database( q )( )
-        }
-  }]
 
   [ insertCategory( request )( response ) {
         scope( sql ) {
@@ -259,19 +248,6 @@ main {
 
               q = queries.insert_tool;
               q.tool_id = request.tool_id;
-              q.name = request.name;
-              update@Database( q )( )
-        }
-  }]
-
-  [ insertRecipeCategory( request )( response ) {
-        scope( sql ) {
-              install( SQLException => println@Console( sql.SQLException.stackTrace )();
-                                       throw( DatabaseError )
-              );
-
-              q = queries.insert_recipecategory;
-              q.category_id = request.category_id;
               q.name = request.name;
               update@Database( q )( )
         }
@@ -1663,6 +1639,33 @@ main {
                 }
           }
     }]
+
+
+      [ insertCookingTechnique( request )( response ) {
+            scope( sql ) {
+                  install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                           throw( DatabaseError )
+                  );
+
+                  q = queries.insert_cookingtechnique;
+                  q.cooking_technique_id = request.cooking_technique_id;
+                  q.name = request.name;
+                  update@Database( q )( )
+            }
+      }]
+
+      [ insertRecipeCategory( request )( response ) {
+            scope( sql ) {
+                  install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                           throw( DatabaseError )
+                  );
+
+                  q = queries.insert_recipecategory;
+                  q.category_id = request.category_id;
+                  q.name = request.name;
+                  update@Database( q )( )
+            }
+      }]
 
 *********/
 

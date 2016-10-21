@@ -55,12 +55,14 @@ type GetIngredientsResponse: void {
   }
 }
 
+/****
 type GetPropertiesResponse: void {
   .property*: void {
       .property_id: int
       .name: string
   }
 }
+
 
 type GetIngredients_namepropResponse: void {
   .ingredient*: void {
@@ -76,6 +78,8 @@ type GetIngredients_nameRequest: void {
 type GetIngredients_namelistRequest: void {
   .name*: string
 }
+
+*****/
 
 type GetRecipeResponse: void {
   .recipe*: void {
@@ -198,10 +202,12 @@ type InsertAuthorRecipeRequest: void {
   .recipe_id: int
 }
 
+/****
 type InsertCookingTechniqueRequest: void {
   .cooking_technique_id: int
   .name: string
 }
+****/
 
 type InsertCategoryRequest: void {
   .id: int
@@ -219,10 +225,12 @@ type InsertToolRequest: void {
   .name: string
 }
 
+/***
 type InsertRecipeCategoryRequest: void {
   .category_id: int
   .name: string
 }
+****/
 
 type InsertTranslationRequest: void {
   .italian  : string
@@ -361,6 +369,8 @@ interface DbServiceInterface {
     // //////// getIngredients_into_set( GetIngredients_namelistRequest )( GetIngredients_namepropResponse ) throws DatabaseError,
     // //////// getIngredients_set_vs_set( GetIngredients_namelistRequest )( GetIngredients_namepropResponse ) throws DatabaseError,
     // //////// getProperties( void )( GetPropertiesResponse ) throws DatabaseError,
+    // //////// insertCookingTechnique( InsertCookingTechniqueRequest )( void ) throws DatabaseError,
+    // //////// insertRecipeCategory( InsertRecipeCategoryRequest )( void ) throws DatabaseError,
     getTools( OptionalLanguage )( GetToolsResponse ) throws DatabaseError,
     getEvents( OptionalLanguage )( GetEventsResponse ) throws DatabaseError,
     getRecipeDetails( GetRecipeDetailsRequest ) (GetRecipeDetailsResponse) throws DatabaseError,
@@ -375,10 +385,8 @@ interface DbServiceInterface {
     insertRecipe( InsertRecipeRequest )( void ) throws DatabaseError,
     insertUser( InsertUserRequest )( void ) throws DatabaseError,
     insertAuthorRecipe( InsertAuthorRecipeRequest )( void ) throws DatabaseError,
-    insertCookingTechnique( InsertCookingTechniqueRequest )( void ) throws DatabaseError,
     insertCategory( InsertCategoryRequest )( void ) throws DatabaseError,
     insertCountry( InsertCountryRequest )( void ) throws DatabaseError,
     insertTool( InsertToolRequest )( void ) throws DatabaseError,
-    insertRecipeCategory( InsertRecipeCategoryRequest )( void ) throws DatabaseError,
     insertTranslation( InsertTranslationRequest )( void ) throws DatabaseError
 }
