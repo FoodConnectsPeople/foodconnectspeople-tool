@@ -57,10 +57,10 @@ main {
             t.appears_in_event = "Secondo Seminario sui Meze"
           };
 
-      mostGeneralRecipeQuery@DbService(t)(res);
 
       println@Console("   ")();
       println@Console(" ======== Test of MostGeneralQuery =============")();
+      mostGeneralRecipeQuery@DbService(t)(res);
       println@Console("Number of recipes satisfying the query :" + #res.recipe)();
       for( i = 0, i < #res.recipe, i++ ) {
         println@Console("Recipe #" + i + " : ")();

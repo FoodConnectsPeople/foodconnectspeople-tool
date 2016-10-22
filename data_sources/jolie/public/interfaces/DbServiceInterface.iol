@@ -20,10 +20,12 @@ type BuildGroceryListResponse: void {
   }
 }
 
+/***
 type BuildListRequest: void {
   .vector*: string
   .sep:     string
 }
+****/
 
 type BuildIntListRequest: void {
   .vector*: int
@@ -36,12 +38,7 @@ type BuildSetVsSetRequest: void {
   .sep:     string
 }
 
-type GetCookingTechniquesResponse: void {
-  .name*: string
-}
-
-
-type GetCountriesResponse: void {
+type NameList: void {
   .name*: string
 }
 
@@ -103,30 +100,6 @@ type GetEventsResponse: void {
     .end_date: string
     .category: string
   }
-}
-
-type GetEaterCategoriesResponse: void {
-  .name*: string
-}
-
-type GetEventCategoriesResponse: void {
-  .name*: string
-}
-
-type GetAllergenesResponse: void {
-  .name*: string
-}
-
-type GetRecipeCategoriesResponse: void {
-  .name*: string
-}
-
-type GetToolsResponse: void {
-  .name*: string
-}
-
-type buildCommaRequest: void {
-  .str* : string
 }
 
 type InsertIngredientRequest: void {
@@ -351,19 +324,20 @@ interface DbServiceInterface {
     buildGroceryList( BuildGroceryListRequest )( BuildGroceryListResponse ) throws DatabaseError,
     translate( TranslateRequest )( string ) throws DatabaseError,
     translateList( TranslateListRequest )( string ) throws DatabaseError,
-    buildList( BuildListRequest )( string ) throws DatabaseError,
-    buildCommaSeparatedString( buildCommaRequest )( string ) throws DatabaseError,
+    sanitizeSQLQueryString( string )( string ) throws DatabaseError,
     buildIntList( BuildIntListRequest )( string ) throws DatabaseError,
     buildSetVsSet( BuildSetVsSetRequest )( string ) throws DatabaseError,
-    getCookingTechniques( OptionalLanguage )( GetCookingTechniquesResponse ) throws DatabaseError,
-    getCountries( OptionalLanguage )( GetCountriesResponse ) throws DatabaseError,
-    getEaterCategories( OptionalLanguage )( GetEaterCategoriesResponse ) throws DatabaseError,
-    getEventCategories( OptionalLanguage )( GetEventCategoriesResponse ) throws DatabaseError,
-    getAllergenes( OptionalLanguage )( GetAllergenesResponse ) throws DatabaseError,
-    getRecipeCategories( OptionalLanguage )( GetRecipeCategoriesResponse ) throws DatabaseError,
+    getCookingTechniques( OptionalLanguage )( NameList ) throws DatabaseError,
+    getCountries( OptionalLanguage )( NameList ) throws DatabaseError,
+    getEaterCategories( OptionalLanguage )( NameList ) throws DatabaseError,
+    getEventCategories( OptionalLanguage )( NameList ) throws DatabaseError,
+    getAllergenes( OptionalLanguage )( NameList ) throws DatabaseError,
+    getRecipeCategories( OptionalLanguage )( NameList ) throws DatabaseError,
     getRecipes( OptionalLanguage )( GetRecipeResponse ) throws DatabaseError,
     getEventRecipes( GetEventRecipesRequest )( GetRecipeResponse ) throws DatabaseError,
     getIngredients( OptionalLanguage )( GetIngredientsResponse ) throws DatabaseError,
+    // //////// buildCommaSeparatedString( NameList )( string ) throws DatabaseError,
+    // //////// buildList( BuildListRequest )( string ) throws DatabaseError,
     // //////// getIngredients_exact_match( GetIngredients_nameRequest )( GetIngredients_namepropResponse ) throws DatabaseError,
     // //////// getIngredients_fuzzy_match( GetIngredients_nameRequest )( GetIngredients_namepropResponse ) throws DatabaseError,
     // //////// getIngredients_into_set( GetIngredients_namelistRequest )( GetIngredients_namepropResponse ) throws DatabaseError,
@@ -371,7 +345,7 @@ interface DbServiceInterface {
     // //////// getProperties( void )( GetPropertiesResponse ) throws DatabaseError,
     // //////// insertCookingTechnique( InsertCookingTechniqueRequest )( void ) throws DatabaseError,
     // //////// insertRecipeCategory( InsertRecipeCategoryRequest )( void ) throws DatabaseError,
-    getTools( OptionalLanguage )( GetToolsResponse ) throws DatabaseError,
+    getTools( OptionalLanguage )( NameList ) throws DatabaseError,
     getEvents( OptionalLanguage )( GetEventsResponse ) throws DatabaseError,
     getRecipeDetails( GetRecipeDetailsRequest ) (GetRecipeDetailsResponse) throws DatabaseError,
     insertIngredient( InsertIngredientRequest )( void ) throws DatabaseError,

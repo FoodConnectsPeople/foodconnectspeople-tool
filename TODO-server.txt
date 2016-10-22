@@ -6,6 +6,8 @@
 
 - Remove trailing blanks from italian translations of countries
 
-- Clean up from redundant tables embedded into "categories" table
+- Analyze and fix reasons of non-working sanitize call from inside translate
 
-- Verify that "'" is handled correctly in all queries of all getters
+- Insert translated recipes in website
+ 
+- Update recipe getters so they return proper link depending on language

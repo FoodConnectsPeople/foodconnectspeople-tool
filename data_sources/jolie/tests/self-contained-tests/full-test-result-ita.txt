@@ -1,7 +1,7 @@
-Connected to Database foodconnectspeople@localhost
-DbService is running...
    
  ======== Test of MostGeneralQuery =============
+Connected to Database foodconnectspeople@localhost
+DbService is running...
 Number of recipes satisfying the query :1
 Recipe #0 : 
   ID : 28

@@ -344,41 +344,6 @@ main {
 
 
 
-  [ buildCommaSeparatedString( request )( response ) {
-        scope( sql ) {
-              install( SQLException => println@Console( sql.SQLException.stackTrace )();
-                                       throw( DatabaseError )
-              );
-
-              /* response = "," + request.str[0] + ","  */
-
-              println@Console(" Entered comma separated")();
-              response = ",";
-              for (idx = 0, idx < #request.str, idx++) {
-                response = response + request.str[idx] + ","
-              };
-              println@Console(" Generated comma separated: #" + response + "#")()
-
-        }
-  }]
-
-   [ buildList( request )( response ) {
-          scope( sql ) {
-                install( SQLException => println@Console( sql.SQLException.stackTrace )();
-                                         throw( DatabaseError )
-                );
-
-                response = "( ";
-                for (idx = 0, idx < #request.vector, idx++) {
-                  if (idx > 0) {
-                    response = response + ","
-                  };
-                  response = response + request.sep + request.vector[idx] + request.sep
-                };
-                response = response + " ) "
-          }
-    }]
-
     [ buildIntList( request )( response ) {
           scope( sql ) {
                 install( SQLException => println@Console( sql.SQLException.stackTrace )();
@@ -488,7 +453,9 @@ main {
                 }
                 else {
 
-                  q = "SELECT grocery_list_unit, conversion_rate, is_standard_conversion FROM fcp.unitconversions WHERE ingredient = '" + ingredient + "' AND unit_of_measure = '" + unit + "'";
+                  sanitizeSQLQueryString@MySelf(ingredient)(q_ingredient);
+                  sanitizeSQLQueryString@MySelf(unit)(q_unit);
+                  q = "SELECT grocery_list_unit, conversion_rate, is_standard_conversion FROM fcp.unitconversions WHERE ingredient = '" + q_ingredient + "' AND unit_of_measure = '" + q_unit + "'";
 
                   query@Database( q )( result2 );
                   if (#result2.row == 0) {
@@ -518,7 +485,8 @@ main {
                 if (request.verbose) { println@Console(" Targets for " + ingredient + " : " + target_quantity + " " + target_unit)() };
 
                 // Identifies the class of the ingredient
-                q = "SELECT ingredient_class FROM fcp.ingredients WHERE name = '" + ingredient + "'";
+                sanitizeSQLQueryString@MySelf(ingredient)(q_ingredient);
+                q = "SELECT ingredient_class FROM fcp.ingredients WHERE name = '" + q_ingredient + "'";
                 query@Database( q )( result3 );
                 if (#result3.row != 1) {
                   println@Console("Error: non-univoque or unspecified ingredient " + ingredient + " !")()
@@ -803,7 +771,7 @@ main {
             transla.from = "english";
             transla.to = language;
 
-            q = queries.get_recipes + " ORDER BY name";
+            q = queries.select_recipes + " ORDER BY name";
             query@Database( q )( result );
             for( i = 0, i < #result.row, i++ ) {
                 with( response.recipe[ i ] ) {
@@ -1041,7 +1009,7 @@ main {
                 // recipe category, main ingredient, cooking technique
 
                 verbose = request.verbose;
-                q = queries.get_recipes;
+                q = queries.select_recipes;
                 constraint_adder = " WHERE ";
                 transla.from = language;
                 transla.to   = "english";
@@ -1051,7 +1019,8 @@ main {
                 if (is_defined(request.recipe_name)) {
                     transla.str = request.recipe_name;
                     translate@MySelf(transla)(recipe_name);
-                    constraint = " ( name LIKE '%" + recipe_name + "%' ) ";
+                    sanitizeSQLQueryString@MySelf(recipe_name)(q_recipe_name);
+                    constraint = " ( name LIKE '%" + q_recipe_name + "%' ) ";
                     if (verbose) { println@Console ("Adding name constraint: '" + constraint + "'")() };
                     q = q + constraint_adder + constraint;
                     constraint_adder = " AND "
@@ -1087,7 +1056,8 @@ main {
                   req.vector << request.country;
                   for (t = 0, t < #req.vector, t++) {
                     transla.str = req.vector[t];
-                    translate@MySelf(transla)(req.vector[t])
+                    translate@MySelf(transla)(req.vector[t]);
+                    sanitizeSQLQueryString@MySelf(req.vector[t])(req.vector[t])
                   };
                   req.sep = "";
                   buildSetVsSet@MySelf(req)(constraint);
@@ -1100,7 +1070,8 @@ main {
                 if (is_defined(request.recipe_category)) {
                     transla.str = request.recipe_category;
                     translate@MySelf(transla)(recipe_category);
-                    constraint = " ( category LIKE '%" + recipe_category + "%' ) ";
+                    sanitizeSQLQueryString@MySelf(recipe_category)(q_recipe_category);
+                    constraint = " ( category LIKE '%" + q_recipe_category + "%' ) ";
                     if (verbose) { println@Console ("Adding category constraint: '" + constraint + "'")() };
                     q = q + constraint_adder + constraint;
                     constraint_adder = " AND "
@@ -1110,7 +1081,8 @@ main {
                 if (is_defined(request.main_ingredient)) {
                     transla.str = request.main_ingredient;
                     translate@MySelf(transla)(main_ingredient);
-                    constraint = " ( main_ingredient LIKE '%" + main_ingredient + "%' ) ";
+                    sanitizeSQLQueryString@MySelf(main_ingredient)(q_main_ingredient);
+                    constraint = " ( main_ingredient LIKE '%" + q_main_ingredient + "%' ) ";
                     if (verbose) { println@Console ("Adding main ingredient constraint: '" + constraint + "'")() };
                     q = q + constraint_adder + constraint;
                     constraint_adder = " AND "
@@ -1122,7 +1094,8 @@ main {
                   req.vector << request.cooking_technique;
                   for (t = 0, t < #req.vector, t++) {
                     transla.str = req.vector[t];
-                    translate@MySelf(transla)(req.vector[t])
+                    translate@MySelf(transla)(req.vector[t]);
+                    sanitizeSQLQueryString@MySelf(req.vector[t])(req.vector[t])
                   };
                   req.sep = "";
                   buildSetVsSet@MySelf(req)(constraint);
@@ -1142,16 +1115,17 @@ main {
                 // in recipeIngredients, it exists (resp. does not exist)
                 // a pair <recipe_id,ingredient> (resp. <recipe_id,not_ingredient>)
 
-                //q = queries.get_recipes;
+                //q = queries.select_recipes;
                 //constraint_adder = " WHERE ";
 
                 if (is_defined(request.yes_ingredient)) {
                   for (idx = 0, idx < #request.yes_ingredient, idx++) {
                     transla.str = request.yes_ingredient[idx];
                     translate@MySelf(transla)(yes_ingr);
+                    sanitizeSQLQueryString@MySelf(yes_ingr)(q_yes_ingr);
                     constraint1 = " ( EXISTS ( SELECT * FROM FCP.recipeIngredients WHERE  ";
                     constraint2 = " FCP.recipes.recipe_id = FCP.recipeIngredients.recipe_id AND ";
-                    constraint3 = " FCP.recipeIngredients.ingredient = '" + yes_ingr + "' ) ) ";
+                    constraint3 = " FCP.recipeIngredients.ingredient = '" + q_yes_ingr + "' ) ) ";
                     constraint = constraint1 + constraint2 + constraint3;
                     if (verbose) { println@Console ("Adding yes ingredient constraint: '" + constraint + "'")() };
                     q = q + constraint_adder + constraint;
@@ -1163,9 +1137,10 @@ main {
                   for (idx = 0, idx < #request.not_ingredient, idx++) {
                     transla.str = request.not_ingredient[idx];
                     translate@MySelf(transla)(not_ingr);
+                    sanitizeSQLQueryString@MySelf(not_ingr)(q_not_ingr);
                     constraint1 = " ( NOT EXISTS ( SELECT * FROM FCP.recipeIngredients WHERE  ";
                     constraint2 = " FCP.recipes.recipe_id = FCP.recipeIngredients.recipe_id AND ";
-                    constraint3 = " FCP.recipeIngredients.ingredient = '" + not_ingr + "' ) ) ";
+                    constraint3 = " FCP.recipeIngredients.ingredient = '" + q_not_ingr + "' ) ) ";
                     constraint = constraint1 + constraint2 + constraint3;
                     if (verbose) { println@Console ("Adding not ingredient constraint: '" + constraint + "'")() };
                     q = q + constraint_adder + constraint;
@@ -1181,16 +1156,17 @@ main {
                 // in recipeTools, it exists (resp. does not exist)
                 // a pair <recipe_id,tool> (resp. <recipe_id,not_tool>)
 
-                //q = queries.get_recipes;
+                //q = queries.select_recipes;
                 //constraint_adder = " WHERE ";
 
                 if (is_defined(request.yes_tool)) {
                   for (idx = 0, idx < #request.yes_tool, idx++) {
                     transla.str = request.yes_tool[idx];
                     translate@MySelf(transla)(yes_tool);
+                    sanitizeSQLQueryString@MySelf(yes_tool)(q_yes_tool);
                     constraint1  = " ( EXISTS ( SELECT * FROM FCP.recipeTools WHERE  ";
                     constraint2 = " FCP.recipes.recipe_id = FCP.recipeTools.recipe_id AND ";
-                    constraint3 = " FCP.recipeTools.tool_name = '" + yes_tool + "' ) ) ";
+                    constraint3 = " FCP.recipeTools.tool_name = '" + q_yes_tool + "' ) ) ";
                     constraint = constraint1 + constraint2 + constraint3;
                     if (verbose) { println@Console ("Adding yes tool constraint: '" + constraint + "'")() };
                     q = q + constraint_adder + constraint;
@@ -1202,9 +1178,10 @@ main {
                   for (idx = 0, idx < #request.not_tool, idx++) {
                     transla.str = request.not_tool[idx];
                     translate@MySelf(transla)(not_tool);
+                    sanitizeSQLQueryString@MySelf(not_tool)(q_not_tool);
                     constraint1 = " ( NOT EXISTS ( SELECT * FROM FCP.recipeTools WHERE  ";
                     constraint2 = " FCP.recipes.recipe_id = FCP.recipeTools.recipe_id AND ";
-                    constraint3 = " FCP.recipeTools.tool_name = '" + not_tool + "' ) ) ";
+                    constraint3 = " FCP.recipeTools.tool_name = '" + q_not_tool + "' ) ) ";
                     constraint = constraint1 + constraint2 + constraint3;
                     if (verbose) { println@Console ("Adding not tool constraint: '" + constraint + "'")() };
                     q = q + constraint_adder + constraint;
@@ -1216,15 +1193,16 @@ main {
                 // Section 3: select the recipe_ids from the portion of query involving only
                 // the recipeEvents table, namely the recipes of an event
 
-                // q = queries.get_recipes;
+                // q = queries.select_recipes;
                 // constraint_adder = " WHERE ";
 
                 if (is_defined(request.appears_in_event)) {
                   transla.str = request.appears_in_event;
                   translate@MySelf(transla)(appears_in_event);
+                  sanitizeSQLQueryString@MySelf(appears_in_event)(q_appears_in_event);
                   constraint1 = " (EXISTS ( SELECT * FROM FCP.recipeEventsNames WHERE ";
                   constraint2 = " FCP.recipes.recipe_id = FCP.recipeEventsNames.recipe_id AND ";
-                  constraint3 = " FCP.recipeEventsNames.name = '" + appears_in_event + "' ) ) ";
+                  constraint3 = " FCP.recipeEventsNames.name = '" + q_appears_in_event + "' ) ) ";
                   constraint = constraint1 + constraint2 + constraint3;
                   if (verbose) { println@Console ("Adding event constraint: '" + constraint + "'")() };
                   q = q + constraint_adder + constraint;
@@ -1242,16 +1220,17 @@ main {
                 // in recipeIngredientsProperties, it does not exist a pair <recipe_id,properties>
                 // s.t. properties contains allergene[idx]
 
-                //q = queries.get_recipes;
+                //q = queries.select_recipes;
                 //constraint_adder = " WHERE ";
 
                 if (is_defined(request.not_allergene)) {
                   for (idx = 0, idx < #request.not_allergene, idx ++) {
                     transla.str = request.not_allergene[idx];
                     translate@MySelf(transla)(not_allergene);
+                    sanitizeSQLQueryString@MySelf(not_allergene)(q_not_allergene);
                     constraint1 = " ( NOT EXISTS ( SELECT * FROM FCP.recipeIngredientsProperties WHERE  ";
                     constraint2 = " FCP.recipes.recipe_id = FCP.recipeIngredientsProperties.recipe_id AND ";
-                    constraint3 = " FCP.recipeIngredientsProperties.properties LIKE '%" + not_allergene + "%' ) ) ";
+                    constraint3 = " FCP.recipeIngredientsProperties.properties LIKE '%" + q_not_allergene + "%' ) ) ";
                     constraint = constraint1 + constraint2 + constraint3;
                     if (verbose) { println@Console ("Adding not allergene constraint: '" + constraint + "'")() };
                     q = q + constraint_adder + constraint;
@@ -1263,9 +1242,10 @@ main {
                   for (idx = 0, idx < #request.eater_category, idx++) {
                     transla.str = request.eater_category[idx];
                     translate@MySelf(transla)(eater);
+                    sanitizeSQLQueryString@MySelf(eater)(q_eater);
                     constraint1 = " ( NOT EXISTS ( SELECT * FROM FCP.recipeIngredientsProperties WHERE  ";
                     constraint2 = " FCP.recipes.recipe_id = FCP.recipeIngredientsProperties.recipe_id AND ";
-                    constraint3 = " FCP.recipeIngredientsProperties.properties NOT LIKE '%" + eater + "%' ) ) ";
+                    constraint3 = " FCP.recipeIngredientsProperties.properties NOT LIKE '%" + q_eater + "%' ) ) ";
                     constraint = constraint1 + constraint2 + constraint3;
                     if (verbose) { println@Console ("Adding eater category constraint: '" + constraint + "'")() };
                     q = q + constraint_adder + constraint;
@@ -1370,6 +1350,23 @@ main {
         }]
 
 
+    [ sanitizeSQLQueryString ( request )( response ) {
+              scope( sql ) {
+                    install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                             throw( DatabaseError )
+                    );
+
+              // println@Console("Into sanitize of '" + request +"'")();
+              str2 = request;
+              str2.replacement = "''";
+              str2.regex       = "'";
+              replaceAll@StringUtils(str2)(str);
+              response = str
+              // println@Console("Exiting sanitize of '" + request +"'")()
+       }
+     }]
+
+
     [ translate ( request )( response ) {
           scope( sql ) {
                 install( SQLException => println@Console( sql.SQLException.stackTrace )();
@@ -1423,10 +1420,16 @@ main {
                   response = str
                 } else {
 
+                  //println@Console("Before sanitize: '" + str + "'")();
+                  //sanitizeSQLQueryString@MySelf(str)(str3);
+                  //println@Console("After sanitize: '" + str3 + "'")();
+                  //str = str3;
+
                   str2 = str;
                   str2.replacement = "''";
                   str2.regex       = "'";
                   replaceAll@StringUtils(str2)(str);
+
 
                   q = "SELECT " + request.to + " FROM fcp.translations WHERE " ;
                   if (request.fuzzy) {
@@ -1666,6 +1669,43 @@ main {
                   update@Database( q )( )
             }
       }]
+
+
+        [ buildCommaSeparatedString( request )( response ) {
+              scope( sql ) {
+                    install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                             throw( DatabaseError )
+                    );
+
+                    // response = "," + request.name[0] + ","
+
+                    println@Console(" Entered comma separated")();
+                    response = ",";
+                    for (idx = 0, idx < #request.name, idx++) {
+                      response = response + request.name[idx] + ","
+                    };
+                    println@Console(" Generated comma separated: #" + response + "#")()
+
+              }
+        }]
+
+
+           [ buildList( request )( response ) {
+                  scope( sql ) {
+                        install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                                 throw( DatabaseError )
+                        );
+
+                        response = "( ";
+                        for (idx = 0, idx < #request.vector, idx++) {
+                          if (idx > 0) {
+                            response = response + ","
+                          };
+                          response = response + request.sep + request.vector[idx] + request.sep
+                        };
+                        response = response + " ) "
+                  }
+            }]
 
 *********/
 
