@@ -17,33 +17,34 @@ function capitalizeFirstLetter(string) {
 }
 
 /* initalize the web app with useful data */
-function initData() {
+function initData( funct ) {
   JolieClient.getCountries({}, function( data ) {
     countries = data.name;
-  }, onError);
-  JolieClient.getCookingTechniques({}, function( data ) {
-    cooking_techniques = data.name;
-  }, onError);
-  JolieClient.getRecipeCategories({}, function( data ) {
-    recipe_categories = data.name;
-  }, onError);
-  JolieClient.getEaterCategories({}, function( data ) {
-    eater_categories = data.name;
-  }, onError);
-  JolieClient.getTools({}, function( data ) {
-    tools = data.name;
-  }, onError);
-  JolieClient.getAllergenes({}, function( data ) {
-    allergenes = data.name;
-  }, onError);
-  JolieClient.getEvents({}, function( data ) {
-    events = data.event;
-  }, onError);
-  JolieClient.getIngredients({}, function( data ) {
-    ingredients = data.ingredient;
-    for( var i = 0; i < ingredients.length; i++ ) {
-      ingredient_names.push( ingredients[ i ].name );
-    }
+    JolieClient.getCookingTechniques({}, function( data ) {
+      cooking_techniques = data.name;
+      JolieClient.getRecipeCategories({}, function( data ) {
+        recipe_categories = data.name;
+        JolieClient.getEaterCategories({}, function( data ) {
+          eater_categories = data.name;
+          JolieClient.getTools({}, function( data ) {
+            tools = data.name;
+            JolieClient.getAllergenes({}, function( data ) {
+              allergenes = data.name;
+              JolieClient.getEvents({}, function( data ) {
+                events = data.event;
+                JolieClient.getIngredients({}, function( data ) {
+                  ingredients = data.ingredient;
+                  for( var i = 0; i < ingredients.length; i++ ) {
+                    ingredient_names.push( ingredients[ i ].name );
+                  }
+                  funct();
+                }, onError);
+              }, onError);
+            }, onError);
+          }, onError);
+        }, onError);
+      }, onError);
+    }, onError);
   }, onError);
 }
 
