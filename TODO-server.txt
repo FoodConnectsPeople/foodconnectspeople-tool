@@ -8,6 +8,9 @@
 
 - Analyze and fix reasons of non-working sanitize call from inside translate
 
+- Analyze and fix reasons for non-working (internal: Myself to Myself) call of Translate into translateList
+
 - Insert translated recipes in website
  
 - Update recipe getters so they return proper link depending on language
+

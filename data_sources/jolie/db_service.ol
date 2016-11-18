@@ -1473,6 +1473,7 @@ main {
                                      throw( DatabaseError )
             );
 
+            println@Console("Translating List '" + request.str + "' from '" + request.from + "' to '" + request.to + "'")();
             if ((request.from != "english") && (request.from != "italian")) {
               println@Console ("Error: unknown origin language " + request.from)()
             };
@@ -1498,10 +1499,108 @@ main {
               split@StringUtils(tosplit)(splitted);
               for (i = 0 , i < #splitted.result, i++) {
 
-                // println@Console("Splitted #" + i + " : '" + splitted.result[i] + "'")();
+                //println@Console("Splitted #" + i + " : '" + splitted.result[i] + "'")();
                 if (splitted.result[i] != "") {
+                  undef(translated);
                   transla.str = splitted.result[i];
-                  translate@MySelf(transla)(translated);
+                  //println@Console("Now translating splitted '" + transla.str + "'")();
+
+                  // NOTICE: this self-call issues a bug. Replicating internal lines below.
+                  //translate@MySelf(transla)(translated);
+
+
+                  undef(request);
+                  request.str = transla.str;
+                  request.from = transla.from;
+                  request.to = transla.to;
+
+                  trim@StringUtils(request.str)(str);
+
+                  if ( (str == ",," ) || (str == ",") ) {
+                    str = ""
+                  } else {
+                    str.prefix = ",";
+                    startsWith@StringUtils(str)(swith);
+                    undef(str.prefix);
+                    if (swith) {
+                      length@StringUtils(str)(len);
+                      str.begin = 1;
+                      str.end   = len - 1;
+                      substring@StringUtils(str)(str1);
+                      str = str1;
+                      undef(str.begin);
+                      undef(str.end)
+                    };
+                    str.suffix = ",";
+                    endsWith@StringUtils(str)(ewith);
+                    undef(str.suffix);
+                    if (ewith) {
+                      length@StringUtils(str)(len);
+                      str.begin = 0;
+                      str.end   = len - 2;
+                      substring@StringUtils(str)(str1);
+                      str = str1;
+                      undef(str.begin);
+                      undef(str.end)
+                    }
+                  };
+
+                  str2 = str;
+                  trim@StringUtils(str2)(str);
+                  undef(str2);
+
+                  if ( (str == "") || (request.from == request.to) ) {
+                    response = str
+                  } else {
+
+                    //println@Console("Before sanitize: '" + str + "'")();
+                    //sanitizeSQLQueryString@MySelf(str)(str3);
+                    //println@Console("After sanitize: '" + str3 + "'")();
+                    //str = str3;
+
+                    str2 = str;
+                    str2.replacement = "''";
+                    str2.regex       = "'";
+                    replaceAll@StringUtils(str2)(str);
+
+
+                    q = "SELECT " + request.to + " FROM fcp.translations WHERE " ;
+                    if (request.fuzzy) {
+                       q = q + " ( "+ request.from + " LIKE '%" + str + "%' ) "
+                    } else {
+                       q = q + " ( "+ request.from + " = '" + str + "' ) "
+                    };
+                    if (is_defined(request.table) && is_defined(request.column)) {
+                      q = q + "AND ( ( table_1 = '" + request.table + "' AND column_1 = '" + request.column + ") OR ";
+                      q = q + "      ( table_2 = '" + request.table + "' AND column_2 = '" + request.column + ") OR ";
+                      q = q + "      ( table_3 = '" + request.table + "' AND column_3 = '" + request.column + ") OR ";
+                      q = q + "      ( table_4 = '" + request.table + "' AND column_4 = '" + request.column + ") )  "
+                    };
+
+                    //println@Console ("Now querying translation: {" + q + "}" )();
+                    query@Database( q )( result );
+                    if (#result.row > 1 ) {
+                      println@Console("WARNING: non-univoque translation for '" + str + "' in ( " + request.table + ", " + request.column + ")")();
+                      println@Console("(DB query was " + q + ")")()
+                    };
+                    if (#result.row < 1 ) {
+                      println@Console("ERROR: non-existing translation for '" + str + "' in ( " + request.table + ", " + request.column + ")")();
+                      println@Console("(DB query was " + q + ")")();
+                      response = "**********"
+                    };
+                    if (#result.row > 0) {
+                      if (request.to == "english") {
+                         response = result.row[0].english
+                      };
+                      if (request.to == "italian") {
+                         response = result.row[0].italian
+                      }
+                    }
+                  };
+
+                  translated = response;
+
+                  //println@Console("Outcome is '" + translated + "'")();
                   response = response + request.separator + translated
                 }
               };
