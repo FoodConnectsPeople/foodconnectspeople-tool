@@ -1486,7 +1486,7 @@ main {
                                      throw( DatabaseError )
             );
 
-            println@Console("Translating List '" + requestt.str + "' from '" + requestt.from + "' to '" + request.to + "'")();
+            // println@Console("Translating List '" + requestt.str + "' from '" + requestt.from + "' to '" + requestt.to + "'")();
             if ((requestt.from != "english") && (requestt.from != "italian")) {
               println@Console ("Error: unknown origin language " + requestt.from)()
             };
@@ -1512,25 +1512,25 @@ main {
               split@StringUtils(tosplit)(splitted);
               for (i = 0 , i < #splitted.result, i++) {
 
-                println@Console("Splitted #" + i + " : '" + splitted.result[i] + "'")();
+                //println@Console("Splitted #" + i + " : '" + splitted.result[i] + "'")();
                 if (splitted.result[i] != "") {
                   undef(translated);
                   transla.str = splitted.result[i];
-                  println@Console("Now translating splitted '" + transla.str + "'")();
+                  //println@Console("Now translating splitted '" + transla.str + "'")();
 
                   // NOTICE: this self-call issues a bug. Replicating internal lines below.
-                  translate@MySelf(transla)(translated);
+                  // translate@MySelf(transla)(translated);
 
-/****
+
                   undef(request);
                   request.str = transla.str;
                   request.from = transla.from;
                   request.to = transla.to;
 
-                  println@Console("Now trimming " + request.str)();
+                  //println@Console("Now trimming " + request.str)();
                   undef(str);
                   trim@StringUtils(request.str)(str);
-                  println@Console("Now trimmed")();
+                  //println@Console("Now trimmed")();
 
                   if ( (str == ",," ) || (str == ",") ) {
                     str = ""
@@ -1561,7 +1561,7 @@ main {
                     }
                   };
 
-                  println@Console("Retrim " + str)();
+                  //println@Console("Retrim " + str)();
                   str2 = str;
                   undef(str);
                   undef(str2.regex);
@@ -1572,7 +1572,7 @@ main {
                   undef(str2.suffix);
                   trim@StringUtils(str2)(str);
                   undef(str2);
-                  println@Console("Retrimmed ")();
+                  //println@Console("Retrimmed ")();
 
                   if ( (str == "") || (request.from == request.to) ) {
                     response = str
@@ -1624,15 +1624,15 @@ main {
                   };
 
                   translated = response;
-****/
 
-                  println@Console("Outcome is '" + translated + "'")();
-                  responsee = responsee + requestt.separator + translated;
-                  println@Console("Current outcome is " + responsee)()
+
+                  //println@Console("Outcome is '" + translated + "'")();
+                  responsee = responsee + requestt.separator + translated
+                  //println@Console("Current outcome is " + responsee)()
                 }
               };
-            responsee = responsee + requestt.separator;
-            println@Console("Final outcome is " + responsee)()
+            responsee = responsee + requestt.separator
+            // println@Console("Final outcome is " + responsee)()
           }
     }
 }]
