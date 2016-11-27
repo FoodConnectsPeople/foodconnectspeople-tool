@@ -48,7 +48,7 @@ main {
             t.not_allergene[0] = "glutine";
             t.not_allergene[1] = "lattosio";
             t.yes_ingredient[0] = "aglio";
-            t.yes_ingredient[1] = "peperoncino piccante rosso";
+            t.yes_ingredient[1] = "peperoncino in polvere";
             t.not_ingredient[0] = "cetriolo";
             t.not_ingredient[1] = "latte intero";
             t.yes_tool[0] = "padella da frittura";
