@@ -2,14 +2,17 @@ ingredient,unit_of_measure,grocery_list_unit,conversion_rate,is_standard_convers
 allspice,small spoon,gr,5,FALSE
 almond,gr,gr,,
 anchovy,gr,gr,,
-aneto,spoon,spoon,,
-anise for dessert,spoon,spoon,,
+aneto,glass,gr,30,FALSE
+aneto,spoon,gr,10,FALSE
+anise for dessert,spoon,gr,10,FALSE
+apple,unit,unit,,
 apple cider vinegar,small spoon,small spoon,,
 avocado,unit,unit,,
 baby chard,gr,gr,,
 baking powder,package,gr,200,FALSE
 baking powder,small spoon,gr,5,FALSE
 baking soda,small spoon,small spoon,,
+banana,unit,kg,0.2,FALSE
 banana,kg,kg,,
 basil leaf,bunch,gr,30,FALSE
 basil leaf,unit,leaf,1,TRUE
@@ -18,6 +21,8 @@ basmati rice,kg,kg,,
 bay leaf,unit,unit,,
 beef meat,gr,kg,0.001,TRUE
 beef meat,kg,kg,,
+beetroot,unit,gr,100,FALSE
+bell pepper,unit,gr,250,FALSE
 bell pepper,gr,gr,,
 black cardamom,unit,unit,,
 black olive,gr,gr,,
@@ -40,7 +45,8 @@ cabbage,gr,gr,,
 cabbage,unit,unit,,
 calamari,kg,kg,,
 caper,small spoon,small spoon,,
-carrot,unit,unit,,
+carrot,kg,gr,1000,
+carrot,unit,gr,100,FALSE
 cashew,gr,gr,,
 celery root,unit,unit,,
 chaat masala,small spoon,small spoon,,
@@ -84,6 +90,7 @@ cucumber,unit,unit,,
 cumin seed,small spoon,small spoon,,
 curry powder,small spoon,small spoon,,
 curry leaf,unit,unit,,
+deer meat,kg,gr,1000,
 dijon mustard,spoon,spoon,,
 dried apricot,gr,gr,,
 dried apricot,unit,gr,20,FALSE
@@ -138,6 +145,7 @@ ginger root,cm,gr,10,FALSE
 ginger root,gr,gr,,
 ginger root,small spoon,gr,10,FALSE
 ginger root,spoon,gr,15,FALSE
+grappa,ml,ml,,
 greek yogurt,glass,gr,200,FALSE
 greek yogurt,gr,gr,,
 greek yogurt,spoon,gr,30,FALSE
@@ -145,7 +153,8 @@ green bean,gr,gr,,
 green cardamom seed,unit,unit,,
 green grape,,,,
 green lentil,gr,gr,,
-green onion,unit,unit,,
+green onion,spring,gr,20,FALSE
+green onion,unit,gr,100,FALSE
 green onion leaf,unit,unit,,
 green pepper,unit,unit,,
 ground black pepper,small spoon,small spoon,,
@@ -154,6 +163,7 @@ ground coriander,small spoon,small spoon,,
 ground cumin,small spoon,small spoon,,
 ground turmeric,small spoon,small spoon,,
 half peach,unit,unit,,
+hard cheese,gr,gr,,
 harissa,spoon,spoon,,
 honey,spoon,spoon,,
 iceberg salad,unit,unit,,
@@ -207,12 +217,15 @@ palm oil,ml,ml,,
 paprika,small spoon,small spoon,,
 parmesan cheese,gr,gr,,
 parmesan cheese,spoon,gr,20,FALSE
+parsley,glass,gr,30,FALSE
 parsley,bunch,gr,50,FALSE
 parsley,gr,gr,,
 parsley,spoon,gr,10,FALSE
 parsley,spring,gr,30,FALSE
 parsley,,,,
+pastry,sheet,gr,200,FALSE
 peanut paste,small spoon,small spoon,,
+pear,unit,gr,200,FALSE
 phyllo pastry,package,package,,
 piccadilly tomato,unit,unit,,
 pine nut,gr,gr,,
@@ -224,6 +237,7 @@ pomegranate sauce,spoon,ml,30,TRUE
 potato,gr,gr,,
 potato,unit,gr,200,FALSE
 pumpkin,unit,unit,,
+pumpkin seed,gr,gr,,
 raisin,gr,gr,,
 raisin,small spoon,gr,10,FALSE
 raki,,,,
@@ -231,10 +245,12 @@ red bell pepper,unit,unit,,
 red mullet,kg,kg,,
 red onion,unit,unit,,
 red radish,unit,unit,,
+red wine,glass,ml,200,
 rice,glass,gr,200,FALSE
 rice,gr,gr,,
 ricotta cheese,glass,gr,200,FALSE
 ricotta cheese,gr,gr,,
+robiola cheese,gr,gr,,
 rocket,,,,
 rose pepper,,,,
 salmon,kg,kg,,
@@ -243,6 +259,7 @@ salt,small spoon,gr,5,FALSE
 salt,spoon,gr,15,FALSE
 salt,,,,
 sardine,kg,kg,,
+savoiardi biscuit,gr,gr,,
 scallion,unit,unit,,
 semolina,spoon,spoon,,
 semolina flour,kg,kg,,
@@ -257,6 +274,7 @@ smoked paprika,small spoon,small spoon,,
 soy sauce,spoon,spoon,,
 soya mince,gr,gr,,
 spelt flour,gr,gr,,
+speck,gr,gr,,
 spinach,gr,gr,,
 stale bread,gr,gr,,
 stale bread,slice,gr,50,FALSE
@@ -279,6 +297,7 @@ tomato,unit,gr,100,FALSE
 tomato paste,spoon,ml,30,TRUE
 tomato sauce,gr,ml,1,FALSE
 tomato sauce,ml,ml,,
+tomato sauce,can,ml,400,
 tomato sauce in cubes,gr,ml,1,FALSE
 tomato sauce in cubes,ml,ml,,
 tosella cheese,gr,gr,,
@@ -291,6 +310,7 @@ vanilla extract,drop,drop,,
 vanillin,small bag,small bag,,
 vegetable broth,lt,ml,1000,TRUE
 vegetable broth,ml,ml,,
+walnut,unit,gr,10,FALSE
 walnut,glass,gr,50,FALSE
 walnut,gr,gr,,
 walnut,spoon,gr,10,FALSE
@@ -298,6 +318,7 @@ water,glass,ml,200,FALSE
 water,lt,ml,1000,TRUE
 water,ml,ml,,
 water,spoon,ml,30,TRUE
+white onion,unit,gr,100,FALSE
 white vinegar,small spoon,ml,10,TRUE
 white vinegar,spoon,ml,30,TRUE
 white wine,ml,ml,,

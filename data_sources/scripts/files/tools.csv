@@ -1,23 +1,43 @@
 tool_id,name
-1,blender
-2,bowl
-3,cake pan
-4,crepe pan
-5,food processor
-6,frying pan
-7,iron pan
-8,ladle
-9,large bowl
-10,large pan
-11,large pot
-12,napkin
-13,oven
-14,oven casserole
-15,oven paper
+1,frying pan
+2,paper towel
+3,bowl
+4,oven
+5,large plate
+6,stretch film
+7,food processor
+8,pot
+9,skillet
+10,oven paper
+11,kitchen paper
+12,tray
+13,barbecue
+14,wooden skewer
+15,skewer
 16,oven tray
-17,pan
-18,pot
-19,schiacciapassatelli
-20,small pot
-21,stretch film
-22,tray
+17,iron pan
+18,cup
+19,sealable container
+20,blender
+21,peeler
+22,spiral cutter
+23,plate
+24,large pot
+25,porcelain plate
+26,small pot
+27,baking tray
+28,toothpick
+29,rolling pin
+30,whisk
+31,grill
+32,crepe pan
+33,ladle
+34,napkin
+35,large pan
+36,schiacciapassatelli
+37,oven casserole
+38,large bowl
+39,pan
+40,cake pan
+41,small aluminium tray
+42,flat pan

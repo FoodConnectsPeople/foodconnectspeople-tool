@@ -1,22 +1,25 @@
 ingredient,is_vegetarian,is_vegan,is_gluten_free,is_lactose_free,is_spice,ingredient_class
+allspice,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 almond,TRUE,TRUE,TRUE,TRUE,FALSE,dry seed
 anchovy,FALSE,FALSE,TRUE,TRUE,FALSE,fish
 aneto,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 anise for dessert,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+apple,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 apple cider vinegar,TRUE,TRUE,TRUE,TRUE,FALSE,oils
 avocado,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 baby chard,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 baking powder,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 baking soda,TRUE,TRUE,TRUE,TRUE,FALSE,powders
+balsamic vinegar,TRUE,TRUE,TRUE,TRUE,FALSE,oils
 banana,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 basil leaf,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 basmati rice,TRUE,TRUE,FALSE,TRUE,FALSE,cereals
 bay leaf,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 beef meat,FALSE,FALSE,TRUE,TRUE,FALSE,meat
+beetroot,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 bell pepper,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 black cardamom,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 black olive,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
-ground black pepper,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 black pepper seed,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 black-eyed pea,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 boiled chickpea,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
@@ -31,6 +34,7 @@ calamari,FALSE,FALSE,TRUE,TRUE,FALSE,fish
 caper,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 carrot,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 cashew,TRUE,TRUE,TRUE,TRUE,FALSE,dry seed
+cayenne pepper,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 celery root,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 chaat masala,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 champignon mushroom,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
@@ -43,6 +47,7 @@ chicken leg,FALSE,FALSE,TRUE,TRUE,FALSE,meat
 chicken thigh,FALSE,FALSE,TRUE,TRUE,FALSE,meat
 chickpea,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 chickpea flour,TRUE,TRUE,TRUE,TRUE,FALSE,flours
+chili powder,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 chives,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 cilantro,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 cinnamon stick,TRUE,TRUE,TRUE,TRUE,TRUE,spice
@@ -56,14 +61,17 @@ corn oil,TRUE,TRUE,TRUE,TRUE,FALSE,oils
 cornstarch,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 cottage cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 couscous,TRUE,TRUE,TRUE,TRUE,FALSE,cereals
+crushed chillies,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 cucumber,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 cumin seed,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 curry leaf,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 curry powder,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+deer meat,FALSE,FALSE,TRUE,TRUE,FALSE,meat
 dijon mustard,TRUE,TRUE,TRUE,TRUE,TRUE,canned items
 dried apricot,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 dried cherries,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 dried plum,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
+dry basil,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 dry blackcurrant,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 dry chickpea,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 dry coconut shred,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
@@ -91,6 +99,7 @@ frozen pea,TRUE,TRUE,TRUE,TRUE,FALSE,frozen items
 garam masala,TRUE,TRUE,TRUE,TRUE,FALSE,spice
 garlic,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 ginger root,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+grappa,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
 greek yogurt,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 green bean,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 green cardamom seed,TRUE,TRUE,TRUE,TRUE,TRUE,spice
@@ -99,11 +108,13 @@ green lentil,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 green onion,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 green onion leaf,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 green pepper,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+ground black pepper,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 ground cinnamon,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 ground coriander,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 ground cumin,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 ground turmeric,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 half peach,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
+hard cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 harissa,TRUE,TRUE,TRUE,TRUE,FALSE,spice
 honey,TRUE,TRUE,TRUE,TRUE,FALSE,sweeteners
 iceberg salad,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
@@ -133,6 +144,7 @@ mutton meat,FALSE,FALSE,TRUE,TRUE,FALSE,meat
 non-salted butter,TRUE,FALSE,TRUE,TRUE,FALSE,dairy
 non-sweetened cocoa powder,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 non-sweetened coconut milk,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
+nothing,TRUE,TRUE,TRUE,TRUE,FALSE,spice
 nutmeg,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 okra,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 onion,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
@@ -142,9 +154,12 @@ orange peel,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 ouzo,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
 palm oil,TRUE,TRUE,TRUE,TRUE,FALSE,oils
 paprika,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+pastry,TRUE,TRUE,FALSE,TRUE,FALSE,frozen items
 parmesan cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 parsley,TRUE,TRUE,TRUE,TRUE,TRUE,vegetable
+parsley root,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 peanut paste,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
+pear,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 phyllo pastry,TRUE,TRUE,TRUE,TRUE,FALSE,frozen items
 piccadilly tomato,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 pine nut,TRUE,TRUE,TRUE,TRUE,FALSE,dry seed
@@ -153,20 +168,23 @@ plum,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 pomegranate sauce,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 potato,TRUE,TRUE,FALSE,TRUE,FALSE,vegetable
 pumpkin,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+pumpkin seed,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 raisin,TRUE,TRUE,TRUE,TRUE,FALSE,dry seed
 raki,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
 red bell pepper,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
-crushed chillies,TRUE,TRUE,TRUE,TRUE,TRUE,spice
-chili powder,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 red mullet,FALSE,FALSE,TRUE,TRUE,FALSE,fish
 red onion,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 red radish,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+red wine,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
 rice,TRUE,TRUE,FALSE,TRUE,FALSE,cereals
-ricotta cheese,TRUE,FALSE,TRUE,TRUE,FALSE,dairy
+ricotta cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
+robiola cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 rocket,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 rose pepper,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+rosolio liqueur,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
 salmon,FALSE,FALSE,TRUE,TRUE,FALSE,fish
 salt,TRUE,TRUE,TRUE,TRUE,FALSE,oils
+savoiardi biscuit,TRUE,TRUE,FALSE,TRUE,FALSE,bakery
 sardine,FALSE,FALSE,TRUE,TRUE,FALSE,fish
 scallion,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 semolina,TRUE,TRUE,FALSE,TRUE,FALSE,cereals
@@ -179,9 +197,11 @@ small tomato,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 smoked paprika,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 soy sauce,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 soya mince,TRUE,TRUE,TRUE,TRUE,FALSE,spice
+speck,FALSE,FALSE,TRUE,TRUE,FALSE,meat
 spelt flour,TRUE,TRUE,TRUE,TRUE,FALSE,flours
 spinach,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 stale bread,TRUE,TRUE,FALSE,TRUE,FALSE,bakery
+star anise,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 sugar,TRUE,TRUE,TRUE,TRUE,FALSE,sweeteners
 sugar powder,TRUE,TRUE,TRUE,TRUE,FALSE,sweeteners
 sumak,TRUE,TRUE,TRUE,TRUE,TRUE,spice
@@ -198,15 +218,17 @@ tomato sauce,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 tomato sauce in cubes,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 tosella cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 tuna fish,FALSE,FALSE,TRUE,TRUE,FALSE,canned items
-allspice,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+turkish tomato paste,TRUE,TRUE,TRUE,TRUE,FALSE,spice
 turkish pepper paste,TRUE,TRUE,TRUE,TRUE,FALSE,spice
 turkish phyllo pastry,TRUE,TRUE,TRUE,TRUE,FALSE,frozen items
 vanilla bean,TRUE,TRUE,TRUE,TRUE,FALSE,spice
 vanilla extract,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 vanillin,TRUE,TRUE,TRUE,TRUE,TRUE,powders
+vegetable stock powder,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 vegetable broth,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 walnut,TRUE,TRUE,TRUE,TRUE,FALSE,dry seed
 water,TRUE,TRUE,TRUE,TRUE,FALSE,water
+white onion,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 white vinegar,TRUE,TRUE,TRUE,TRUE,FALSE,oils
 white wine,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
 white yogurt,TRUE,FALSE,TRUE,FALSE,FALSE,dairy

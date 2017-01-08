@@ -4,7 +4,7 @@ id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from
 3,roasted eggplant salad,middle-east-2/turkey/turkish-roasted-eggplant-salad,40,4,2,turkey,,,entrée,eggplant,roasted,TRUE,TRUE,TRUE,TRUE
 4,zucchini salad,middle-east-2/turkey/kabak-salatasi,30,4,2,turkey,,,entrée,zucchini,pan-fried,TRUE,FALSE,TRUE,FALSE
 5,kidney bean salad,middle-east-2/turkey/piyaz,15,4,1,turkey,,,entrée,bean,boiled,TRUE,TRUE,TRUE,TRUE
-6,roasted pepper rolls with cheese,middle-east-2/turkey/peynirli-koz-biber,50,4,4,turkey,,,main,pepper,roasted,TRUE,FALSE,TRUE,FALSE
+6,roasted pepper rolls with cheese,middle-east-2/turkey/peynirli-koz-biber,50,4,4,turkey,,,main,bell pepper,roasted,TRUE,FALSE,TRUE,FALSE
 7,spoon salad,middle-east-2/turkey/kasik-salatasi,30,4,1,turkey,,,entrée,tomato,raw,TRUE,TRUE,TRUE,TRUE
 8,chickpeas dip (hummus),middle-east-2/lebanon/hummus,15,4,1,middle east,,,entrée,chickpea,boiled,TRUE,TRUE,TRUE,TRUE
 9,circassian chicken,asia/russia/cerkez-tavugu,60,4,3,russia,,,main,chicken,boiled,FALSE,FALSE,FALSE,TRUE
@@ -24,28 +24,28 @@ id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from
 23,pakistani style rice (channa pulao),asia/pakistan/channa-pulao,40,5,3,pakistan,,,main,rice,boiled,TRUE,TRUE,TRUE,TRUE
 24,lamb skewers with vegetables,middel-east-2/turkey/sebzeli-kuzu-sis,40,10,3,mediterranean,,,main,lamb,baked,FALSE,FALSE,TRUE,FALSE
 25,carrot dip (tarator),middle-east-2/turkey/turkish-carrot-dip,20,4,2,turkey,,,entrée,carrot,pan-fried,TRUE,FALSE,TRUE,FALSE
-26,baked eggplants with cheese,middle-east-2/turkey/firinda-peynirli-karniyarik,40,5,3,turkey,,,main,eggplant,baked,VERO,FALSE,TRUE,FALSE
+26,baked eggplants with cheese,middle-east-2/turkey/firinda-peynirli-karniyarik,40,5,3,turkey,,,main,eggplant,baked,TRUE,FALSE,TRUE,FALSE
 27,tomato baskets with cheese,middle-east-2/turkey/peynirly-domates-sepeti,30,6,2,turkey,,,entrée,tomato,raw,TRUE,FALSE,TRUE,FALSE
 28,curry sauced shrimps,asia/thailand/curry-sauced-shrimps,40,6,3,thailand,,,main,shrimp,pan-fried,FALSE,FALSE,TRUE,TRUE
-29,kebap with pistachios and fresh basil,middle-east-2/turkey/fistikli-reyhanli-kebap,60,8,3,turkey,,,main,"beef meat, lamb meat",baked,FALSE,FALSE,TRUE,TRUE
+29,kebap with pistachios and fresh basil,middle-east-2/turkey/fistikli-reyhanli-kebap,60,8,3,turkey,,,main,beef meat; lamb meat,baked,FALSE,FALSE,TRUE,TRUE
 30,greek style mussels in red sauce (mydia saganaki),mediterranea/greece/midia-saganaki,40,4,3,greece,,,main,mussel,pan-fried,FALSE,FALSE,TRUE,FALSE
 31,cretan style stuffed calamari,mediterranea/greece/kalamaria-gemista,90,6,4,greece,,,main,calamari,baked,FALSE,FALSE,TRUE,TRUE
-32,crescione romagnolo with samosa filling,world-fusion/crescione-romagnolo-with-samosa-filling,90,5,4,fusion,,,main,"spelt flour, potato",baked,TRUE,TRUE,FALSE,TRUE
+32,crescione romagnolo with samosa filling,world-fusion/crescione-romagnolo-with-samosa-filling,90,5,4,fusion,,,main,spelt flour; potato,baked,TRUE,TRUE,FALSE,TRUE
 33,armenian eggplant,asia/armenia/armenian-style-eggplants,40,4,3,armenia,,,entrée,eggplant,baked,TRUE,TRUE,TRUE,TRUE
 34,armenian phyllo pastry,asia/armenia/armenian-style-boreg,60,6,3,armenia,,,main,muenster cheese,baked,TRUE,FALSE,FALSE,FALSE
-35,walnut mushroom taco,central-america/mexico/walnut-mushroom-taco,30,4,2,mexico,,,entrée,"walnut, mushroom",almost raw,TRUE,TRUE,FALSE,TRUE
+35,walnut mushroom taco,central-america/mexico/walnut-mushroom-taco,30,4,2,mexico,,,entrée,walnut; mushroom,almost raw,TRUE,TRUE,FALSE,TRUE
 36,carrot ribbons,world-fusion/carrot-ribbons,40,4,3,fusion,,,entrée,carrot,raw,TRUE,TRUE,TRUE,TRUE
-37,spinach cheese,world-fusion/spinach-cheese,20,4,2,fusion,,,entrée,"spinach, cashew",raw,TRUE,TRUE,TRUE,TRUE
+37,spinach cheese,world-fusion/spinach-cheese,20,4,2,fusion,,,entrée,spinach; cashew,raw,TRUE,TRUE,TRUE,TRUE
 38,pumpkin noodles,world-fusion/pumpkin-noodles,20,4,2,fusion,,,entrée,pumpkin,raw,TRUE,TRUE,TRUE,TRUE
 39,thai chicken in green curry,asia/thailand/thai-chicken-in-green-curry,40,8,3,thailand,,,main,chicken,boiled,FALSE,FALSE,TRUE,TRUE
 40,indonesian rice,asia/indonesia/indonesian-rice,60,10,3,indonesia,,,side dish,rice,boiled,TRUE,TRUE,TRUE,TRUE
-41,vegetable cous cous,africa/morocco/vegetable-cous-cous,80,8,3,morocco,,,main,"cous cous, sweet potato",boiled,TRUE,TRUE,FALSE,TRUE
+41,vegetable cous cous,africa/morocco/vegetable-cous-cous,80,8,3,morocco,,,main,cous cous; sweet potato,boiled,TRUE,TRUE,FALSE,TRUE
 42,guacamole,central-america/mexico/guacamole,15,4,1,mexico,,,entrée,avocado,raw,TRUE,TRUE,TRUE,TRUE
 43,morcilla de verano,mediterranea/spain/morcilla-de-verano,30,4,3,spain,,,entrée,eggplant,roasted,TRUE,TRUE,TRUE,TRUE
 44,swans of lake Sarmasi (lahana sarmasi),middle-east-2/turkey/turkish-swans-of-lake-sarmasi,90,6,4,turkey,,,main,cabbage,boiled,TRUE,FALSE,FALSE,FALSE
-45,moist orange cake with mastic cream,middle-east-2/turkey/turkish-moist-orange-cake-with-mastic-cream,60,12,3,turkey,,,dessert,"egg,sugar,milk",baked,TRUE,FALSE,FALSE,FALSE
-46,mediterranean olive tapenade,middle-east-2/turkey/mediterranean-olive-tapenade,10,4,1,mediterranean,,,entrée,"olive, tomato",almost raw,FALSE,FALSE,TRUE,TRUE
-47,carrot dip with bell pepper (biberli tarator),middle-east-2/turkey/carrot-dip-with-bell-pepper,30,4,2,turkey,,,entrée,"carrot, bell pepper",baked,TRUE,FALSE,TRUE,FALSE
+45,moist orange cake with mastic cream,middle-east-2/turkey/turkish-moist-orange-cake-with-mastic-cream,60,12,3,turkey,,,dessert,egg;sugar;milk,baked,TRUE,FALSE,FALSE,FALSE
+46,mediterranean olive tapenade,middle-east-2/turkey/mediterranean-olive-tapenade,10,4,1,mediterranean,,,entrée,olive; tomato,almost raw,FALSE,FALSE,TRUE,TRUE
+47,carrot dip with bell pepper (biberli tarator),middle-east-2/turkey/carrot-dip-with-bell-pepper,30,4,2,turkey,,,entrée,carrot; bell pepper,baked,TRUE,FALSE,TRUE,FALSE
 48,eggplant and green lentils stew (mualle),middle-east-2/turkey/turkish-eggplant-and-green-lentils-stew,90,5,3,turkey,,,main,eggplant,boiled,TRUE,TRUE,TRUE,TRUE
 49,potatoes dough rolls,middle-east-2/turkey/turkish-potatoes-dough-rolls,90,8,4,turkey,,,main,potato,baked,TRUE,FALSE,FALSE,FALSE
 50,salmorejo,mediterranea/spain/salmorejo,10,6,1,spain,,,entrée,tomato,almost raw,FALSE,FALSE,FALSE,TRUE
@@ -55,25 +55,31 @@ id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from
 54,grilled calamari with feta,mediterranea/greece/grilled-calamari-with-feta,30,5,2,greece,,,main,calamari,roasted,FALSE,FALSE,TRUE,FALSE
 55,sauteed calamari with ouzo on potato pouree bed,mediterranea/greece/sauteed-calamari-with-ouzo-on-potato-pouree-bed,60,5,3,greece,,,main,calamari,pan-fried,FALSE,FALSE,TRUE,FALSE
 56,armenian stuffed pumpkin (ghapama),asia/armenia/ghapama,150,6,3,armenia,,,main,pumpkin,baked,TRUE,FALSE,FALSE,TRUE
-57,Saint Joseph's donuts (zeppole),mediterranea/italy/saint-joseph-donuts,90,8,4,italy,,,dessert,"egg,sugar,milk",fried,TRUE,FALSE,FALSE,FALSE
-58,Dahi baray,asia/pakistan/dahi-baray,90,6,4,pakistan,,,main,"chickpea flour, yogurt, sugar",fried,TRUE,FALSE,TRUE,FALSE
+57,Saint Joseph's donuts (zeppole),mediterranea/italy/saint-joseph-donuts,90,8,4,italy,,,dessert,egg;sugar;milk,fried,TRUE,FALSE,FALSE,FALSE
+58,Dahi baray,asia/pakistan/dahi-baray,90,6,4,pakistan,,,main,chickpea flour; yogurt; sugar,fried,TRUE,FALSE,TRUE,FALSE
 59,Chapli kebab,asia/pakistan/chapli-kebab,40,6,3,pakistan,,,main,beef meat,pan-fried,FALSE,FALSE,FALSE,TRUE
 60,Manjar de coco,south-america/brazil/manjar-de-coco,60,12,2,brazil,,,dessert,coconut milk,boiled,TRUE,TRUE,FALSE,TRUE
-61,Panquecas de doce de leite,south-america/argentina/panquecas-de-doce-de-leite,30,8,3,argentina,,,dessert,"flour, condensed milk",pan-fried,TRUE,FALSE,FALSE,FALSE
-62,Birani,asia/bangladesh/birani,40,8,3,bangladesh,,,main,"beef meat, rice",boiled,FALSE,FALSE,TRUE,FALSE
-63,Konnto,africa/guinea-bissau/konnto,45,8,3,guinea-bissau,,,main,"chicken meat, rice",pan-fried,FALSE,FALSE,TRUE,TRUE
-64,Simaumo,africa/gambia/simaumo,45,8,3,gambia,,,main,"chicken meat, rice",pan-fried,FALSE,FALSE,TRUE,TRUE
-65,Tigadeghena,africa/mali/tigadeghena,45,4,3,mali,,,main,"mutton meat, rice",pan-fried,FALSE,FALSE,TRUE,TRUE
+61,Panquecas de doce de leite,south-america/argentina/panquecas-de-doce-de-leite,30,8,3,argentina,,,dessert,flour; condensed milk,pan-fried,TRUE,FALSE,FALSE,FALSE
+62,Birani,asia/bangladesh/birani,40,8,3,bangladesh,,,main,beef meat; rice,boiled,FALSE,FALSE,TRUE,FALSE
+63,Konnto,africa/guinea-bissau/konnto,45,8,3,guinea-bissau,,,main,chicken meat; rice,pan-fried,FALSE,FALSE,TRUE,TRUE
+64,Simaumo,africa/gambia/simaumo,45,8,3,gambia,,,main,chicken meat; rice,pan-fried,FALSE,FALSE,TRUE,TRUE
+65,Tigadeghena,africa/mali/tigadeghena,45,4,3,mali,,,main,mutton meat; rice,pan-fried,FALSE,FALSE,TRUE,TRUE
 66,Deghe,africa/mali/deghe,15,8,2,mali,,,dessert,banana,almost raw,TRUE,FALSE,FALSE,FALSE
-67,Ghorme gosht,asia/afghanistan/ghorme-gosht,60,8,3,afghanistan,,,main,"beef meat, rice",pan-fried,FALSE,FALSE,TRUE,TRUE
+67,Ghorme gosht,asia/afghanistan/ghorme-gosht,60,8,3,afghanistan,,,main,beef meat; rice,pan-fried,FALSE,FALSE,TRUE,TRUE
 68,Jamweli,africa/gambia/jamweli,90,8,3,gambia,,,main,mutton meat,boiled,FALSE,FALSE,TRUE,TRUE
 69,Zucchini with bechamel sauce,mediterranea/italy/zucchini-with-bechamel-sauce,45,4,3,italy,,,main,zucchini,baked,TRUE,FALSE,TRUE,FALSE
-70,Egusi soup,africa/nigeria/egusi-soup,90,8,3,nigeria,,,main,"beef meat, semolina",pan-fried,FALSE,FALSE,FALSE,FALSE
-71,Kebab,asia/afghanistan/kebab,45,8,3,afghanistan,,,main,"chicken meat, pepper, eggplant",roasted,FALSE,FALSE,TRUE,TRUE
-72,Wake,africa/togo/wake,45,12,4,togo,,,main,"sardine, red mullet",fried,FALSE,FALSE,FALSE,TRUE
-73,Crescione pie with herbs,mediterranea/italy/crescione-pie-with-herbs,60,4,4,italy,,,main,"flour, spinach, chard",baked,TRUE,TRUE,FALSE,TRUE
-74,Passatelli asciutti with mushroom sauce,mediterranea/italy/passatelli-asciutti-with-mushroom-sauce,45,4,3,italy,,,main,"flour, mushroom",boiled,FALSE,FALSE,FALSE,FALSE
+70,Egusi soup,africa/nigeria/egusi-soup,90,8,3,nigeria,,,main,beef meat; semolina,pan-fried,FALSE,FALSE,FALSE,FALSE
+71,Kebab,asia/afghanistan/kebab,45,8,3,afghanistan,,,main,chicken meat; bell pepper; eggplant,roasted,FALSE,FALSE,TRUE,TRUE
+72,Wake,africa/togo/wake,45,12,4,togo,,,main,sardine; red mullet,fried,FALSE,FALSE,FALSE,TRUE
+73,Crescione pie with herbs,mediterranea/italy/crescione-pie-with-herbs,60,4,4,italy,,,main,flour; spinach; chard,baked,TRUE,TRUE,FALSE,TRUE
+74,Passatelli asciutti with mushroom sauce,mediterranea/italy/passatelli-asciutti-with-mushroom-sauce,45,4,3,italy,,,main,flour; mushroom,boiled,FALSE,FALSE,FALSE,FALSE
 75,Eggplant light parmigiana,mediterranea/italy/eggplant-light-parmigiana,75,4,3,italy,,,main,eggplant,baked,TRUE,FALSE,TRUE,FALSE
 76,Baked mix peppers,mediterranea/italy/baked-mix-peppers,45,4,2,italy,,,entrée,bell pepper,baked,TRUE,TRUE,TRUE,TRUE
 77,Romagna peaches with cream,mediterranea/italy/romagna-peaches-with-cream,45,12,2,italy,,,dessert,peach,almost raw,TRUE,FALSE,FALSE,FALSE
-78,Grandparents' Romagna donut,mediterranea/italy/grandparents-romagna-donut,45,8,3,italy,,,dessert,"flour, butter, sugar",baked,TRUE,FALSE,FALSE,FALSE
+78,Grandparents' Romagna donut,mediterranea/italy/grandparents-romagna-donut,45,8,3,italy,,,dessert,flour; butter; sugar,baked,TRUE,FALSE,FALSE,FALSE
+79,A thousand and one nights in the mountains,world-fusion/a-thousand-and-one-nights-in-the-mountains,150,8,3,fusion,,,main,deer meat; okra,pan-fried,FALSE,FALSE,TRUE,TRUE
+80,Achille's therapy (vegetarian),world-fusion/achilles-therapy,45,4,2,fusion,,,entrée,pastry; cheese,baked,TRUE,FALSE,FALSE,FALSE
+81,Achille's therapy (non-vegetarian),world-fusion/achilles-therapy,45,4,2,fusion,,,entrée,pastry; speck,baked,FALSE,FALSE,FALSE,TRUE
+82,Mr. Lemonhead,world-fusion/mr-lemonhead,30,8,2,fusion,,,dessert,orange;lemon;lime,raw,TRUE,FALSE,TRUE,FALSE
+83,Stuffed peppers (Biber dolmasi),,30,4,2,turkey,,,entrée,bell pepper; rice,pan-fried,TRUE,TRUE,TRUE,TRUE
+84,Karamellata stin Kalamata,,45,3,3,germany,,,main,beetroot; sweet potato; parsley root,pan-fried,TRUE,TRUE,TRUE,TRUE
