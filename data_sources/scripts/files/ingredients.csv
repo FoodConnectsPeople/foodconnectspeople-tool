@@ -38,6 +38,7 @@ cayenne pepper,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 celery root,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 chaat masala,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 champignon mushroom,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+cheddar cheese,TRUE,FALSE,TRUE,FALSE,TRUE,dairy
 cherry in sirup,TRUE,TRUE,TRUE,TRUE,FALSE,canned fruit
 cherry sirup,TRUE,TRUE,TRUE,TRUE,FALSE,canned fruit
 cherry tomato,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
@@ -83,7 +84,11 @@ egg,FALSE,FALSE,TRUE,TRUE,FALSE,eggs
 egg yolk,FALSE,FALSE,TRUE,TRUE,FALSE,eggs
 eggplant,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 extra-virgin olive oil,TRUE,TRUE,TRUE,TRUE,FALSE,oils
+gorgonzola cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
+greek graviera cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
+greek kefalotiri cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 feta cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
+flavour,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 flour,TRUE,TRUE,FALSE,TRUE,FALSE,flours
 fontina cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 french baguette,TRUE,TRUE,FALSE,TRUE,FALSE,bakery
@@ -100,6 +105,8 @@ garam masala,TRUE,TRUE,TRUE,TRUE,FALSE,spice
 garlic,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 ginger root,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 grappa,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
+greek pecorino cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
+greek ricotta cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 greek yogurt,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 green bean,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 green cardamom seed,TRUE,TRUE,TRUE,TRUE,TRUE,spice

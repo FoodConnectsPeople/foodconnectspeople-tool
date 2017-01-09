@@ -83,3 +83,6 @@ id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from
 82,Mr. Lemonhead,world-fusion/mr-lemonhead,30,8,2,fusion,,,dessert,orange;lemon;lime,raw,TRUE,FALSE,TRUE,FALSE
 83,Stuffed peppers (Biber dolmasi),,30,4,2,turkey,,,entrée,bell pepper; rice,pan-fried,TRUE,TRUE,TRUE,TRUE
 84,Karamellata stin Kalamata,,45,3,3,germany,,,main,beetroot; sweet potato; parsley root,pan-fried,TRUE,TRUE,TRUE,TRUE
+85,Ring-shaped ravioli Kalamata style,,210,4,4,italy,,,main,eggs; cheese,boiled,FALSE,FALSE,FALSE,FALSE
+86,Experimental interventions (Begendi),,30,4,1,turkey,,,main,eggplant,pan-fried,TRUE,FALSE,FALSE,FALSE
+87,Greek potato dumplings,,60,4,2,italy,,,main,potato; cheese,boiled,TRUE,FALSE,FALSE,FALSE

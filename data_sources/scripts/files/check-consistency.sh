@@ -18,10 +18,12 @@ echo "==== DONE === "
 echo " "
 
 
-tail -n +2 recipe2ingredients.csv | cut -f2,4 -d"," | sort | uniq > u-recipeingredientsunits.csv
-tail -n +2 unitconversions.csv | cut -f1,2 -d"," | sort | uniq > u-unitconversions.csv
+tail -n +2 recipe2ingredients.csv | cut -f2,4,7 -d"," > u-recipeingredientsunits0.csv
+grep -v ",," u-recipeingredientsunits0.csv | sort | uniq > u-recipeingredientsunits.csv
+tail -n +2 unitconversions.csv | cut -f1,2,6 -d"," > u-unitconversions0.csv
+grep -v ",," u-unitconversions0.csv | sort | uniq > u-unitconversions.csv
 echo "==== Differences between recipe-ingredients and unit conversions: only in conversions"
-diff u-recipeingredientsunits.csv u-unitconversions.csv | grep ">"
+diff -b u-recipeingredientsunits.csv u-unitconversions.csv | grep ">"
 echo "==== DONE === "
 echo " "
 
