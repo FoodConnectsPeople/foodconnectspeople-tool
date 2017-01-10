@@ -86,3 +86,7 @@ id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from
 85,Ring-shaped ravioli Kalamata style,,210,4,4,italy,,,main,eggs; cheese,boiled,FALSE,FALSE,FALSE,FALSE
 86,Experimental interventions (Begendi),,30,4,1,turkey,,,main,eggplant,pan-fried,TRUE,FALSE,FALSE,FALSE
 87,Greek potato dumplings,,60,4,2,italy,,,main,potato; cheese,boiled,TRUE,FALSE,FALSE,FALSE
+88,Dimitri's lemon lamb,,180,5,2,greece,,,main,lamb; potato; lemon,roasted,FALSE,FALSE,TRUE,TRUE
+89,Aubergines with tomato and feta from Frosos,,60,6,3,greece,,,main,eggplant; tomato; feta cheese,baked,TRUE,FALSE,TRUE,FALSE
+90,poor biscuits,,75,10,1,italy,,,dessert,flour;sugar;wine,baked,TRUE,TRUE,FALSE,TRUE
+91,orange cake (portokalopita),,75,15,3,greece,,,dessert,orange,baked,TRUE,FALSE,FALSE,FALSE

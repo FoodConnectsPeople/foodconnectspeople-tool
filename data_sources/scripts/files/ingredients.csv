@@ -67,6 +67,7 @@ cucumber,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 cumin seed,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 curry leaf,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 curry powder,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+dark chocolate,TRUE,TRUE,TRUE,TRUE,FALSE,sweeteners
 deer meat,FALSE,FALSE,TRUE,TRUE,FALSE,meat
 dijon mustard,TRUE,TRUE,TRUE,TRUE,TRUE,canned items
 dried apricot,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
@@ -98,6 +99,7 @@ fresh habanero chili,TRUE,TRUE,TRUE,TRUE,FALSE,spice
 fresh mint,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 fresh oregano,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 fresh red chili,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+dry rosemary,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 fresh rosemary,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 fresh thyme,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 frozen pea,TRUE,TRUE,TRUE,TRUE,FALSE,frozen items
@@ -213,8 +215,10 @@ sugar,TRUE,TRUE,TRUE,TRUE,FALSE,sweeteners
 sugar powder,TRUE,TRUE,TRUE,TRUE,FALSE,sweeteners
 sumak,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 sundried tomato,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+sunflower oil,TRUE,TRUE,TRUE,TRUE,FALSE,oils
 sweet potato,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 sweet vinegar,TRUE,TRUE,TRUE,TRUE,FALSE,oils
+sweet wine,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
 tahini,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 taleggio cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 tamarind paste,TRUE,TRUE,TRUE,TRUE,FALSE,spice
