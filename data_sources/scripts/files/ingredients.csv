@@ -106,6 +106,7 @@ frozen pea,TRUE,TRUE,TRUE,TRUE,FALSE,frozen items
 garam masala,TRUE,TRUE,TRUE,TRUE,FALSE,spice
 garlic,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 ginger root,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+grana trentino cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 grappa,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
 greek pecorino cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 greek ricotta cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
@@ -144,6 +145,7 @@ mango,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 manioc,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 mastic gum,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 mastic powder,TRUE,TRUE,TRUE,TRUE,FALSE,spice
+meat broth,FALSE,FALSE,TRUE,TRUE,FALSE,canned items
 melon seed,TRUE,TRUE,TRUE,TRUE,TRUE,dry seed
 mozzarella cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 muenster cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
@@ -220,8 +222,12 @@ sweet potato,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 sweet vinegar,TRUE,TRUE,TRUE,TRUE,FALSE,oils
 sweet wine,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
 tahini,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
+pecorino cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
+cokelec turkish cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
+urfa peyniri turkish cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 taleggio cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 tamarind paste,TRUE,TRUE,TRUE,TRUE,FALSE,spice
+Teroldego red wine,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
 thai green curry paste,TRUE,TRUE,TRUE,TRUE,FALSE,spice
 tomato,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 tomato paste,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
@@ -245,6 +251,7 @@ white wine,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
 white yogurt,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 white/kamut flour,TRUE,TRUE,FALSE,TRUE,FALSE,flours
 whole milk,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
+whole wheat flour,TRUE,TRUE,FALSE,TRUE,FALSE,flours
 yeast for dessert,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 yellow bell pepper,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 zucchini,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable

@@ -90,3 +90,5 @@ id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from
 89,Aubergines with tomato and feta from Frosos,,60,6,3,greece,,,main,eggplant; tomato; feta cheese,baked,TRUE,FALSE,TRUE,FALSE
 90,poor biscuits,,75,10,1,italy,,,dessert,flour;sugar;wine,baked,TRUE,TRUE,FALSE,TRUE
 91,orange cake (portokalopita),,75,15,3,greece,,,dessert,orange,baked,TRUE,FALSE,FALSE,FALSE
+92,rice with Teroldego wine,,30,4,2,italy,,,main,rice; red wine,boiled,FALSE,FALSE,FALSE,TRUE
+93,sikma,,90,4,4,turkey,,,main,cheese,pan-fried,TRUE,FALSE,FALSE,FALSE
