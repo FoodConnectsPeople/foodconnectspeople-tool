@@ -8,6 +8,7 @@ apple,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 apple cider vinegar,TRUE,TRUE,TRUE,TRUE,FALSE,oils
 avocado,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 baby chard,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+bacon,FALSE,FALSE,TRUE,TRUE,FALSE,dairy
 baking powder,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 baking soda,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 balsamic vinegar,TRUE,TRUE,TRUE,TRUE,FALSE,oils
@@ -55,6 +56,7 @@ cinnamon stick,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 clove,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 coconut,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 coconut milk,TRUE,TRUE,TRUE,TRUE,FALSE,canned fruit
+cokelec turkish cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 concentrated tomato paste,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 coriander seed,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 corn meal flour,TRUE,TRUE,TRUE,TRUE,FALSE,flours
@@ -74,20 +76,19 @@ dried apricot,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 dried cherries,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 dried plum,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 dry basil,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+dry bell pepper,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 dry blackcurrant,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 dry chickpea,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 dry coconut shred,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 dry mint,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 dry oregano,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 dry pomegranate seed,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+dry rosemary,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 dulce de leche,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 egg,FALSE,FALSE,TRUE,TRUE,FALSE,eggs
 egg yolk,FALSE,FALSE,TRUE,TRUE,FALSE,eggs
 eggplant,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 extra-virgin olive oil,TRUE,TRUE,TRUE,TRUE,FALSE,oils
-gorgonzola cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
-greek graviera cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
-greek kefalotiri cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 feta cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 flavour,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 flour,TRUE,TRUE,FALSE,TRUE,FALSE,flours
@@ -99,15 +100,17 @@ fresh habanero chili,TRUE,TRUE,TRUE,TRUE,FALSE,spice
 fresh mint,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 fresh oregano,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 fresh red chili,TRUE,TRUE,TRUE,TRUE,TRUE,spice
-dry rosemary,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 fresh rosemary,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 fresh thyme,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 frozen pea,TRUE,TRUE,TRUE,TRUE,FALSE,frozen items
 garam masala,TRUE,TRUE,TRUE,TRUE,FALSE,spice
 garlic,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 ginger root,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+gorgonzola cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 grana trentino cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 grappa,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
+greek graviera cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
+greek kefalotiri cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 greek pecorino cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 greek ricotta cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 greek yogurt,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
@@ -165,12 +168,13 @@ orange peel,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 ouzo,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
 palm oil,TRUE,TRUE,TRUE,TRUE,FALSE,oils
 paprika,TRUE,TRUE,TRUE,TRUE,TRUE,spice
-pastry,TRUE,TRUE,FALSE,TRUE,FALSE,frozen items
 parmesan cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 parsley,TRUE,TRUE,TRUE,TRUE,TRUE,vegetable
 parsley root,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+pastry,TRUE,TRUE,FALSE,TRUE,FALSE,frozen items
 peanut paste,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 pear,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
+pecorino cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 phyllo pastry,TRUE,TRUE,TRUE,TRUE,FALSE,frozen items
 piccadilly tomato,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 pine nut,TRUE,TRUE,TRUE,TRUE,FALSE,dry seed
@@ -193,10 +197,11 @@ robiola cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 rocket,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 rose pepper,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 rosolio liqueur,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
+sage,TRUE,TRUE,TRUE,TRUE,TRUE,vegetable
 salmon,FALSE,FALSE,TRUE,TRUE,FALSE,fish
 salt,TRUE,TRUE,TRUE,TRUE,FALSE,oils
-savoiardi biscuit,TRUE,TRUE,FALSE,TRUE,FALSE,bakery
 sardine,FALSE,FALSE,TRUE,TRUE,FALSE,fish
+savoiardi biscuit,TRUE,TRUE,FALSE,TRUE,FALSE,bakery
 scallion,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 semolina,TRUE,TRUE,FALSE,TRUE,FALSE,cereals
 semolina flour,TRUE,TRUE,FALSE,TRUE,FALSE,flours
@@ -222,11 +227,9 @@ sweet potato,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 sweet vinegar,TRUE,TRUE,TRUE,TRUE,FALSE,oils
 sweet wine,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
 tahini,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
-pecorino cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
-cokelec turkish cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
-urfa peyniri turkish cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 taleggio cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 tamarind paste,TRUE,TRUE,TRUE,TRUE,FALSE,spice
+tarhana,FALSE,FALSE,FALSE,FALSE,FALSE,canned items
 Teroldego red wine,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
 thai green curry paste,TRUE,TRUE,TRUE,TRUE,FALSE,spice
 tomato,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
@@ -235,14 +238,15 @@ tomato sauce,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 tomato sauce in cubes,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 tosella cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 tuna fish,FALSE,FALSE,TRUE,TRUE,FALSE,canned items
-turkish tomato paste,TRUE,TRUE,TRUE,TRUE,FALSE,spice
 turkish pepper paste,TRUE,TRUE,TRUE,TRUE,FALSE,spice
 turkish phyllo pastry,TRUE,TRUE,TRUE,TRUE,FALSE,frozen items
+turkish tomato paste,TRUE,TRUE,TRUE,TRUE,FALSE,spice
+urfa peyniri turkish cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 vanilla bean,TRUE,TRUE,TRUE,TRUE,FALSE,spice
 vanilla extract,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 vanillin,TRUE,TRUE,TRUE,TRUE,TRUE,powders
-vegetable stock powder,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 vegetable broth,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
+vegetable stock powder,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 walnut,TRUE,TRUE,TRUE,TRUE,FALSE,dry seed
 water,TRUE,TRUE,TRUE,TRUE,FALSE,water
 white onion,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable

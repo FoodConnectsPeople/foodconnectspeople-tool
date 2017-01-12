@@ -92,3 +92,5 @@ id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from
 91,orange cake (portokalopita),,75,15,3,greece,,,dessert,orange,baked,TRUE,FALSE,FALSE,FALSE
 92,rice with Teroldego wine,,30,4,2,italy,,,main,rice; red wine,boiled,FALSE,FALSE,FALSE,TRUE
 93,sikma,,90,4,4,turkey,,,main,cheese,pan-fried,TRUE,FALSE,FALSE,FALSE
+94,tarhana soup (ninemin tarhana corbasi),,90,6,3,turkey,,,entrée,tarhana; black-eyed peas,boiled,FALSE,FALSE,FALSE,FALSE
+95,beef escalope rolls (useleti scape'),,50,7,3,italy,,,main,beef meat,pan-fried,FALSE,FALSE,TRUE,TRUE
