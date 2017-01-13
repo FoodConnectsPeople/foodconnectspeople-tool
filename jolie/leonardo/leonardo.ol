@@ -56,6 +56,11 @@ Interfaces: HTTPInterface
 Aggregates: Frontend
 }
 
+inputPort Admin {
+	Location: Location_Admin
+	Protocol: sodep
+	OneWay: shutdown
+}
 
 
 init
@@ -105,4 +110,8 @@ main
 			readFile@File( file )( response )
 		}
 	} ] { nullProcess }
+
+	[ shutdown( request ) ] {
+		 exit 
+	}
 }

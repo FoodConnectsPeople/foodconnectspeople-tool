@@ -1,6 +1,7 @@
 constants {
 	// The deployment location for reaching the Leonardo web server
-	Location_Leonardo = "socket://localhost:8000/",
+	Location_Leonardo = "socket://localhost:80/",
+	Location_Admin = "socket://localhost:8000",
 
 	// The root directory in which Leonardo will look for content to serve to clients
 	RootContentDirectory = "www/",
