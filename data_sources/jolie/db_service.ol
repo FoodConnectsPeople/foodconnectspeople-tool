@@ -109,7 +109,11 @@ main {
               for( i = 0, i < #result.row, i++ ) {
                   with( response.ingredient[ i ] ) {
                       .ingredient_id = result.row[ i ].ingredient_id;
-
+                      .name = result.row[i].name;
+                      .properties = result.row[ i ].properties;
+                      .allergene = result.row[i].allergene;
+                      .ingredient_class = result.row[i].ingredient_class
+/*
                       transla.str = result.row[i].name;
                       translate@MySelf(transla)(str);
                       .name = str;
@@ -119,13 +123,14 @@ main {
                       .properties = str;
 
                       translal.str = result.row[i].allergene;
+                      .ingredient_class =
                       translateList@MySelf(translal)(str);
                       .allergene = str;
 
                       transla.str = result.row[i].ingredient_class;
                       translate@MySelf(transla)(str);
                       .ingredient_class = str
-
+*/
                   }
               }
         }
@@ -1509,6 +1514,10 @@ main {
           }
     }
 }]
+
+[ shutdown( request ) ] {
+  exit
+}
 
 /******   OLD-REDUNDANT STUFF
 

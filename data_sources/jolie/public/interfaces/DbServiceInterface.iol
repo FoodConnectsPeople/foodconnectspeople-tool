@@ -317,7 +317,8 @@ type GetRecipeDetailsResponse: void {
 
 interface DbServiceInterface {
   OneWay:
-    tester( void )
+    tester( void ),
+    shutdown( void )
 
   RequestResponse:
     mostGeneralRecipeQuery( MostGeneralQueryRequest )( GetRecipeResponse ) throws DatabaseError,
