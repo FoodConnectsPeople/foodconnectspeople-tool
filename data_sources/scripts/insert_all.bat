@@ -1,7 +1,7 @@
 del .\ingredients.csv
 del files\ingredients-transformed.csv
 copy files\ingredients.csv .
-call python transform-ingredients.py > files\ingredients-transformed.csv
+call py -2 transform-ingredients-py2.py > files\ingredients-transformed.csv
 del .\ingredients.csv
 
 call jolie insert_ingredients.ol

@@ -66,7 +66,7 @@ recipe_id,tool_name,tool_quantity
 32,frying pan,1
 32,iron pan,1
 33,barbecue,1
-33,stretch film,
+33,stretch film, 
 33,cup,2
 34,tray,1
 34,oven,1
@@ -74,7 +74,8 @@ recipe_id,tool_name,tool_quantity
 35,food processor,1
 35,tray,1
 36,blender,1
-36,"peeler, spiral cutter",1
+36,peeler,1
+36,spiral cutter,1
 36,plate,1
 37,food processor,1
 37,bowl,1
@@ -175,3 +176,56 @@ recipe_id,tool_name,tool_quantity
 78,bowl,1
 78,oven,1
 78,cake pan,1
+79,pan,1
+79,oven,1
+79,large pan,1
+80,large bowl,2
+80,small aluminium tray,4
+80,frying pan,1
+80,oven,1
+81,bowl,1
+81,frying pan,1
+81,small aluminium tray,4
+81,oven,1
+82,bowl,2
+82,large plate,1
+83,large bowl,1
+83,flat pan,1
+83,pot,1
+84,pot,2
+84,large pan,1
+85,rolling pin,1
+85,large bowl,1
+85,tray,2
+85,bowl,1
+85,cloth,1
+85,stretch film,
+86,bowl,1
+86,oven,1
+87,large pan,2
+87,slotted spoon,1
+87,tray,1
+88,pan,1
+88,oven tray,1
+88,oven,1
+88,tray,1
+88,tin foil, 
+89,large pan,1
+89,oven tray,2
+89,oven,1
+89,large bowl,1
+90,oven,1
+90,bowl,1
+91,large bowl,1
+91,oven pan,1
+92,large pan,1
+92,small pot,1
+92,ladle,1
+93,large pan,1
+93,large bowl,2
+94,pan,1
+94,bowl,1
+94,pot,2
+95,steak hammer,1
+95,large pan,1
+95,toothpick,30
