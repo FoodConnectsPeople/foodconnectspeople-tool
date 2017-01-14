@@ -133,49 +133,6 @@ footer {
   .row.content {height:auto;}
 }
 
-/*body {
-  font-size: 1em;
-  color: #999999;
-  margin: 0px;
-  font-family: Arial, sans-serif;
+body {
+  font-family: 'Open Sans', sans-serif;
 }
-
-
-
-#header {
-  width:100%;
-  height:5%;
-  background-color: #006699;
-  color: white;
-  font-size: 1.3em;
-}
-
-#menu-container {
-  width:15%;
-  min-height: 800px;
-  padding:0.5em;
-  vertical-align: top;
-}
-
-#workpanel {
-  width:85%;
-  padding:0.5em;
-}
-
-.ingredient {
-  margin:0.5em;
-  padding:0.3em;
-  border: 1px solid #CCC;
-  background-color: #EEE;
-}
-
-.ingredient-name {
-  width: 25%;
-  float:left;
-}
-
-.site-title {
-  padding-top:0.5%;
-  padding-left:2%
-}
-*/
