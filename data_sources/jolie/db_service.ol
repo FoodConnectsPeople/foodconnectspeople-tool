@@ -651,7 +651,8 @@ main {
             if ( language == DEFAULT_LANGUAGE ) {
                 q = queries.select_countries
             } else {
-                q = queries.select_countries_i18n
+                q = queries.select_countries_i18n;
+                q.language = language
             };
             query@Database( q )( result );
             for( i = 0, i < #result.row, i++ ) {

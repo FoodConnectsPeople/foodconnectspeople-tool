@@ -22,7 +22,7 @@ define __queries {
         :preparation_time_minutes, :persons, :difficulty, :place_of_origin,
         :is_from_latitude, :is_from_longitude, :category, :main_ingredient, :cooking_technique)";
     .select_countries = "SELECT country_id, name FROM FCP.countries ORDER BY name";
-    .select_countries_i18n = "SELECT country_id, content AS name FROM FCP.countries_i18n ORDER BY name";
+    .select_countries_i18n = "SELECT country_id, content AS name FROM FCP.countries_i18n WHERE language=:language ORDER BY name";
     .select_cooking_techniques = "SELECT id, name FROM FCP.categories WHERE category = 'cooking-technique' ORDER BY name";
     .select_languages = "SELECT language_id FROM FCP.languages WHERE language_id=:language_id";
     .select_properties = "SELECT name, property_id FROM FCP.properties";
