@@ -30,6 +30,7 @@ function initData( funct ) {
       for( var i = 0; i < ingredients.length; i++ ) {
         ingredient_names.push( ingredients[ i ].name );
       }
+      funct();
   })
   /*
   JolieClient.getCountries({}, function( data ) {
