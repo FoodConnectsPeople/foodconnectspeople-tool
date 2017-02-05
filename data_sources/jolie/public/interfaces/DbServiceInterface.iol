@@ -43,6 +43,10 @@ type NameList: void {
   .name*: string
 }
 
+type GetCountriesResponse: void {
+  .country*: Country
+}
+
 type GetIngredientsResponse: void {
   .ingredient*: Ingredient
 }
@@ -303,6 +307,12 @@ type GetRecipeDetailsResponse: void {
   }
 }
 
+type UpdateCountryRequest: void {
+  .language: string
+  .name: string
+  .id: int
+}
+
 interface DbServiceInterface {
   OneWay:
     tester( void ),
@@ -317,7 +327,7 @@ interface DbServiceInterface {
     buildIntList( BuildIntListRequest )( string ) throws DatabaseError,
     buildSetVsSet( BuildSetVsSetRequest )( string ) throws DatabaseError,
     getCookingTechniques( OptionalLanguage )( NameList ) throws DatabaseError,
-    getCountries( OptionalLanguage )( NameList ) throws DatabaseError,
+    getCountries( OptionalLanguage )( GetCountriesResponse ) throws DatabaseError,
     getEaterCategories( OptionalLanguage )( NameList ) throws DatabaseError,
     getEventCategories( OptionalLanguage )( NameList ) throws DatabaseError,
     getEvents( OptionalLanguage )( GetEventsResponse ) throws DatabaseError,
@@ -344,12 +354,12 @@ interface DbServiceInterface {
     insertRecipeIngredient( InsertRecipeIngredientRequest )( void ) throws DatabaseError,
     insertRecipeEvent( InsertRecipeEventRequest )( void ) throws DatabaseError,
     insertRecipeTool( InsertRecipeToolRequest )( void ) throws DatabaseError,
-    insertIngredient( InsertIngredientRequest )( void ) throws DatabaseError,
     insertRecipe( InsertRecipeRequest )( void ) throws DatabaseError,
     insertUser( InsertUserRequest )( void ) throws DatabaseError,
     insertAuthorRecipe( InsertAuthorRecipeRequest )( void ) throws DatabaseError,
     insertCategory( InsertCategoryRequest )( void ) throws DatabaseError,
     insertCountry( InsertCountryRequest )( void ) throws DatabaseError,
     insertTool( InsertToolRequest )( void ) throws DatabaseError,
-    insertTranslation( InsertTranslationRequest )( void ) throws DatabaseError
+    insertTranslation( InsertTranslationRequest )( void ) throws DatabaseError,
+    updateCountry( UpdateCountryRequest )( void ) throws DatabaseError LanguageNotPermitted
 }

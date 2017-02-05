@@ -27,7 +27,8 @@ main {
       getCurrentTimeMillis@Time( request )( tm );
       if ( ( tm - last_cache_timeout ) > CacheExpirationTime ) {
           synchronized( sync_cache ) {
-              getCountries@DbService( request )( global.cache.countries );
+              getCountries@DbService( request )( countries );
+              global.cache.country -> countries.country;
               getCookingTechniques@DbService( request )( global.cache.cooking_techniques );
               getRecipeCategories@DbService( request )( global.cache.recipe_categories );
               getEaterCategories@DbService( request )( global.cache.eater_categories );

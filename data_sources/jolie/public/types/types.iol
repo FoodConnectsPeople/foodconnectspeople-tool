@@ -14,3 +14,8 @@ type Ingredient: void {
   .allergene: string
   .ingredient_class: string
 }
+
+type Country: void {
+  .country_id: int
+  .name: string
+}

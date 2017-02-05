@@ -1,4 +1,4 @@
-var countries;
+var countries = [];
 var cooking_techniques;
 var ingredients;
 var ingredient_names = [];
@@ -19,7 +19,9 @@ function capitalizeFirstLetter(string) {
 /* initalize the web app with useful data */
 function initData( funct ) {
   JolieClient.getInitData({}, function( data ) {
-      countries = data.countries.name;
+      for( var i = 0; i < data.country.length; i++ ) {
+          countries.push( data.country[ i ].name )
+      }
       cooking_techniques = data.cooking_techniques.name;
       recipe_categories = data.recipe_categories.name;
       eater_categories = data.eater_categories.name;

@@ -168,11 +168,24 @@ CREATE TABLE FCP.Translations (
   , PRIMARY KEY (english,italian)
 );
 
+CREATE TABLE fcp.i18n
+(
+  field character varying NOT NULL,
+  language character varying NOT NULL,
+  content character varying,
+  dbtable character varying NOT NULL,
+  row_id integer NOT NULL,
+  CONSTRAINT "i18n_PK" PRIMARY KEY (field, language, dbtable, row_id),
+  CONSTRAINT "lang_idFK" FOREIGN KEY (language)
+      REFERENCES fcp.languages (language_id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+);
 
-CREATE TABLE FCP.Languages (
-  language_id SERIAL
-  , label VARCHAR(64)
-  , abbreviation VARCHAR(3)
+CREATE TABLE fcp.languages
+(
+  language_id character varying NOT NULL,
+  description character varying,
+  CONSTRAINT "lang_idPK" PRIMARY KEY (language_id)
 );
 
 CREATE VIEW FCP.recipeingredientsproperties
@@ -202,3 +215,9 @@ events.category
 
 FROM FCP.recipeevents recipeevents, FCP.events events
 WHERE recipeevents.event_id = events.event_id ;
+
+CREATE VIEW fcp.countries_i18n AS
+ SELECT c.country_id,
+    i.content
+   FROM fcp.countries c
+     JOIN fcp.i18n i ON i.dbtable::text = 'countries'::text AND i.field::text = 'name'::text AND i.row_id = c.country_id;

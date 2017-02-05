@@ -1,7 +1,7 @@
 include "../../../../data_sources/jolie/public/interfaces/DbServiceInterface.iol"
 
 type GetInitDataResponse: void {
-  .countries: NameList
+  .country*: Country
   .cooking_techniques: NameList
   .recipe_categories: NameList
   .eater_categories: NameList

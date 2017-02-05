@@ -2,6 +2,7 @@ include "console.iol"
 include "string_utils.iol"
 include "database.iol"
 include "ini_utils.iol"
+include "runtime.iol"
 
 include "public/interfaces/DbServiceInterface.iol"
 
@@ -11,6 +12,9 @@ include "queries.iol"
 
 execution { concurrent }
 
+constants {
+  DEFAULT_LANGUAGE = "en"
+}
 
 inputPort DbService {
   Location: DB_SERVICE_LOCATION
@@ -20,8 +24,6 @@ inputPort DbService {
 
 // Output port to invoke "internal functions"
 outputPort MySelf {
-  Location: DB_SERVICE_LOCATION
-  Protocol: sodep
   Interfaces: DbServiceInterface
 }
 
@@ -44,10 +46,28 @@ inputPort DbServiceLocal {
   Interfaces: DbServiceInterface
 }
 
+define __check_language  {
 
+    /* check if the language exists */
+    if ( is_defined( request.language ) && request.language != DEFAULT_LANGUAGE ) {
+        undef( q );
+        q = queries.select_languages;
+        q.language_id = request.language;
+        query@Database( q )( result );
+        if ( #result.row == 0 ) {
+            throw( LanguageNotPermitted )
+        }
+        ;
+        language = request.language
+    } else {
+        language = DEFAULT_LANGUAGE
+    }
+
+}
 
 
 init {
+    getLocalLocation@Runtime()( MySelf.location );
     __queries;
     parseIniFile@IniUtils( INI_FILE )( config );
     HOST = config.db.HOST;
@@ -243,7 +263,6 @@ main {
               install( SQLException => println@Console( sql.SQLException.stackTrace )();
                                        throw( DatabaseError )
               );
-
               q = queries.insert_country;
               q.country_id = request.country_id;
               q.name = request.name;
@@ -628,14 +647,21 @@ main {
                                      throw( DatabaseError )
             );
 
-            if (is_defined(request.language)) {
-              language = request.language
+            __check_language;
+            if ( language == DEFAULT_LANGUAGE ) {
+                q = queries.select_countries
             } else {
-              language = "english"
+                q = queries.select_countries_i18n
             };
-
-            q = queries.select_countries;
             query@Database( q )( result );
+            for( i = 0, i < #result.row, i++ ) {
+                with( response.country[ i ] ) {
+                    .name = result.row[ i ].name;
+                    .country_id = result.row[ i ].country_id
+                }
+            }
+            /*
+
 
             //for( i = 0, i < #result.row, i++ ) {
             //  println@Console("Country " + i + " is '" + result.row[i].name + "'")();
@@ -650,6 +676,7 @@ main {
               translate@MySelf(transla)(str);
               response.name[i] = str
             }
+            */
       }
     }]
 
@@ -1003,6 +1030,7 @@ main {
     }]
 
     [ mostGeneralRecipeQuery( request )( response ) {
+      valueToPrettyString@StringUtils( request )( s ); println@Console( s )();
           scope( sql ) {
                 install( SQLException => println@Console( sql.SQLException.stackTrace )();
                                          throw( DatabaseError )
@@ -1640,6 +1668,30 @@ main {
             // println@Console("Final outcome is " + responsee)()
           }
     }
+}]
+
+[ updateCountry( request )( response ) {
+  scope( sql ) {
+        install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                 throw( DatabaseError )
+        );
+
+        __check_language;
+        undef( q );
+        if ( language == DEFAULT_LANGUAGE ) {
+            /* update of the source table */
+            q = queries.update_country;
+            q.name = request.name;
+            q.id = request.id;
+            update@Database( q )()
+        } else {
+            /* update of the i18n table */
+            q = queries.update_country_i18n;
+            q.content = request.name;
+            q.id = request.id;
+            update@Database( q )()
+        }
+  }
 }]
 
 [ shutdown( request ) ] {
