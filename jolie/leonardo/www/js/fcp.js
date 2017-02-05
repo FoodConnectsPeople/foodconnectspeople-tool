@@ -32,35 +32,6 @@ function initData( funct ) {
       }
       funct();
   })
-  /*
-  JolieClient.getCountries({}, function( data ) {
-    countries = data.name;
-    JolieClient.getCookingTechniques({}, function( data ) {
-      cooking_techniques = data.name;
-      JolieClient.getRecipeCategories({}, function( data ) {
-        recipe_categories = data.name;
-        JolieClient.getEaterCategories({}, function( data ) {
-          eater_categories = data.name;
-          JolieClient.getTools({}, function( data ) {
-            tools = data.name;
-            JolieClient.getAllergenes({}, function( data ) {
-              allergenes = data.name;
-              JolieClient.getEvents({}, function( data ) {
-                events = data.event;
-                JolieClient.getIngredients({}, function( data ) {
-                  ingredients = data.ingredient;
-                  for( var i = 0; i < ingredients.length; i++ ) {
-                    ingredient_names.push( ingredients[ i ].name );
-                  }
-                  funct();
-                }, onError);
-              }, onError);
-            }, onError);
-          }, onError);
-        }, onError);
-      }, onError);
-    }, onError);
-  }, onError);*/
 }
 
 
@@ -266,7 +237,7 @@ function searchForRecipes() {
     request.not_tool = not_tool.toLowerCase().trim().split(",")
   }
   if ( appears_in_event != "" ) {
-    request.appears_in_event = appears_in_event.toLowerCase().trim()
+    request.appears_in_event = appears_in_event.trim()
   }
   JolieClient.mostGeneralRecipeQuery(request, function( data ) {
       createRecipeTable( data )
