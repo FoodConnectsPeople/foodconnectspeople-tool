@@ -18,6 +18,20 @@ function capitalizeFirstLetter(string) {
 
 /* initalize the web app with useful data */
 function initData( funct ) {
+  JolieClient.getInitData({}, function( data ) {
+      countries = data.countries.name;
+      cooking_techniques = data.cooking_techniques.name;
+      recipe_categories = data.recipe_categories.name;
+      eater_categories = data.eater_categories.name;
+      tools = data.tools.name;
+      allergenes = data.allergenes.name;
+      events = data.event;
+      ingredients = data.ingredient;
+      for( var i = 0; i < ingredients.length; i++ ) {
+        ingredient_names.push( ingredients[ i ].name );
+      }
+  })
+  /*
   JolieClient.getCountries({}, function( data ) {
     countries = data.name;
     JolieClient.getCookingTechniques({}, function( data ) {
@@ -45,7 +59,7 @@ function initData( funct ) {
         }, onError);
       }, onError);
     }, onError);
-  }, onError);
+  }, onError);*/
 }
 
 

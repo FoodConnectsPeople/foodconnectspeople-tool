@@ -1,6 +1,6 @@
 constants {
 	// The deployment location for reaching the Leonardo web server
-	Location_Leonardo = "socket://localhost:80/",
+	Location_Leonardo = "socket://localhost:8001/",
 	Location_Admin = "socket://localhost:8000",
 
 	// The root directory in which Leonardo will look for content to serve to clients
@@ -13,5 +13,8 @@ constants {
 	DebugHttp = false,
 
 	// Add the content of every HTTP message to their debug messages
-	DebugHttpContent = false
+	DebugHttpContent = false,
+
+	// Cache expriation time
+	CacheExpirationTime = 3600000
 }

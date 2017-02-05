@@ -1,3 +1,4 @@
+include "../types/types.iol"
 
 type BuildGroceryListRequest: void {
   .verbose     : bool
@@ -43,13 +44,7 @@ type NameList: void {
 }
 
 type GetIngredientsResponse: void {
-  .ingredient*: void {
-      .ingredient_id: int
-      .name: string
-      .properties: string
-      .allergene: string
-      .ingredient_class: string
-  }
+  .ingredient*: Ingredient
 }
 
 /****
@@ -92,14 +87,7 @@ type GetRecipeResponse: void {
 }
 
 type GetEventsResponse: void {
-  .event*: void {
-    .event_id: int
-    .name: string
-    .place: string
-    .start_date: string
-    .end_date: string
-    .category: string
-  }
+  .event*: Event
 }
 
 type InsertIngredientRequest: void {
@@ -332,6 +320,7 @@ interface DbServiceInterface {
     getCountries( OptionalLanguage )( NameList ) throws DatabaseError,
     getEaterCategories( OptionalLanguage )( NameList ) throws DatabaseError,
     getEventCategories( OptionalLanguage )( NameList ) throws DatabaseError,
+    getEvents( OptionalLanguage )( GetEventsResponse ) throws DatabaseError,
     getAllergenes( OptionalLanguage )( NameList ) throws DatabaseError,
     getRecipeCategories( OptionalLanguage )( NameList ) throws DatabaseError,
     getRecipes( OptionalLanguage )( GetRecipeResponse ) throws DatabaseError,
@@ -347,7 +336,6 @@ interface DbServiceInterface {
     // //////// insertCookingTechnique( InsertCookingTechniqueRequest )( void ) throws DatabaseError,
     // //////// insertRecipeCategory( InsertRecipeCategoryRequest )( void ) throws DatabaseError,
     getTools( OptionalLanguage )( NameList ) throws DatabaseError,
-    getEvents( OptionalLanguage )( GetEventsResponse ) throws DatabaseError,
     getRecipeDetails( GetRecipeDetailsRequest ) (GetRecipeDetailsResponse) throws DatabaseError,
     insertIngredient( InsertIngredientRequest )( void ) throws DatabaseError,
     insertEvent( InsertEventRequest )( void ) throws DatabaseError,
