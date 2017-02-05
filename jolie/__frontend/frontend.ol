@@ -33,7 +33,8 @@ main {
               getRecipeCategories@DbService( request )( global.cache.recipe_categories );
               getEaterCategories@DbService( request )( global.cache.eater_categories );
               getAllergenes@DbService( request )( global.cache.allergenes );
-              getTools@DbService( request )( global.cache.tools );
+              getTools@DbService( request )( tools );
+              global.cache.tool -> tools.tool;
               getEvents@DbService( request )( events );
               global.cache.event -> events.event;
               getIngredients@DbService( request )( ingredients );

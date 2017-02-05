@@ -19,3 +19,8 @@ type Country: void {
   .country_id: int
   .name: string
 }
+
+type Tool: void {
+  .tool_id: int
+  .name: string
+}

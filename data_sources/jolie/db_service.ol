@@ -873,6 +873,27 @@ main {
                                      throw( DatabaseError )
             );
 
+            __check_language;
+            if ( language == DEFAULT_LANGUAGE ) {
+                q = queries.select_tools
+            } else {
+                q = queries.select_tools_i18n;
+                q.language = language
+            };
+            query@Database( q )( result );
+            for( i = 0, i < #result.row, i++ ) {
+                with( response.tool[ i ] ) {
+                    .name = result.row[ i ].name;
+                    .tool_id = result.row[ i ].tool_id
+                }
+            }
+      }
+      /*
+      scope( sql ) {
+            install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                     throw( DatabaseError )
+            );
+
             if (is_defined(request.language)) {
               language = request.language
             } else {
@@ -890,7 +911,7 @@ main {
               translate@MySelf(transla)(str);
               response.name[i] = str
             }
-      }
+      }*/
     }]
 
 
@@ -1688,6 +1709,30 @@ main {
         } else {
             /* update of the i18n table */
             q = queries.update_country_i18n;
+            q.content = request.name;
+            q.id = request.id;
+            update@Database( q )()
+        }
+  }
+}]
+
+[ updateTool( request )( response ) {
+  scope( sql ) {
+        install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                 throw( DatabaseError )
+        );
+
+        __check_language;
+        undef( q );
+        if ( language == DEFAULT_LANGUAGE ) {
+            /* update of the source table */
+            q = queries.update_tool;
+            q.name = request.name;
+            q.id = request.id;
+            update@Database( q )()
+        } else {
+            /* update of the i18n table */
+            q = queries.update_tool_i18n;
             q.content = request.name;
             q.id = request.id;
             update@Database( q )()

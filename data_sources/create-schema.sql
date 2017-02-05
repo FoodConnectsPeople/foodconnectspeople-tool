@@ -216,9 +216,16 @@ events.category
 FROM FCP.recipeevents recipeevents, FCP.events events
 WHERE recipeevents.event_id = events.event_id ;
 
-CREATE OR REPLACE VIEW fcp.countries_i18n AS
+CREATE VIEW fcp.countries_i18n AS
  SELECT c.country_id,
     i.language,
     i.content
    FROM fcp.countries c
      JOIN fcp.i18n i ON i.dbtable::text = 'countries'::text AND i.field::text = 'name'::text AND i.row_id = c.country_id;
+
+ CREATE VIEW fcp.tools_i18n AS
+  SELECT t.tool_id,
+     i.language,
+     i.content
+    FROM fcp.tools t
+      JOIN fcp.i18n i ON i.dbtable::text = 'tools'::text AND i.field::text = 'name'::text AND i.row_id = t.tool_id;

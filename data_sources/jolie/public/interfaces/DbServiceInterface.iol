@@ -51,6 +51,11 @@ type GetIngredientsResponse: void {
   .ingredient*: Ingredient
 }
 
+type GetToolsResponse: void {
+  .tool*: Tool
+}
+
+
 /****
 type GetPropertiesResponse: void {
   .property*: void {
@@ -307,7 +312,14 @@ type GetRecipeDetailsResponse: void {
   }
 }
 
+
 type UpdateCountryRequest: void {
+  .language: string
+  .name: string
+  .id: int
+}
+
+type UpdateToolRequest: void {
   .language: string
   .name: string
   .id: int
@@ -345,7 +357,7 @@ interface DbServiceInterface {
     // //////// getProperties( void )( GetPropertiesResponse ) throws DatabaseError,
     // //////// insertCookingTechnique( InsertCookingTechniqueRequest )( void ) throws DatabaseError,
     // //////// insertRecipeCategory( InsertRecipeCategoryRequest )( void ) throws DatabaseError,
-    getTools( OptionalLanguage )( NameList ) throws DatabaseError,
+    getTools( OptionalLanguage )( GetToolsResponse ) throws DatabaseError,
     getRecipeDetails( GetRecipeDetailsRequest ) (GetRecipeDetailsResponse) throws DatabaseError,
     insertIngredient( InsertIngredientRequest )( void ) throws DatabaseError,
     insertEvent( InsertEventRequest )( void ) throws DatabaseError,
@@ -361,5 +373,6 @@ interface DbServiceInterface {
     insertCountry( InsertCountryRequest )( void ) throws DatabaseError,
     insertTool( InsertToolRequest )( void ) throws DatabaseError,
     insertTranslation( InsertTranslationRequest )( void ) throws DatabaseError,
-    updateCountry( UpdateCountryRequest )( void ) throws DatabaseError LanguageNotPermitted
+    updateCountry( UpdateCountryRequest )( void ) throws DatabaseError LanguageNotPermitted,
+    updateTool( UpdateToolRequest )( void ) throws DatabaseError LanguageNotPermitted
 }

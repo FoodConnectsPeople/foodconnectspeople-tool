@@ -3,7 +3,7 @@ var cooking_techniques;
 var ingredients;
 var ingredient_names = [];
 var recipe_categories;
-var tools;
+var tools = [];
 var allergenes;
 var eater_categories;
 var events;
@@ -22,10 +22,12 @@ function initData( funct ) {
       for( var i = 0; i < data.country.length; i++ ) {
           countries.push( data.country[ i ].name )
       }
+      for( var i = 0; i < data.tool.length; i++ ) {
+          tools.push( data.tool[ i ].name )
+      }
       cooking_techniques = data.cooking_techniques.name;
       recipe_categories = data.recipe_categories.name;
       eater_categories = data.eater_categories.name;
-      tools = data.tools.name;
       allergenes = data.allergenes.name;
       events = data.event;
       ingredients = data.ingredient;
