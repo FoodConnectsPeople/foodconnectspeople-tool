@@ -45,6 +45,7 @@ echo "==== DONE === "
 echo " "
 
 tail -n +2 recipes.csv | cut -f2 -d","   > terms.csv
+tail -n +2 recipes.csv | cut -f3 -d","  >> terms.csv
 tail -n +2 recipes.csv | cut -f7 -d","  >> terms.csv
 tail -n +2 recipes.csv | cut -f10 -d"," >> terms.csv
 tail -n +2 recipes.csv | cut -f11 -d"," >> terms.csv

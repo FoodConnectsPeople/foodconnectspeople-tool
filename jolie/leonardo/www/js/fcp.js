@@ -58,7 +58,7 @@ function createRecipeTable( data ) {
             }
 
             $("#recipes-table").append( "<tr>"
-              + "<td>" + '<a target="fcp_recipe" href= "http://www.foodconnectspeople.com/recipes/' + link + '">' + name + "</a></td>"
+              + "<td>" + '<a target="fcp_recipe" href= "http://www.foodconnectspeople.com/' + link + '">' + name + "</a></td>"
               // + "<td>" + name + "</td>"
               + "<td>" + category + "</td>"
               + "<td>" + cooking_technique + "</td>"

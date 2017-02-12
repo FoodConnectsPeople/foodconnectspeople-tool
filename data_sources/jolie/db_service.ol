@@ -792,7 +792,10 @@ main {
                     translate@MySelf(transla)(str);
                     .recipe_name = str;
 
-                    .recipe_link = result.row[ i ].link;
+                    transla.str = result.row [ i ].link;
+                    translate@MySelf(transla)(link_tr);
+                    .recipe_link = link_tr;
+
                     .preparation_time_minutes = result.row[ i ].preparation_time_minutes;
                     .difficulty = result.row[ i ].difficulty;
 
@@ -923,7 +926,10 @@ main {
             translate@MySelf(transla)(recipe_name);
             response.name = recipe_name;
 
-            response.link = result.row[0].link;
+            transla.str = result.row[0].link;
+            translate@MySelf(transla)(link_tr);
+            response.link = link_tr;
+
             response.preparation_time = result.row[0].preparation_time_minutes;
             response.is_from_latitude = result.row[0].is_from_latitude;
             response.is_from_longitude = result.row[0].is_from_longitude;
@@ -1287,7 +1293,10 @@ main {
 
                         if (verbose) { println@Console( (i+1) + " - Recipe #" + result.row[i].recipe_id + " : " + recname)() };
 
-                        .recipe_link = result.row[ i ].link;
+                        transla.str = result.row[ i ].link;
+                        translate@MySelf(transla)(link_tr);
+                        .recipe_link = link_tr;
+
                         .preparation_time_minutes = result.row[ i ].preparation_time_minutes;
                         .difficulty = result.row[ i ].difficulty;
                         .place_of_origin = result.row[ i ].place_of_origin;
@@ -1339,7 +1348,10 @@ main {
                             translate@MySelf(transla)(recname);
                             .recipe_name = recname;
 
-                            .recipe_link = result.row[ 0 ].link;
+                            transla.str = result.row[ 0 ].link;
+                            translate@MySelf(transla)(link_tr);
+                            .recipe_link = link_tr;
+
                             .preparation_time_minutes = result.row[ 0 ].preparation_time_minutes;
                             .difficulty = result.row[ 0 ].difficulty;
                             .place_of_origin = result.row[ 0 ].place_of_origin;

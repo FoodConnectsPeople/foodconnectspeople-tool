@@ -9,7 +9,7 @@ main {
 
         if (language == "english") {
           t.language = language;
-          t.recipe_name = "sauced shrimps";
+          t.recipe_name = "pla goong";
           t.max_preparation_time = 45;
           t.difficulty_value[0] = 2;
           t.difficulty_value[1] = 3;
@@ -34,7 +34,7 @@ main {
 
         if (language == "italian") {
             t.language = language;
-            t.recipe_name = "Gamberi alla salsa";
+            t.recipe_name = "pla goong";
             t.max_preparation_time = 45;
             t.difficulty_value[0] = 2;
             t.difficulty_value[1] = 3;
