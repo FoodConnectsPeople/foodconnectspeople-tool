@@ -24,7 +24,7 @@ init {
 
 main {
   getInitData( request )( response ) {
-      getCurrentTimeMillis@Time( request )( tm );
+      getCurrentTimeMillis@Time( )( tm );
       if ( ( tm - last_cache_timeout ) > CacheExpirationTime ) {
           synchronized( sync_cache ) {
               getCountries@DbService( request )( global.cache.countries );
@@ -37,7 +37,7 @@ main {
               global.cache.event -> events.event;
               getIngredients@DbService( request )( ingredients );
               global.cache.ingredient -> ingredients.ingredient;
-              getCurrentTimeMillis@Time( request )( last_cache_timeout )
+              getCurrentTimeMillis@Time( )( last_cache_timeout )
           }
       }
       ;

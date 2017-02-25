@@ -7,6 +7,8 @@ var tools;
 var allergenes;
 var eater_categories;
 var events;
+var languages = {"English":"english", "Italiano":"italian"}
+var current_language = languages.English;
 
 function onError( data ) {
     alert( data.error.message );
@@ -16,9 +18,17 @@ function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
+function changeCurrentLanguage() {
+  current_language = languages[ $("#language :selected").text() ];
+  initData( showRecipes );
+
+}
+
+
 /* initalize the web app with useful data */
 function initData( funct ) {
-  JolieClient.getInitData({}, function( data ) {
+  var request = { language:current_language };
+  JolieClient.getInitData( request , function( data ) {
       countries = data.countries.name;
       cooking_techniques = data.cooking_techniques.name;
       recipe_categories = data.recipe_categories.name;
@@ -33,9 +43,6 @@ function initData( funct ) {
       funct();
   })
 }
-
-
-
 
 /* it creates a recipe table starting from a response GetRecipeResponse */
 function createRecipeTable( data ) {
@@ -239,6 +246,7 @@ function searchForRecipes() {
   if ( appears_in_event != "" ) {
     request.appears_in_event = appears_in_event.trim()
   }
+  request.language = current_language;
   JolieClient.mostGeneralRecipeQuery(request, function( data ) {
       createRecipeTable( data )
   }, onError);
@@ -287,11 +295,13 @@ function showIngredients() {
 function showRecipes() {
     $("#workarea").empty();
     $("#workarea").load( "recipe_filter.html", function() {
+      $("#language option[value='" + current_language + "']").attr("selected","selected");
       initializeRecipeFilter();
       $(".selectpicker").selectpicker('refresh');
       $("#workarea input[data-role='tagsinput']").tagsinput('refresh');
     } );
-    JolieClient.getRecipes({}, function( data ) {
+    var request = { language: current_language }
+    JolieClient.getRecipes( request, function( data ) {
         createRecipeTable( data )
     }, onError);
 
