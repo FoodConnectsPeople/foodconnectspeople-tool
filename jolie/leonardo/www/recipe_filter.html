@@ -1,14 +1,96 @@
 
 
 
-<button class="btn btn-sm btn-info" data-toggle="collapse" data-target="#filter">Click Here for Advanced Search Filter</button>
+<!--<button class="btn btn-sm btn-info" data-toggle="collapse" data-target="#filter">Click Here for Advanced Search Filter</button>-->
 <select id="language" class="selectpicker" onchange="changeCurrentLanguage()">
     <option value="english">English</option>
     <option value="italian">Italiano</option>
 </select>
 
-<div id="filter" class="collapse">
+<div id="filter">
   <table width="100%" class="small">
+    <tr>
+      <td>
+        <div class="form-group">
+          <label>Recipe Name:</label>
+          <input type="text" class="form-control typeahead" id="recipe_names">
+        </div>
+      </td>
+      <td>
+        <div class="form-group">
+          <label>Recipe Category:</label><br>
+          <select id="recipe_category" class="selectpicker form-control">
+          </select>
+        </div>
+      </td>
+      <td>
+        <div class="form-group">
+          <label for"country">Country:</label>
+          <input type="text" class="form-control typeahead" id="country">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="form-group">
+          <label>Main ingredient:</label>
+          <input type="text" class="form-control typeahead" id="main_ingredient">
+        </div>
+      </td>
+      <td>
+        <div class="form-group" id="tags_form_group">
+            <label>Must have ingredients:</label><br>
+            <input type="text" class="typeahead form-control" id="yes_ingredient">
+        </div>
+      </td>
+      <td>
+        <div class="form-group" id="tags_form_group">
+            <label>Must avoid ingredients:</label>
+            <input type="text" class="typeahead form-control" id="not_ingredient">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="form-group">
+            <label>Eater Category:</label>
+            <select class="selectpicker form-control" id="eater_category" multiple></select>
+        </div>
+      </td>
+      <td>
+        <div class="form-group">
+            <label>Not allergene:</label>
+            <select class="selectpicker form-control" id="not_allergene" multiple></select>
+        </div>
+      </td>
+      <td>
+        <div class="form-group">
+          <label>Cooking technique:</label><br>
+          <select id="cooking_technique" class="selectpicker form-control" multiple>
+          </select>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="form-group" id="tags_form_group">
+            <label>Requires tools:</label><br>
+            <input type="text" class="typeahead form-control" id="yes_tool">
+        </div>
+      </td>
+      <td>
+        <div class="form-group" id="tags_form_group">
+            <label>Don't use tools:</label>
+            <input type="text" class="typeahead form-control" id="not_tool">
+        </div>
+      </td>
+      <td>
+        <div class="form-group">
+          <label>Appears in event:</label>
+          <select class="selectpicker form-control" id="appears_in_event"></select>
+        </div>
+      </td>
+    </tr>
     <tr>
       <td>
         <div class="form-group">
@@ -25,67 +107,6 @@
             <option>4</option>
             <option>5</option>
           </select>
-        </div>
-      </td><td>
-        <div class="form-group">
-          <label for"country">Country:</label>
-          <input type="text" class="form-control typeahead" id="country">
-        </div>
-      </td></tr>
-      <tr><td>
-        <div class="form-group">
-          <label>Main ingredient:</label>
-          <input type="text" class="form-control typeahead" id="main_ingredient">
-        </div>
-      </td><td>
-        <div class="form-group">
-          <label>Cooking technique:</label><br>
-          <select id="cooking_technique" class="selectpicker form-control" multiple>
-          </select>
-        </div>
-      </td><td>
-        <div class="form-group">
-            <label>Eater Category:</label>
-            <select class="selectpicker form-control" id="eater_category" multiple></select>
-        </div>
-      </td></tr>
-      <tr><td>
-        <div class="form-group">
-            <label>Not allergene:</label>
-            <select class="selectpicker form-control" id="not_allergene" multiple></select>
-        </div>
-      </td><td>
-        <div class="form-group" id="tags_form_group">
-            <label>Must have ingredients:</label><br>
-            <input type="text" class="typeahead form-control" id="yes_ingredient">
-        </div>
-      </td><td>
-        <div class="form-group" id="tags_form_group">
-            <label>Must avoid ingredients:</label>
-            <input type="text" class="typeahead form-control" id="not_ingredient">
-        </div>
-      </td></tr>
-      <tr><td>
-        <div class="form-group" id="tags_form_group">
-            <label>Requires tools:</label><br>
-            <input type="text" class="typeahead form-control" id="yes_tool">
-        </div>
-      </td><td>
-        <div class="form-group" id="tags_form_group">
-            <label>Don't use tools:</label>
-            <input type="text" class="typeahead form-control" id="not_tool">
-        </div>
-      </td><td>
-        <div class="form-group">
-          <label>Category:</label><br>
-          <select id="recipe_category" class="selectpicker form-control">
-          </select>
-        </div>
-      </td></tr>
-      <tr><td>
-        <div class="form-group">
-          <label>Appears in event:</label>
-          <select class="selectpicker form-control" id="appears_in_event"></select>
         </div>
       </td><td>
         <button onclick="searchForRecipes()" class="btn btn-success glyphicon glyphicon-search"></button>

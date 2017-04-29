@@ -86,6 +86,7 @@ type GetRecipeResponse: void {
   }
 }
 
+
 type GetEventsResponse: void {
   .event*: Event
 }
@@ -324,6 +325,7 @@ interface DbServiceInterface {
     getAllergenes( OptionalLanguage )( NameList ) throws DatabaseError,
     getRecipeCategories( OptionalLanguage )( NameList ) throws DatabaseError,
     getRecipes( OptionalLanguage )( GetRecipeResponse ) throws DatabaseError,
+    getRecipeNames( OptionalLanguage )( NameList ) throws DatabaseError,
     getEventRecipes( GetEventRecipesRequest )( GetRecipeResponse ) throws DatabaseError,
     getIngredients( OptionalLanguage )( GetIngredientsResponse ) throws DatabaseError,
     // //////// buildCommaSeparatedString( NameList )( string ) throws DatabaseError,

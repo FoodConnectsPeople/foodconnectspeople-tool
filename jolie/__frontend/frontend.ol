@@ -37,7 +37,8 @@ main {
               global.cache.event -> events.event;
               getIngredients@DbService( request )( ingredients );
               global.cache.ingredient -> ingredients.ingredient;
-              getCurrentTimeMillis@Time( )( last_cache_timeout )
+              getCurrentTimeMillis@Time( )( last_cache_timeout );
+              getRecipeNames@DbService( request )( global.cache.recipe_names )
           }
       }
       ;

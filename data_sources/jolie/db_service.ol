@@ -816,6 +816,31 @@ main {
       }
     }]
 
+    [ getRecipeNames( request )( response ) {
+      scope( sql ) {
+            install( SQLException => println@Console( sql.SQLException.stackTrace )();
+                                     throw( DatabaseError )
+            );
+
+            if (is_defined(request.language)) {
+              language = request.language
+            } else {
+              language = "english"
+            };
+            transla.fuzzy = false;
+            transla.from = "english";
+            transla.to = language;
+
+            q = queries.select_recipe_names;
+            query@Database( q )( result );
+            for( i = 0, i < #result.row, i++ ) {
+                  transla.str = result.row[ i ].name;
+                  translate@MySelf(transla)(str);
+                  response.name[ i ] = str
+            }
+      }
+    }]
+
     [ getRecipeCategories( request )( response ) {
       scope( sql ) {
             install( SQLException => println@Console( sql.SQLException.stackTrace )();

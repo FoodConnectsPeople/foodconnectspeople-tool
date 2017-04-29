@@ -37,10 +37,12 @@ function initData( funct ) {
       allergenes = data.allergenes.name;
       events = data.event;
       ingredients = data.ingredient;
+      recipe_names = data.recipe_names.name;
       for( var i = 0; i < ingredients.length; i++ ) {
         ingredient_names.push( ingredients[ i ].name );
       }
       funct();
+
   })
 }
 
@@ -86,6 +88,12 @@ function initializeRecipeFilter() {
     local: countries
   });
 
+  var recipeNamesBloodhound = new Bloodhound({
+    datumTokenizer: Bloodhound.tokenizers.whitespace,
+    queryTokenizer: Bloodhound.tokenizers.whitespace,
+    local: recipe_names
+  });
+
   var ingredientsBloodhound = new Bloodhound({
     datumTokenizer: Bloodhound.tokenizers.whitespace,
     queryTokenizer: Bloodhound.tokenizers.whitespace,
@@ -106,6 +114,16 @@ function initializeRecipeFilter() {
   {
     name: 'countries',
     source: countriesBloodhound
+  });
+
+  $('#recipe_names').typeahead({
+    hint: false,
+    highlight: true,
+    minLength: 1
+  },
+  {
+    name: 'recipe_names',
+    source: recipeNamesBloodhound
   });
 
   $('#main_ingredient').typeahead({
@@ -151,6 +169,7 @@ function initializeRecipeFilter() {
   });
 
   $("#country").parent().css("display","");
+  $("#recipe_names").parent().css("display","");
   $("#main_ingredient").parent().css("display","");
 
   for( var c = 0; c < cooking_techniques.length; c++ ) {
@@ -177,6 +196,7 @@ function searchForRecipes() {
   var request = { "verbose":false, "language":"english" };
   var max_preparation_time = $("#max_preparation_time").val();
   var country = $("#country").val();
+  var recipe_name = $("#recipe_names").val();
   var recipe_category = $("#recipe_category").val();
   var main_ingredient = $("#main_ingredient").val();
   var eater_category = $("#eater_category").val();
@@ -197,6 +217,9 @@ function searchForRecipes() {
   }
   if ( country != "" ) {
     request.country = country.toLowerCase().trim()
+  }
+  if ( recipe_name != "" ) {
+    request.recipe_name = recipe_name
   }
   if ( recipe_category != "" ) {
     request.recipe_category = recipe_category.toLowerCase().trim()

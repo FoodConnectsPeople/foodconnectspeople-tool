@@ -9,6 +9,7 @@ type GetInitDataResponse: void {
   .allergenes: NameList
   .event*: Event
   .ingredient*: Ingredient
+  .recipe_names: NameList
 }
 
 interface FrontendInterface {
