@@ -1,33 +1,33 @@
 id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from_latitude,is_from_longitude,category,main_ingredient,cooking_technique,is_vegetarian,is_vegan,is_gluten_free,is_lactose_free
-1,sauteed eggplants (shakshuka),recipes/middle-east/turkey/shakshuka,30,4,3,turkey,,,main,eggplant,pan-fried,TRUE,TRUE,TRUE,TRUE
-2,mint dip (haydari),recipes/middle-east/turkey/haydari,5,4,1,turkey,,,appetizer,yogurt,raw,TRUE,FALSE,TRUE,FALSE
-3,roasted eggplant salad,recipes/middle-east/turkey/turkish-roasted-eggplant-salad,40,4,2,turkey,,,appetizer,eggplant,roasted,TRUE,TRUE,TRUE,TRUE
-4,zucchini salad,recipes/middle-east/turkey/kabak-salatasi,30,4,2,turkey,,,appetizer,zucchini,pan-fried,TRUE,FALSE,TRUE,FALSE
-5,kidney bean salad,recipes/middle-east/turkey/piyaz,15,4,1,turkey,,,appetizer,bean,boiled,TRUE,TRUE,TRUE,TRUE
-6,roasted pepper rolls with cheese,recipes/middle-east/turkey/peynirli-koz-biber,50,4,4,turkey,,,main,bell pepper,roasted,TRUE,FALSE,TRUE,FALSE
-7,spoon salad,recipes/middle-east/turkey/kasik-salatasi,30,4,1,turkey,,,appetizer,tomato,raw,TRUE,TRUE,TRUE,TRUE
-8,chickpeas dip (hummus),recipes/middle-east/lebanon/hummus,15,4,1,middle east,,,appetizer,chickpea,boiled,TRUE,TRUE,TRUE,TRUE
-9,circassian chicken,recipes/middle-east/turkey/cerkez-tavugu-circassian-chicken-with-walnuts,60,4,3,russia,,,main,chicken,boiled,FALSE,FALSE,FALSE,TRUE
-10,cretan paste,recipes/middle-east/turkey/girit-ezmesi,5,4,1,turkey,,,appetizer,ricotta cheese,raw,TRUE,FALSE,TRUE,FALSE
-11,eggplants dip (babaganoush),recipes/middle-east/syria/babaganoush,30,4,2,middle east,,,appetizer,eggplant,roasted,TRUE,FALSE,TRUE,FALSE
-12,spinach phyllo pastry (borek),recipes/middle-east/turkey/ispanakli-borek,60,4,4,middle east,,,main,spinach,baked,TRUE,FALSE,FALSE,FALSE
-13,hot vegetarian burgers (yalanci cig kofte),recipes/middle-east/turkey/yalanci-cig-kofte,60,4,4,turkey,,,main,bulgur,almost raw,TRUE,FALSE,FALSE,TRUE
-14,cheese stuffed mushrooms,recipes/middle-east/turkey/firinda-kasarli-mantar,30,4,2,turkey,,,appetizer,mushroom,baked,TRUE,FALSE,TRUE,FALSE
-15,root celery salad,recipes/middle-east/turkey/turkish-root-celery-salad,20,4,1,turkey,,,appetizer,root celery,raw,TRUE,FALSE,TRUE,FALSE
-16,shrimp salad,recipes/middle-east/turkey/karides-salatasi,30,4,2,turkey,,,appetizer,shrimp,pan-fried,FALSE,FALSE,TRUE,TRUE
+1,saksuka,recipes/middle-east/turkey/saksuka-sauteed-eggplants,30,4,3,turkey,,,main,eggplant,pan-fried,TRUE,TRUE,TRUE,TRUE
+2,haydari,recipes/middle-east/turkey/haydari-mint-and-yogurt-dip,5,4,1,turkey,,,appetizer,yogurt,raw,TRUE,FALSE,TRUE,FALSE
+3,patlican salatasi,recipes/middle-east/turkey/patlican-salatasi-roasted-eggplant-salad,40,4,2,turkey,,,appetizer,eggplant,roasted,TRUE,TRUE,TRUE,TRUE
+4,kabak salatasi,recipes/middle-east/turkey/kabak-salatasi-zucchini-salad,30,4,2,turkey,,,appetizer,zucchini,pan-fried,TRUE,FALSE,TRUE,FALSE
+5,piyaz,recipes/middle-east/turkey/piyaz-navy-bean-salad,15,4,1,turkey,,,appetizer,bean,boiled,TRUE,TRUE,TRUE,TRUE
+6,kozlenmis kirmizi biber sarmasi,recipes/middle-east/turkey/kozlenmis-kirmizi-biber-sarmasi-roasted-pepper-rolls-with-cheese,50,4,4,turkey,,,main,bell pepper,roasted,TRUE,FALSE,TRUE,FALSE
+7,kasik salatasi,recipes/middle-east/turkey/kasik-salatasi-spoon-salad,30,4,1,turkey,,,appetizer,tomato,raw,TRUE,TRUE,TRUE,TRUE
+8,hummus,recipes/middle-east/lebanon/hummus-chickpeas-dip,15,4,1,middle east,,,appetizer,chickpea,boiled,TRUE,TRUE,TRUE,TRUE
+9,cerkez tavugu,recipes/middle-east/turkey/cerkez-tavugu-circassian-chicken-with-walnuts,60,4,3,russia,,,main,chicken,boiled,FALSE,FALSE,FALSE,TRUE
+10,girit ezmesi,recipes/middle-east/turkey/girit-ezmesi-cretan-style-walnut-and-ricotta-dip,5,4,1,turkey,,,appetizer,ricotta cheese,raw,TRUE,FALSE,TRUE,FALSE
+11,babaganoush,recipes/middle-east/syria/babaganoush-eggplant-dip,30,4,2,middle east,,,appetizer,eggplant,roasted,TRUE,FALSE,TRUE,FALSE
+12,ispanakli borek,recipes/middle-east/turkey/ispanakli-borek-spinach-filled-pastry,60,4,4,middle east,,,main,spinach,baked,TRUE,FALSE,FALSE,FALSE
+13,yalanci cig kofte,recipes/middle-east/turkey/yalanci-cig-kofte-hot-veggie-balls-with-bulgur-and-aromatic-herbs,60,4,4,turkey,,,main,bulgur,almost raw,TRUE,FALSE,FALSE,TRUE
+14,firinda kasarli mantar,recipes/middle-east/turkey/firinda-kasarli-mantar-cheese-stuffed-mushrooms,30,4,2,turkey,,,appetizer,mushroom,baked,TRUE,FALSE,TRUE,FALSE
+15,kereviz salatasi,recipes/middle-east/turkey/kereviz-salatasi-root-celery-salad,20,4,1,turkey,,,appetizer,root celery,raw,TRUE,FALSE,TRUE,FALSE
+16,karides salatasi,recipes/middle-east/turkey/karides-salatasi-shrimp-salad,30,4,2,turkey,,,appetizer,shrimp,pan-fried,FALSE,FALSE,TRUE,TRUE
 17,zucchini burger (kolokithokeftedes),recipes/mediterranea/greece/kolokithokeftedes-zucchini-dumpligs,40,4,4,greece,,,main,zucchini,fried,TRUE,FALSE,FALSE,FALSE
 18,tyrokafteri,recipes/mediterranea/greece/tyrokafteri-hot-feta-dip,15,4,2,greece,,,appetizer,feta cheese,pan-fried,TRUE,FALSE,TRUE,FALSE
-19,rhum cake,recipes/middle-east/turkey/rum-tatlisi,40,4,2,turkey,,,dessert,coconut,baked,TRUE,FALSE,FALSE,TRUE
-20,falafel,recipes/middle-east/syria/falafel,60,4,3,middle east,,,main,chickpea,fried,TRUE,TRUE,FALSE,TRUE
+19,rum tatlisi,recipes/middle-east/turkey/rum-tatlisi-walnut-coconut-and-bread-crumbs-cake-with-syrup,40,4,2,turkey,,,dessert,coconut,baked,TRUE,FALSE,FALSE,TRUE
+20,falafel,recipes/middle-east/syria/falafel-chickpea-fritters,60,4,3,middle east,,,main,chickpea,fried,TRUE,TRUE,FALSE,TRUE
 21,bhindi,recipes/asia/india/bhindi-coriander-flavored-okra,40,4,3,india,,,main,okra,pan-fried,TRUE,TRUE,TRUE,TRUE
 22,murghi ka saalan,recipes/asia/pakistan/murghi-ka-saalan-pakistani-style-chicken-curry,50,5,3,pakistan,,,main,chicken,pan-fried,FALSE,FALSE,TRUE,TRUE
 23,channa pulao,recipes/asia/pakistan/channa-pulao-spicy-basmati-rice-with-chickpeas,40,5,3,pakistan,,,main,rice,boiled,TRUE,TRUE,TRUE,TRUE
-24,lamb skewers with vegetables,recipes/middle-east/turkey/sebzeli-kuzu-sis,40,10,3,mediterranean,,,main,lamb,baked,FALSE,FALSE,TRUE,FALSE
-25,carrot dip (tarator),recipes/middle-east/turkey/turkish-carrot-dip,20,4,2,turkey,,,appetizer,carrot,pan-fried,TRUE,FALSE,TRUE,FALSE
-26,baked eggplants with cheese,recipes/middle-east/turkey/firinda-peynirli-karniyarik,40,5,3,turkey,,,main,eggplant,baked,TRUE,FALSE,TRUE,FALSE
-27,tomato baskets with cheese,recipes/middle-east/turkey/peynirly-domates-sepeti,30,6,2,turkey,,,appetizer,tomato,raw,TRUE,FALSE,TRUE,FALSE
+24,sebzeli kuzu sis,recipes/middle-east/turkey/sebzeli-kuzu-sis-lamb-skewers-with-vegetables,40,10,3,mediterranean,,,main,lamb,baked,FALSE,FALSE,TRUE,FALSE
+25,havuc tarator,recipes/middle-east/turkey/havuc-tarator-carrot-dip,20,4,2,turkey,,,appetizer,carrot,pan-fried,TRUE,FALSE,TRUE,FALSE
+26,firinda peynirli karniyarik,recipes/middle-east/turkey/firinda-peynirli-karniyarik-baked-eggplants-with-cheese,40,5,3,turkey,,,main,eggplant,baked,TRUE,FALSE,TRUE,FALSE
+27,peynirli domates sepeti,recipes/middle-east/turkey/peynirli-domates-sepeti-tomato-baskets-with-cheese,30,6,2,turkey,,,appetizer,tomato,raw,TRUE,FALSE,TRUE,FALSE
 28,pla goong,recipes/asia/thailand/pla-goong-curry-sauced-grilled-shrimps,40,6,3,thailand,,,main,shrimp,pan-fried,FALSE,FALSE,TRUE,TRUE
-29,kebap with pistachios and fresh basil,recipes/middle-east/turkey/fistikli-reyhanli-kebap,60,8,3,turkey,,,main,beef meat; lamb meat,baked,FALSE,FALSE,TRUE,TRUE
+29,fistikli reyhanli kebap,recipes/middle-east/turkey/fistikli-reyhanli-kebap-kebab-with-pistachios-and-fresh-basils,60,8,3,turkey,,,main,beef meat; lamb meat,baked,FALSE,FALSE,TRUE,TRUE
 30,Midia Saganaki,recipes/mediterranea/greece/midia-saganaki-mussels-in-tomato-and-feta-sauce,40,4,3,greece,,,main,mussel,pan-fried,FALSE,FALSE,TRUE,FALSE
 31,Kalamaria Gemista Me Ryzi,recipes/mediterranea/greece/kalamaria-gemista-me-ryzi-cretan-style-stuffed-squids,90,6,4,greece,,,main,calamari,baked,FALSE,FALSE,TRUE,TRUE
 32,crescione romagnolo with samosa filling,recipes/world-fusion/crescione-romagnolo-with-samosa-filling,90,5,4,fusion,,,main,spelt flour; potato,baked,TRUE,TRUE,FALSE,TRUE
@@ -42,24 +42,24 @@ id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from
 41,vegetable cous cous,recipes/africa/morocco/vegetable-cous-cous,80,8,3,morocco,,,main,cous cous; sweet potato,boiled,TRUE,TRUE,FALSE,TRUE
 42,guacamole,recipes/central-america/mexico/guacamole-avocado-lime-dip,15,4,1,mexico,,,appetizer,avocado,raw,TRUE,TRUE,TRUE,TRUE
 43,morcilla de verano,recipes/mediterranea/spain/morcilla-de-verano-roasted-eggplant-salad,30,4,3,spain,,,appetizer,eggplant,roasted,TRUE,TRUE,TRUE,TRUE
-44,swans of lake Sarmasi (lahana sarmasi),recipes/middle-east/turkey/turkish-swans-of-lake-sarmasi,90,6,4,turkey,,,main,cabbage,boiled,TRUE,FALSE,FALSE,FALSE
+44,lahana sarmasi,recipes/middle-east/turkey/lahana-sarmasi-spicy-cabbage-rolls,90,6,4,turkey,,,main,cabbage,boiled,TRUE,FALSE,FALSE,FALSE
 45,Sakiz Kremali Portakalli Kek,recipes/middle-east/turkey/sakiz-kremali-portakalli-kek-orange-cake-with-mastic-cream,60,12,3,turkey,,,dessert,egg;sugar;milk,baked,TRUE,FALSE,FALSE,FALSE
-46,mediterranean olive tapenade,recipes/middle-east/turkey/mediterranean-olive-tapenade,10,4,1,mediterranean,,,appetizer,olive; tomato,almost raw,FALSE,FALSE,TRUE,TRUE
+46,zeytin tapenade,recipes/middle-east/turkey/zeytin-tapenade-olive-tapenade,10,4,1,mediterranean,,,appetizer,olive; tomato,almost raw,FALSE,FALSE,TRUE,TRUE
 47,carrot dip with bell pepper (biberli tarator),recipes/middle-east/turkey/carrot-dip-with-bell-pepper,30,4,2,turkey,,,appetizer,carrot; bell pepper,baked,TRUE,FALSE,TRUE,FALSE
 48,mualle,recipes/middle-east/turkey/mualle-eggplant-and-lentils-stew,90,5,3,turkey,,,main,eggplant,boiled,TRUE,TRUE,TRUE,TRUE
-49,potatoes dough rolls,recipes/middle-east/turkey/turkish-potatoes-dough-rolls,90,8,4,turkey,,,main,potato,baked,TRUE,FALSE,FALSE,FALSE
+49,patatesli gubate,recipes/middle-east/turkey/patatesli-gubate-pastry-with-potato-and-onion-filling,90,8,4,turkey,,,main,potato,baked,TRUE,FALSE,FALSE,FALSE
 50,salmorejo,recipes/mediterranea/spain/salmorejo-cold-tomato-soup,10,6,1,spain,,,appetizer,tomato,almost raw,FALSE,FALSE,FALSE,TRUE
 51,ajoblanco,recipes/mediterranea/spain/ajoblanco-almond-garlic-dip,10,6,1,spain,,,appetizer,almond,almost raw,TRUE,TRUE,FALSE,TRUE
-52,cheese tart with mastic,recipes/mediterranea/greece/cheese-tart-with-mastic,50,6,3,fusion,,,main,cheese,baked,FALSE,FALSE,FALSE,FALSE
-53,salmon with crust of pine nuts and mastic sauce,recipes/mediterranea/greece/salmon-with-pine-nuts-and-mastic-sauce,40,6,3,fusion,,,main,salmon,baked,FALSE,FALSE,FALSE,FALSE
+52,Almiri Tarta Me Mastiha,recipes/mediterranea/greece/almiri-tarta-me-mastiha-cheese-tart-with-mastic,50,6,3,fusion,,,main,cheese,baked,FALSE,FALSE,FALSE,FALSE
+53,Solomos Se Krousta Me Saltsa Mastiha,recipes/mediterranea/greece/solomos-se-krousta-me-saltsa-mastiha-salmon-with-pine-nuts-and-mastic-sauce,40,6,3,fusion,,,main,salmon,baked,FALSE,FALSE,FALSE,FALSE
 54,Kalamaria Gemista Me Feta,recipes/mediterranea/greece/kalamaria-gemista-me-feta-grilled-calamari-filled-with-feta,30,5,2,greece,,,main,calamari,roasted,FALSE,FALSE,TRUE,FALSE
-55,sauteed calamari with ouzo on potato pouree bed,recipes/mediterranea/greece/sauteed-calamari-with-ouzo-on-potato-pouree-bed,60,5,3,greece,,,main,calamari,pan-fried,FALSE,FALSE,TRUE,FALSE
+55,Kalamari Svismeno Me Ouzo,recipes/mediterranea/greece/kalamari-svismeno-me-ouzo-sauteed-squids-with-ouzo-on-potato-puree-bed,60,5,3,greece,,,main,calamari,pan-fried,FALSE,FALSE,TRUE,FALSE
 56,ghapama,recipes/asia/armenia/ghapama-stuffed-pumpkin,150,6,3,armenia,,,main,pumpkin,baked,TRUE,FALSE,FALSE,TRUE
 57,zeppole,recipes/mediterranea/italy/zeppole-di-san-giuseppe-saint-joseph-donuts,90,8,4,italy,,,dessert,egg;sugar;milk,fried,TRUE,FALSE,FALSE,FALSE
 58,Dahi baray,recipes/asia/pakistan/dahi-baray-chickpea-dumplings-in-yogurt,90,6,4,pakistan,,,main,chickpea flour; yogurt; sugar,fried,TRUE,FALSE,TRUE,FALSE
 59,Chapli Kabab,recipes/asia/pakistan/chapli-kabab-spicy-meatballs-with-pomegranate-seeds,40,6,3,pakistan,,,main,beef meat,pan-fried,FALSE,FALSE,FALSE,TRUE
-60,Manjar de coco,recipes/south-america/brazil/manjar-de-coco,60,12,2,brazil,,,dessert,coconut milk,boiled,TRUE,TRUE,FALSE,TRUE
-61,Panquecas de doce de leite,recipes/south-america/argentina/panquecas-de-doce-de-leite,30,8,3,argentina,,,dessert,flour; condensed milk,pan-fried,TRUE,FALSE,FALSE,FALSE
+60,Manjar de coco,recipes/south-america/brazil/manjar-de-coco-coconut-pudding,60,12,2,brazil,,,dessert,coconut milk,boiled,TRUE,TRUE,FALSE,TRUE
+61,Panquecas de doce de leite,recipes/south-america/argentina/panquecas-de-doce-de-leite-pancakes-with-caramelized-milk,30,8,3,argentina,,,dessert,flour; condensed milk,pan-fried,TRUE,FALSE,FALSE,FALSE
 62,Birani,recipes/asia/bangladesh/birani-basmati-rice-with-meat,40,8,3,bangladesh,,,main,beef meat; rice,boiled,FALSE,FALSE,TRUE,FALSE
 63,Konnto,recipes/africa/guinea-bissau/konnto-spicy-chicken-thighs/,45,8,3,guinea-bissau,,,main,chicken meat; rice,pan-fried,FALSE,FALSE,TRUE,TRUE
 64,Simaumo,recipes/africa/gambia/simaumo-chicken-thighs-in-tomato-sauce/,45,8,3,gambia,,,main,chicken meat; rice,pan-fried,FALSE,FALSE,TRUE,TRUE
@@ -82,15 +82,15 @@ id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from
 81,Achille's therapy (non-vegetarian),recipes/world-fusion/achilles-therapy,45,4,2,fusion,,,appetizer,pastry; speck,baked,FALSE,FALSE,FALSE,TRUE
 82,Mr. Lemonhead,recipes/world-fusion/mr-lemonhead,30,8,2,fusion,,,dessert,orange;lemon;lime,raw,TRUE,FALSE,TRUE,FALSE
 83,Stuffed peppers (Biber dolmasi),recipes/middle-east/turkey/biber-dolmasi-stuffed-peppers,30,4,2,turkey,,,appetizer,bell pepper; rice,pan-fried,TRUE,TRUE,TRUE,TRUE
-84,Karamellata stin Kalamata,recipes/world-fusion/karamellata-stin-kalamata,45,3,3,germany,,,main,beetroot; sweet potato; parsley root,pan-fried,TRUE,TRUE,TRUE,TRUE
+84,Karamellisierte Petersilienwurzeln,recipes/europe/germany/karamellisierte-petersilienwurzeln-caramelized-beet-roots-carrots-and-sweet-potatoes,45,3,3,germany,,,main,beetroot; sweet potato; parsley root,pan-fried,TRUE,TRUE,TRUE,TRUE
 85,Cappelletti Romagnoli,recipes/mediterranea/italy/cappelletti-romagnoli-fresh-filled-pasta-from-romagna,210,4,4,italy,,,main,eggs; cheese,boiled,FALSE,FALSE,FALSE,FALSE
-86,Experimental interventions (Begendi),recipes/middle-east/turkey/experimental-interventions,30,4,1,turkey,,,main,eggplant,pan-fried,TRUE,FALSE,FALSE,FALSE
+86,Begendi,recipes/middle-east/turkey/begendi-roasted-eggplants-with-cheese,30,4,1,turkey,,,main,eggplant,pan-fried,TRUE,FALSE,FALSE,FALSE
 87,Gnocchi al formaggio,recipes/mediterranea/italy/gnocchi-al-formaggio-potato-dumplings-with-cheese-sauce,60,4,2,italy,,,main,potato; cheese,boiled,TRUE,FALSE,FALSE,FALSE
-88,Dimitri's lemon lamb,recipes/mediterranea/greece/dimitris-lemon-lamb,180,5,2,greece,,,main,lamb; potato; lemon,roasted,FALSE,FALSE,TRUE,TRUE
+88,Arnaki Lemonato tou Dimitri,recipes/mediterranea/greece/arnaki-lemonato-tou-dimitri-dimitris-lemon-lamb,180,5,2,greece,,,main,lamb; potato; lemon,roasted,FALSE,FALSE,TRUE,TRUE
 89,Melizanes me Domata ke Feta tis Frosos,recipes/mediterranea/greece/melizanes-me-domata-ke-feta-tis-frosos-aubergines-with-tomatoes-and-feta,60,6,3,greece,,,main,eggplant; tomato; feta cheese,baked,TRUE,FALSE,TRUE,FALSE
 90,biscotti poveri,recipes/mediterranea/italy/biscotti-poveri-poor-biscuits,75,10,1,italy,,,dessert,flour;sugar;wine,baked,TRUE,TRUE,FALSE,TRUE
 91,portokalopita,recipes/mediterranea/greece/portokalopita-orange-cake-with-phyllo-pastry,75,15,3,greece,,,dessert,orange,baked,TRUE,FALSE,FALSE,FALSE
 92,Risotto al Teroldego,recipes/mediterranea/italy/risotto-al-teroldego-rice-with-teroldego-wine,30,4,2,italy,,,main,rice; red wine,boiled,FALSE,FALSE,FALSE,TRUE
-93,sikma,recipes/middle-east/turkey/sikma,90,4,4,turkey,,,main,cheese,pan-fried,TRUE,FALSE,FALSE,FALSE
-94,tarhana soup (ninemin tarhana corbasi),recipes/middle-east/turkey/tarhana-corbasi,90,6,3,turkey,,,appetizer,tarhana; black-eyed peas,boiled,FALSE,FALSE,FALSE,FALSE
+93,sikma,recipes/middle-east/turkey/sikma-home-made-wrap-and-roll-sandwich-with-cheese,90,4,4,turkey,,,main,cheese,pan-fried,TRUE,FALSE,FALSE,FALSE
+94,Borulceli tarhana corbasi,recipes/middle-east/turkey/borulceli-tarhana-corbasi-dried-yogurt-and-vegetables-soup,90,6,3,turkey,,,appetizer,tarhana; black-eyed peas,boiled,FALSE,FALSE,FALSE,FALSE
 95,useleti scape',recipes/mediterranea/italy/useleti-scape-beef-escalopes-rolls-useleti-scape,50,7,3,italy,,,main,beef meat,pan-fried,FALSE,FALSE,TRUE,TRUE
