@@ -18,10 +18,9 @@ function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-function changeCurrentLanguage() {
-  current_language = languages[ $("#language :selected").text() ];
-  initData( showRecipes );
-
+function changeCurrentLanguage( language ) {
+  current_language = language;
+  console.log( current_language );
 }
 
 
@@ -38,6 +37,7 @@ function initData( funct ) {
       events = data.event;
       ingredients = data.ingredient;
       recipe_names = data.recipe_names.name;
+      ingredient_names = [];
       for( var i = 0; i < ingredients.length; i++ ) {
         ingredient_names.push( ingredients[ i ].name );
       }
@@ -50,8 +50,14 @@ function initData( funct ) {
 function createRecipeTable( data ) {
     $("#recipes-table").remove();
     $("#workarea").append("<table id=\"recipes-table\" class=\"table table-striped\"></table>");
-    $("#recipes-table").append( "<tr><th>Recipe</th><th>Category</th><th>Cooking Tecnique</th>"
-    + "<th>Place of Origin</th><th>Preparation Time</th><th>Difficulty</th></tr>");
+    if ( current_language == "italian" ) {
+      $("#recipes-table").append( "<tr><th>Ricetta</th><th>Categoria</th><th>Stile di cottura</th>"
+      + "<th>Nazione</th><th>Tempo di Preparazione</th><th>Difficoltà</th></tr>");
+    } else {
+      $("#recipes-table").append( "<tr><th>Recipe</th><th>Category</th><th>Cooking Tecnique</th>"
+      + "<th>Place of Origin</th><th>Preparation Time</th><th>Difficulty</th></tr>");
+    }
+
     if ( data.hasOwnProperty( "recipe") ) {
         for( var i = 0; i < data.recipe.length; i++ ) {
             var name = data.recipe[ i ].recipe_name;
@@ -317,7 +323,7 @@ function showIngredients() {
 /* it shows all the recipes */
 function showRecipes() {
     $("#workarea").empty();
-    $("#workarea").load( "recipe_filter.html", function() {
+    $("#workarea").load( "recipe_filter_" + current_language +  ".html", function() {
       $("#language option[value='" + current_language + "']").attr("selected","selected");
       initializeRecipeFilter();
       $(".selectpicker").selectpicker('refresh');
