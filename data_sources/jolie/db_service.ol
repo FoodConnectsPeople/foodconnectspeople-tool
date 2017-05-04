@@ -1325,7 +1325,10 @@ main {
 
                         .preparation_time_minutes = result.row[ i ].preparation_time_minutes;
                         .difficulty = result.row[ i ].difficulty;
-                        .place_of_origin = result.row[ i ].place_of_origin;
+
+                        transla.str = result.row[ i ].place_of_origin;
+                        translate@MySelf(transla)(nation_origin);
+                        .place_of_origin = nation_origin;
 
                         transla.str = result.row[ i ].category;
                         translate@MySelf(transla)(catname);
