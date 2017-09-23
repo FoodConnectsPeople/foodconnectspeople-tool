@@ -537,7 +537,10 @@ main {
                   pos = #grocery_list;
                   grocery_list[pos].ingredient       = ingredient;
                   grocery_list[pos].ingredient_class = ingredient_class;
-                  grocery_list[pos].quantity         = "Quantity not specified";
+                  if (language != "italian")
+                    { grocery_list[pos].quantity         = "Quantity not specified" };
+                  if (language == "italian")
+                    { grocery_list[pos].quantity         = "Quantita' non specificata" };
                   grocery_list[pos].unit_of_measure  = ""
                 };
 
@@ -601,7 +604,7 @@ main {
             };
             response.classes[idxclass].class = grocery_list[l].ingredient_class;
             response.classes[idxclass].ingredients[idxingredient].ingredient = grocery_list[l].ingredient;
-            response.classes[idxclass].ingredients[idxingredient].quantity = grocery_list[l].quantity;
+            response.classes[idxclass].ingredients[idxingredient].quantity = string(grocery_list[l].quantity);
             response.classes[idxclass].ingredients[idxingredient].unit_of_measure = grocery_list[l].unit_of_measure
         };
 

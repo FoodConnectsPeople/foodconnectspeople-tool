@@ -15,7 +15,7 @@ type BuildGroceryListResponse: void {
     .class : string
     .ingredients* : void {
       .ingredient : string
-      .quantity   : double
+      .quantity   : string
       .unit_of_measure : string
     }
   }
