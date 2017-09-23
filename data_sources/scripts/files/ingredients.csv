@@ -228,8 +228,10 @@ small green pepper,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 small tomato,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 smoked paprika,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 fresh soy cream,TRUE,TRUE,TRUE,TRUE,FALSE,dairy
+soy strip,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 soy sauce,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 soya mince,TRUE,TRUE,TRUE,TRUE,FALSE,spice
+spaghetti,TRUE,TRUE,FALSE,TRUE,FALSE,cereals
 speck,FALSE,FALSE,TRUE,TRUE,FALSE,meat
 spelt flour,TRUE,TRUE,TRUE,TRUE,FALSE,flours
 spinach,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable

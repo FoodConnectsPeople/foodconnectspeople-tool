@@ -228,55 +228,57 @@ ingredient_id,name,properties,allergene,ingredient_class
 227,small tomato,__vegetarian__vegan__onnivore__,,vegetable
 228,smoked paprika,__vegetarian__vegan__onnivore__,,spice
 229,fresh soy cream,__vegetarian__vegan__onnivore__,,dairy
-230,soy sauce,__vegetarian__vegan__onnivore__,,canned items
-231,soya mince,__vegetarian__vegan__onnivore__,,spice
-232,speck,__onnivore__,,meat
-233,spelt flour,__vegetarian__vegan__onnivore__,,flours
-234,spinach,__vegetarian__vegan__onnivore__,,vegetable
-235,stale bread,__vegetarian__vegan__onnivore__,__gluten__,bakery
-236,star anise,__vegetarian__vegan__onnivore__,,spice
-237,sugar,__vegetarian__vegan__onnivore__,,sweeteners
-238,sugar powder,__vegetarian__vegan__onnivore__,,sweeteners
-239,sumak,__vegetarian__vegan__onnivore__,,spice
-240,sundried tomato,__vegetarian__vegan__onnivore__,,vegetable
-241,sunflower oil,__vegetarian__vegan__onnivore__,,oils
-242,sweet potato,__vegetarian__vegan__onnivore__,,vegetable
-243,sweet vinegar,__vegetarian__vegan__onnivore__,,oils
-244,sweet wine,__vegetarian__vegan__onnivore__,,alcohol
-245,tahini,__vegetarian__vegan__onnivore__,,canned items
-246,taleggio cheese,__vegetarian__onnivore__,__lactose__,dairy
-247,tamarind paste,__vegetarian__vegan__onnivore__,,spice
-248,tarhana,__onnivore__,__gluten__lactose__,canned items
-249,Teroldego red wine,__vegetarian__vegan__onnivore__,,alcohol
-250,thai green curry paste,__vegetarian__vegan__onnivore__,,spice
-251,tomato,__vegetarian__vegan__onnivore__,,vegetable
-252,tomato paste,__vegetarian__vegan__onnivore__,,canned items
-253,tomato sauce,__vegetarian__vegan__onnivore__,,canned items
-254,tomato sauce in cubes,__vegetarian__vegan__onnivore__,,canned items
-255,tosella cheese,__vegetarian__onnivore__,__lactose__,dairy
-256,tuna fish,__onnivore__,,canned items
-257,turkish pepper paste,__vegetarian__vegan__onnivore__,,spice
-258,turkish phyllo pastry,__vegetarian__vegan__onnivore__,,frozen items
-259,turkish tomato paste,__vegetarian__vegan__onnivore__,,spice
-260,urfa peyniri turkish cheese,__vegetarian__onnivore__,__lactose__,dairy
-261,vanilla bean,__vegetarian__vegan__onnivore__,,spice
-262,vanilla extract,__vegetarian__vegan__onnivore__,,powders
-263,vanillin,__vegetarian__vegan__onnivore__,,powders
-264,vegan butter,__vegetarian__vegan__onnivore__,,dairy
-265,vegetable broth,__vegetarian__vegan__onnivore__,,canned items
-266,vegetable stock powder,__vegetarian__vegan__onnivore__,,powders
-267,vietnamese fish sauce,__onnivore__,,canned items
-268,walnut,__vegetarian__vegan__onnivore__,,dry seed
-269,water,__vegetarian__vegan__onnivore__,,water
-270,white asparagus,__vegetarian__vegan__onnivore__,,vegetable
-271,white bread,__vegetarian__vegan__onnivore__,__gluten__,bakery
-272,white onion,__vegetarian__vegan__onnivore__,,vegetable
-273,white vinegar,__vegetarian__vegan__onnivore__,,oils
-274,white wine,__vegetarian__vegan__onnivore__,,alcohol
-275,white yogurt,__vegetarian__onnivore__,__lactose__,dairy
-276,white/kamut flour,__vegetarian__vegan__onnivore__,__gluten__,flours
-277,whole milk,__vegetarian__onnivore__,__lactose__,dairy
-278,whole wheat flour,__vegetarian__vegan__onnivore__,__gluten__,flours
-279,yeast for dessert,__vegetarian__vegan__onnivore__,,powders
-280,yellow bell pepper,__vegetarian__vegan__onnivore__,,vegetable
-281,zucchini,__vegetarian__vegan__onnivore__,,vegetable
+230,soy strip,__vegetarian__vegan__onnivore__,,canned items
+231,soy sauce,__vegetarian__vegan__onnivore__,,canned items
+232,soya mince,__vegetarian__vegan__onnivore__,,spice
+233,spaghetti,__vegetarian__vegan__onnivore__,__gluten__,cereals
+234,speck,__onnivore__,,meat
+235,spelt flour,__vegetarian__vegan__onnivore__,,flours
+236,spinach,__vegetarian__vegan__onnivore__,,vegetable
+237,stale bread,__vegetarian__vegan__onnivore__,__gluten__,bakery
+238,star anise,__vegetarian__vegan__onnivore__,,spice
+239,sugar,__vegetarian__vegan__onnivore__,,sweeteners
+240,sugar powder,__vegetarian__vegan__onnivore__,,sweeteners
+241,sumak,__vegetarian__vegan__onnivore__,,spice
+242,sundried tomato,__vegetarian__vegan__onnivore__,,vegetable
+243,sunflower oil,__vegetarian__vegan__onnivore__,,oils
+244,sweet potato,__vegetarian__vegan__onnivore__,,vegetable
+245,sweet vinegar,__vegetarian__vegan__onnivore__,,oils
+246,sweet wine,__vegetarian__vegan__onnivore__,,alcohol
+247,tahini,__vegetarian__vegan__onnivore__,,canned items
+248,taleggio cheese,__vegetarian__onnivore__,__lactose__,dairy
+249,tamarind paste,__vegetarian__vegan__onnivore__,,spice
+250,tarhana,__onnivore__,__gluten__lactose__,canned items
+251,Teroldego red wine,__vegetarian__vegan__onnivore__,,alcohol
+252,thai green curry paste,__vegetarian__vegan__onnivore__,,spice
+253,tomato,__vegetarian__vegan__onnivore__,,vegetable
+254,tomato paste,__vegetarian__vegan__onnivore__,,canned items
+255,tomato sauce,__vegetarian__vegan__onnivore__,,canned items
+256,tomato sauce in cubes,__vegetarian__vegan__onnivore__,,canned items
+257,tosella cheese,__vegetarian__onnivore__,__lactose__,dairy
+258,tuna fish,__onnivore__,,canned items
+259,turkish pepper paste,__vegetarian__vegan__onnivore__,,spice
+260,turkish phyllo pastry,__vegetarian__vegan__onnivore__,,frozen items
+261,turkish tomato paste,__vegetarian__vegan__onnivore__,,spice
+262,urfa peyniri turkish cheese,__vegetarian__onnivore__,__lactose__,dairy
+263,vanilla bean,__vegetarian__vegan__onnivore__,,spice
+264,vanilla extract,__vegetarian__vegan__onnivore__,,powders
+265,vanillin,__vegetarian__vegan__onnivore__,,powders
+266,vegan butter,__vegetarian__vegan__onnivore__,,dairy
+267,vegetable broth,__vegetarian__vegan__onnivore__,,canned items
+268,vegetable stock powder,__vegetarian__vegan__onnivore__,,powders
+269,vietnamese fish sauce,__onnivore__,,canned items
+270,walnut,__vegetarian__vegan__onnivore__,,dry seed
+271,water,__vegetarian__vegan__onnivore__,,water
+272,white asparagus,__vegetarian__vegan__onnivore__,,vegetable
+273,white bread,__vegetarian__vegan__onnivore__,__gluten__,bakery
+274,white onion,__vegetarian__vegan__onnivore__,,vegetable
+275,white vinegar,__vegetarian__vegan__onnivore__,,oils
+276,white wine,__vegetarian__vegan__onnivore__,,alcohol
+277,white yogurt,__vegetarian__onnivore__,__lactose__,dairy
+278,white/kamut flour,__vegetarian__vegan__onnivore__,__gluten__,flours
+279,whole milk,__vegetarian__onnivore__,__lactose__,dairy
+280,whole wheat flour,__vegetarian__vegan__onnivore__,__gluten__,flours
+281,yeast for dessert,__vegetarian__vegan__onnivore__,,powders
+282,yellow bell pepper,__vegetarian__vegan__onnivore__,,vegetable
+283,zucchini,__vegetarian__vegan__onnivore__,,vegetable
