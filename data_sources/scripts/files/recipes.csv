@@ -104,3 +104,4 @@ id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from
 103,Cauliflower soup with Ras-El-Hanout,recipes/world-fusion/cauliflower-soup-with-ras-el-hanout,60,8,3,fusion,,,main,cauliflower,boiled,TRUE,FALSE,TRUE,TRUE
 104,Cauliflower vegan soup with Ras-El-Hanout,recipes/world-fusion/cauliflower-vegan-soup-with-ras-el-hanout,60,8,3,fusion,,,main,cauliflower,boiled,TRUE,TRUE,TRUE,TRUE
 105,Pastitsio (baked pasta with minced beef) ,recipes/mediterranea/greece/pastitsio-baked-pasta-with-minced-beef,70,6,4,greece,,,main,pasta; beef meat,baked,FALSE,FALSE,FALSE,FALSE
+106,Honey apple cake,recipes/south-america/brazil/honey-apple-cake,75,10,3,brazil,,,dessert,honey; apple,baked,TRUE,FALSE,FALSE,TRUE

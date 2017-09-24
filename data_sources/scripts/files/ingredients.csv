@@ -24,6 +24,7 @@ black cardamom,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 black olive,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 black pepper seed,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 black-eyed pea,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+black tea,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 boiled chickpea,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 boneless chicken thigh,FALSE,FALSE,TRUE,TRUE,FALSE,meat
 breadcrumb,TRUE,TRUE,FALSE,TRUE,FALSE,powders
@@ -119,6 +120,7 @@ ginger root,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 gorgonzola cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 grana trentino cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 grappa,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
+green apple,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 greek graviera cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 greek kefalotiri cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 greek pecorino cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy

@@ -24,261 +24,263 @@ ingredient_id,name,properties,allergene,ingredient_class
 23,black olive,__vegetarian__vegan__onnivore__,,vegetable
 24,black pepper seed,__vegetarian__vegan__onnivore__,,spice
 25,black-eyed pea,__vegetarian__vegan__onnivore__,,vegetable
-26,boiled chickpea,__vegetarian__vegan__onnivore__,,vegetable
-27,boneless chicken thigh,__onnivore__,,meat
-28,breadcrumb,__vegetarian__vegan__onnivore__,__gluten__,powders
-29,brown mustard seed,__vegetarian__vegan__onnivore__,,spice
-30,brown sugar,__vegetarian__vegan__onnivore__,,sweeteners
-31,bulgur,__vegetarian__vegan__onnivore__,__gluten__,cereals
-32,butter,__vegetarian__onnivore__,__lactose__,dairy
-33,cabbage,__vegetarian__vegan__onnivore__,,vegetable
-34,calamari,__onnivore__,,fish
-35,caper,__vegetarian__vegan__onnivore__,,canned items
-36,carrot,__vegetarian__vegan__onnivore__,,vegetable
-37,cashew,__vegetarian__vegan__onnivore__,,dry seed
-38,cauliflower,__vegetarian__vegan__onnivore__,,vegetable
-39,cayenne pepper,__vegetarian__vegan__onnivore__,,spice
-40,celery root,__vegetarian__vegan__onnivore__,,vegetable
-41,chaat masala,__vegetarian__vegan__onnivore__,,spice
-42,champignon mushroom,__vegetarian__vegan__onnivore__,,vegetable
-43,gruyere cheese,__vegetarian__onnivore__,__lactose__,dairy
-44,emmental cheese,__vegetarian__onnivore__,__lactose__,dairy
-45,cheddar cheese,__vegetarian__onnivore__,__lactose__,dairy
-46,fresh cream,__vegetarian__onnivore__,__lactose__,dairy
-47,cherry in sirup,__vegetarian__vegan__onnivore__,,canned fruit
-48,cherry sirup,__vegetarian__vegan__onnivore__,,canned fruit
-49,cherry tomato,__vegetarian__vegan__onnivore__,,vegetable
-50,chicken,__onnivore__,,meat
-51,chicken breast,__onnivore__,,meat
-52,chicken leg,__onnivore__,,meat
-53,chicken thigh,__onnivore__,,meat
-54,chickpea,__vegetarian__vegan__onnivore__,,vegetable
-55,chickpea flour,__vegetarian__vegan__onnivore__,,flours
-56,chili powder,__vegetarian__vegan__onnivore__,,spice
-57,chives,__vegetarian__vegan__onnivore__,,spice
-58,cilantro,__vegetarian__vegan__onnivore__,,spice
-59,cinnamon stick,__vegetarian__vegan__onnivore__,,spice
-60,clove,__vegetarian__vegan__onnivore__,,spice
-61,coconut,__vegetarian__vegan__onnivore__,,fruit
-62,coconut milk,__vegetarian__vegan__onnivore__,,canned fruit
-63,cokelec turkish cheese,__vegetarian__onnivore__,__lactose__,dairy
-64,concentrated tomato paste,__vegetarian__vegan__onnivore__,,canned items
-65,coriander seed,__vegetarian__vegan__onnivore__,,spice
-66,corn meal flour,__vegetarian__vegan__onnivore__,,flours
-67,corn oil,__vegetarian__vegan__onnivore__,,oils
-68,cornstarch,__vegetarian__vegan__onnivore__,,powders
-69,cottage cheese,__vegetarian__onnivore__,__lactose__,dairy
-70,couscous,__vegetarian__vegan__onnivore__,,cereals
-71,crushed chillies,__vegetarian__vegan__onnivore__,,spice
-72,cucumber,__vegetarian__vegan__onnivore__,,vegetable
-73,cumin seed,__vegetarian__vegan__onnivore__,,spice
-74,curry leaf,__vegetarian__vegan__onnivore__,,spice
-75,curry powder,__vegetarian__vegan__onnivore__,,spice
-76,dark chocolate,__vegetarian__vegan__onnivore__,,sweeteners
-77,deer meat,__onnivore__,,meat
-78,dijon mustard,__vegetarian__vegan__onnivore__,,canned items
-79,dill,__vegetarian__vegan__onnivore__,,spice
-80,dried apricot,__vegetarian__vegan__onnivore__,,fruit
-81,dried cherries,__vegetarian__vegan__onnivore__,,fruit
-82,dried plum,__vegetarian__vegan__onnivore__,,fruit
-83,dry basil,__vegetarian__vegan__onnivore__,,spice
-84,dry bell pepper,__vegetarian__vegan__onnivore__,,vegetable
-85,dry blackcurrant,__vegetarian__vegan__onnivore__,,fruit
-86,dry chickpea,__vegetarian__vegan__onnivore__,,fruit
-87,dry coconut shred,__vegetarian__vegan__onnivore__,,fruit
-88,dry mint,__vegetarian__vegan__onnivore__,,spice
-89,dry oregano,__vegetarian__vegan__onnivore__,,spice
-90,dry pomegranate seed,__vegetarian__vegan__onnivore__,,spice
-91,dry red chili,__vegetarian__vegan__onnivore__,,spice
-92,dry rosemary,__vegetarian__vegan__onnivore__,,spice
-93,dulce de leche,__vegetarian__onnivore__,__lactose__,dairy
-94,egg,__onnivore__,,eggs
-95,egg yolk,__onnivore__,,eggs
-96,eggplant,__vegetarian__vegan__onnivore__,,vegetable
-97,extra-virgin olive oil,__vegetarian__vegan__onnivore__,,oils
-98,fava bean,__vegetarian__vegan__onnivore__,,vegetable
-99,feta cheese,__vegetarian__onnivore__,__lactose__,dairy
-100,flavour,__vegetarian__vegan__onnivore__,,spice
-101,flour,__vegetarian__vegan__onnivore__,__gluten__,flours
-102,fontina cheese,__vegetarian__onnivore__,__lactose__,dairy
-103,french baguette,__vegetarian__vegan__onnivore__,__gluten__,bakery
-104,fresh coriander leaf,__vegetarian__vegan__onnivore__,,spice
-105,fresh green chili,__vegetarian__vegan__onnivore__,,spice
-106,fresh habanero chili,__vegetarian__vegan__onnivore__,,spice
-107,fresh mint,__vegetarian__vegan__onnivore__,,spice
-108,fresh oregano,__vegetarian__vegan__onnivore__,,spice
-109,fresh red chili,__vegetarian__vegan__onnivore__,,spice
-110,fresh rosemary,__vegetarian__vegan__onnivore__,,spice
-111,fresh thai basil,__vegetarian__vegan__onnivore__,,spice
-112,fresh sprout,__vegetarian__vegan__onnivore__,,vegetable
-113,fresh thyme,__vegetarian__vegan__onnivore__,,spice
-114,frozen pea,__vegetarian__vegan__onnivore__,,frozen items
-115,garam masala,__vegetarian__vegan__onnivore__,,spice
-116,garlic,__vegetarian__vegan__onnivore__,,vegetable
-117,ginger root,__vegetarian__vegan__onnivore__,,spice
-118,gorgonzola cheese,__vegetarian__onnivore__,__lactose__,dairy
-119,grana trentino cheese,__vegetarian__onnivore__,__lactose__,dairy
-120,grappa,__vegetarian__vegan__onnivore__,,alcohol
-121,greek graviera cheese,__vegetarian__onnivore__,__lactose__,dairy
-122,greek kefalotiri cheese,__vegetarian__onnivore__,__lactose__,dairy
-123,greek pecorino cheese,__vegetarian__onnivore__,__lactose__,dairy
-124,greek ricotta cheese,__vegetarian__onnivore__,__lactose__,dairy
-125,greek yogurt,__vegetarian__onnivore__,__lactose__,dairy
-126,green bean,__vegetarian__vegan__onnivore__,,vegetable
-127,green cardamom seed,__vegetarian__vegan__onnivore__,,spice
-128,green celery,__vegetarian__vegan__onnivore__,,vegetable
-129,green grape,__vegetarian__vegan__onnivore__,,fruit
-130,green lentil,__vegetarian__vegan__onnivore__,,vegetable
-131,green onion,__vegetarian__vegan__onnivore__,,vegetable
-132,green onion leaf,__vegetarian__vegan__onnivore__,,vegetable
-133,green pepper,__vegetarian__vegan__onnivore__,,vegetable
-134,ground black pepper,__vegetarian__vegan__onnivore__,,spice
-135,ground cinnamon,__vegetarian__vegan__onnivore__,,spice
-136,ground coriander,__vegetarian__vegan__onnivore__,,spice
-137,ground cumin,__vegetarian__vegan__onnivore__,,spice
-138,ground turmeric,__vegetarian__vegan__onnivore__,,spice
-139,half peach,__vegetarian__vegan__onnivore__,,fruit
-140,hard cheese,__vegetarian__onnivore__,__lactose__,dairy
-141,harissa,__vegetarian__vegan__onnivore__,,spice
-142,honey,__vegetarian__vegan__onnivore__,,sweeteners
-143,iceberg salad,__vegetarian__vegan__onnivore__,,vegetable
-144,icing sugar,__vegetarian__vegan__onnivore__,,sweeteners
-145,instant yeast,__vegetarian__vegan__onnivore__,,powders
-146,isot pepper,__vegetarian__vegan__onnivore__,,spice
-147,navy bean,__vegetarian__vegan__onnivore__,,vegetable
-148,lamb meat,__onnivore__,,meat
-149,leek,__vegetarian__vegan__onnivore__,,vegetable
-150,lemon,__vegetarian__vegan__onnivore__,,fruit
-151,lemongrass,__vegetarian__vegan__onnivore__,,spice
-152,lemon juice,__vegetarian__vegan__onnivore__,,fruit
-153,lemon peel,__vegetarian__vegan__onnivore__,,fruit
-154,lettuce,__vegetarian__vegan__onnivore__,,vegetable
-155,lime,__vegetarian__vegan__onnivore__,,fruit
-156,lime peel,__vegetarian__vegan__onnivore__,,fruit
-157,maggi,__vegetarian__vegan__onnivore__,__lactose__,canned items
-158,mango,__vegetarian__vegan__onnivore__,,fruit
-159,manioc,__vegetarian__vegan__onnivore__,,vegetable
-160,maple syrup,__vegetarian__vegan__onnivore__,,canned items
-161,mastic gum,__vegetarian__vegan__onnivore__,,spice
-162,mastic powder,__vegetarian__vegan__onnivore__,,spice
-163,meat broth,__onnivore__,,canned items
-164,melon seed,__vegetarian__vegan__onnivore__,,dry seed
-165,mozzarella cheese,__vegetarian__onnivore__,__lactose__,dairy
-166,muenster cheese,__vegetarian__onnivore__,__lactose__,dairy
-167,mushroom,__vegetarian__vegan__onnivore__,,vegetable
-168,mussel,__onnivore__,,fish
-169,mustard,__vegetarian__vegan__onnivore__,,canned items
-170,mutton meat,__onnivore__,,meat
-171,non-salted butter,__vegetarian__onnivore__,,dairy
-172,non-sweetened cocoa powder,__vegetarian__vegan__onnivore__,,powders
-173,non-sweetened coconut milk,__vegetarian__vegan__onnivore__,,canned items
-174,nothing,__vegetarian__vegan__onnivore__,,spice
-175,nutmeg,__vegetarian__vegan__onnivore__,,spice
-176,okra,__vegetarian__vegan__onnivore__,,vegetable
-177,onion,__vegetarian__vegan__onnivore__,,vegetable
-178,orange,__vegetarian__vegan__onnivore__,,fruit
-179,orange juice,__vegetarian__vegan__onnivore__,,fruit
-180,orange peel,__vegetarian__vegan__onnivore__,,fruit
-181,ouzo,__vegetarian__vegan__onnivore__,,alcohol
-182,palm oil,__vegetarian__vegan__onnivore__,,oils
-183,paprika,__vegetarian__vegan__onnivore__,,spice
-184,parmesan cheese,__vegetarian__onnivore__,__lactose__,dairy
-185,parsley,__vegetarian__vegan__onnivore__,,vegetable
-186,parsley root,__vegetarian__vegan__onnivore__,,vegetable
-187,pastry,__vegetarian__vegan__onnivore__,__gluten__,frozen items
-188,peanut paste,__vegetarian__vegan__onnivore__,,canned items
-189,pear,__vegetarian__vegan__onnivore__,,fruit
-190,pecorino cheese,__vegetarian__onnivore__,__lactose__,dairy
-191,phyllo pastry,__vegetarian__vegan__onnivore__,,frozen items
-192,piccadilly tomato,__vegetarian__vegan__onnivore__,,vegetable
-193,pine nut,__vegetarian__vegan__onnivore__,,dry seed
-194,pistachio,__vegetarian__vegan__onnivore__,,dry seed
-195,plum,__vegetarian__vegan__onnivore__,,fruit
-196,pomegranate sauce,__vegetarian__vegan__onnivore__,,canned items
-197,potato,__vegetarian__vegan__onnivore__,__gluten__,vegetable
-198,pumpkin,__vegetarian__vegan__onnivore__,,vegetable
-199,pumpkin seed,__vegetarian__vegan__onnivore__,,spice
-200,raisin,__vegetarian__vegan__onnivore__,,dry seed
-201,raki,__vegetarian__vegan__onnivore__,,alcohol
-202,ras-el-hanout,__vegetarian__vegan__onnivore__,,spice
-203,red bell pepper,__vegetarian__vegan__onnivore__,,vegetable
-204,red mullet,__onnivore__,,fish
-205,red onion,__vegetarian__vegan__onnivore__,,vegetable
-206,red radish,__vegetarian__vegan__onnivore__,,vegetable
-207,red wine,__vegetarian__vegan__onnivore__,,alcohol
-208,rice,__vegetarian__vegan__onnivore__,__gluten__,cereals
-209,rice noodle,__vegetarian__vegan__onnivore__,__gluten__,cereals
-210,ricotta cheese,__vegetarian__onnivore__,__lactose__,dairy
-211,robiola cheese,__vegetarian__onnivore__,__lactose__,dairy
-212,rocket,__vegetarian__vegan__onnivore__,,vegetable
-213,rose pepper,__vegetarian__vegan__onnivore__,,spice
-214,rosolio liqueur,__vegetarian__vegan__onnivore__,,alcohol
-215,sage,__vegetarian__vegan__onnivore__,,vegetable
-216,salmon,__onnivore__,,fish
-217,salt,__vegetarian__vegan__onnivore__,,oils
-218,sardine,__onnivore__,,fish
-219,savoiardi biscuit,__vegetarian__vegan__onnivore__,__gluten__,bakery
-220,scallion,__vegetarian__vegan__onnivore__,,vegetable
-221,semolina,__vegetarian__vegan__onnivore__,__gluten__,cereals
-222,semolina flour,__vegetarian__vegan__onnivore__,__gluten__,flours
-223,sesame seed,__vegetarian__vegan__onnivore__,,dry seed
-224,shallot,__vegetarian__vegan__onnivore__,,vegetable
-225,shrimp,__onnivore__,,fish
-226,small green pepper,__vegetarian__vegan__onnivore__,,vegetable
-227,small tomato,__vegetarian__vegan__onnivore__,,vegetable
-228,smoked paprika,__vegetarian__vegan__onnivore__,,spice
-229,fresh soy cream,__vegetarian__vegan__onnivore__,,dairy
-230,soy strip,__vegetarian__vegan__onnivore__,,canned items
-231,soy sauce,__vegetarian__vegan__onnivore__,,canned items
-232,soya mince,__vegetarian__vegan__onnivore__,,spice
-233,spaghetti,__vegetarian__vegan__onnivore__,__gluten__,cereals
-234,speck,__onnivore__,,meat
-235,spelt flour,__vegetarian__vegan__onnivore__,,flours
-236,spinach,__vegetarian__vegan__onnivore__,,vegetable
-237,stale bread,__vegetarian__vegan__onnivore__,__gluten__,bakery
-238,star anise,__vegetarian__vegan__onnivore__,,spice
-239,sugar,__vegetarian__vegan__onnivore__,,sweeteners
-240,sugar powder,__vegetarian__vegan__onnivore__,,sweeteners
-241,sumak,__vegetarian__vegan__onnivore__,,spice
-242,sundried tomato,__vegetarian__vegan__onnivore__,,vegetable
-243,sunflower oil,__vegetarian__vegan__onnivore__,,oils
-244,sweet potato,__vegetarian__vegan__onnivore__,,vegetable
-245,sweet vinegar,__vegetarian__vegan__onnivore__,,oils
-246,sweet wine,__vegetarian__vegan__onnivore__,,alcohol
-247,tahini,__vegetarian__vegan__onnivore__,,canned items
-248,taleggio cheese,__vegetarian__onnivore__,__lactose__,dairy
-249,tamarind paste,__vegetarian__vegan__onnivore__,,spice
-250,tarhana,__onnivore__,__gluten__lactose__,canned items
-251,Teroldego red wine,__vegetarian__vegan__onnivore__,,alcohol
-252,thai green curry paste,__vegetarian__vegan__onnivore__,,spice
-253,tomato,__vegetarian__vegan__onnivore__,,vegetable
-254,tomato paste,__vegetarian__vegan__onnivore__,,canned items
-255,tomato sauce,__vegetarian__vegan__onnivore__,,canned items
-256,tomato sauce in cubes,__vegetarian__vegan__onnivore__,,canned items
-257,tosella cheese,__vegetarian__onnivore__,__lactose__,dairy
-258,tuna fish,__onnivore__,,canned items
-259,turkish pepper paste,__vegetarian__vegan__onnivore__,,spice
-260,turkish phyllo pastry,__vegetarian__vegan__onnivore__,,frozen items
-261,turkish tomato paste,__vegetarian__vegan__onnivore__,,spice
-262,urfa peyniri turkish cheese,__vegetarian__onnivore__,__lactose__,dairy
-263,vanilla bean,__vegetarian__vegan__onnivore__,,spice
-264,vanilla extract,__vegetarian__vegan__onnivore__,,powders
-265,vanillin,__vegetarian__vegan__onnivore__,,powders
-266,vegan butter,__vegetarian__vegan__onnivore__,,dairy
-267,vegetable broth,__vegetarian__vegan__onnivore__,,canned items
-268,vegetable stock powder,__vegetarian__vegan__onnivore__,,powders
-269,vietnamese fish sauce,__onnivore__,,canned items
-270,walnut,__vegetarian__vegan__onnivore__,,dry seed
-271,water,__vegetarian__vegan__onnivore__,,water
-272,white asparagus,__vegetarian__vegan__onnivore__,,vegetable
-273,white bread,__vegetarian__vegan__onnivore__,__gluten__,bakery
-274,white onion,__vegetarian__vegan__onnivore__,,vegetable
-275,white vinegar,__vegetarian__vegan__onnivore__,,oils
-276,white wine,__vegetarian__vegan__onnivore__,,alcohol
-277,white yogurt,__vegetarian__onnivore__,__lactose__,dairy
-278,white/kamut flour,__vegetarian__vegan__onnivore__,__gluten__,flours
-279,whole milk,__vegetarian__onnivore__,__lactose__,dairy
-280,whole wheat flour,__vegetarian__vegan__onnivore__,__gluten__,flours
-281,yeast for dessert,__vegetarian__vegan__onnivore__,,powders
-282,yellow bell pepper,__vegetarian__vegan__onnivore__,,vegetable
-283,zucchini,__vegetarian__vegan__onnivore__,,vegetable
+26,black tea,__vegetarian__vegan__onnivore__,,powders
+27,boiled chickpea,__vegetarian__vegan__onnivore__,,vegetable
+28,boneless chicken thigh,__onnivore__,,meat
+29,breadcrumb,__vegetarian__vegan__onnivore__,__gluten__,powders
+30,brown mustard seed,__vegetarian__vegan__onnivore__,,spice
+31,brown sugar,__vegetarian__vegan__onnivore__,,sweeteners
+32,bulgur,__vegetarian__vegan__onnivore__,__gluten__,cereals
+33,butter,__vegetarian__onnivore__,__lactose__,dairy
+34,cabbage,__vegetarian__vegan__onnivore__,,vegetable
+35,calamari,__onnivore__,,fish
+36,caper,__vegetarian__vegan__onnivore__,,canned items
+37,carrot,__vegetarian__vegan__onnivore__,,vegetable
+38,cashew,__vegetarian__vegan__onnivore__,,dry seed
+39,cauliflower,__vegetarian__vegan__onnivore__,,vegetable
+40,cayenne pepper,__vegetarian__vegan__onnivore__,,spice
+41,celery root,__vegetarian__vegan__onnivore__,,vegetable
+42,chaat masala,__vegetarian__vegan__onnivore__,,spice
+43,champignon mushroom,__vegetarian__vegan__onnivore__,,vegetable
+44,gruyere cheese,__vegetarian__onnivore__,__lactose__,dairy
+45,emmental cheese,__vegetarian__onnivore__,__lactose__,dairy
+46,cheddar cheese,__vegetarian__onnivore__,__lactose__,dairy
+47,fresh cream,__vegetarian__onnivore__,__lactose__,dairy
+48,cherry in sirup,__vegetarian__vegan__onnivore__,,canned fruit
+49,cherry sirup,__vegetarian__vegan__onnivore__,,canned fruit
+50,cherry tomato,__vegetarian__vegan__onnivore__,,vegetable
+51,chicken,__onnivore__,,meat
+52,chicken breast,__onnivore__,,meat
+53,chicken leg,__onnivore__,,meat
+54,chicken thigh,__onnivore__,,meat
+55,chickpea,__vegetarian__vegan__onnivore__,,vegetable
+56,chickpea flour,__vegetarian__vegan__onnivore__,,flours
+57,chili powder,__vegetarian__vegan__onnivore__,,spice
+58,chives,__vegetarian__vegan__onnivore__,,spice
+59,cilantro,__vegetarian__vegan__onnivore__,,spice
+60,cinnamon stick,__vegetarian__vegan__onnivore__,,spice
+61,clove,__vegetarian__vegan__onnivore__,,spice
+62,coconut,__vegetarian__vegan__onnivore__,,fruit
+63,coconut milk,__vegetarian__vegan__onnivore__,,canned fruit
+64,cokelec turkish cheese,__vegetarian__onnivore__,__lactose__,dairy
+65,concentrated tomato paste,__vegetarian__vegan__onnivore__,,canned items
+66,coriander seed,__vegetarian__vegan__onnivore__,,spice
+67,corn meal flour,__vegetarian__vegan__onnivore__,,flours
+68,corn oil,__vegetarian__vegan__onnivore__,,oils
+69,cornstarch,__vegetarian__vegan__onnivore__,,powders
+70,cottage cheese,__vegetarian__onnivore__,__lactose__,dairy
+71,couscous,__vegetarian__vegan__onnivore__,,cereals
+72,crushed chillies,__vegetarian__vegan__onnivore__,,spice
+73,cucumber,__vegetarian__vegan__onnivore__,,vegetable
+74,cumin seed,__vegetarian__vegan__onnivore__,,spice
+75,curry leaf,__vegetarian__vegan__onnivore__,,spice
+76,curry powder,__vegetarian__vegan__onnivore__,,spice
+77,dark chocolate,__vegetarian__vegan__onnivore__,,sweeteners
+78,deer meat,__onnivore__,,meat
+79,dijon mustard,__vegetarian__vegan__onnivore__,,canned items
+80,dill,__vegetarian__vegan__onnivore__,,spice
+81,dried apricot,__vegetarian__vegan__onnivore__,,fruit
+82,dried cherries,__vegetarian__vegan__onnivore__,,fruit
+83,dried plum,__vegetarian__vegan__onnivore__,,fruit
+84,dry basil,__vegetarian__vegan__onnivore__,,spice
+85,dry bell pepper,__vegetarian__vegan__onnivore__,,vegetable
+86,dry blackcurrant,__vegetarian__vegan__onnivore__,,fruit
+87,dry chickpea,__vegetarian__vegan__onnivore__,,fruit
+88,dry coconut shred,__vegetarian__vegan__onnivore__,,fruit
+89,dry mint,__vegetarian__vegan__onnivore__,,spice
+90,dry oregano,__vegetarian__vegan__onnivore__,,spice
+91,dry pomegranate seed,__vegetarian__vegan__onnivore__,,spice
+92,dry red chili,__vegetarian__vegan__onnivore__,,spice
+93,dry rosemary,__vegetarian__vegan__onnivore__,,spice
+94,dulce de leche,__vegetarian__onnivore__,__lactose__,dairy
+95,egg,__onnivore__,,eggs
+96,egg yolk,__onnivore__,,eggs
+97,eggplant,__vegetarian__vegan__onnivore__,,vegetable
+98,extra-virgin olive oil,__vegetarian__vegan__onnivore__,,oils
+99,fava bean,__vegetarian__vegan__onnivore__,,vegetable
+100,feta cheese,__vegetarian__onnivore__,__lactose__,dairy
+101,flavour,__vegetarian__vegan__onnivore__,,spice
+102,flour,__vegetarian__vegan__onnivore__,__gluten__,flours
+103,fontina cheese,__vegetarian__onnivore__,__lactose__,dairy
+104,french baguette,__vegetarian__vegan__onnivore__,__gluten__,bakery
+105,fresh coriander leaf,__vegetarian__vegan__onnivore__,,spice
+106,fresh green chili,__vegetarian__vegan__onnivore__,,spice
+107,fresh habanero chili,__vegetarian__vegan__onnivore__,,spice
+108,fresh mint,__vegetarian__vegan__onnivore__,,spice
+109,fresh oregano,__vegetarian__vegan__onnivore__,,spice
+110,fresh red chili,__vegetarian__vegan__onnivore__,,spice
+111,fresh rosemary,__vegetarian__vegan__onnivore__,,spice
+112,fresh thai basil,__vegetarian__vegan__onnivore__,,spice
+113,fresh sprout,__vegetarian__vegan__onnivore__,,vegetable
+114,fresh thyme,__vegetarian__vegan__onnivore__,,spice
+115,frozen pea,__vegetarian__vegan__onnivore__,,frozen items
+116,garam masala,__vegetarian__vegan__onnivore__,,spice
+117,garlic,__vegetarian__vegan__onnivore__,,vegetable
+118,ginger root,__vegetarian__vegan__onnivore__,,spice
+119,gorgonzola cheese,__vegetarian__onnivore__,__lactose__,dairy
+120,grana trentino cheese,__vegetarian__onnivore__,__lactose__,dairy
+121,grappa,__vegetarian__vegan__onnivore__,,alcohol
+122,green apple,__vegetarian__vegan__onnivore__,,fruit
+123,greek graviera cheese,__vegetarian__onnivore__,__lactose__,dairy
+124,greek kefalotiri cheese,__vegetarian__onnivore__,__lactose__,dairy
+125,greek pecorino cheese,__vegetarian__onnivore__,__lactose__,dairy
+126,greek ricotta cheese,__vegetarian__onnivore__,__lactose__,dairy
+127,greek yogurt,__vegetarian__onnivore__,__lactose__,dairy
+128,green bean,__vegetarian__vegan__onnivore__,,vegetable
+129,green cardamom seed,__vegetarian__vegan__onnivore__,,spice
+130,green celery,__vegetarian__vegan__onnivore__,,vegetable
+131,green grape,__vegetarian__vegan__onnivore__,,fruit
+132,green lentil,__vegetarian__vegan__onnivore__,,vegetable
+133,green onion,__vegetarian__vegan__onnivore__,,vegetable
+134,green onion leaf,__vegetarian__vegan__onnivore__,,vegetable
+135,green pepper,__vegetarian__vegan__onnivore__,,vegetable
+136,ground black pepper,__vegetarian__vegan__onnivore__,,spice
+137,ground cinnamon,__vegetarian__vegan__onnivore__,,spice
+138,ground coriander,__vegetarian__vegan__onnivore__,,spice
+139,ground cumin,__vegetarian__vegan__onnivore__,,spice
+140,ground turmeric,__vegetarian__vegan__onnivore__,,spice
+141,half peach,__vegetarian__vegan__onnivore__,,fruit
+142,hard cheese,__vegetarian__onnivore__,__lactose__,dairy
+143,harissa,__vegetarian__vegan__onnivore__,,spice
+144,honey,__vegetarian__vegan__onnivore__,,sweeteners
+145,iceberg salad,__vegetarian__vegan__onnivore__,,vegetable
+146,icing sugar,__vegetarian__vegan__onnivore__,,sweeteners
+147,instant yeast,__vegetarian__vegan__onnivore__,,powders
+148,isot pepper,__vegetarian__vegan__onnivore__,,spice
+149,navy bean,__vegetarian__vegan__onnivore__,,vegetable
+150,lamb meat,__onnivore__,,meat
+151,leek,__vegetarian__vegan__onnivore__,,vegetable
+152,lemon,__vegetarian__vegan__onnivore__,,fruit
+153,lemongrass,__vegetarian__vegan__onnivore__,,spice
+154,lemon juice,__vegetarian__vegan__onnivore__,,fruit
+155,lemon peel,__vegetarian__vegan__onnivore__,,fruit
+156,lettuce,__vegetarian__vegan__onnivore__,,vegetable
+157,lime,__vegetarian__vegan__onnivore__,,fruit
+158,lime peel,__vegetarian__vegan__onnivore__,,fruit
+159,maggi,__vegetarian__vegan__onnivore__,__lactose__,canned items
+160,mango,__vegetarian__vegan__onnivore__,,fruit
+161,manioc,__vegetarian__vegan__onnivore__,,vegetable
+162,maple syrup,__vegetarian__vegan__onnivore__,,canned items
+163,mastic gum,__vegetarian__vegan__onnivore__,,spice
+164,mastic powder,__vegetarian__vegan__onnivore__,,spice
+165,meat broth,__onnivore__,,canned items
+166,melon seed,__vegetarian__vegan__onnivore__,,dry seed
+167,mozzarella cheese,__vegetarian__onnivore__,__lactose__,dairy
+168,muenster cheese,__vegetarian__onnivore__,__lactose__,dairy
+169,mushroom,__vegetarian__vegan__onnivore__,,vegetable
+170,mussel,__onnivore__,,fish
+171,mustard,__vegetarian__vegan__onnivore__,,canned items
+172,mutton meat,__onnivore__,,meat
+173,non-salted butter,__vegetarian__onnivore__,,dairy
+174,non-sweetened cocoa powder,__vegetarian__vegan__onnivore__,,powders
+175,non-sweetened coconut milk,__vegetarian__vegan__onnivore__,,canned items
+176,nothing,__vegetarian__vegan__onnivore__,,spice
+177,nutmeg,__vegetarian__vegan__onnivore__,,spice
+178,okra,__vegetarian__vegan__onnivore__,,vegetable
+179,onion,__vegetarian__vegan__onnivore__,,vegetable
+180,orange,__vegetarian__vegan__onnivore__,,fruit
+181,orange juice,__vegetarian__vegan__onnivore__,,fruit
+182,orange peel,__vegetarian__vegan__onnivore__,,fruit
+183,ouzo,__vegetarian__vegan__onnivore__,,alcohol
+184,palm oil,__vegetarian__vegan__onnivore__,,oils
+185,paprika,__vegetarian__vegan__onnivore__,,spice
+186,parmesan cheese,__vegetarian__onnivore__,__lactose__,dairy
+187,parsley,__vegetarian__vegan__onnivore__,,vegetable
+188,parsley root,__vegetarian__vegan__onnivore__,,vegetable
+189,pastry,__vegetarian__vegan__onnivore__,__gluten__,frozen items
+190,peanut paste,__vegetarian__vegan__onnivore__,,canned items
+191,pear,__vegetarian__vegan__onnivore__,,fruit
+192,pecorino cheese,__vegetarian__onnivore__,__lactose__,dairy
+193,phyllo pastry,__vegetarian__vegan__onnivore__,,frozen items
+194,piccadilly tomato,__vegetarian__vegan__onnivore__,,vegetable
+195,pine nut,__vegetarian__vegan__onnivore__,,dry seed
+196,pistachio,__vegetarian__vegan__onnivore__,,dry seed
+197,plum,__vegetarian__vegan__onnivore__,,fruit
+198,pomegranate sauce,__vegetarian__vegan__onnivore__,,canned items
+199,potato,__vegetarian__vegan__onnivore__,__gluten__,vegetable
+200,pumpkin,__vegetarian__vegan__onnivore__,,vegetable
+201,pumpkin seed,__vegetarian__vegan__onnivore__,,spice
+202,raisin,__vegetarian__vegan__onnivore__,,dry seed
+203,raki,__vegetarian__vegan__onnivore__,,alcohol
+204,ras-el-hanout,__vegetarian__vegan__onnivore__,,spice
+205,red bell pepper,__vegetarian__vegan__onnivore__,,vegetable
+206,red mullet,__onnivore__,,fish
+207,red onion,__vegetarian__vegan__onnivore__,,vegetable
+208,red radish,__vegetarian__vegan__onnivore__,,vegetable
+209,red wine,__vegetarian__vegan__onnivore__,,alcohol
+210,rice,__vegetarian__vegan__onnivore__,__gluten__,cereals
+211,rice noodle,__vegetarian__vegan__onnivore__,__gluten__,cereals
+212,ricotta cheese,__vegetarian__onnivore__,__lactose__,dairy
+213,robiola cheese,__vegetarian__onnivore__,__lactose__,dairy
+214,rocket,__vegetarian__vegan__onnivore__,,vegetable
+215,rose pepper,__vegetarian__vegan__onnivore__,,spice
+216,rosolio liqueur,__vegetarian__vegan__onnivore__,,alcohol
+217,sage,__vegetarian__vegan__onnivore__,,vegetable
+218,salmon,__onnivore__,,fish
+219,salt,__vegetarian__vegan__onnivore__,,oils
+220,sardine,__onnivore__,,fish
+221,savoiardi biscuit,__vegetarian__vegan__onnivore__,__gluten__,bakery
+222,scallion,__vegetarian__vegan__onnivore__,,vegetable
+223,semolina,__vegetarian__vegan__onnivore__,__gluten__,cereals
+224,semolina flour,__vegetarian__vegan__onnivore__,__gluten__,flours
+225,sesame seed,__vegetarian__vegan__onnivore__,,dry seed
+226,shallot,__vegetarian__vegan__onnivore__,,vegetable
+227,shrimp,__onnivore__,,fish
+228,small green pepper,__vegetarian__vegan__onnivore__,,vegetable
+229,small tomato,__vegetarian__vegan__onnivore__,,vegetable
+230,smoked paprika,__vegetarian__vegan__onnivore__,,spice
+231,fresh soy cream,__vegetarian__vegan__onnivore__,,dairy
+232,soy strip,__vegetarian__vegan__onnivore__,,canned items
+233,soy sauce,__vegetarian__vegan__onnivore__,,canned items
+234,soya mince,__vegetarian__vegan__onnivore__,,spice
+235,spaghetti,__vegetarian__vegan__onnivore__,__gluten__,cereals
+236,speck,__onnivore__,,meat
+237,spelt flour,__vegetarian__vegan__onnivore__,,flours
+238,spinach,__vegetarian__vegan__onnivore__,,vegetable
+239,stale bread,__vegetarian__vegan__onnivore__,__gluten__,bakery
+240,star anise,__vegetarian__vegan__onnivore__,,spice
+241,sugar,__vegetarian__vegan__onnivore__,,sweeteners
+242,sugar powder,__vegetarian__vegan__onnivore__,,sweeteners
+243,sumak,__vegetarian__vegan__onnivore__,,spice
+244,sundried tomato,__vegetarian__vegan__onnivore__,,vegetable
+245,sunflower oil,__vegetarian__vegan__onnivore__,,oils
+246,sweet potato,__vegetarian__vegan__onnivore__,,vegetable
+247,sweet vinegar,__vegetarian__vegan__onnivore__,,oils
+248,sweet wine,__vegetarian__vegan__onnivore__,,alcohol
+249,tahini,__vegetarian__vegan__onnivore__,,canned items
+250,taleggio cheese,__vegetarian__onnivore__,__lactose__,dairy
+251,tamarind paste,__vegetarian__vegan__onnivore__,,spice
+252,tarhana,__onnivore__,__gluten__lactose__,canned items
+253,Teroldego red wine,__vegetarian__vegan__onnivore__,,alcohol
+254,thai green curry paste,__vegetarian__vegan__onnivore__,,spice
+255,tomato,__vegetarian__vegan__onnivore__,,vegetable
+256,tomato paste,__vegetarian__vegan__onnivore__,,canned items
+257,tomato sauce,__vegetarian__vegan__onnivore__,,canned items
+258,tomato sauce in cubes,__vegetarian__vegan__onnivore__,,canned items
+259,tosella cheese,__vegetarian__onnivore__,__lactose__,dairy
+260,tuna fish,__onnivore__,,canned items
+261,turkish pepper paste,__vegetarian__vegan__onnivore__,,spice
+262,turkish phyllo pastry,__vegetarian__vegan__onnivore__,,frozen items
+263,turkish tomato paste,__vegetarian__vegan__onnivore__,,spice
+264,urfa peyniri turkish cheese,__vegetarian__onnivore__,__lactose__,dairy
+265,vanilla bean,__vegetarian__vegan__onnivore__,,spice
+266,vanilla extract,__vegetarian__vegan__onnivore__,,powders
+267,vanillin,__vegetarian__vegan__onnivore__,,powders
+268,vegan butter,__vegetarian__vegan__onnivore__,,dairy
+269,vegetable broth,__vegetarian__vegan__onnivore__,,canned items
+270,vegetable stock powder,__vegetarian__vegan__onnivore__,,powders
+271,vietnamese fish sauce,__onnivore__,,canned items
+272,walnut,__vegetarian__vegan__onnivore__,,dry seed
+273,water,__vegetarian__vegan__onnivore__,,water
+274,white asparagus,__vegetarian__vegan__onnivore__,,vegetable
+275,white bread,__vegetarian__vegan__onnivore__,__gluten__,bakery
+276,white onion,__vegetarian__vegan__onnivore__,,vegetable
+277,white vinegar,__vegetarian__vegan__onnivore__,,oils
+278,white wine,__vegetarian__vegan__onnivore__,,alcohol
+279,white yogurt,__vegetarian__onnivore__,__lactose__,dairy
+280,white/kamut flour,__vegetarian__vegan__onnivore__,__gluten__,flours
+281,whole milk,__vegetarian__onnivore__,__lactose__,dairy
+282,whole wheat flour,__vegetarian__vegan__onnivore__,__gluten__,flours
+283,yeast for dessert,__vegetarian__vegan__onnivore__,,powders
+284,yellow bell pepper,__vegetarian__vegan__onnivore__,,vegetable
+285,zucchini,__vegetarian__vegan__onnivore__,,vegetable
