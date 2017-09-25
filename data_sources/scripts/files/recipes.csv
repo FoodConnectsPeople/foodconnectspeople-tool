@@ -96,7 +96,7 @@ id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from
 95,useleti scape',recipes/mediterranea/italy/useleti-scape-beef-escalopes-rolls-useleti-scape,50,7,3,italy,,,main,beef meat,pan-fried,FALSE,FALSE,TRUE,TRUE
 96,Gratin dauphinois,recipes/europe/france/gratin-dauphinois,65,6,3,france,,,main,potato,baked,TRUE,TRUE,TRUE,FALSE
 97,Mashed fava beans with tuna and capers,recipes/mediterranea/greece/mashed-fava-beans-with-tuna-and-capers,90,4,2,greece,,,appetizer,fava beans; tuna fish,boiled,FALSE,FALSE,TRUE,TRUE
-98,Cheese-stuffed peppers,recipes/europe/bosnia/cheese-stuffed-peppers,90,5,3,bosnia,,,appetizer,bell pepper; feta cheese,baked,FALSE,FALSE,TRUE,FALSE
+98,Cheese-stuffed peppers,recipes/europe/serbia/cheese-stuffed-peppers,90,5,3,serbia,,,appetizer,bell pepper; feta cheese,baked,FALSE,FALSE,TRUE,FALSE
 99,Artichoke hipster ravioli,recipes/world-fusion/artichoke-hipster-ravioli,120,4,3,fusion,,,main,artichoke; asparagus,boiled,TRUE,FALSE,FALSE,FALSE
 100,Enginar dolmasi (steamed artichokes),recipes/middle-east/turkey/enginar-dolmasi-steamed-artichokes,30,4,2,turkey,,,main,artichoke; rice,boiled,TRUE,TRUE,TRUE,TRUE
 101,Risotto al vino bianco ed asparagi (rice with asparagus and white wine),recipes/mediterranea/italy/risotto-al-vino-bianco-ed-asparagi-rice-with-aspagarus-and-white-wine,40,4,3,italy,,,main,artichoke; rice,boiled,TRUE,FALSE,FALSE,FALSE
@@ -105,3 +105,5 @@ id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from
 104,Cauliflower vegan soup with Ras-El-Hanout,recipes/world-fusion/cauliflower-vegan-soup-with-ras-el-hanout,60,8,3,fusion,,,main,cauliflower,boiled,TRUE,TRUE,TRUE,TRUE
 105,Pastitsio (baked pasta with minced beef) ,recipes/mediterranea/greece/pastitsio-baked-pasta-with-minced-beef,70,6,4,greece,,,main,pasta; beef meat,baked,FALSE,FALSE,FALSE,FALSE
 106,Honey apple cake,recipes/south-america/brazil/honey-apple-cake,75,10,3,brazil,,,dessert,honey; apple,baked,TRUE,FALSE,FALSE,TRUE
+107,Kisir (turkish cracked wheat salad),recipes/middle-east/turkey/kisir-turkish-cracked-wheat-salad,45,4,2,turkey,,,appetizer,bulgur,boiled,TRUE,TRUE,FALSE,TRUE
+108,Chukkandar tikki (red beetroot burgers),recipes/asia/india/chukkandar-tikki-red-beetroot-burger,60,4,3,india,,,main,beetroot,pan-fried,TRUE,TRUE,FALSE,TRUE

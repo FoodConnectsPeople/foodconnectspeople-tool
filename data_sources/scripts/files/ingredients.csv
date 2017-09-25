@@ -88,6 +88,7 @@ dry blackcurrant,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 dry chickpea,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 dry coconut shred,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 dry mint,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+dry misithra cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 dry oregano,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 dry pomegranate seed,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 dry red chili,TRUE,TRUE,TRUE,TRUE,TRUE,spice
@@ -116,6 +117,7 @@ fresh thyme,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 frozen pea,TRUE,TRUE,TRUE,TRUE,FALSE,frozen items
 garam masala,TRUE,TRUE,TRUE,TRUE,FALSE,spice
 garlic,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+gentiline lettuce,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 ginger root,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 gorgonzola cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 grana trentino cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
