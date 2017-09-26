@@ -42,6 +42,8 @@ main {
       t.rec_persons[5].persons   = 2;
       t.rec_persons[6].recipe_id = 111;
       t.rec_persons[6].persons   = 2;
+      t.rec_persons[6].recipe_id = 112;
+      t.rec_persons[6].persons   = 9;
 
 
       buildGroceryList@DbService(t)(response);

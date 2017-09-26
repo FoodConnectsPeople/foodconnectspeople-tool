@@ -110,3 +110,4 @@ id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from
 109,Choco-salame,recipes/mediterranea/italy/choco-salame,30,10,1,italy,,,dessert,dark chocolate,bain-marie,TRUE,FALSE,FALSE,FALSE
 110,Custard cake,recipes/mediterranea/italy/custard-cake,80,10,3,italy,,,dessert,eggs; flour; sugar,baked,TRUE,FALSE,FALSE,FALSE
 111,Armenian style Georgian eggplants,recipes/asia/armenia/armenian-style-georgian-eggplants,50,10,2,armenia,,,main,eggplant,pan-fried,TRUE,FALSE,FALSE,FALSE
+112,Palak murgh (pakistani marinated chicken with basmati rice),recipes/asia/pakistan/palak-murgh-pakistani-marinated-chicken-with-basmati-rice,60,3,4,pakistan,,,main,chicken,pan-fried,FALSE,FALSE,TRUE,FALSE
