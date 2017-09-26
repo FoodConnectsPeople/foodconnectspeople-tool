@@ -2,14 +2,11 @@ include "head.iol"
 
 main {
 
-        language = "italian";
-        t.verbose = true;
-
-      /******************** Section 3: test of grocerylist *********/
 
       undef(t);
       undef(response);
 
+      language = "italian";
       t.convert_all = true;
       t.verbose     = false;
       t.language    = language;
