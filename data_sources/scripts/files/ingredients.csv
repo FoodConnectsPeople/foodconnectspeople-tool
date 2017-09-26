@@ -64,6 +64,7 @@ coconut,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 coconut milk,TRUE,TRUE,TRUE,TRUE,FALSE,canned fruit
 cokelec turkish cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 concentrated tomato paste,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
+cookie,TRUE,FALSE,FALSE,FALSE,FALSE,flours
 coriander seed,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 corn meal flour,TRUE,TRUE,TRUE,TRUE,FALSE,flours
 corn oil,TRUE,TRUE,TRUE,TRUE,FALSE,oils
@@ -150,6 +151,7 @@ icing sugar,TRUE,TRUE,TRUE,TRUE,FALSE,sweeteners
 instant yeast,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 isot pepper,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 navy bean,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+khmeli-suneli,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 lamb meat,FALSE,FALSE,TRUE,TRUE,FALSE,meat
 leek,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 lemon,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
@@ -160,6 +162,7 @@ lettuce,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 lime,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 lime peel,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 maggi,TRUE,TRUE,TRUE,FALSE,FALSE,canned items
+mayonnaise,TRUE,FALSE,TRUE,TRUE,FALSE,canned items
 mango,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 manioc,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 maple syrup,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
@@ -198,6 +201,7 @@ piccadilly tomato,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 pine nut,TRUE,TRUE,TRUE,TRUE,FALSE,dry seed
 pistachio,TRUE,TRUE,TRUE,TRUE,FALSE,dry seed
 plum,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
+pomegranate,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 pomegranate sauce,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 potato,TRUE,TRUE,FALSE,TRUE,FALSE,vegetable
 pumpkin,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
@@ -280,6 +284,7 @@ white onion,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 white vinegar,TRUE,TRUE,TRUE,TRUE,FALSE,oils
 white wine,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
 white yogurt,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
+white flour type 00,TRUE,FALSE,FALSE,TRUE,FALSE,flours
 white/kamut flour,TRUE,TRUE,FALSE,TRUE,FALSE,flours
 whole milk,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 whole wheat flour,TRUE,TRUE,FALSE,TRUE,FALSE,flours

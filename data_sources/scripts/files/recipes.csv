@@ -106,4 +106,7 @@ id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from
 105,Pastitsio (baked pasta with minced beef) ,recipes/mediterranea/greece/pastitsio-baked-pasta-with-minced-beef,70,6,4,greece,,,main,pasta; beef meat,baked,FALSE,FALSE,FALSE,FALSE
 106,Honey apple cake,recipes/south-america/brazil/honey-apple-cake,75,10,3,brazil,,,dessert,honey; apple,baked,TRUE,FALSE,FALSE,TRUE
 107,Kisir (turkish cracked wheat salad),recipes/middle-east/turkey/kisir-turkish-cracked-wheat-salad,45,4,2,turkey,,,appetizer,bulgur,boiled,TRUE,TRUE,FALSE,TRUE
-108,Chukkandar tikki (red beetroot burgers),recipes/asia/india/chukkandar-tikki-red-beetroot-burger,60,4,3,india,,,main,beetroot,pan-fried,TRUE,TRUE,FALSE,TRUE
+108,Chukkandar tikki (red beetroot burgers),recipes/asia/india/chukkandar-tikki-red-beetroot-burgers,60,4,3,india,,,main,beetroot,pan-fried,TRUE,TRUE,FALSE,TRUE
+109,Choco-salame,recipes/mediterranea/italy/choco-salame,30,10,1,italy,,,dessert,dark chocolate,bain-marie,TRUE,FALSE,FALSE,FALSE
+110,Custard cake,recipes/mediterranea/italy/custard-cake,80,10,3,italy,,,dessert,eggs; flour; sugar,baked,TRUE,FALSE,FALSE,FALSE
+111,Armenian style Georgian eggplants,recipes/asia/armenia/armenian-style-georgian-eggplants,50,10,2,armenia,,,main,eggplant,pan-fried,TRUE,FALSE,FALSE,FALSE
