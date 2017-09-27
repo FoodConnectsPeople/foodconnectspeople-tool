@@ -510,10 +510,14 @@ main {
                 // - otherwise, with no unit of measure at all
 
                 ingposition = -1;
+                ingposany   = -1;
                 sameunit = false;
                 someentry = false;
                 for (k = 0, k < #grocery_list, k++) {
                   someentry = someentry || (grocery_list[k].ingredient == ingredient);
+                  if ( (grocery_list[k].ingredient == ingredient) ) {
+                    ingposany = k
+                  };
                   if ( (grocery_list[k].ingredient == ingredient) && (grocery_list[k].unit_of_measure == target_unit) ) {
                     sameunit = true;
                     ingposition = k
@@ -537,17 +541,16 @@ main {
                   pos = #grocery_list;
                   grocery_list[pos].ingredient       = ingredient;
                   grocery_list[pos].ingredient_class = ingredient_class;
-                  if (language != "italian")
-                    { grocery_list[pos].quantity         = "Quantity not specified" };
-                  if (language == "italian")
-                    { grocery_list[pos].quantity         = "Quantita' non specificata" };
+                  grocery_list[pos].qtyunspecified   = true;
+                  grocery_list[pos].quantity         = 0;
                   grocery_list[pos].unit_of_measure  = ""
                 };
 
-                // Case 2: quantity is unspecified and already ingredient is in list. Do nothing
+                // Case 2: quantity is unspecified and already ingredient is in list. Add unspecified flag.
                 if ( (target_quantity == "") && (someentry == true) ) {
                   //println@Console("Case 2")();
-                  no_op = no_op
+                  pos = ingposany;
+                  grocery_list[pos].qtyunspecified = true
                 };
 
 
@@ -565,17 +568,23 @@ main {
                   //println@Console("Case 4")();
 
                   if (ingposition == -1) {
-                    pos = #grocery_list
+                    pos = #grocery_list;
+                    grocery_list[pos].ingredient = ingredient;
+                    grocery_list[pos].ingredient_class = ingredient_class;
+                    grocery_list[pos].unit_of_measure = target_unit;
+                    grocery_list[pos].quantity = target_quantity;
+                    grocery_list[pos].qtyunspecified = false
                   } else {
-                    pos = ingposition
-                  };
-
-                  grocery_list[pos].ingredient = ingredient;
-                  grocery_list[pos].ingredient_class = ingredient_class;
-                  grocery_list[pos].unit_of_measure = target_unit;
-                  grocery_list[pos].quantity = target_quantity
+                    pos = ingposition;
+                    grocery_list[pos].ingredient = ingredient;
+                    grocery_list[pos].ingredient_class = ingredient_class;
+                    grocery_list[pos].unit_of_measure = target_unit;
+                    grocery_list[pos].quantity = target_quantity
+                  }
 
                 };
+
+                //println@Console("Cases done")();
 
                 // Handling alternate ingredient if needed (for unknown or known quantity)
 
@@ -589,9 +598,11 @@ main {
                     alternate_notes[pos] = "Note: " + alternate_ingredient + " can substitute " + ingredient + " for " + target_quantity + " " + target_unit + ", for recipe " + recipe_id
                   }
                 }
+
             }
         };
 
+        if (request.verbose) { println@Console("Building response")() };
         undef(response);
         for (l = 0, l < #grocery_list, l++) {
             idxclass      = #response.classes;
@@ -604,7 +615,16 @@ main {
             };
             response.classes[idxclass].class = grocery_list[l].ingredient_class;
             response.classes[idxclass].ingredients[idxingredient].ingredient = grocery_list[l].ingredient;
-            response.classes[idxclass].ingredients[idxingredient].quantity = string(grocery_list[l].quantity);
+            qty =  string(grocery_list[l].quantity);
+            if ( (grocery_list[l].quantity != 0) && (grocery_list[l].qtyunspecified == true) && (language != "italian") )
+              { qty = "Quantity not specified + " + qty};
+            if ( (grocery_list[l].quantity != 0) && (grocery_list[l].qtyunspecified == true) && (language == "italian") )
+              { qty = "Quantita' non specificata + " + qty};
+            if ( (grocery_list[l].quantity == 0) && (grocery_list[l].qtyunspecified == true) && (language != "italian") )
+                { qty = "Quantity not specified" };
+            if ( (grocery_list[l].quantity == 0) && (grocery_list[l].qtyunspecified == true) && (language == "italian") )
+                { qty = "Quantita' non specificata"};
+            response.classes[idxclass].ingredients[idxingredient].quantity = qty;
             response.classes[idxclass].ingredients[idxingredient].unit_of_measure = grocery_list[l].unit_of_measure
         };
 
