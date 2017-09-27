@@ -275,6 +275,7 @@ vanilla extract,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 vanillin,TRUE,TRUE,TRUE,TRUE,TRUE,powders
 vegan butter,TRUE,TRUE,TRUE,TRUE,FALSE,dairy
 vegetable broth,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
+vegetable stock cube,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 vegetable stock powder,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 vietnamese fish sauce,FALSE,FALSE,TRUE,TRUE,FALSE,canned items
 walnut,TRUE,TRUE,TRUE,TRUE,FALSE,dry seed
