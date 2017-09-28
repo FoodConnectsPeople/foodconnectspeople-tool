@@ -20,7 +20,7 @@ main {
       t.rec_persons[3].recipe_id = 98;
       t.rec_persons[3].persons   = 5;
       t.rec_persons[4].recipe_id = 112;
-      t.rec_persons[4].persons   = 3;
+      t.rec_persons[4].persons   = 6;
       t.rec_persons[5].recipe_id = 96;
       t.rec_persons[5].persons   = 6;
       t.rec_persons[6].recipe_id = 68;
@@ -29,6 +29,10 @@ main {
       t.rec_persons[7].persons   = 10;
       t.rec_persons[8].recipe_id = 109;
       t.rec_persons[8].persons   = 10;
+      t.rec_persons[9].recipe_id = 108;
+      t.rec_persons[9].persons   = 8;
+      t.rec_persons[10].recipe_id = 106;
+      t.rec_persons[10].persons   = 10;
 
 
       buildGroceryList@DbService(t)(response);
