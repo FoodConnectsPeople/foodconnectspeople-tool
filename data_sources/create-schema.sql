@@ -168,6 +168,14 @@ CREATE TABLE FCP.Translations (
   , PRIMARY KEY (english,italian)
 );
 
+
+CREATE TABLE fcp.languages
+(
+  language_id character varying NOT NULL,
+  description character varying,
+  CONSTRAINT "lang_idPK" PRIMARY KEY (language_id)
+);
+
 CREATE TABLE fcp.i18n
 (
   field character varying NOT NULL,
@@ -181,12 +189,6 @@ CREATE TABLE fcp.i18n
       ON UPDATE NO ACTION ON DELETE NO ACTION
 );
 
-CREATE TABLE fcp.languages
-(
-  language_id character varying NOT NULL,
-  description character varying,
-  CONSTRAINT "lang_idPK" PRIMARY KEY (language_id)
-);
 
 CREATE VIEW FCP.recipeingredientsproperties
 AS SELECT
@@ -221,11 +223,13 @@ CREATE VIEW fcp.countries_i18n AS
     i.language,
     i.content
    FROM fcp.countries c
-     JOIN fcp.i18n i ON i.dbtable::text = 'countries'::text AND i.field::text = 'name'::text AND i.row_id = c.country_id;
+     JOIN fcp.i18n i ON i.dbtable::text = 'countries'::text
+     AND i.field::text = 'name'::text AND i.row_id = c.country_id;
 
  CREATE VIEW fcp.tools_i18n AS
   SELECT t.tool_id,
      i.language,
      i.content
     FROM fcp.tools t
-      JOIN fcp.i18n i ON i.dbtable::text = 'tools'::text AND i.field::text = 'name'::text AND i.row_id = t.tool_id;
+      JOIN fcp.i18n i ON i.dbtable::text = 'tools'::text
+      AND i.field::text = 'name'::text AND i.row_id = t.tool_id;
