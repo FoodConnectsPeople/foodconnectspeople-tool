@@ -112,3 +112,6 @@ id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from
 111,Armenian style Georgian eggplants,recipes/asia/armenia/armenian-style-georgian-eggplants,50,10,2,armenia,,,main,eggplant,pan-fried,TRUE,FALSE,FALSE,FALSE
 112,Palak murgh (pakistani marinated chicken with basmati rice),recipes/asia/pakistan/palak-murgh-pakistani-marinated-chicken-with-basmati-rice,60,3,4,pakistan,,,main,chicken,pan-fried,FALSE,FALSE,TRUE,FALSE
 113,Spinach puree,recipes/europe/serbia/spinach-puree,20,2,2,serbia,,,appetizer,spinach,pan-fried,TRUE,TRUE,FALSE,TRUE
+114,Cantarelle (sweet crepes with olive oil),recipes/mediterranea/italy/cantarelle-sweet-crepes-with-olive-oil/,30,6,2,italy,,,dessert,flour; sugar,pan-fried,TRUE,TRUE,FALSE,TRUE
+115,Salsa verde e bollito (boiled meat with green sauce),recipes/mediterranea/italy/salsa-verde-e-bollito-boiled-meat-with-green-sauce/,180,4,4,italy,,,main,beef meat,boiled,FALSE,FALSE,TRUE,TRUE
+116,Sarmale (veg version with walnuts),recipes/europe/romania/sarmale-veg-version-with-walnuts/,210,4,4,romania,,,main,cabbage; walnuts,boiled,TRUE,FALSE,TRUE,FALSE

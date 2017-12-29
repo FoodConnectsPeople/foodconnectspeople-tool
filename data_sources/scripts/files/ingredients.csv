@@ -273,8 +273,12 @@ urfa peyniri turkish cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 vanilla bean,TRUE,TRUE,TRUE,TRUE,FALSE,spice
 vanilla extract,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 vanillin,TRUE,TRUE,TRUE,TRUE,TRUE,powders
+veal head,FALSE,FALSE,TRUE,TRUE,FALSE,meat
+veal leg,FALSE,FALSE,TRUE,TRUE,FALSE,meat
+veal tongue,FALSE,FALSE,TRUE,TRUE,FALSE,meat
 vegan butter,TRUE,TRUE,TRUE,TRUE,FALSE,dairy
 vegetable broth,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
+vegetable soup concentrate,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 vegetable stock cube,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 vegetable stock powder,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 vietnamese fish sauce,FALSE,FALSE,TRUE,TRUE,FALSE,canned items
