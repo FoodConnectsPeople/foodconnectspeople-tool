@@ -1,4 +1,5 @@
 ingredient,is_vegetarian,is_vegan,is_gluten_free,is_lactose_free,is_spice,ingredient_class
+pure alcohol,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
 allspice,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 almond,TRUE,TRUE,TRUE,TRUE,FALSE,dry seed
 anchovy,FALSE,FALSE,TRUE,TRUE,FALSE,fish
@@ -63,6 +64,7 @@ clove,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 coconut,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 coconut milk,TRUE,TRUE,TRUE,TRUE,FALSE,canned fruit
 cokelec turkish cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
+coloured candy,TRUE,TRUE,TRUE,TRUE,FALSE,sweeteners
 concentrated tomato paste,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 cookie,TRUE,FALSE,FALSE,FALSE,FALSE,flours
 coriander seed,TRUE,TRUE,TRUE,TRUE,TRUE,spice
@@ -164,6 +166,7 @@ lime,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 lime peel,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 maggi,TRUE,TRUE,TRUE,FALSE,FALSE,canned items
 mayonnaise,TRUE,FALSE,TRUE,TRUE,FALSE,canned items
+mandarin,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 mango,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 manioc,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 maple syrup,TRUE,TRUE,TRUE,TRUE,FALSE,canned items

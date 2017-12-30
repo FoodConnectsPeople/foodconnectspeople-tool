@@ -115,3 +115,6 @@ id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from
 114,Cantarelle (sweet crepes with olive oil),recipes/mediterranea/italy/cantarelle-sweet-crepes-with-olive-oil/,30,6,2,italy,,,dessert,flour; sugar,pan-fried,TRUE,TRUE,FALSE,TRUE
 115,Salsa verde e bollito (boiled meat with green sauce),recipes/mediterranea/italy/salsa-verde-e-bollito-boiled-meat-with-green-sauce/,180,4,4,italy,,,main,beef meat,boiled,FALSE,FALSE,TRUE,TRUE
 116,Sarmale (veg version with walnuts),recipes/europe/romania/sarmale-veg-version-with-walnuts/,210,4,4,romania,,,main,cabbage; walnuts,boiled,TRUE,FALSE,TRUE,FALSE
+117,Blinchiki (savory crepes; veg version),recipes/asia/russia/blinchiki-savory-crepes/,60,4,3,russia,,,main,mushroom,pan-fried,TRUE,FALSE,FALSE,FALSE
+118,Blinchiki (savory crepes; non-veg version),recipes/asia/russia/blinchiki-savory-crepes/,60,4,3,russia,,,main,beef meat,pan-fried,FALSE,FALSE,FALSE,FALSE
+119,Purceddhruzzi (xmas cookies from Salento),recipes/mediterranea/italy/purceddhruzzi/,60,8,3,italy,,,dessert,flour; oranges; honey,pan-fried,TRUE,FALSE,FALSE,TRUE
