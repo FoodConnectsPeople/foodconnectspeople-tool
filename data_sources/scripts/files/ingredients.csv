@@ -63,9 +63,11 @@ cinnamon stick,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 clove,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 coconut,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 coconut milk,TRUE,TRUE,TRUE,TRUE,FALSE,canned fruit
+coffee,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 cokelec turkish cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 coloured candy,TRUE,TRUE,TRUE,TRUE,FALSE,sweeteners
 concentrated tomato paste,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
+cooked wine,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
 cookie,TRUE,FALSE,FALSE,FALSE,FALSE,flours
 coriander seed,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 corn meal flour,TRUE,TRUE,TRUE,TRUE,FALSE,flours
@@ -84,6 +86,7 @@ dijon mustard,TRUE,TRUE,TRUE,TRUE,TRUE,canned items
 dill,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 dried apricot,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 dried cherries,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
+dried fig,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 dried plum,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 dry basil,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 dry bell pepper,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
@@ -201,6 +204,7 @@ peanut paste,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 pear,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 pecorino cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 phyllo pastry,TRUE,TRUE,TRUE,TRUE,FALSE,frozen items
+puff pastry,TRUE,TRUE,TRUE,TRUE,FALSE,frozen items
 piccadilly tomato,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 pine nut,TRUE,TRUE,TRUE,TRUE,FALSE,dry seed
 pistachio,TRUE,TRUE,TRUE,TRUE,FALSE,dry seed
@@ -225,6 +229,7 @@ robiola cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 rocket,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 rose pepper,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 rosolio liqueur,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
+rhum,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
 sage,TRUE,TRUE,TRUE,TRUE,TRUE,vegetable
 salmon,FALSE,FALSE,TRUE,TRUE,FALSE,fish
 salt,TRUE,TRUE,TRUE,TRUE,FALSE,oils
@@ -286,6 +291,7 @@ vegetable stock cube,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 vegetable stock powder,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 vietnamese fish sauce,FALSE,FALSE,TRUE,TRUE,FALSE,canned items
 walnut,TRUE,TRUE,TRUE,TRUE,FALSE,dry seed
+walnut kernel,TRUE,TRUE,TRUE,TRUE,FALSE,dry seed
 water,TRUE,TRUE,TRUE,TRUE,FALSE,water
 white asparagus,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 white bread,TRUE,TRUE,FALSE,TRUE,FALSE,bakery
@@ -297,6 +303,7 @@ white flour type 00,TRUE,FALSE,FALSE,TRUE,FALSE,flours
 white/kamut flour,TRUE,TRUE,FALSE,TRUE,FALSE,flours
 whole milk,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 whole wheat flour,TRUE,TRUE,FALSE,TRUE,FALSE,flours
+worcester sauce,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 yeast for dessert,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 yellow bell pepper,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 zucchini,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
