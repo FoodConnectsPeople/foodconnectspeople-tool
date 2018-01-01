@@ -35,6 +35,7 @@ bulgur,TRUE,TRUE,FALSE,TRUE,FALSE,cereals
 butter,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 cabbage,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 calamari,FALSE,FALSE,TRUE,TRUE,FALSE,fish
+canned pea,FALSE,FALSE,FALSE,FALSE,FALSE,canned items
 caper,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 carrot,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 cashew,TRUE,TRUE,TRUE,TRUE,FALSE,dry seed
@@ -66,6 +67,7 @@ coconut milk,TRUE,TRUE,TRUE,TRUE,FALSE,canned fruit
 coffee,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 cokelec turkish cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 coloured candy,TRUE,TRUE,TRUE,TRUE,FALSE,sweeteners
+cous-cous,TRUE,TRUE,FALSE,TRUE,FALSE,cereals
 concentrated tomato paste,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 cooked wine,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
 cookie,TRUE,FALSE,FALSE,FALSE,FALSE,flours
@@ -205,7 +207,9 @@ pear,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 pecorino cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 phyllo pastry,TRUE,TRUE,TRUE,TRUE,FALSE,frozen items
 puff pastry,TRUE,TRUE,TRUE,TRUE,FALSE,frozen items
+pickled cucumber,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 piccadilly tomato,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+pimento,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 pine nut,TRUE,TRUE,TRUE,TRUE,FALSE,dry seed
 pistachio,TRUE,TRUE,TRUE,TRUE,FALSE,dry seed
 plum,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
@@ -218,6 +222,7 @@ raisin,TRUE,TRUE,TRUE,TRUE,FALSE,dry seed
 raki,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
 ras-el-hanout,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 red bell pepper,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+red lentil,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 red mullet,FALSE,FALSE,TRUE,TRUE,FALSE,fish
 red onion,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 red radish,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
@@ -283,6 +288,7 @@ vanilla extract,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 vanillin,TRUE,TRUE,TRUE,TRUE,TRUE,powders
 veal head,FALSE,FALSE,TRUE,TRUE,FALSE,meat
 veal leg,FALSE,FALSE,TRUE,TRUE,FALSE,meat
+veal meat,FALSE,FALSE,TRUE,TRUE,FALSE,meat
 veal tongue,FALSE,FALSE,TRUE,TRUE,FALSE,meat
 vegan butter,TRUE,TRUE,TRUE,TRUE,FALSE,dairy
 vegetable broth,TRUE,TRUE,TRUE,TRUE,FALSE,canned items

@@ -120,3 +120,5 @@ id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from
 119,Purceddhruzzi (xmas cookies from Salento),recipes/mediterranea/italy/purceddhruzzi/,60,8,3,italy,,,dessert,flour; oranges; honey,pan-fried,TRUE,FALSE,FALSE,TRUE
 120,Lu pistingu (Xmas dessert from Marche region),recipes/mediterranea/italy/lu-pistingu-xmas-dessert-from-marche-region/,150,6,4,italy,,,dessert,dried figs; walnuts; almonds,baked,TRUE,TRUE,FALSE,TRUE
 121,Ragout fin (salty Xmas pies),recipes/europe/germany/ragout-fin-salty-xmas-pies/,135,6,4,germany,,,appetizer,puff pastry; chicken,baked,FALSE,FALSE,FALSE,FALSE
+122,Olivier salad,recipes/europe/belarus/olivier-salad/,60,6,2,belarus,,,appetizer,potatoes; veal meat,boiled,FALSE,FALSE,TRUE,TRUE
+123,Mercimek koftesi (red lentils burgers),recipes/middle-east/turkey/mercimek-koftesi-red-lentils-burgers/,70,6,2,turkey,,,appetizer,red lentils; bulgur,boiled,TRUE,TRUE,FALSE,TRUE
