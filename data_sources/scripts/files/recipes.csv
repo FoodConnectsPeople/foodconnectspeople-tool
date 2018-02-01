@@ -122,3 +122,4 @@ id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from
 121,Ragout fin (salty Xmas pies),recipes/europe/germany/ragout-fin-salty-xmas-pies/,135,6,4,germany,,,appetizer,puff pastry; chicken,baked,FALSE,FALSE,FALSE,FALSE
 122,Olivier salad,recipes/europe/belarus/olivier-salad/,60,6,2,belarus,,,appetizer,potatoes; veal meat,boiled,FALSE,FALSE,TRUE,TRUE
 123,Mercimek koftesi (red lentils burgers),recipes/middle-east/turkey/mercimek-koftesi-red-lentils-burgers/,70,6,2,turkey,,,appetizer,red lentils; bulgur,boiled,TRUE,TRUE,FALSE,TRUE
+124,Biscay style cod (bacalao a la vizcaina),recipes/central-america/guatemala/biscay-style-cod-bacalao-a-la-vizcaina,50,4,2,guatemala,,,main,dry cod,boiled; pan-fried,FALSE,FALSE,TRUE,TRUE

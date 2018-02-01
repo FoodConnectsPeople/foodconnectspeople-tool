@@ -23,6 +23,8 @@ beetroot,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 bell pepper,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 black cardamom,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 black olive,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+pitted olive,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+stuffed olive,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 black pepper seed,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 black-eyed pea,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 black tea,TRUE,TRUE,TRUE,TRUE,FALSE,powders
@@ -95,6 +97,7 @@ dry bell pepper,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 dry blackcurrant,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 dry chickpea,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 dry coconut shred,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
+dry cod,FALSE,FALSE,TRUE,TRUE,FALSE,fish
 dry mint,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 dry misithra cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 dry oregano,TRUE,TRUE,TRUE,TRUE,TRUE,spice
