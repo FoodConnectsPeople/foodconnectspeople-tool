@@ -127,3 +127,4 @@ id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from
 126,Ndole and yam (chicken and shrimps sautee with peanuts),recipes/africa/camerun/ndole-and-yam-chicken-and-shrimps-sautee-with-peanuts,60,4,2,camerun,,,main,chicken; shrimps; spinaches; peanuts,pan-fried,FALSE,FALSE,TRUE,TRUE
 127,Avocado salad,recipes/africa/ivory-coast/avocado-salad,35,4,1,ivory coast,,,side dish,avocado,almost raw,TRUE,FALSE,TRUE,TRUE
 128,Syltiash (rice and milk dessert),recipes/europe/albania/syltiash/rice-and-milk-dessert,20,4,1,albania,,,dessert,rice; milk,boiled,TRUE,FALSE,TRUE,FALSE
+129,Celo zereshk morgh (rice with currant and chicken),recipes/asia/iran/celo-zereshk-morh-rice-with-currant-and-chicken,90,4,2,iran,,,main,rice; currant; chicken,boiled; pan-fried,FALSE,FALSE,TRUE,TRUE

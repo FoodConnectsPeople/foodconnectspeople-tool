@@ -83,6 +83,7 @@ couscous,TRUE,TRUE,TRUE,TRUE,FALSE,cereals
 crushed chillies,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 cucumber,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 cumin seed,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+currant,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 curry leaf,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 curry powder,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 dark chocolate,TRUE,TRUE,TRUE,TRUE,FALSE,sweeteners
@@ -149,10 +150,12 @@ green onion,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 green onion leaf,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 green pepper,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 ground black pepper,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+ground red pepper,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 ground cinnamon,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 ground coriander,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 ground cumin,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 ground fenugreek,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+ground ginger,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 ground saffron,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 ground turmeric,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 half peach,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
