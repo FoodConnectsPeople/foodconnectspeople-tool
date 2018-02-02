@@ -7,6 +7,7 @@ anise for dessert,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 apple,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 apple cider vinegar,TRUE,TRUE,TRUE,TRUE,FALSE,oils
 apple sweetener,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
+apple vinegar,TRUE,TRUE,TRUE,TRUE,FALSE,oils
 artichoke,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 avocado,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 baby chard,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
@@ -152,6 +153,7 @@ ground cinnamon,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 ground coriander,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 ground cumin,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 ground fenugreek,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+ground saffron,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 ground turmeric,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 half peach,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 hard cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
@@ -159,6 +161,7 @@ harissa,TRUE,TRUE,TRUE,TRUE,FALSE,spice
 honey,TRUE,TRUE,TRUE,TRUE,FALSE,sweeteners
 iceberg salad,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 icing sugar,TRUE,TRUE,TRUE,TRUE,FALSE,sweeteners
+igname potato,TRUE,TRUE,FALSE,TRUE,FALSE,vegetable
 instant yeast,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 isot pepper,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 navy bean,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
@@ -205,6 +208,7 @@ parmesan cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 parsley,TRUE,TRUE,TRUE,TRUE,TRUE,vegetable
 parsley root,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 pastry,TRUE,TRUE,FALSE,TRUE,FALSE,frozen items
+peanut,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 peanut paste,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 pear,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 pecorino cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
@@ -262,6 +266,7 @@ spelt flour,TRUE,TRUE,TRUE,TRUE,FALSE,flours
 spinach,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 stale bread,TRUE,TRUE,FALSE,TRUE,FALSE,bakery
 star anise,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+stock cube,FALSE,FALSE,TRUE,TRUE,FALSE,canned items
 sugar,TRUE,TRUE,TRUE,TRUE,FALSE,sweeteners
 sugar powder,TRUE,TRUE,TRUE,TRUE,FALSE,sweeteners
 sumak,TRUE,TRUE,TRUE,TRUE,TRUE,spice

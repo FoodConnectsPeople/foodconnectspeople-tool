@@ -123,3 +123,7 @@ id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from
 122,Olivier salad,recipes/europe/belarus/olivier-salad/,60,6,2,belarus,,,appetizer,potatoes; veal meat,boiled,FALSE,FALSE,TRUE,TRUE
 123,Mercimek koftesi (red lentils burgers),recipes/middle-east/turkey/mercimek-koftesi-red-lentils-burgers/,70,6,2,turkey,,,appetizer,red lentils; bulgur,boiled,TRUE,TRUE,FALSE,TRUE
 124,Biscay style cod (bacalao a la vizcaina),recipes/central-america/guatemala/biscay-style-cod-bacalao-a-la-vizcaina,50,4,2,guatemala,,,main,dry cod,boiled; pan-fried,FALSE,FALSE,TRUE,TRUE
+125,Sacivi (chicken puree),recipes/europe/georgia/sacivi-chicken-puree,60,4,3,georgia,,,main,chicken,fried,FALSE,FALSE,TRUE,TRUE
+126,Ndole and yam (chicken and shrimps sautee with peanuts),recipes/africa/camerun/ndole-and-yam-chicken-and-shrimps-sautee-with-peanuts,60,4,2,camerun,,,main,chicken; shrimps; spinaches; peanuts,pan-fried,FALSE,FALSE,TRUE,TRUE
+127,Avocado salad,recipes/africa/ivory-coast/avocado-salad,35,4,1,ivory coast,,,side dish,avocado,almost raw,TRUE,FALSE,TRUE,TRUE
+128,Syltiash (rice and milk dessert),recipes/europe/albania/syltiash/rice-and-milk-dessert,20,4,1,albania,,,dessert,rice; milk,boiled,TRUE,FALSE,TRUE,FALSE
