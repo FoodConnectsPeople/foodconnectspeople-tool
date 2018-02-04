@@ -132,6 +132,7 @@ garam masala,TRUE,TRUE,TRUE,TRUE,FALSE,spice
 garlic,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 gentiline lettuce,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 ginger root,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+goat meet,FALSE,FALSE,TRUE,TRUE,FALSE,meat
 gorgonzola cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 grana trentino cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 grappa,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
