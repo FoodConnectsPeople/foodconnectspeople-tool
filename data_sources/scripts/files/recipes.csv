@@ -61,12 +61,12 @@ id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from
 60,Manjar de coco,recipes/south-america/brazil/manjar-de-coco-coconut-pudding,60,12,2,brazil,,,dessert,coconut milk,boiled,TRUE,TRUE,FALSE,TRUE
 61,Panquecas de doce de leite,recipes/south-america/argentina/panquecas-de-doce-de-leite-pancakes-with-caramelized-milk,30,8,3,argentina,,,dessert,flour; condensed milk,pan-fried,TRUE,FALSE,FALSE,FALSE
 62,Birani,recipes/asia/bangladesh/birani-basmati-rice-with-meat,40,8,3,bangladesh,,,main,beef meat; rice,boiled,FALSE,FALSE,TRUE,FALSE
-63,Konnto,recipes/africa/guinea-bissau/konnto-spicy-chicken-thighs/,45,8,3,guinea-bissau,,,main,chicken meat; rice,pan-fried,FALSE,FALSE,TRUE,TRUE
-64,Simaumo,recipes/africa/gambia/simaumo-chicken-thighs-in-tomato-sauce/,45,8,3,gambia,,,main,chicken meat; rice,pan-fried,FALSE,FALSE,TRUE,TRUE
-65,Tigadegena,recipes/africa/mali/tigadegena-meat-stew-with-peanut-butter/,45,4,3,mali,,,main,mutton meat; rice,pan-fried,FALSE,FALSE,TRUE,TRUE
+63,Konnto,recipes/africa/guinea-bissau/konnto-spicy-chicken-thighs,45,8,3,guinea-bissau,,,main,chicken meat; rice,pan-fried,FALSE,FALSE,TRUE,TRUE
+64,Simaumo,recipes/africa/gambia/simaumo-chicken-thighs-in-tomato-sauce,45,8,3,gambia,,,main,chicken meat; rice,pan-fried,FALSE,FALSE,TRUE,TRUE
+65,Tigadegena,recipes/africa/mali/tigadegena-meat-stew-with-peanut-butter,45,4,3,mali,,,main,mutton meat; rice,pan-fried,FALSE,FALSE,TRUE,TRUE
 66,Degue,recipes/africa/mali/degue-couscous-and-banana-dessert,15,8,2,mali,,,dessert,banana,almost raw,TRUE,FALSE,FALSE,FALSE
 67,Ghormeh gosht,recipes/asia/afghanistan/ghormeh-gosht-beef-stew-in-tomato-sauce,60,8,3,afghanistan,,,main,beef meat; rice,pan-fried,FALSE,FALSE,TRUE,TRUE
-68,Jamweli,recipes/africa/gambia/jamweli-meat-stew-with-dijon-mustard/,90,8,3,gambia,,,main,mutton meat,boiled,FALSE,FALSE,TRUE,TRUE
+68,Jamweli,recipes/africa/gambia/jamweli-meat-stew-with-dijon-mustard,90,8,3,gambia,,,main,mutton meat,boiled,FALSE,FALSE,TRUE,TRUE
 69,Zucchine alla besciamella,recipes/mediterranea/italy/zucchine-alla-besciamella-baked-zucchini-with-bechamel-sauce,45,4,3,italy,,,main,zucchini,baked,TRUE,FALSE,TRUE,FALSE
 70,Egusi soup,recipes/africa/nigeria/egusi-soup-meat-with-melon-seeds,90,8,3,nigeria,,,main,beef meat; semolina,pan-fried,FALSE,FALSE,FALSE,FALSE
 71,Kabob,recipes/asia/afghanistan/kabob-grilled-chicken-marinated-with-onion,45,8,3,afghanistan,,,main,chicken meat; bell pepper; eggplant,roasted,FALSE,FALSE,TRUE,TRUE
@@ -112,20 +112,23 @@ id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from
 111,Armenian style Georgian eggplants,recipes/asia/armenia/armenian-style-georgian-eggplants,50,10,2,armenia,,,main,eggplant,pan-fried,TRUE,FALSE,FALSE,FALSE
 112,Palak murgh (pakistani marinated chicken with basmati rice),recipes/asia/pakistan/palak-murgh-pakistani-marinated-chicken-with-basmati-rice,60,3,4,pakistan,,,main,chicken,pan-fried,FALSE,FALSE,TRUE,FALSE
 113,Spinach puree,recipes/europe/serbia/spinach-puree,20,2,2,serbia,,,appetizer,spinach,pan-fried,TRUE,TRUE,FALSE,TRUE
-114,Cantarelle (sweet crepes with olive oil),recipes/mediterranea/italy/cantarelle-sweet-crepes-with-olive-oil/,30,6,2,italy,,,dessert,flour; sugar,pan-fried,TRUE,TRUE,FALSE,TRUE
-115,Salsa verde e bollito (boiled meat with green sauce),recipes/mediterranea/italy/salsa-verde-e-bollito-boiled-meat-with-green-sauce/,180,4,4,italy,,,main,beef meat,boiled,FALSE,FALSE,TRUE,TRUE
-116,Sarmale (veg version with walnuts),recipes/europe/romania/sarmale-veg-version-with-walnuts/,210,4,4,romania,,,main,cabbage; walnuts,boiled,TRUE,FALSE,TRUE,FALSE
-117,Blinchiki (savory crepes; veg version),recipes/asia/russia/blinchiki-savory-crepes/,60,4,3,russia,,,main,mushroom,pan-fried,TRUE,FALSE,FALSE,FALSE
-118,Blinchiki (savory crepes; non-veg version),recipes/asia/russia/blinchiki-savory-crepes/,60,4,3,russia,,,main,beef meat,pan-fried,FALSE,FALSE,FALSE,FALSE
-119,Purceddhruzzi (xmas cookies from Salento),recipes/mediterranea/italy/purceddhruzzi/,60,8,3,italy,,,dessert,flour; oranges; honey,pan-fried,TRUE,FALSE,FALSE,TRUE
-120,Lu pistingu (Xmas dessert from Marche region),recipes/mediterranea/italy/lu-pistingu-xmas-dessert-from-marche-region/,150,6,4,italy,,,dessert,dried figs; walnuts; almonds,baked,TRUE,TRUE,FALSE,TRUE
-121,Ragout fin (salty Xmas pies),recipes/europe/germany/ragout-fin-salty-xmas-pies/,135,6,4,germany,,,appetizer,puff pastry; chicken,baked,FALSE,FALSE,FALSE,FALSE
-122,Olivier salad,recipes/europe/belarus/olivier-salad/,60,6,2,belarus,,,appetizer,potatoes; veal meat,boiled,FALSE,FALSE,TRUE,TRUE
-123,Mercimek koftesi (red lentils burgers),recipes/middle-east/turkey/mercimek-koftesi-red-lentils-burgers/,70,6,2,turkey,,,appetizer,red lentils; bulgur,boiled,TRUE,TRUE,FALSE,TRUE
+114,Cantarelle (sweet crepes with olive oil),recipes/mediterranea/italy/cantarelle-sweet-crepes-with-olive-oil,30,6,2,italy,,,dessert,flour; sugar,pan-fried,TRUE,TRUE,FALSE,TRUE
+115,Salsa verde e bollito (boiled meat with green sauce),recipes/mediterranea/italy/salsa-verde-e-bollito-boiled-meat-with-green-sauce,180,4,4,italy,,,main,beef meat,boiled,FALSE,FALSE,TRUE,TRUE
+116,Sarmale (veg version with walnuts),recipes/europe/romania/sarmale-veg-version-with-walnuts,210,4,4,romania,,,main,cabbage; walnuts,boiled,TRUE,FALSE,TRUE,FALSE
+117,Blinchiki (savory crepes; veg version),recipes/asia/russia/blinchiki-savory-crepes,60,4,3,russia,,,main,mushroom,pan-fried,TRUE,FALSE,FALSE,FALSE
+118,Blinchiki (savory crepes; non-veg version),recipes/asia/russia/blinchiki-savory-crepes,60,4,3,russia,,,main,beef meat,pan-fried,FALSE,FALSE,FALSE,FALSE
+119,Purceddhruzzi (xmas cookies from Salento),recipes/mediterranea/italy/purceddhruzzi,60,8,3,italy,,,dessert,flour; oranges; honey,pan-fried,TRUE,FALSE,FALSE,TRUE
+120,Lu pistingu (Xmas dessert from Marche region),recipes/mediterranea/italy/lu-pistingu-xmas-dessert-from-marche-region,150,6,4,italy,,,dessert,dried figs; walnuts; almonds,baked,TRUE,TRUE,FALSE,TRUE
+121,Ragout fin (salty Xmas pies),recipes/europe/germany/ragout-fin-salty-xmas-pies,135,6,4,germany,,,appetizer,puff pastry; chicken,baked,FALSE,FALSE,FALSE,FALSE
+122,Olivier salad,recipes/europe/belarus/olivier-salad,60,6,2,belarus,,,appetizer,potatoes; veal meat,boiled,FALSE,FALSE,TRUE,TRUE
+123,Mercimek koftesi (red lentils burgers),recipes/middle-east/turkey/mercimek-koftesi-red-lentils-burgers,70,6,2,turkey,,,appetizer,red lentils; bulgur,boiled,TRUE,TRUE,FALSE,TRUE
 124,Biscay style cod (bacalao a la vizcaina),recipes/central-america/guatemala/biscay-style-cod-bacalao-a-la-vizcaina,50,4,2,guatemala,,,main,dry cod,boiled; pan-fried,FALSE,FALSE,TRUE,TRUE
 125,Sacivi (chicken puree),recipes/europe/georgia/sacivi-chicken-puree,60,4,3,georgia,,,main,chicken,fried,FALSE,FALSE,TRUE,TRUE
 126,Ndole and yam (chicken and shrimps sautee with peanuts),recipes/africa/camerun/ndole-and-yam-chicken-and-shrimps-sautee-with-peanuts,60,4,2,camerun,,,main,chicken; shrimps; spinaches; peanuts,pan-fried,FALSE,FALSE,TRUE,TRUE
 127,Avocado salad,recipes/africa/ivory-coast/avocado-salad,35,4,1,ivory coast,,,side dish,avocado,almost raw,TRUE,FALSE,TRUE,TRUE
 128,Syltiash (rice and milk dessert),recipes/europe/albania/syltiash/rice-and-milk-dessert,20,4,1,albania,,,dessert,rice; milk,boiled,TRUE,FALSE,TRUE,FALSE
 129,Celo zereshk morgh (rice with currant and chicken),recipes/asia/iran/celo-zereshk-morh-rice-with-currant-and-chicken,90,4,2,iran,,,main,rice; currant; chicken,boiled; pan-fried,FALSE,FALSE,TRUE,TRUE
-130,Tigadegena,recipes/africa/mali/tigadegena-meat-stew-with-peanut-butter/,45,4,3,mali,,,main,mutton meat; rice,pan-fried,FALSE,FALSE,TRUE,TRUE
+130,Tigadegena,recipes/africa/mali/tigadegena-meat-stew-with-peanut-butter,45,4,3,mali,,,main,mutton meat; rice,pan-fried,FALSE,FALSE,TRUE,TRUE
+131,Aloko avec poisson (fish and plantain),recipes/africa/ivory-coast/aloko-avec-poisson-fish-and-plantain,60,4,2,ivory coast,,,main,plantain; sea bream,fried,FALSE,FALSE,TRUE,TRUE
+132,Fish batter,recipes/africa/morocco/fish-batter,60,4,2,morocco,,,side dish,shrimp; calamari; sea bream,fried; baked,FALSE,FALSE,FALSE,FALSE
+133,Tagin (beef stew),recipes/africa/morocco/tagin-beef-stew,90,4,3,morocco,,,main,beef meat; vegetables,pan-fried,FALSE,FALSE,TRUE,TRUE

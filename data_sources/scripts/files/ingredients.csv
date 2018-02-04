@@ -179,6 +179,7 @@ lemon peel,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 lettuce,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 lime,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 lime peel,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
+mackerel,FALSE,FALSE,TRUE,TRUE,FALSE,fish
 maggi,TRUE,TRUE,TRUE,FALSE,FALSE,canned items
 mayonnaise,TRUE,FALSE,TRUE,TRUE,FALSE,canned items
 mandarin,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
@@ -223,6 +224,7 @@ piccadilly tomato,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 pimento,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 pine nut,TRUE,TRUE,TRUE,TRUE,FALSE,dry seed
 pistachio,TRUE,TRUE,TRUE,TRUE,FALSE,dry seed
+plantain,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 plum,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 pomegranate,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 pomegranate sauce,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
@@ -252,6 +254,7 @@ salt,TRUE,TRUE,TRUE,TRUE,FALSE,oils
 sardine,FALSE,FALSE,TRUE,TRUE,FALSE,fish
 savoiardi biscuit,TRUE,TRUE,FALSE,TRUE,FALSE,bakery
 scallion,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+sea bream,FALSE,FALSE,TRUE,TRUE,FALSE,fish
 semolina,TRUE,TRUE,FALSE,TRUE,FALSE,cereals
 semolina flour,TRUE,TRUE,FALSE,TRUE,FALSE,flours
 sesame seed,TRUE,TRUE,TRUE,TRUE,TRUE,dry seed
