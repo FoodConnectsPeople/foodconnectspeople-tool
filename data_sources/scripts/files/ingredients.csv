@@ -19,6 +19,7 @@ banana,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 basil leaf,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 basmati rice,TRUE,TRUE,FALSE,TRUE,FALSE,cereals
 bay leaf,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+bean,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 beef liver,FALSE,FALSE,TRUE,TRUE,FALSE,meat
 beef meat,FALSE,FALSE,TRUE,TRUE,FALSE,meat
 beetroot,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
