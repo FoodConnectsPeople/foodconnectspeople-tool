@@ -19,6 +19,7 @@ banana,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 basil leaf,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 basmati rice,TRUE,TRUE,FALSE,TRUE,FALSE,cereals
 bay leaf,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+beef liver,FALSE,FALSE,TRUE,TRUE,FALSE,meat
 beef meat,FALSE,FALSE,TRUE,TRUE,FALSE,meat
 beetroot,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 bell pepper,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
@@ -38,6 +39,7 @@ bulgur,TRUE,TRUE,FALSE,TRUE,FALSE,cereals
 butter,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 cabbage,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 calamari,FALSE,FALSE,TRUE,TRUE,FALSE,fish
+canned corn,FALSE,FALSE,FALSE,FALSE,FALSE,canned items
 canned pea,FALSE,FALSE,FALSE,FALSE,FALSE,canned items
 caper,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 carrot,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable

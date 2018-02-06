@@ -132,3 +132,4 @@ id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from
 131,Aloko avec poisson (fish and plantain),recipes/africa/ivory-coast/aloko-avec-poisson-fish-and-plantain,60,4,2,ivory coast,,,main,plantain; sea bream,fried,FALSE,FALSE,TRUE,TRUE
 132,Fish batter,recipes/africa/morocco/fish-batter,60,4,2,morocco,,,side dish,shrimp; calamari; sea bream,fried; baked,FALSE,FALSE,FALSE,FALSE
 133,Tagin (beef stew),recipes/africa/morocco/tagin-beef-stew,90,4,3,morocco,,,main,beef meat; vegetables,pan-fried,FALSE,FALSE,TRUE,TRUE
+134,Fried rice,recipes/africa/nigeria/fried-rice,90,5,4,nigeria,,,main,rice; beef liver,boiled; pan-fried,FALSE,FALSE,TRUE,TRUE
