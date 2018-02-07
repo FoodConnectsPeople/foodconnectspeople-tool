@@ -44,6 +44,7 @@ canned corn,FALSE,FALSE,FALSE,FALSE,FALSE,canned items
 canned pea,FALSE,FALSE,FALSE,FALSE,FALSE,canned items
 caper,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 carrot,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+casceche,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 cashew,TRUE,TRUE,TRUE,TRUE,FALSE,dry seed
 cauliflower,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 cayenne pepper,TRUE,TRUE,TRUE,TRUE,TRUE,spice
@@ -108,6 +109,7 @@ dry misithra cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 dry oregano,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 dry pomegranate seed,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 dry red chili,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+dry rose,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 dry rosemary,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 dulce de leche,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 egg,FALSE,FALSE,TRUE,TRUE,FALSE,eggs
@@ -136,6 +138,7 @@ garlic,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 gentiline lettuce,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 ginger root,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 goat meet,FALSE,FALSE,TRUE,TRUE,FALSE,meat
+goat yogurt,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 gorgonzola cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 grana trentino cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 grappa,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
@@ -216,6 +219,7 @@ parmesan cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 parsley,TRUE,TRUE,TRUE,TRUE,TRUE,vegetable
 parsley root,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 pastry,TRUE,TRUE,FALSE,TRUE,FALSE,frozen items
+peach jam,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 peanut,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 peanut paste,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 pear,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
@@ -257,6 +261,7 @@ salt,TRUE,TRUE,TRUE,TRUE,FALSE,oils
 sardine,FALSE,FALSE,TRUE,TRUE,FALSE,fish
 savoiardi biscuit,TRUE,TRUE,FALSE,TRUE,FALSE,bakery
 scallion,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+scented water,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 sea bream,FALSE,FALSE,TRUE,TRUE,FALSE,fish
 semolina,TRUE,TRUE,FALSE,TRUE,FALSE,cereals
 semolina flour,TRUE,TRUE,FALSE,TRUE,FALSE,flours

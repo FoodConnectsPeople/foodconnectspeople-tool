@@ -134,3 +134,7 @@ id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from
 133,Tagin (beef stew),recipes/africa/morocco/tagin-beef-stew,90,4,3,morocco,,,main,beef meat; vegetables,pan-fried,FALSE,FALSE,TRUE,TRUE
 134,Fried rice,recipes/africa/nigeria/fried-rice,90,5,4,nigeria,,,main,rice; beef liver,boiled; pan-fried,FALSE,FALSE,TRUE,TRUE
 135,Rice and beans with soup,recipes/africa/gambia/rice-and-beans-with-soup,60,5,3,gambia,,,main,beef meat; beans,boiled; pan-fried,FALSE,FALSE,TRUE,TRUE
+136,Casceche bamdegian (fried eggplants with goat yogurt),recipes/asia/iran/casceche-bamdegian-freidd-eggplants-with-goat-yogurt,90,4,2,iran,,,main,eggplant,baked;pan-fried,TRUE,FALSE,TRUE,FALSE
+137,Thiebou yapp (stewed lamb with rice),recipes/africa/senegal/thiebou-yapp-stewed-lamb-with-rice,120,5,4,senegal,,,main,lamb meat,boiled; pan-fried,FALSE,FALSE,TRUE,TRUE
+138,Kayke badumi (almond and jam cake),recipes/asia/iran/kayke-badumi-almond-and-jam-cake,45,12,3,iran,,,dessert,flour; sugar; butter; egg ,baked,TRUE,FALSE,FALSE,FALSE
+139,Karb ighzal (coconut and semolina dessert),recipes/africa/morocco/karb-ighzal/coconut-and-semolina-dessert,60,15,3,morocco,,,dessert,coconut; semolina,baked,TRUE,FALSE,FALSE,FALSE
