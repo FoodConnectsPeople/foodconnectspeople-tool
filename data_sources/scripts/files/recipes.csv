@@ -138,3 +138,4 @@ id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from
 137,Thiebou yapp (stewed lamb with rice),recipes/africa/senegal/thiebou-yapp-stewed-lamb-with-rice,120,5,4,senegal,,,main,lamb meat,boiled; pan-fried,FALSE,FALSE,TRUE,TRUE
 138,Kayke badumi (almond and jam cake),recipes/asia/iran/kayke-badumi-almond-and-jam-cake,45,12,3,iran,,,dessert,flour; sugar; butter; egg ,baked,TRUE,FALSE,FALSE,FALSE
 139,Karb ighzal (coconut and semolina dessert),recipes/africa/morocco/karb-ighzal/coconut-and-semolina-dessert,60,15,3,morocco,,,dessert,coconut; semolina,baked,TRUE,FALSE,FALSE,TRUE
+140,Soup with shrimps and vegetables,recipes/africa/mali/soup-with-shrimps-and-vegetables,90,5,2,mali,,,main,rice; cous cous; shrimps; vegetables,boiled; pan-fried,FALSE,FALSE,FALSE,FALSE

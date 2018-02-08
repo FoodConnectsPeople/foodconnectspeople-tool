@@ -74,7 +74,6 @@ coconut milk,TRUE,TRUE,TRUE,TRUE,FALSE,canned fruit
 coffee,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 cokelec turkish cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 coloured candy,TRUE,TRUE,TRUE,TRUE,FALSE,sweeteners
-cous-cous,TRUE,TRUE,FALSE,TRUE,FALSE,cereals
 concentrated tomato paste,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 cooked wine,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
 cookie,TRUE,FALSE,FALSE,FALSE,FALSE,flours
@@ -143,6 +142,7 @@ gorgonzola cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 grana trentino cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 grappa,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
 green apple,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
+green bell pepper,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 greek graviera cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 greek kefalotiri cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 greek pecorino cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
@@ -221,6 +221,7 @@ parsley root,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 pastry,TRUE,TRUE,FALSE,TRUE,FALSE,frozen items
 peach jam,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 peanut,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+peanut oil,TRUE,TRUE,TRUE,TRUE,FALSE,oils
 peanut paste,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 pear,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 pecorino cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
@@ -261,6 +262,7 @@ salmon,FALSE,FALSE,TRUE,TRUE,FALSE,fish
 salt,TRUE,TRUE,TRUE,TRUE,FALSE,oils
 sardine,FALSE,FALSE,TRUE,TRUE,FALSE,fish
 savoiardi biscuit,TRUE,TRUE,FALSE,TRUE,FALSE,bakery
+savoy cabbage,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 scallion,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 sea bream,FALSE,FALSE,TRUE,TRUE,FALSE,fish
 semolina,TRUE,TRUE,FALSE,TRUE,FALSE,cereals
@@ -325,6 +327,7 @@ walnut kernel,TRUE,TRUE,TRUE,TRUE,FALSE,dry seed
 water,TRUE,TRUE,TRUE,TRUE,FALSE,water
 white asparagus,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 white bread,TRUE,TRUE,FALSE,TRUE,FALSE,bakery
+white long radish,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 white onion,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 white vinegar,TRUE,TRUE,TRUE,TRUE,FALSE,oils
 white wine,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
