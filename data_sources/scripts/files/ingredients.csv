@@ -252,6 +252,7 @@ rice noodle,TRUE,TRUE,FALSE,TRUE,FALSE,cereals
 ricotta cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 robiola cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 rocket,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+rose water,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 rose pepper,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 rosolio liqueur,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
 rhum,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
@@ -261,7 +262,6 @@ salt,TRUE,TRUE,TRUE,TRUE,FALSE,oils
 sardine,FALSE,FALSE,TRUE,TRUE,FALSE,fish
 savoiardi biscuit,TRUE,TRUE,FALSE,TRUE,FALSE,bakery
 scallion,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
-scented water,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 sea bream,FALSE,FALSE,TRUE,TRUE,FALSE,fish
 semolina,TRUE,TRUE,FALSE,TRUE,FALSE,cereals
 semolina flour,TRUE,TRUE,FALSE,TRUE,FALSE,flours
@@ -287,6 +287,7 @@ sugar powder,TRUE,TRUE,TRUE,TRUE,FALSE,sweeteners
 sumak,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 sundried tomato,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 sunflower oil,TRUE,TRUE,TRUE,TRUE,FALSE,oils
+surimi,FALSE,FALSE,FALSE,FALSE,FALSE,canned items
 sweet potato,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 sweet vinegar,TRUE,TRUE,TRUE,TRUE,FALSE,oils
 sweet wine,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
