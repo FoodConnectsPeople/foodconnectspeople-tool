@@ -102,7 +102,8 @@ cilantro,cilandro (coriandolo),RecipeIngredients,Ingredient,RecipeIngredients,Al
 cinnamon stick,bastoncino di cannella,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient,,
 cerkez tavugu,pollo alla circassa,Recipe,Name,,,,,,
 cleaned,pulito,RecipeIngredients,Preparation_technique,,,,,,
-clove,chiodo di garofano,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient,RecipeIngredients,Unit_of_measure
+clove,spicchio,RecipeIngredients,Unit_of_measure,,,,,,
+cloves,chiodo di garofano,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient,RecipeIngredients,Unit_of_measure
 cm,cm,RecipeIngredients,Unit_of_measure,,,,,,
 coconut,cocco,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient,Recipe,Main_ingredient
 coconut milk,latte di cocco,RecipeIngredients,Ingredient,RecipeIngredients,Alternate ingredient,Ingredients,Ingredient,Recipe,Main_ingredient
