@@ -51,6 +51,7 @@ cayenne pepper,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 celery root,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 chaat masala,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 champignon mushroom,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 gruyere cheese,TRUE,FALSE,TRUE,FALSE,TRUE,dairy
 emmental cheese,TRUE,FALSE,TRUE,FALSE,TRUE,dairy
 cheddar cheese,TRUE,FALSE,TRUE,FALSE,TRUE,dairy
