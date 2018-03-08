@@ -299,6 +299,7 @@ tamarind paste,TRUE,TRUE,TRUE,TRUE,FALSE,spice
 tarhana,FALSE,FALSE,FALSE,FALSE,FALSE,canned items
 Teroldego red wine,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
 thai green curry paste,TRUE,TRUE,TRUE,TRUE,FALSE,spice
+toast bread,TRUE,TRUE,FALSE,TRUE,FALSE,bakery
 tomato,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 tomato paste,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 tomato sauce,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
