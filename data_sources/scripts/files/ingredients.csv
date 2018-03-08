@@ -40,6 +40,7 @@ cabbage,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 calamari,FALSE,FALSE,TRUE,TRUE,FALSE,fish
 canned corn,FALSE,FALSE,FALSE,FALSE,FALSE,canned items
 canned pea,FALSE,FALSE,FALSE,FALSE,FALSE,canned items
+canned pineapple,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 caper,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 carrot,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 casceche,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
@@ -100,7 +101,7 @@ dry basil,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 dry bell pepper,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 dry blackcurrant,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 dry chickpea,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
-dry coconut shred,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
+dry coconut shred,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 dry cod,FALSE,FALSE,TRUE,TRUE,FALSE,fish
 dry mint,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 dry misithra cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
@@ -167,6 +168,7 @@ ground turmeric,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 half peach,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 hard cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 harissa,TRUE,TRUE,TRUE,TRUE,FALSE,spice
+hazelnut shred,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 honey,TRUE,TRUE,TRUE,TRUE,FALSE,sweeteners
 iceberg salad,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 icing sugar,TRUE,TRUE,TRUE,TRUE,FALSE,sweeteners
@@ -175,6 +177,7 @@ instant yeast,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 isot pepper,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 navy bean,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 khmeli-suneli,TRUE,TRUE,TRUE,TRUE,TRUE,spice
+ladyfinger biscuit,TRUE,TRUE,FALSE,TRUE,FALSE,bakery
 lamb meat,FALSE,FALSE,TRUE,TRUE,FALSE,meat
 leek,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 lemon,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
@@ -191,6 +194,7 @@ mandarin,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 mango,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 manioc,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 maple syrup,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
+mascarpone cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 mastic gum,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 mastic powder,TRUE,TRUE,TRUE,TRUE,FALSE,spice
 meat broth,FALSE,FALSE,TRUE,TRUE,FALSE,canned items
@@ -309,6 +313,7 @@ tuna fish,FALSE,FALSE,TRUE,TRUE,FALSE,canned items
 turkish pepper paste,TRUE,TRUE,TRUE,TRUE,FALSE,spice
 turkish phyllo pastry,TRUE,TRUE,TRUE,TRUE,FALSE,frozen items
 turkish tomato paste,TRUE,TRUE,TRUE,TRUE,FALSE,spice
+turnip green,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 urfa peyniri turkish cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 vanilla bean,TRUE,TRUE,TRUE,TRUE,FALSE,spice
 vanilla extract,TRUE,TRUE,TRUE,TRUE,FALSE,powders

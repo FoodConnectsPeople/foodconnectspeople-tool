@@ -139,4 +139,6 @@ id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from
 138,Kayke badumi (almond and jam cake),recipes/asia/iran/kayke-badumi-almond-and-jam-cake,45,12,3,iran,,,dessert,flour; sugar; butter; egg ,baked,TRUE,FALSE,FALSE,FALSE
 139,Karb ighzal (coconut and semolina dessert),recipes/africa/morocco/karb-ighzal/coconut-and-semolina-dessert,60,15,3,morocco,,,dessert,coconut; semolina,baked,TRUE,FALSE,FALSE,TRUE
 140,Soup with shrimps and vegetables,recipes/africa/mali/soup-with-shrimps-and-vegetables,90,5,2,mali,,,main,rice; cous cous; shrimps; vegetables,boiled; pan-fried,FALSE,FALSE,FALSE,FALSE
-141,Mozzarella in carrozza (mozzarella cheese in its carriage),recipes/mediterranea/italy/mozzarella-in-carrozza-mozzarella-cheese-in-its-carriage,30,8,2,italy,,,side dish, mozzarella cheese,pan-fried,TRUE,FALSE,TRUE,FALSE
+141,Mozzarella in carrozza (fried mozzarella cheese in toast bread),recipes/mediterranea/italy/mozzarella-in-carrozza-fried-mozzarella-cheese-in-toast-bread,30,8,2,italy,,,side dish, mozzarella cheese,pan-fried,TRUE,FALSE,TRUE,FALSE
+142,Tiramisu with pineapple,recipes/mediterranea/italy/tiramisu-with-pineapple,30,4,2,italy,,,dessert,mascarpone cheese; egg,raw,TRUE,FALSE,FALSE,FALSE
+143,Orecchiette alle cime di rapa (ear-shaped pasta with turnip tops),recipes/mediterranea/italy/orecchiette-alle-cime-di-rapa-ear-shaped-pasta-with-turnip-tops,120,4,4,italy,,,main,semolina flour; turnip greens,boiled,TRUE,TRUE,FALSE,TRUE
