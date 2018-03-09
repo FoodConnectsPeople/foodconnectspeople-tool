@@ -144,3 +144,5 @@ id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from
 143,Orecchiette alle cime di rapa (ear-shaped pasta with turnip tops),recipes/mediterranea/italy/orecchiette-alle-cime-di-rapa-ear-shaped-pasta-with-turnip-tops,120,4,4,italy,,,main,semolina flour; turnip greens,boiled,TRUE,TRUE,FALSE,TRUE
 144,Linzerschnitten (Linz cake biscuits),recipes/mediterranea/italy/linzerschnitten-linz-cake-biscuits,105,8,2,italy,,,dessert,cranberry jam; hazelnut; almond,baked,TRUE,FALSE,FALSE,FALSE
 145,Baccala' 'm brodettu (stockfish in broth),recipes/mediterranea/italy/baccala-m-brodettu-stockfish-in-broth,60,4,2,italy,,,main,stockfish,pan-fried,FALSE,FALSE,TRUE,TRUE
+146,Apple strudel,recipes/mediterranea/italy/apple-strudel,60,4,3,italy,,,dessert,apple,baked,TRUE,TRUE,FALSE,TRUE
+147,Chocolate salami,recipes/mediterranea/italy/chocolate-salami,15,8,1,italy,,,dessert,butter,raw,TRUE,FALSE,FALSE,FALSE

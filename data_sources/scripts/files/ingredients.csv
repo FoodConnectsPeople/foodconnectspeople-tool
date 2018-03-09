@@ -8,6 +8,7 @@ apple,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 apple cider vinegar,TRUE,TRUE,TRUE,TRUE,FALSE,oils
 apple sweetener,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 apple vinegar,TRUE,TRUE,TRUE,TRUE,FALSE,oils
+apricot jam,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 artichoke,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 avocado,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 baby chard,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
@@ -100,6 +101,7 @@ dried fig,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 dried plum,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 dry basil,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 dry bell pepper,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+dry biscuit,TRUE,TRUE,FALSE,TRUE,FALSE,bakery
 dry blackcurrant,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 dry chickpea,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 dry coconut shred,TRUE,TRUE,TRUE,TRUE,FALSE,powders
@@ -178,7 +180,6 @@ instant yeast,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 isot pepper,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 navy bean,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 khmeli-suneli,TRUE,TRUE,TRUE,TRUE,TRUE,spice
-ladyfinger biscuit,TRUE,TRUE,FALSE,TRUE,FALSE,bakery
 lamb meat,FALSE,FALSE,TRUE,TRUE,FALSE,meat
 leek,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 lemon,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
