@@ -83,6 +83,7 @@ corn oil,TRUE,TRUE,TRUE,TRUE,FALSE,oils
 cornstarch,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 cottage cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 couscous,TRUE,TRUE,TRUE,TRUE,FALSE,cereals
+cranberry jam,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 crushed chillies,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 cucumber,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 cumin seed,TRUE,TRUE,TRUE,TRUE,TRUE,spice
@@ -211,6 +212,8 @@ non-sweetened coconut milk,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 nothing,TRUE,TRUE,TRUE,TRUE,FALSE,spice
 nutmeg,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 okra,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+black olive in brine,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
+green olive in brine,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 onion,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 orange,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 orange juice,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
@@ -288,6 +291,7 @@ spinach,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 stale bread,TRUE,TRUE,FALSE,TRUE,FALSE,bakery
 star anise,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 stock cube,FALSE,FALSE,TRUE,TRUE,FALSE,canned items
+stockfish,FALSE,FALSE,TRUE,TRUE,FALSE,fish
 sugar,TRUE,TRUE,TRUE,TRUE,FALSE,sweeteners
 sugar powder,TRUE,TRUE,TRUE,TRUE,FALSE,sweeteners
 sumak,TRUE,TRUE,TRUE,TRUE,TRUE,spice
