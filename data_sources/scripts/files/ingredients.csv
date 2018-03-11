@@ -33,14 +33,18 @@ black tea,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 boiled chickpea,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 boneless chicken thigh,FALSE,FALSE,TRUE,TRUE,FALSE,meat
 breadcrumb,TRUE,TRUE,FALSE,TRUE,FALSE,powders
+brewer yeast,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 brown mustard seed,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 brown sugar,TRUE,TRUE,TRUE,TRUE,FALSE,sweeteners
 bulgur,TRUE,TRUE,FALSE,TRUE,FALSE,cereals
 butter,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 cabbage,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+caciocavallo cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 calamari,FALSE,FALSE,TRUE,TRUE,FALSE,fish
 canned corn,FALSE,FALSE,FALSE,FALSE,FALSE,canned items
 canned pea,FALSE,FALSE,FALSE,FALSE,FALSE,canned items
+canned anchovy,FALSE,FALSE,TRUE,TRUE,FALSE,canned items
+canned peeled tomato,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 canned pineapple,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 caper,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 carrot,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
@@ -286,7 +290,7 @@ soy strip,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 soy sauce,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 soya mince,TRUE,TRUE,TRUE,TRUE,FALSE,spice
 spaghetti,TRUE,TRUE,FALSE,TRUE,FALSE,cereals
-speck,FALSE,FALSE,TRUE,TRUE,FALSE,meat
+speck ham,FALSE,FALSE,TRUE,TRUE,FALSE,meat
 spelt flour,TRUE,TRUE,TRUE,TRUE,FALSE,flours
 spinach,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 stale bread,TRUE,TRUE,FALSE,TRUE,FALSE,bakery
@@ -351,4 +355,5 @@ whole wheat flour,TRUE,TRUE,FALSE,TRUE,FALSE,flours
 worcester sauce,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 yeast for dessert,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 yellow bell pepper,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+yellow onion,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 zucchini,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable

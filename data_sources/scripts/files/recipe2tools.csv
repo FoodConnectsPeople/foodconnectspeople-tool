@@ -354,8 +354,8 @@ recipe_id,tool_name,tool_quantity
 140,frying pan,1
 141,frying pan,1
 141,ladle,1
-142,bowl,1
-142,blender,1
+142,bowl,2
+142,tray,1
 143,pot,1
 143,frying pan,1
 143,bowl,1
@@ -365,6 +365,7 @@ recipe_id,tool_name,tool_quantity
 146,oven tray,1
 146,oven,1
 146,rolling pin,1
+146,bowl,1
 147,terrine,1
 147,ladle,1
 147,blender,1
@@ -373,3 +374,15 @@ recipe_id,tool_name,tool_quantity
 148,frying pan,1
 149,oven paper,
 149,oven tray,1
+150,large bowl,1
+150,pot,1
+150,frying pan,1
+151,pot,1
+151,pan,1
+151,frying pan,1
+151,ravioli shape,1
+152,tray,1
+152,large bowl,1
+152,bowl,2
+152,large pot,1
+152,ladle,1

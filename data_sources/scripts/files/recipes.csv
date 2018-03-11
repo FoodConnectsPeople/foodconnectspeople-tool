@@ -79,7 +79,7 @@ id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from
 78,Ciambella romagnola,recipes/mediterranea/italy/ciambella-romagnola-dei-nonni-grandparents-donut-from-romagna,45,8,3,italy,,,dessert,flour; butter; sugar,baked,TRUE,FALSE,FALSE,FALSE
 79,A thousand and one nights in the mountains,recipes/world-fusion/a-thousand-and-one-nights-in-the-mountains,150,8,3,fusion,,,main,deer meat; okra,pan-fried,FALSE,FALSE,TRUE,TRUE
 80,Achille's therapy (vegetarian),recipes/world-fusion/achilles-therapy,45,4,2,fusion,,,appetizer,pastry; cheese,baked,TRUE,FALSE,FALSE,FALSE
-81,Achille's therapy (non-vegetarian),recipes/world-fusion/achilles-therapy,45,4,2,fusion,,,appetizer,pastry; speck,baked,FALSE,FALSE,FALSE,TRUE
+81,Achille's therapy (non-vegetarian),recipes/world-fusion/achilles-therapy,45,4,2,fusion,,,appetizer,pastry; speck ham,baked,FALSE,FALSE,FALSE,TRUE
 82,Mr. Lemonhead,recipes/world-fusion/mr-lemonhead,30,8,2,fusion,,,dessert,orange;lemon;lime,raw,TRUE,FALSE,TRUE,FALSE
 83,Stuffed peppers (Biber dolmasi),recipes/middle-east/turkey/biber-dolmasi-stuffed-peppers,30,4,2,turkey,,,appetizer,bell pepper; rice,pan-fried,TRUE,TRUE,TRUE,TRUE
 84,Karamellisierte Petersilienwurzeln,recipes/europe/germany/karamellisierte-petersilienwurzeln-caramelized-beet-roots-carrots-and-sweet-potatoes,45,3,3,germany,,,main,beetroot; sweet potato; parsley root,pan-fried,TRUE,TRUE,TRUE,TRUE
@@ -139,12 +139,15 @@ id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from
 138,Kayke badumi (almond and jam cake),recipes/asia/iran/kayke-badumi-almond-and-jam-cake,45,12,3,iran,,,dessert,flour; sugar; butter; egg ,baked,TRUE,FALSE,FALSE,FALSE
 139,Karb ighzal (coconut and semolina dessert),recipes/africa/morocco/karb-ighzal/coconut-and-semolina-dessert,60,15,3,morocco,,,dessert,coconut; semolina,baked,TRUE,FALSE,FALSE,TRUE
 140,Soup with shrimps and vegetables,recipes/africa/mali/soup-with-shrimps-and-vegetables,90,5,2,mali,,,main,rice; cous cous; shrimps; vegetables,boiled; pan-fried,FALSE,FALSE,FALSE,FALSE
-141,Mozzarella in carrozza (fried mozzarella cheese in toast bread),recipes/mediterranea/italy/mozzarella-in-carrozza-fried-mozzarella-cheese-in-toast-bread,30,8,2,italy,,,side dish, mozzarella cheese,pan-fried,TRUE,FALSE,TRUE,FALSE
-142,Tiramisu with pineapple,recipes/mediterranea/italy/tiramisu-with-pineapple,30,4,2,italy,,,dessert,mascarpone cheese; egg,raw,TRUE,FALSE,FALSE,FALSE
-143,Orecchiette alle cime di rapa (ear-shaped pasta with turnip tops),recipes/mediterranea/italy/orecchiette-alle-cime-di-rapa-ear-shaped-pasta-with-turnip-tops,120,4,4,italy,,,main,semolina flour; turnip greens,boiled,TRUE,TRUE,FALSE,TRUE
+141,Mozzarella in carrozza (fried mozzarella cheese in toast bread),recipes/mediterranea/italy/mozzarella-in-carrozza-fried-mozzarella-cheese-in-toast-bread,30,8,2,italy,,,side dish, mozzarella cheese,pan-fried,TRUE,FALSE,FALSE,FALSE
+142,Tiramisu with pineapple,recipes/mediterranea/italy/tiramisu-with-pineapple,45,6,3,italy,,,dessert,mascarpone cheese; pineapple,raw,TRUE,FALSE,FALSE,FALSE
+143,Orecchiette alle cime di rapa (ear-shaped pasta with turnip tops),recipes/mediterranea/italy/orecchiette-alle-cime-di-rapa-ear-shaped-pasta-with-turnip-tops,120,4,3,italy,,,main,semolina flour; turnip greens,boiled,TRUE,TRUE,FALSE,TRUE
 144,Linzerschnitten (Linz cake biscuits),recipes/mediterranea/italy/linzerschnitten-linz-cake-biscuits,105,8,2,italy,,,dessert,cranberry jam; hazelnut; almond,baked,TRUE,FALSE,FALSE,FALSE
 145,Baccala' 'm brodettu (stockfish in broth),recipes/mediterranea/italy/baccala-m-brodettu-stockfish-in-broth,60,4,2,italy,,,main,stockfish,pan-fried,FALSE,FALSE,TRUE,TRUE
-146,Apple strudel,recipes/mediterranea/italy/apple-strudel,60,4,3,italy,,,dessert,apple,baked,TRUE,TRUE,FALSE,TRUE
+146,Apple strudel,recipes/mediterranea/italy/apple-strudel,90,6,3,italy,,,dessert,apple,baked,TRUE,FALSE,FALSE,FALSE
 147,Chocolate salami,recipes/mediterranea/italy/chocolate-salami,15,8,1,italy,,,dessert,butter,raw,TRUE,FALSE,FALSE,FALSE
 148,Dumpling trio with Treviso radicchio sauce,recipes/mediterranea/italy/dumpling-trio-with-treviso-radicchio-sauce,150,10,3,italy,,,main,Treviso radicchio,boiled,TRUE,FALSE,TRUE,FALSE
-149,Crumble cake of courgettes and stewed lentils,recipes/mediterranea/italy/crumble-cake-of-courgettes-and-stewed-lentils,4,60,3,italy,,,main,zucchini,baked,TRUE,FALSE,TRUE,FALSE
+149,Crumble cake of courgettes and stewed lentils,recipes/mediterranea/italy/crumble-cake-of-courgettes-and-stewed-lentils,4,60,3,italy,,,main,zucchini,baked,TRUE,FALSE,FALSE,FALSE
+150,Spatzle (spinach dumplings with speck ham and cream),recipes/mediterranea/italy/spatzle-spinach-dumplings-with-speck-ham-and-cream,4,120,3,italy,,,main,spinach; speck ham,boiled; pan-fried,FALSE,FALSE,FALSE,FALSE
+151,Ravioli from Langhe,recipes/mediterranea/italy/ravioli-from-langhe,4,180,4,italy,,,main,beef meat,baked,FALSE,FALSE,FALSE,FALSE
+152,Sfincione (Sicilian style pizza),recipes/mediterranea/italy/sfincione-sicilian-style-pizza,5,180,2,italy,,,main,flour; tomato; onion; anchovies; caciocavallo cheese,baked,TRUE,FALSE,FALSE,FALSE
