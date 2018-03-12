@@ -147,8 +147,8 @@ id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from
 146,Apple strudel,recipes/mediterranea/italy/apple-strudel,90,6,3,italy,,,dessert,apple,baked,TRUE,FALSE,FALSE,FALSE
 147,Chocolate salami,recipes/mediterranea/italy/chocolate-salami,15,8,1,italy,,,dessert,butter,raw,TRUE,FALSE,FALSE,FALSE
 148,Dumpling trio with Treviso radicchio sauce,recipes/mediterranea/italy/dumpling-trio-with-treviso-radicchio-sauce,150,10,3,italy,,,main,Treviso radicchio,boiled,TRUE,FALSE,TRUE,FALSE
-149,Crumble cake of courgettes and stewed lentils,recipes/mediterranea/italy/crumble-cake-of-courgettes-and-stewed-lentils,4,60,3,italy,,,main,zucchini,baked,TRUE,FALSE,FALSE,FALSE
-150,Spatzle (spinach dumplings with speck ham and cream),recipes/mediterranea/italy/spatzle-spinach-dumplings-with-speck-ham-and-cream,4,120,3,italy,,,main,spinach; speck ham,boiled; pan-fried,FALSE,FALSE,FALSE,FALSE
-151,Ravioli from Langhe,recipes/mediterranea/italy/ravioli-from-langhe,4,180,4,italy,,,main,beef meat,baked,FALSE,FALSE,FALSE,FALSE
-152,Sfincione (Sicilian style pizza),recipes/mediterranea/italy/sfincione-sicilian-style-pizza,5,180,2,italy,,,main,flour; tomato; onion; anchovies; caciocavallo cheese,baked,TRUE,FALSE,FALSE,FALSE
-153,Strangolapreti alla trentina (spinach dumplings),recipes/mediterranea/strangolapreti-alla-trentina-spinach-dumplings,20,180,3,italy,,,main,bread; spinach,boiled,TRUE,FALSE,FALSE,FALSE
+149,Crumble cake of courgettes and stewed lentils,recipes/mediterranea/italy/crumble-cake-of-courgettes-and-stewed-lentils,60,4,3,italy,,,main,zucchini,baked,TRUE,FALSE,FALSE,FALSE
+150,Spatzle (spinach dumplings with speck ham and cream),recipes/mediterranea/italy/spatzle-spinach-dumplings-with-speck-ham-and-cream,120,4,3,italy,,,main,spinach; speck ham,boiled; pan-fried,FALSE,FALSE,FALSE,FALSE
+151,Ravioli from Langhe,recipes/mediterranea/italy/ravioli-from-langhe,180,4,4,italy,,,main,beef meat,baked,FALSE,FALSE,FALSE,FALSE
+152,Sfincione (Sicilian style pizza),recipes/mediterranea/italy/sfincione-sicilian-style-pizza,180,5,2,italy,,,main,flour; tomato; onion; anchovies; caciocavallo cheese,baked,TRUE,FALSE,FALSE,FALSE
+153,Strangolapreti alla trentina (spinach dumplings),recipes/mediterranea/strangolapreti-alla-trentina-spinach-dumplings,180,20,3,italy,,,main,bread; spinach,boiled,TRUE,FALSE,FALSE,FALSE
