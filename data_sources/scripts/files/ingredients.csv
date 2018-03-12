@@ -139,6 +139,7 @@ fresh thai basil,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 fresh sprout,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 fresh thyme,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 frozen pea,TRUE,TRUE,TRUE,TRUE,FALSE,frozen items
+frozen spinach,TRUE,TRUE,TRUE,TRUE,FALSE,frozen items
 garam masala,TRUE,TRUE,TRUE,TRUE,FALSE,spice
 garlic,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 gentiline lettuce,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
@@ -183,6 +184,7 @@ igname potato,TRUE,TRUE,FALSE,TRUE,FALSE,vegetable
 instant yeast,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 isot pepper,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 navy bean,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+kamut flour,TRUE,TRUE,FALSE,TRUE,FALSE,flours
 khmeli-suneli,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 lamb meat,FALSE,FALSE,TRUE,TRUE,FALSE,meat
 leek,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
@@ -291,7 +293,6 @@ soy sauce,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 soya mince,TRUE,TRUE,TRUE,TRUE,FALSE,spice
 spaghetti,TRUE,TRUE,FALSE,TRUE,FALSE,cereals
 speck ham,FALSE,FALSE,TRUE,TRUE,FALSE,meat
-spelt flour,TRUE,TRUE,TRUE,TRUE,FALSE,flours
 spinach,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 stale bread,TRUE,TRUE,FALSE,TRUE,FALSE,bakery
 star anise,TRUE,TRUE,TRUE,TRUE,TRUE,spice
@@ -349,11 +350,11 @@ white vinegar,TRUE,TRUE,TRUE,TRUE,FALSE,oils
 white wine,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
 white yogurt,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 white flour type 00,TRUE,FALSE,FALSE,TRUE,FALSE,flours
-white/kamut flour,TRUE,TRUE,FALSE,TRUE,FALSE,flours
 whole milk,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 whole wheat flour,TRUE,TRUE,FALSE,TRUE,FALSE,flours
 worcester sauce,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 yeast for dessert,TRUE,TRUE,TRUE,TRUE,FALSE,powders
+yeast for salty pies,TRUE,TRUE,TRUE,TRUE,FALSE,powders
 yellow bell pepper,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 yellow onion,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 zucchini,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable

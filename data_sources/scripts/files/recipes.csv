@@ -151,3 +151,4 @@ id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from
 150,Spatzle (spinach dumplings with speck ham and cream),recipes/mediterranea/italy/spatzle-spinach-dumplings-with-speck-ham-and-cream,4,120,3,italy,,,main,spinach; speck ham,boiled; pan-fried,FALSE,FALSE,FALSE,FALSE
 151,Ravioli from Langhe,recipes/mediterranea/italy/ravioli-from-langhe,4,180,4,italy,,,main,beef meat,baked,FALSE,FALSE,FALSE,FALSE
 152,Sfincione (Sicilian style pizza),recipes/mediterranea/italy/sfincione-sicilian-style-pizza,5,180,2,italy,,,main,flour; tomato; onion; anchovies; caciocavallo cheese,baked,TRUE,FALSE,FALSE,FALSE
+153,Strangolapreti alla trentina (spinach dumplings),recipes/mediterranea/strangolapreti-alla-trentina-spinach-dumplings,20,180,3,italy,,,main,bread; spinach,boiled,TRUE,FALSE,FALSE,FALSE
