@@ -54,6 +54,7 @@ cashew,TRUE,TRUE,TRUE,TRUE,FALSE,dry seed
 cauliflower,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 cayenne pepper,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 celery root,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
+celery stalk,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 chaat masala,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 champignon mushroom,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
@@ -159,7 +160,6 @@ greek ricotta cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 greek yogurt,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 green bean,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 green cardamom seed,TRUE,TRUE,TRUE,TRUE,TRUE,spice
-green celery,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 green grape,TRUE,TRUE,TRUE,TRUE,FALSE,fruit
 green lentil,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 green onion,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
