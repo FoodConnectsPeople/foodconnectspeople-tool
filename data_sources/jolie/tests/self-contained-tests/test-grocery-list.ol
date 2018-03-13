@@ -14,7 +14,7 @@ main {
       t.rec_persons[0].recipe_id = 141;
       t.rec_persons[0].persons   = 8;
       t.rec_persons[1].recipe_id = 142;
-      t.rec_persons[1].persons   = 6;
+      t.rec_persons[1].persons   = 12;
       t.rec_persons[2].recipe_id = 143;
       t.rec_persons[2].persons   = 4;
       t.rec_persons[3].recipe_id = 144;
@@ -24,7 +24,7 @@ main {
       t.rec_persons[5].recipe_id = 146;
       t.rec_persons[5].persons   = 6;
       t.rec_persons[6].recipe_id = 147;
-      t.rec_persons[6].persons   = 8;
+      t.rec_persons[6].persons   = 16;
       t.rec_persons[7].recipe_id = 148;
       t.rec_persons[7].persons   = 5;
       t.rec_persons[8].recipe_id = 149;

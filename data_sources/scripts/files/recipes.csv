@@ -151,6 +151,6 @@ id,name,link,preparation_time_minutes,persons,difficulty,place_of_origin,is_from
 150,Spatzle (spinach dumplings with speck ham and cream),recipes/mediterranea/italy/spatzle-spinach-dumplings-with-speck-ham-and-cream,120,4,3,italy,,,main,spinach; speck ham,boiled; pan-fried,FALSE,FALSE,FALSE,FALSE
 151,Ravioli from Langhe,recipes/mediterranea/italy/ravioli-from-langhe,180,4,4,italy,,,main,beef meat,baked,FALSE,FALSE,FALSE,FALSE
 152,Sfincione (Sicilian style pizza),recipes/mediterranea/italy/sfincione-sicilian-style-pizza,180,5,2,italy,,,main,flour; tomato; onion; anchovies; caciocavallo cheese,baked,TRUE,FALSE,FALSE,FALSE
-153,Strangolapreti alla trentina (spinach dumplings),recipes/mediterranea/strangolapreti-alla-trentina-spinach-dumplings,180,20,3,italy,,,main,bread; spinach,boiled,TRUE,FALSE,FALSE,FALSE
+153,Strangolapreti alla trentina (spinach dumplings),recipes/mediterranea/strangolapreti-alla-trentina-spinach-dumplings,180,10,3,italy,,,main,bread; spinach,boiled,TRUE,FALSE,FALSE,FALSE
 154,Zucchini and potatoes rosti,recipes/mediterranea/italy/zucchini-and-potatoes-rosti,20,4,2,italy,,,side dish,potato; zucchini,baked,TRUE,TRUE,TRUE,TRUE
 155,Baked tagliatelle pasta with peas,recipes/mediterranea/italy/baked-tagliatelle-pasta-with-peas,60,6,3,italy,,,main,pasta; peas,baked,TRUE,FALSE,FALSE,FALSE
