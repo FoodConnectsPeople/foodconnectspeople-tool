@@ -30,13 +30,17 @@ main {
       t.rec_persons[8].recipe_id = 149;
       t.rec_persons[8].persons   = 4;
       t.rec_persons[9].recipe_id = 150;
-      t.rec_persons[9].persons   = 5;
+      t.rec_persons[9].persons   = 4;
       t.rec_persons[10].recipe_id = 151;
-      t.rec_persons[10].persons   = 5;
+      t.rec_persons[10].persons   = 4;
       t.rec_persons[11].recipe_id = 152;
       t.rec_persons[11].persons   = 4;
       t.rec_persons[12].recipe_id = 153;
-      t.rec_persons[12].persons   = 5;
+      t.rec_persons[12].persons   = 4;
+      t.rec_persons[13].recipe_id = 154;
+      t.rec_persons[13].persons   = 4;
+      t.rec_persons[14].recipe_id = 155;
+      t.rec_persons[14].persons   = 4;
 
       buildGroceryList@DbService(t)(response);
 

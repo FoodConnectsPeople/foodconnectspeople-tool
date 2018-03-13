@@ -308,6 +308,7 @@ sweet potato,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 sweet vinegar,TRUE,TRUE,TRUE,TRUE,FALSE,oils
 sweet wine,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
 tahini,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
+tagliatelle pasta,TRUE,TRUE,FALSE,TRUE,FALSE,flours
 taleggio cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 tamarind paste,TRUE,TRUE,TRUE,TRUE,FALSE,spice
 tarhana,FALSE,FALSE,FALSE,FALSE,FALSE,canned items
