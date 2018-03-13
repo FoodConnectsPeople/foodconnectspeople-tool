@@ -1,5 +1,6 @@
 ingredient,is_vegetarian,is_vegan,is_gluten_free,is_lactose_free,is_spice,ingredient_class
 pure alcohol,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
+all-purpose flour,TRUE,TRUE,FALSE,TRUE,FALSE,flours
 allspice,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 almond,TRUE,TRUE,TRUE,TRUE,FALSE,dry seed
 anchovy,FALSE,FALSE,TRUE,TRUE,FALSE,fish
@@ -118,6 +119,7 @@ dry red chili,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 dry rose,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 dry rosemary,TRUE,TRUE,TRUE,TRUE,TRUE,spice
 dulce de leche,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
+durum wheat flour,TRUE,TRUE,FALSE,TRUE,FALSE,flours
 egg,FALSE,FALSE,TRUE,TRUE,FALSE,eggs
 egg yolk,FALSE,FALSE,TRUE,TRUE,FALSE,eggs
 eggplant,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
@@ -125,7 +127,6 @@ extra-virgin olive oil,TRUE,TRUE,TRUE,TRUE,FALSE,oils
 fava bean,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 feta cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 flavour,TRUE,TRUE,TRUE,TRUE,TRUE,spice
-flour,TRUE,TRUE,FALSE,TRUE,FALSE,flours
 fontina cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 french baguette,TRUE,TRUE,FALSE,TRUE,FALSE,bakery
 fresh coriander leaf,TRUE,TRUE,TRUE,TRUE,TRUE,spice
@@ -233,6 +234,7 @@ parmesan cheese,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 parsley,TRUE,TRUE,TRUE,TRUE,TRUE,vegetable
 parsley root,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 pastry,TRUE,TRUE,FALSE,TRUE,FALSE,frozen items
+pastry flour,TRUE,FALSE,FALSE,TRUE,FALSE,flours
 peach jam,TRUE,TRUE,TRUE,TRUE,FALSE,canned items
 peanut,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 peanut oil,TRUE,TRUE,TRUE,TRUE,FALSE,oils
@@ -280,7 +282,6 @@ savoy cabbage,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 scallion,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 sea bream,FALSE,FALSE,TRUE,TRUE,FALSE,fish
 semolina,TRUE,TRUE,FALSE,TRUE,FALSE,cereals
-semolina flour,TRUE,TRUE,FALSE,TRUE,FALSE,flours
 sesame seed,TRUE,TRUE,TRUE,TRUE,TRUE,dry seed
 shallot,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 shrimp,FALSE,FALSE,TRUE,TRUE,FALSE,fish
@@ -350,7 +351,6 @@ white onion,TRUE,TRUE,TRUE,TRUE,FALSE,vegetable
 white vinegar,TRUE,TRUE,TRUE,TRUE,FALSE,oils
 white wine,TRUE,TRUE,TRUE,TRUE,FALSE,alcohol
 white yogurt,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
-white flour type 00,TRUE,FALSE,FALSE,TRUE,FALSE,flours
 whole milk,TRUE,FALSE,TRUE,FALSE,FALSE,dairy
 whole wheat flour,TRUE,TRUE,FALSE,TRUE,FALSE,flours
 worcester sauce,TRUE,TRUE,TRUE,TRUE,TRUE,spice
